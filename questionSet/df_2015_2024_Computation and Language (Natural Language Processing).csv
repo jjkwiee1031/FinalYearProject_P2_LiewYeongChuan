@@ -1,0 +1,580 @@
+Question,Source Article Index,Question Type,Summary
+What are the two novel zero-shot methods for detecting machine-generated text introduced in the paper 'DetectLLM: Leveraging Log Rank Information' a a a a a?,abs-2306.05540v1,Direct Fact Retrieval & Definition Questions,"Title: DetectLLM: Leveraging Log Rank Information for Zero-Shot Detection of
+  Machine-Generated Text 
+Summary: With the rapid progress of large language models (LLMs) and the huge amount
+of text they generated, it becomes more and more impractical to manually
+distinguish whether a text is machine-generated. Given the growing use of LLMs
+in social media and education, it prompts us to develop methods to detect
+machine-generated text, preventing malicious usage such as plagiarism,
+misinformation, and propaganda. Previous work has studied several zero-shot
+methods, which require no training data. These methods achieve good
+performance, but there is still a lot of room for improvement. In this paper,
+we introduce two novel zero-shot methods for detecting machine-generated text
+by leveraging the log rank information. One is called DetectLLM-LRR, which is
+fast and efficient, and the other is called DetectLLM-NPR, which is more
+accurate, but slower due to the need for perturbations. Our experiments on
+three datasets and seven language models show that our proposed methods improve
+over the state of the art by 3.9 and 1.75 AUROC points absolute. Moreover,
+DetectLLM-NPR needs fewer perturbations than previous work to achieve the same
+level of performance, which makes it more practical for real-world use. We also
+investigate the efficiency--performance trade-off based on users preference on
+these two measures and we provide intuition for using them in practice
+effectively. We release the data and the code of both methods in
+https://github.com/mbzuai-nlp/DetectLLM 
+
+"
+What is the full name of the benchmark dataset introduced in the paper 'MERA: A Comprehensive LLM Evaluation in Russian'?,abs-2401.04531v3,Direct Fact Retrieval & Definition Questions,"Title: MERA: A Comprehensive LLM Evaluation in Russian 
+Summary: Over the past few years, one of the most notable advancements in AI research
+has been in foundation models (FMs), headlined by the rise of language models
+(LMs). As the models' size increases, LMs demonstrate enhancements in
+measurable aspects and the development of new qualitative features. However,
+despite researchers' attention and the rapid growth in LM application, the
+capabilities, limitations, and associated risks still need to be better
+understood. To address these issues, we introduce an open Multimodal Evaluation
+of Russian-language Architectures (MERA), a new instruction benchmark for
+evaluating foundation models oriented towards the Russian language. The
+benchmark encompasses 21 evaluation tasks for generative models in 11 skill
+domains and is designed as a black-box test to ensure the exclusion of data
+leakage. The paper introduces a methodology to evaluate FMs and LMs in zero-
+and few-shot fixed instruction settings that can be extended to other
+modalities. We propose an evaluation methodology, an open-source code base for
+the MERA assessment, and a leaderboard with a submission system. We evaluate
+open LMs as baselines and find that they are still far behind the human level.
+We publicly release MERA to guide forthcoming research, anticipate
+groundbreaking model features, standardize the evaluation procedure, and
+address potential societal drawbacks. 
+
+"
+What does the acronym HSP stand for in the context of the prompting method designed to improve LLM reasoning?,abs-2402.14310v1,Direct Fact Retrieval & Definition Questions,"Title: Hint-before-Solving Prompting: Guiding LLMs to Effectively Utilize
+  Encoded Knowledge 
+Summary: Large Language Models (LLMs) have recently showcased remarkable
+generalizability in various domains. Despite their extensive knowledge, LLMs
+still face challenges in efficiently utilizing encoded knowledge to develop
+accurate and logical reasoning processes. To mitigate this problem, we
+introduced Hint-before-Solving Prompting (HSP), which guides the model to
+generate hints (e.g., specific knowledge or key ideas) for solving the problem
+and then generate solutions containing intermediate reasoning steps. Since HSP
+is orthogonal to prompting methods (e.g., Chain-of-Thought (CoT)), we applied
+HSP to CoT, Least-to-Most, Plan-and-Solve, and Standard promptings. The results
+of extensive experiments on 6 reasoning benchmarks and 4 open-source LLMs
+demonstrate that HSP can effectively improve the accuracy of reasoning tasks:
+(1) By applying high-quality hint-enhanced HSP to CoT prompting,
+Llama2-70B-Chat shows an improvement of 9.7. (2) Beyond exploring training-free
+LLM capabilities, we built the HSPMATH dataset based on HSP and fine-tuned
+Llemma-7B, reaching 64.3 accuracy, surpassing GPT-3.5 and WizardMath-13B. We
+make our code and dataset publicly available at
+\url{https://github.com/jinlanfu/HSP}. 
+
+"
+"According to the abstract, what new dataset is introduced in 'Hurdles to Progress in Long-form Question Answering' to evaluate LFQA models?",abs-2103.06332v2,Direct Fact Retrieval & Definition Questions,"Title: Hurdles to Progress in Long-form Question Answering 
+Summary: The task of long-form question answering (LFQA) involves retrieving documents
+relevant to a given question and using them to generate a paragraph-length
+answer. While many models have recently been proposed for LFQA, we show in this
+paper that the task formulation raises fundamental challenges regarding
+evaluation and dataset creation that currently preclude meaningful modeling
+progress. To demonstrate these challenges, we first design a new system that
+relies on sparse attention and contrastive retriever learning to achieve
+state-of-the-art performance on the ELI5 LFQA dataset. While our system tops
+the public leaderboard, a detailed analysis reveals several troubling trends:
+(1) our system's generated answers are not actually grounded in the documents
+that it retrieves; (2) ELI5 contains significant train / validation overlap, as
+at least 81% of ELI5 validation questions occur in paraphrased form in the
+training set; (3) ROUGE-L is not an informative metric of generated answer
+quality and can be easily gamed; and (4) human evaluations used for other text
+generation tasks are unreliable for LFQA. We offer suggestions to mitigate each
+of these issues, which we hope will lead to more rigorous LFQA research and
+meaningful progress in the future. 
+
+"
+What is the main goal of the 'Exhaustivity and anti-exhaustivity in the RSA framework' paper?,abs-2202.07023v1,Summarization / Purpose Identification Questions,"Title: Exhaustivity and anti-exhaustivity in the RSA framework: Testing the
+  effect of prior beliefs 
+Summary: During communication, the interpretation of utterances is sensitive to a
+listener's probabilistic prior beliefs, something which is captured by one
+currently influential model of pragmatics, the Rational Speech Act (RSA)
+framework. In this paper we focus on cases when this sensitivity to priors
+leads to counterintuitive predictions of the framework. Our domain of interest
+is exhaustivity effects, whereby a sentence such as ""Mary came"" is understood
+to mean that only Mary came. We show that in the baseline RSA model, under
+certain conditions, anti-exhaustive readings are predicted (e.g., ""Mary came""
+would be used to convey that both Mary and Peter came). The specific question
+we ask is the following: should exhaustive interpretations be derived as purely
+pragmatic inferences (as in the classical Gricean view, endorsed in the
+baseline RSA model), or should they rather be generated by an encapsulated
+semantic mechanism (as argued in some of the recent formal literature)? To
+answer this question, we provide a detailed theoretical analysis of different
+RSA models and evaluate them against data obtained in a new study which tested
+the effects of prior beliefs on both production and comprehension, improving on
+previous empirical work. We found no anti-exhaustivity effects, but observed
+that message choice is sensitive to priors, as predicted by the RSA framework
+overall. The best models turn out to be those which include an encapsulated
+exhaustivity mechanism (as other studies concluded on the basis of very
+different data). We conclude that, on the one hand, in the division of labor
+between semantics and pragmatics, semantics plays a larger role than is often
+thought, but, on the other hand, the tradeoff between informativity and cost
+which characterizes all RSA models does play a central role for genuine
+pragmatic effects. 
+
+"
+What is the primary contribution of the paper 'Neural Poetry: Learning to Generate Poems using Syllables'?,abs-1908.08861v2,Summarization / Purpose Identification Questions,"Title: Neural Poetry: Learning to Generate Poems using Syllables 
+Summary: Motivated by the recent progresses on machine learning-based models that
+learn artistic styles, in this paper we focus on the problem of poem
+generation. This is a challenging task in which the machine has to capture the
+linguistic features that strongly characterize a certain poet, as well as the
+semantics of the poet's production, that are influenced by his personal
+experiences and by his literary background. Since poetry is constructed using
+syllables, that regulate the form and structure of poems, we propose a
+syllable-based neural language model, and we describe a poem generation
+mechanism that is designed around the poet style, automatically selecting the
+most representative generations. The poetic work of a target author is usually
+not enough to successfully train modern deep neural networks, so we propose a
+multi-stage procedure that exploits non-poetic works of the same author, and
+also other publicly available huge corpora to learn syntax and grammar of the
+target language. We focus on the Italian poet Dante Alighieri, widely famous
+for his Divine Comedy. A quantitative and qualitative experimental analysis of
+the generated tercets is reported, where we included expert judges with strong
+background in humanistic studies. The generated tercets are frequently
+considered to be real by a generic population of judges, with relative
+difference of 56.25\% with respect to the ones really authored by Dante, and
+expert judges perceived Dante's style and rhymes in the generated text. 
+
+"
+What is the main purpose of the DetectLLM framework described in abstract abs-2306.05540v1?,abs-2306.05540v1,Summarization / Purpose identification Questions,"Title: DetectLLM: Leveraging Log Rank Information for Zero-Shot Detection of
+  Machine-Generated Text 
+Summary: With the rapid progress of large language models (LLMs) and the huge amount
+of text they generated, it becomes more and more impractical to manually
+distinguish whether a text is machine-generated. Given the growing use of LLMs
+in social media and education, it prompts us to develop methods to detect
+machine-generated text, preventing malicious usage such as plagiarism,
+misinformation, and propaganda. Previous work has studied several zero-shot
+methods, which require no training data. These methods achieve good
+performance, but there is still a lot of room for improvement. In this paper,
+we introduce two novel zero-shot methods for detecting machine-generated text
+by leveraging the log rank information. One is called DetectLLM-LRR, which is
+fast and efficient, and the other is called DetectLLM-NPR, which is more
+accurate, but slower due to the need for perturbations. Our experiments on
+three datasets and seven language models show that our proposed methods improve
+over the state of the art by 3.9 and 1.75 AUROC points absolute. Moreover,
+DetectLLM-NPR needs fewer perturbations than previous work to achieve the same
+level of performance, which makes it more practical for real-world use. We also
+investigate the efficiency--performance trade-off based on users preference on
+these two measures and we provide intuition for using them in practice
+effectively. We release the data and the code of both methods in
+https://github.com/mbzuai-nlp/DetectLLM 
+
+"
+Summarize the main finding of the paper 'Word Order Matters when you Increase Masking'.,abs-2211.04427v1,Summarization / Purpose Identification Questions,"Title: Word Order Matters when you Increase Masking 
+Summary: Word order, an essential property of natural languages, is injected in
+Transformer-based neural language models using position encoding. However,
+recent experiments have shown that explicit position encoding is not always
+useful, since some models without such feature managed to achieve state-of-the
+art performance on some tasks. To understand better this phenomenon, we examine
+the effect of removing position encodings on the pre-training objective itself
+(i.e., masked language modelling), to test whether models can reconstruct
+position information from co-occurrences alone. We do so by controlling the
+amount of masked tokens in the input sentence, as a proxy to affect the
+importance of position information for the task. We find that the necessity of
+position information increases with the amount of masking, and that masked
+language models without position encodings are not able to reconstruct this
+information on the task. These findings point towards a direct relationship
+between the amount of masking and the ability of Transformers to capture
+order-sensitive aspects of language using position encoding. 
+
+"
+"How do the approaches for handling multilingual machine translation differ between the 'Multi-Way, Multilingual Neural Machine Translation' paper (abs-1601.01073v1) and the 'Lego-MT' paper (abs-2212.10551v3)?","abs-1601.01073v1,abs-2212.10551v3",Comparative & Contrastive Questions,"Title: Multi-Way, Multilingual Neural Machine Translation with a Shared
+  Attention Mechanism 
+Summary: We propose multi-way, multilingual neural machine translation. The proposed
+approach enables a single neural translation model to translate between
+multiple languages, with a number of parameters that grows only linearly with
+the number of languages. This is made possible by having a single attention
+mechanism that is shared across all language pairs. We train the proposed
+multi-way, multilingual model on ten language pairs from WMT'15 simultaneously
+and observe clear performance improvements over models trained on only one
+language pair. In particular, we observe that the proposed model significantly
+improves the translation quality of low-resource language pairs. 
+
+Title: Lego-MT: Learning Detachable Models for Massively Multilingual Machine
+  Translation 
+Summary: Multilingual neural machine translation (MNMT) aims to build a unified model
+for many language directions. Existing monolithic models for MNMT encounter two
+challenges: parameter interference among languages and inefficient inference
+for large models. In this paper, we revisit the classic multi-way structures
+and develop a detachable model by assigning each language (or group of
+languages) to an individual branch that supports plug-and-play training and
+inference. To address the needs of learning representations for all languages
+in a unified space, we propose a novel efficient training recipe, upon which we
+build an effective detachable model, Lego-MT. For a fair comparison, we collect
+data from OPUS and build a translation benchmark covering 433 languages and
+1.3B parallel data. Experiments show that Lego-MT with 1.2B parameters brings
+an average gain of 3.2 spBLEU. It even outperforms M2M-100 with 12B parameters.
+The proposed training recipe brings a 28.2$\times$ speedup over the
+conventional multi-way training method.\footnote{
+\url{https://github.com/CONE-MT/Lego-MT}.} 
+
+"
+Contrast the methods for generating synthetic data in 'Generating Datasets with Pretrained Language Models' (abs-2104.07540v3) and 'Synthetic Data Generation for Grammatical Error Correction' (abs-2105.13318v1).,"abs-2104.07540v3,abs-2105.13318v1",Comparative & Contrastive Questions,"Title: Generating Datasets with Pretrained Language Models 
+Summary: To obtain high-quality sentence embeddings from pretrained language models
+(PLMs), they must either be augmented with additional pretraining objectives or
+finetuned on a large set of labeled text pairs. While the latter approach
+typically outperforms the former, it requires great human effort to generate
+suitable datasets of sufficient size. In this paper, we show how PLMs can be
+leveraged to obtain high-quality sentence embeddings without the need for
+labeled data, finetuning or modifications to the pretraining objective: We
+utilize the generative abilities of large and high-performing PLMs to generate
+entire datasets of labeled text pairs from scratch, which we then use for
+finetuning much smaller and more efficient models. Our fully unsupervised
+approach outperforms strong baselines on several semantic textual similarity
+datasets. 
+
+Title: Synthetic Data Generation for Grammatical Error Correction with Tagged
+  Corruption Models 
+Summary: Synthetic data generation is widely known to boost the accuracy of neural
+grammatical error correction (GEC) systems, but existing methods often lack
+diversity or are too simplistic to generate the broad range of grammatical
+errors made by human writers. In this work, we use error type tags from
+automatic annotation tools such as ERRANT to guide synthetic data generation.
+We compare several models that can produce an ungrammatical sentence given a
+clean sentence and an error type tag. We use these models to build a new, large
+synthetic pre-training data set with error tag frequency distributions matching
+a given development set. Our synthetic data set yields large and consistent
+gains, improving the state-of-the-art on the BEA-19 and CoNLL-14 test sets. We
+also show that our approach is particularly effective in adapting a GEC system,
+trained on mixed native and non-native English, to a native English test set,
+even surpassing real training data consisting of high-quality sentence pairs. 
+
+"
+How do the goals of the RAG systems described in 'Benchmarking Retrieval-Augmented Large Language Models in Biomedical NLP' (abs-2405.08151v2) and 'BordIRlines: A Dataset for Evaluating Cross-lingual Retrieval-Augmented Generation' (abs-2410.01171v1) differ in terms of their application domains and evaluation focus?,"abs-2405.08151v2,abs-2410.01171v1",Comparative & Contrastive Questions,"Title: Benchmarking Retrieval-Augmented Large Language Models in Biomedical
+  NLP: Application, Robustness, and Self-Awareness 
+Summary: Large language models (LLM) have demonstrated remarkable capabilities in
+various biomedical natural language processing (NLP) tasks, leveraging the
+demonstration within the input context to adapt to new tasks. However, LLM is
+sensitive to the selection of demonstrations. To address the hallucination
+issue inherent in LLM, retrieval-augmented LLM (RAL) offers a solution by
+retrieving pertinent information from an established database. Nonetheless,
+existing research work lacks rigorous evaluation of the impact of
+retrieval-augmented large language models on different biomedical NLP tasks.
+This deficiency makes it challenging to ascertain the capabilities of RAL
+within the biomedical domain. Moreover, the outputs from RAL are affected by
+retrieving the unlabeled, counterfactual, or diverse knowledge that is not well
+studied in the biomedical domain. However, such knowledge is common in the real
+world. Finally, exploring the self-awareness ability is also crucial for the
+RAL system. So, in this paper, we systematically investigate the impact of RALs
+on 5 different biomedical tasks (triple extraction, link prediction,
+classification, question answering, and natural language inference). We analyze
+the performance of RALs in four fundamental abilities, including unlabeled
+robustness, counterfactual robustness, diverse robustness, and negative
+awareness. To this end, we proposed an evaluation framework to assess the RALs'
+performance on different biomedical NLP tasks and establish four different
+testbeds based on the aforementioned fundamental abilities. Then, we evaluate 3
+representative LLMs with 3 different retrievers on 5 tasks over 9 datasets. 
+
+Title: BordIRlines: A Dataset for Evaluating Cross-lingual Retrieval-Augmented
+  Generation 
+Summary: Large language models excel at creative generation but continue to struggle
+with the issues of hallucination and bias. While retrieval-augmented generation
+(RAG) provides a framework for grounding LLMs' responses in accurate and
+up-to-date information, it still raises the question of bias: which sources
+should be selected for inclusion in the context? And how should their
+importance be weighted? In this paper, we study the challenge of cross-lingual
+RAG and present a dataset to investigate the robustness of existing systems at
+answering queries about geopolitical disputes, which exist at the intersection
+of linguistic, cultural, and political boundaries. Our dataset is sourced from
+Wikipedia pages containing information relevant to the given queries and we
+investigate the impact of including additional context, as well as the
+composition of this context in terms of language and source, on an LLM's
+response. Our results show that existing RAG systems continue to be challenged
+by cross-lingual use cases and suffer from a lack of consistency when they are
+provided with competing information in multiple languages. We present case
+studies to illustrate these issues and outline steps for future research to
+address these challenges. We make our dataset and code publicly available at
+https://github.com/manestay/bordIRlines. 
+
+"
+Compare the motivations for creating the 'Re-TACRED' dataset (abs-2104.08398v1) and the 'AmbigQA' dataset (abs-2004.10645v2). What specific shortcomings in existing NLP datasets did each aim to address?,"abs-2104.08398v1,abs-2004.10645v2",Comparative & Contrastive Questions,"Title: Re-TACRED: Addressing Shortcomings of the TACRED Dataset 
+Summary: TACRED is one of the largest and most widely used sentence-level relation
+extraction datasets. Proposed models that are evaluated using this dataset
+consistently set new state-of-the-art performance. However, they still exhibit
+large error rates despite leveraging external knowledge and unsupervised
+pretraining on large text corpora. A recent study suggested that this may be
+due to poor dataset quality. The study observed that over 50% of the most
+challenging sentences from the development and test sets are incorrectly
+labeled and account for an average drop of 8% f1-score in model performance.
+However, this study was limited to a small biased sample of 5k (out of a total
+of 106k) sentences, substantially restricting the generalizability and broader
+implications of its findings. In this paper, we address these shortcomings by:
+(i) performing a comprehensive study over the whole TACRED dataset, (ii)
+proposing an improved crowdsourcing strategy and deploying it to re-annotate
+the whole dataset, and (iii) performing a thorough analysis to understand how
+correcting the TACRED annotations affects previously published results. After
+verification, we observed that 23.9% of TACRED labels are incorrect. Moreover,
+evaluating several models on our revised dataset yields an average f1-score
+improvement of 14.3% and helps uncover significant relationships between the
+different models (rather than simply offsetting or scaling their scores by a
+constant factor). Finally, aside from our analysis we also release Re-TACRED, a
+new completely re-annotated version of the TACRED dataset that can be used to
+perform reliable evaluation of relation extraction models. 
+
+Title: AmbigQA: Answering Ambiguous Open-domain Questions 
+Summary: Ambiguity is inherent to open-domain question answering; especially when
+exploring new topics, it can be difficult to ask questions that have a single,
+unambiguous answer. In this paper, we introduce AmbigQA, a new open-domain
+question answering task which involves finding every plausible answer, and then
+rewriting the question for each one to resolve the ambiguity. To study this
+task, we construct AmbigNQ, a dataset covering 14,042 questions from NQ-open,
+an existing open-domain QA benchmark. We find that over half of the questions
+in NQ-open are ambiguous, with diverse sources of ambiguity such as event and
+entity references. We also present strong baseline models for AmbigQA which we
+show benefit from weakly supervised learning that incorporates NQ-open,
+strongly suggesting our new task and data will support significant future
+research effort. Our data and baselines are available at
+https://nlp.cs.washington.edu/ambigqa. 
+
+"
+How could the 'UNcommonsense Reasoning' approach (abs-2311.08469v2) be used to evaluate the robustness of the 'Faithfully Reflecting Updated Information in Text' (FRUIT) system (abs-2112.08634v2) when the new evidence presents an unusual or unexpected update?,"abs-2311.08469v2,abs-2112.08634v2",Synthesis & Multi-Hop Reasoning Questions,"Title: UNcommonsense Reasoning: Abductive Reasoning about Uncommon Situations 
+Summary: Language technologies that accurately model the dynamics of events must
+perform commonsense reasoning. Existing work evaluating commonsense reasoning
+focuses on making inferences about common, everyday situations. To instead
+investigate the ability to model unusual, unexpected, and unlikely situations,
+we explore the task of uncommonsense abductive reasoning. Given a piece of
+context with an unexpected outcome, this task requires reasoning abductively to
+generate an explanation that makes the unexpected outcome more likely in the
+context. To this end, we curate and release a new English language corpus
+called UNcommonsense. We characterize the performance differences between human
+explainers and the best-performing large language models, finding that
+model-enhanced human-written explanations achieve the highest quality by
+trading off between specificity and diversity. Finally, we experiment with
+several imitation learning algorithms to train open and accessible language
+models on this task. When compared with the vanilla supervised fine-tuning
+approach, these methods consistently reduce lose rates on both common and
+uncommonsense abductive reasoning judged by human evaluators. 
+
+Title: FRUIT: Faithfully Reflecting Updated Information in Text 
+Summary: Textual knowledge bases such as Wikipedia require considerable effort to keep
+up to date and consistent. While automated writing assistants could potentially
+ease this burden, the problem of suggesting edits grounded in external
+knowledge has been under-explored. In this paper, we introduce the novel
+generation task of *faithfully reflecting updated information in text* (FRUIT)
+where the goal is to update an existing article given new evidence. We release
+the FRUIT-WIKI dataset, a collection of over 170K distantly supervised data
+produced from pairs of Wikipedia snapshots, along with our data generation
+pipeline and a gold evaluation set of 914 instances whose edits are guaranteed
+to be supported by the evidence. We provide benchmark results for popular
+generation systems as well as EDIT5 -- a T5-based approach tailored to editing
+we introduce that establishes the state of the art. Our analysis shows that
+developing models that can update articles faithfully requires new capabilities
+for neural generation models, and opens doors to many new applications. 
+
+"
+"Considering the findings in 'Detoxifying Language Models Risks Marginalizing Minority Voices' (abs-2104.06390v1), what potential risks could arise when applying the detoxification techniques to the analysis of anti-Asian violence-provoking speech as studied in 'A Community-Centric Perspective' (abs-2407.15227v1)?","abs-2104.06390v1,abs-2407.15227v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Detoxifying Language Models Risks Marginalizing Minority Voices 
+Summary: Language models (LMs) must be both safe and equitable to be responsibly
+deployed in practice. With safety in mind, numerous detoxification techniques
+(e.g., Dathathri et al. 2020; Krause et al. 2020) have been proposed to
+mitigate toxic LM generations. In this work, we show that current
+detoxification techniques hurt equity: they decrease the utility of LMs on
+language used by marginalized groups (e.g., African-American English and
+minority identity mentions). In particular, we perform automatic and human
+evaluations of text generation quality when LMs are conditioned on inputs with
+different dialects and group identifiers. We find that detoxification makes LMs
+more brittle to distribution shift, especially on language used by marginalized
+groups. We identify that these failures stem from detoxification methods
+exploiting spurious correlations in toxicity datasets. Overall, our results
+highlight the tension between the controllability and distributional robustness
+of LMs. 
+
+Title: A Community-Centric Perspective for Characterizing and Detecting
+  Anti-Asian Violence-Provoking Speech 
+Summary: Violence-provoking speech -- speech that implicitly or explicitly promotes
+violence against the members of the targeted community, contributed to a
+massive surge in anti-Asian crimes during the pandemic. While previous works
+have characterized and built tools for detecting other forms of harmful speech,
+like fear speech and hate speech, our work takes a community-centric approach
+to studying anti-Asian violence-provoking speech. Using data from ~420k Twitter
+posts spanning a 3-year duration (January 1, 2020 to February 1, 2023), we
+develop a codebook to characterize anti-Asian violence-provoking speech and
+collect a community-crowdsourced dataset to facilitate its large-scale
+detection using state-of-the-art classifiers. We contrast the capabilities of
+natural language processing classifiers, ranging from BERT-based to LLM-based
+classifiers, in detecting violence-provoking speech with their capabilities to
+detect anti-Asian hateful speech. In contrast to prior work that has
+demonstrated the effectiveness of such classifiers in detecting hateful speech
+($F_1 = 0.89$), our work shows that accurate and reliable detection of
+violence-provoking speech is a challenging task ($F_1 = 0.69$). We discuss the
+implications of our findings, particularly the need for proactive interventions
+to support Asian communities during public health crises. The resources related
+to the study are available at
+https://claws-lab.github.io/violence-provoking-speech/. 
+
+"
+How can the concept of 'spurious patterns' from 'Learning the Difference that Makes a Difference with Counterfactually-Augmented Data' (abs-1909.12434v2) be applied to analyze the potential biases in the machine-generated news articles discussed in 'Uncovering Agendas' (abs-2405.00821v1)?,"abs-1909.12434v2,abs-2405.00821v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Learning the Difference that Makes a Difference with
+  Counterfactually-Augmented Data 
+Summary: Despite alarm over the reliance of machine learning systems on so-called
+spurious patterns, the term lacks coherent meaning in standard statistical
+frameworks. However, the language of causality offers clarity: spurious
+associations are due to confounding (e.g., a common cause), but not direct or
+indirect causal effects. In this paper, we focus on natural language
+processing, introducing methods and resources for training models less
+sensitive to spurious patterns. Given documents and their initial labels, we
+task humans with revising each document so that it (i) accords with a
+counterfactual target label; (ii) retains internal coherence; and (iii) avoids
+unnecessary changes. Interestingly, on sentiment analysis and natural language
+inference tasks, classifiers trained on original data fail on their
+counterfactually-revised counterparts and vice versa. Classifiers trained on
+combined datasets perform remarkably well, just shy of those specialized to
+either domain. While classifiers trained on either original or manipulated data
+alone are sensitive to spurious features (e.g., mentions of genre), models
+trained on the combined data are less sensitive to this signal. Both datasets
+are publicly available. 
+
+Title: Uncovering Agendas: A Novel French & English Dataset for Agenda
+  Detection on Social Media 
+Summary: The behavior and decision making of groups or communities can be dramatically
+influenced by individuals pushing particular agendas, e.g., to promote or
+disparage a person or an activity, to call for action, etc.. In the examination
+of online influence campaigns, particularly those related to important
+political and social events, scholars often concentrate on identifying the
+sources responsible for setting and controlling the agenda (e.g., public
+media). In this article we present a methodology for detecting specific
+instances of agenda control through social media where annotated data is
+limited or non-existent. By using a modest corpus of Twitter messages centered
+on the 2022 French Presidential Elections, we carry out a comprehensive
+evaluation of various approaches and techniques that can be applied to this
+problem. Our findings demonstrate that by treating the task as a textual
+entailment problem, it is possible to overcome the requirement for a large
+annotated training dataset. 
+
+"
+"Based on the challenges identified in 'Hurdles to Progress in Long-form Question Answering' (abs-2103.06332v2), how might the 'LongBench' benchmark (abs-2308.14508v2) address the issue of ROUGE-L being an uninformative metric for long-form QA?","abs-2103.06332v2,abs-2308.14508v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Hurdles to Progress in Long-form Question Answering 
+Summary: The task of long-form question answering (LFQA) involves retrieving documents
+relevant to a given question and using them to generate a paragraph-length
+answer. While many models have recently been proposed for LFQA, we show in this
+paper that the task formulation raises fundamental challenges regarding
+evaluation and dataset creation that currently preclude meaningful modeling
+progress. To demonstrate these challenges, we first design a new system that
+relies on sparse attention and contrastive retriever learning to achieve
+state-of-the-art performance on the ELI5 LFQA dataset. While our system tops
+the public leaderboard, a detailed analysis reveals several troubling trends:
+(1) our system's generated answers are not actually grounded in the documents
+that it retrieves; (2) ELI5 contains significant train / validation overlap, as
+at least 81% of ELI5 validation questions occur in paraphrased form in the
+training set; (3) ROUGE-L is not an informative metric of generated answer
+quality and can be easily gamed; and (4) human evaluations used for other text
+generation tasks are unreliable for LFQA. We offer suggestions to mitigate each
+of these issues, which we hope will lead to more rigorous LFQA research and
+meaningful progress in the future. 
+
+Title: LongBench: A Bilingual, Multitask Benchmark for Long Context
+  Understanding 
+Summary: Although large language models (LLMs) demonstrate impressive performance for
+many language tasks, most of them can only handle texts a few thousand tokens
+long, limiting their applications on longer sequence inputs, such as books,
+reports, and codebases. Recent works have proposed methods to improve LLMs'
+long context capabilities by extending context windows and more sophisticated
+memory mechanisms. However, comprehensive benchmarks tailored for evaluating
+long context understanding are lacking. In this paper, we introduce LongBench,
+the first bilingual, multi-task benchmark for long context understanding,
+enabling a more rigorous evaluation of long context understanding. LongBench
+comprises 21 datasets across 6 task categories in both English and Chinese,
+with an average length of 6,711 words (English) and 13,386 characters
+(Chinese). These tasks cover key long-text application areas including
+single-doc QA, multi-doc QA, summarization, few-shot learning, synthetic tasks,
+and code completion. All datasets in LongBench are standardized into a unified
+format, allowing for effortless automatic evaluation of LLMs. Upon
+comprehensive evaluation of 8 LLMs on LongBench, we find that: (1) Commercial
+model (GPT-3.5-Turbo-16k) outperforms other open-sourced models, but still
+struggles on longer contexts. (2) Scaled position embedding and fine-tuning on
+longer sequences lead to substantial improvement on long context understanding.
+(3) Context compression technique such as retrieval brings improvement for
+model with weak ability on long contexts, but the performance still lags behind
+models that have strong long context understanding capability. The code and
+datasets are available at https://github.com/THUDM/LongBench. 
+
+"
+"What specific computational resources (e.g., GPU model, number of GPUs) were used to train the models in the paper 'Using LLMs to Aid Annotation and Collection of Clinically-Enriched Data in Bipolar Disorder and Schizophrenia'?",abs-2406.12687v1,Negative / Unanswerable Questions,"Title: Using LLMs to Aid Annotation and Collection of Clinically-Enriched Data
+  in Bipolar Disorder and Schizophrenia 
+Summary: NLP in mental health has been primarily social media focused. Real world
+practitioners also have high case loads and often domain specific variables, of
+which modern LLMs lack context. We take a dataset made by recruiting 644
+participants, including individuals diagnosed with Bipolar Disorder (BD),
+Schizophrenia (SZ), and Healthy Controls (HC). Participants undertook tasks
+derived from a standardized mental health instrument, and the resulting data
+were transcribed and annotated by experts across five clinical variables. This
+paper demonstrates the application of contemporary language models in
+sequence-to-sequence tasks to enhance mental health research. Specifically, we
+illustrate how these models can facilitate the deployment of mental health
+instruments, data collection, and data annotation with high accuracy and
+scalability. We show that small models are capable of annotation for
+domain-specific clinical variables, data collection for mental-health
+instruments, and perform better then commercial large models. 
+
+"
+What was the exact number of perturbations DetectLLM-NPR used to achieve its performance in 'DetectLLM: Leveraging Log Rank Information for Zero-Shot Detection of Machine-Generated Text'?,abs-2306.05540v1,Negative / Unanswerable Questions,"Title: DetectLLM: Leveraging Log Rank Information for Zero-Shot Detection of
+  Machine-Generated Text 
+Summary: With the rapid progress of large language models (LLMs) and the huge amount
+of text they generated, it becomes more and more impractical to manually
+distinguish whether a text is machine-generated. Given the growing use of LLMs
+in social media and education, it prompts us to develop methods to detect
+machine-generated text, preventing malicious usage such as plagiarism,
+misinformation, and propaganda. Previous work has studied several zero-shot
+methods, which require no training data. These methods achieve good
+performance, but there is still a lot of room for improvement. In this paper,
+we introduce two novel zero-shot methods for detecting machine-generated text
+by leveraging the log rank information. One is called DetectLLM-LRR, which is
+fast and efficient, and the other is called DetectLLM-NPR, which is more
+accurate, but slower due to the need for perturbations. Our experiments on
+three datasets and seven language models show that our proposed methods improve
+over the state of the art by 3.9 and 1.75 AUROC points absolute. Moreover,
+DetectLLM-NPR needs fewer perturbations than previous work to achieve the same
+level of performance, which makes it more practical for real-world use. We also
+investigate the efficiency--performance trade-off based on users preference on
+these two measures and we provide intuition for using them in practice
+effectively. We release the data and the code of both methods in
+https://github.com/mbzuai-nlp/DetectLLM 
+
+"
+"In the paper 'Neural Poetry: Learning to Generate Poems using Syllables', which specific non-poetic works by Dante Alighieri were used to pre-train the model?",abs-1908.08861v2,Negative / Unanswerable Questions,"Title: Neural Poetry: Learning to Generate Poems using Syllables 
+Summary: Motivated by the recent progresses on machine learning-based models that
+learn artistic styles, in this paper we focus on the problem of poem
+generation. This is a challenging task in which the machine has to capture the
+linguistic features that strongly characterize a certain poet, as well as the
+semantics of the poet's production, that are influenced by his personal
+experiences and by his literary background. Since poetry is constructed using
+syllables, that regulate the form and structure of poems, we propose a
+syllable-based neural language model, and we describe a poem generation
+mechanism that is designed around the poet style, automatically selecting the
+most representative generations. The poetic work of a target author is usually
+not enough to successfully train modern deep neural networks, so we propose a
+multi-stage procedure that exploits non-poetic works of the same author, and
+also other publicly available huge corpora to learn syntax and grammar of the
+target language. We focus on the Italian poet Dante Alighieri, widely famous
+for his Divine Comedy. A quantitative and qualitative experimental analysis of
+the generated tercets is reported, where we included expert judges with strong
+background in humanistic studies. The generated tercets are frequently
+considered to be real by a generic population of judges, with relative
+difference of 56.25\% with respect to the ones really authored by Dante, and
+expert judges perceived Dante's style and rhymes in the generated text. 
+
+"
+What was the total cost of crowdsourcing for the 'Re-TACRED' dataset re-annotation project?,abs-2104.08398v1,Negative / Unanswerable Questions,"Title: Re-TACRED: Addressing Shortcomings of the TACRED Dataset 
+Summary: TACRED is one of the largest and most widely used sentence-level relation
+extraction datasets. Proposed models that are evaluated using this dataset
+consistently set new state-of-the-art performance. However, they still exhibit
+large error rates despite leveraging external knowledge and unsupervised
+pretraining on large text corpora. A recent study suggested that this may be
+due to poor dataset quality. The study observed that over 50% of the most
+challenging sentences from the development and test sets are incorrectly
+labeled and account for an average drop of 8% f1-score in model performance.
+However, this study was limited to a small biased sample of 5k (out of a total
+of 106k) sentences, substantially restricting the generalizability and broader
+implications of its findings. In this paper, we address these shortcomings by:
+(i) performing a comprehensive study over the whole TACRED dataset, (ii)
+proposing an improved crowdsourcing strategy and deploying it to re-annotate
+the whole dataset, and (iii) performing a thorough analysis to understand how
+correcting the TACRED annotations affects previously published results. After
+verification, we observed that 23.9% of TACRED labels are incorrect. Moreover,
+evaluating several models on our revised dataset yields an average f1-score
+improvement of 14.3% and helps uncover significant relationships between the
+different models (rather than simply offsetting or scaling their scores by a
+constant factor). Finally, aside from our analysis we also release Re-TACRED, a
+new completely re-annotated version of the TACRED dataset that can be used to
+perform reliable evaluation of relation extraction models. 
+
+"

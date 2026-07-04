@@ -1,0 +1,579 @@
+Question,Source Article Index,Question Type,Summary,prediction,documentIDs
+What does the acronym NoRGa stand for in the paper 'Mixture of Experts Meets Prompt-Based Continual Learning'?,abs-2405.14124v4,Direct Fact Retrieval & Definition Questions,"Title: Mixture of Experts Meets Prompt-Based Continual Learning 
+Summary: Exploiting the power of pre-trained models, prompt-based approaches stand out
+compared to other continual learning solutions in effectively preventing
+catastrophic forgetting, even with very few learnable parameters and without
+the need for a memory buffer. While existing prompt-based continual learning
+methods excel in leveraging prompts for state-of-the-art performance, they
+often lack a theoretical explanation for the effectiveness of prompting. This
+paper conducts a theoretical analysis to unravel how prompts bestow such
+advantages in continual learning, thus offering a new perspective on prompt
+design. We first show that the attention block of pre-trained models like
+Vision Transformers inherently encodes a special mixture of experts
+architecture, characterized by linear experts and quadratic gating score
+functions. This realization drives us to provide a novel view on prefix tuning,
+reframing it as the addition of new task-specific experts, thereby inspiring
+the design of a novel gating mechanism termed Non-linear Residual Gates
+(NoRGa). Through the incorporation of non-linear activation and residual
+connection, NoRGa enhances continual learning performance while preserving
+parameter efficiency. The effectiveness of NoRGa is substantiated both
+theoretically and empirically across diverse benchmarks and pretraining
+paradigms. Our code is publicly available at
+https://github.com/Minhchuyentoancbn/MoE_PromptCL 
+
+",This is a test answer.,"abs-2408.05065v1, abs-2402.12711v2, abs-2408.05425v1, abs-2407.21236v1"
+What is the main objective of the 'Constrained Meta Agnostic Reinforcement Learning' (C-MAML) framework?,abs-2406.14047v1,Summarization / Purpose Identification Questions,"Title: Constrained Meta Agnostic Reinforcement Learning 
+Summary: Meta-Reinforcement Learning (Meta-RL) aims to acquire meta-knowledge for
+quick adaptation to diverse tasks. However, applying these policies in
+real-world environments presents a significant challenge in balancing rapid
+adaptability with adherence to environmental constraints. Our novel approach,
+Constraint Model Agnostic Meta Learning (C-MAML), merges meta learning with
+constrained optimization to address this challenge. C-MAML enables rapid and
+efficient task adaptation by incorporating task-specific constraints directly
+into its meta-algorithm framework during the training phase. This fusion
+results in safer initial parameters for learning new tasks. We demonstrate the
+effectiveness of C-MAML in simulated locomotion with wheeled robot tasks of
+varying complexity, highlighting its practicality and robustness in dynamic
+environments. 
+
+",This is a test answer.,"abs-2406.14047v1, abs-2406.14054v1, abs-2401.11237v2, abs-2406.03234v1"
+Compare the approaches of 'Streamlined Federated Unlearning' (SFU) and 'Fishers Harvest Parallel Unlearning in Inherited Model Networks' (FIUn). How do their strategies for unlearning differ in terms of model architecture and dependencies?,"abs-2412.00126v1,abs-2408.08493v2",Comparative & Contrastive Questions,"Title: Streamlined Federated Unlearning: Unite as One to Be Highly Efficient 
+Summary: Recently, the enactment of ""right to be forgotten"" laws and regulations has
+imposed new privacy requirements on federated learning (FL). Researchers aim to
+remove the influence of certain data from the trained model without training
+from scratch through federated unlearning (FU). While current FU research has
+shown progress in enhancing unlearning efficiency, it often results in degraded
+model performance upon achieving the goal of data unlearning, necessitating
+additional steps to recover the performance of the unlearned model. Moreover,
+these approaches also suffer from many shortcomings such as high consumption of
+computational and storage resources. To this end, we propose a streamlined
+federated unlearning approach (SFU) aimed at effectively removing the influence
+of target data while preserving the model's performance on the retained data
+without degradation. We design a practical multi-teacher system that achieves
+both target data influence removal and model performance preservation by
+guiding the unlearned model through several distinct teacher models. SFU is
+both computationally and storage-efficient, highly flexible, and generalizable.
+We conducted extensive experiments on both image and text benchmark datasets.
+The results demonstrate that SFU significantly improves time and communication
+efficiency compared to the benchmark retraining method and significantly
+outperforms existing state-of-the-art (SOTA) methods. Additionally, we verified
+the effectiveness of SFU using the backdoor attack. 
+
+Title: Fishers Harvest Parallel Unlearning in Inherited Model Networks 
+Summary: Unlearning in various learning frameworks remains challenging, with the
+continuous growth and updates of models exhibiting complex inheritance
+relationships. This paper presents a novel unlearning framework, which enables
+fully parallel unlearning among models exhibiting inheritance. A key enabler is
+the new Unified Model Inheritance Graph (UMIG), which captures the inheritance
+using a Directed Acyclic Graph (DAG).Central to our framework is the new Fisher
+Inheritance Unlearning (FIUn) algorithm, which utilizes the Fisher Information
+Matrix (FIM) from initial unlearning models to pinpoint impacted parameters in
+inherited models. By employing FIM, the FIUn method breaks the sequential
+dependencies among the models, facilitating simultaneous unlearning and
+reducing computational overhead. We further design to merge disparate FIMs into
+a single matrix, synchronizing updates across inherited models. Experiments
+confirm the effectiveness of our unlearning framework. For single-class tasks,
+it achieves complete unlearning with 0\% accuracy for unlearned labels while
+maintaining 94.53\% accuracy for retained labels on average. For multi-class
+tasks, the accuracy is 1.07\% for unlearned labels and 84.77\% for retained
+labels on average. Our framework accelerates unlearning by 99\% compared to
+alternative methods. 
+
+",This is a test answer.,"abs-2412.00126v1, abs-2408.08493v2, abs-2401.04385v4, abs-2401.14027v1"
+The paper on 'Mixture of Experts Meets Prompt-Based Continual Learning' reframes prefix tuning as adding new experts. How could the FIUn algorithm from 'Fishers Harvest Parallel Unlearning' be adapted to selectively 'unlearn' or remove specific task-experts from such a continually learned model without retraining the entire system?,"abs-2405.14124v4,abs-2408.08493v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Mixture of Experts Meets Prompt-Based Continual Learning 
+Summary: Exploiting the power of pre-trained models, prompt-based approaches stand out
+compared to other continual learning solutions in effectively preventing
+catastrophic forgetting, even with very few learnable parameters and without
+the need for a memory buffer. While existing prompt-based continual learning
+methods excel in leveraging prompts for state-of-the-art performance, they
+often lack a theoretical explanation for the effectiveness of prompting. This
+paper conducts a theoretical analysis to unravel how prompts bestow such
+advantages in continual learning, thus offering a new perspective on prompt
+design. We first show that the attention block of pre-trained models like
+Vision Transformers inherently encodes a special mixture of experts
+architecture, characterized by linear experts and quadratic gating score
+functions. This realization drives us to provide a novel view on prefix tuning,
+reframing it as the addition of new task-specific experts, thereby inspiring
+the design of a novel gating mechanism termed Non-linear Residual Gates
+(NoRGa). Through the incorporation of non-linear activation and residual
+connection, NoRGa enhances continual learning performance while preserving
+parameter efficiency. The effectiveness of NoRGa is substantiated both
+theoretically and empirically across diverse benchmarks and pretraining
+paradigms. Our code is publicly available at
+https://github.com/Minhchuyentoancbn/MoE_PromptCL 
+
+Title: Fishers Harvest Parallel Unlearning in Inherited Model Networks 
+Summary: Unlearning in various learning frameworks remains challenging, with the
+continuous growth and updates of models exhibiting complex inheritance
+relationships. This paper presents a novel unlearning framework, which enables
+fully parallel unlearning among models exhibiting inheritance. A key enabler is
+the new Unified Model Inheritance Graph (UMIG), which captures the inheritance
+using a Directed Acyclic Graph (DAG).Central to our framework is the new Fisher
+Inheritance Unlearning (FIUn) algorithm, which utilizes the Fisher Information
+Matrix (FIM) from initial unlearning models to pinpoint impacted parameters in
+inherited models. By employing FIM, the FIUn method breaks the sequential
+dependencies among the models, facilitating simultaneous unlearning and
+reducing computational overhead. We further design to merge disparate FIMs into
+a single matrix, synchronizing updates across inherited models. Experiments
+confirm the effectiveness of our unlearning framework. For single-class tasks,
+it achieves complete unlearning with 0\% accuracy for unlearned labels while
+maintaining 94.53\% accuracy for retained labels on average. For multi-class
+tasks, the accuracy is 1.07\% for unlearned labels and 84.77\% for retained
+labels on average. Our framework accelerates unlearning by 99\% compared to
+alternative methods. 
+
+",This is a test answer.,"abs-2405.14124v4, abs-2410.00074v1, abs-2401.11237v2, abs-2409.19391v1"
+"In the 'Constrained Meta Agnostic Reinforcement Learning' paper, what was the exact brand and model of the wheeled robot used in the simulated locomotion tasks?",abs-2406.14047v1,Negative / Unanswerable Questions,"Title: Constrained Meta Agnostic Reinforcement Learning 
+Summary: Meta-Reinforcement Learning (Meta-RL) aims to acquire meta-knowledge for
+quick adaptation to diverse tasks. However, applying these policies in
+real-world environments presents a significant challenge in balancing rapid
+adaptability with adherence to environmental constraints. Our novel approach,
+Constraint Model Agnostic Meta Learning (C-MAML), merges meta learning with
+constrained optimization to address this challenge. C-MAML enables rapid and
+efficient task adaptation by incorporating task-specific constraints directly
+into its meta-algorithm framework during the training phase. This fusion
+results in safer initial parameters for learning new tasks. We demonstrate the
+effectiveness of C-MAML in simulated locomotion with wheeled robot tasks of
+varying complexity, highlighting its practicality and robustness in dynamic
+environments. 
+
+",This is a test answer.,"abs-2406.14047v1, abs-2411.17506v1, abs-2406.17885v3, abs-2412.05334v1"
+"According to the paper 'Fishers Harvest Parallel Unlearning in Inherited Model Networks', what does the acronym FIUn stand for?",abs-2408.08493v2,Direct Fact Retrieval & Definition Questions,"Title: Fishers Harvest Parallel Unlearning in Inherited Model Networks 
+Summary: Unlearning in various learning frameworks remains challenging, with the
+continuous growth and updates of models exhibiting complex inheritance
+relationships. This paper presents a novel unlearning framework, which enables
+fully parallel unlearning among models exhibiting inheritance. A key enabler is
+the new Unified Model Inheritance Graph (UMIG), which captures the inheritance
+using a Directed Acyclic Graph (DAG).Central to our framework is the new Fisher
+Inheritance Unlearning (FIUn) algorithm, which utilizes the Fisher Information
+Matrix (FIM) from initial unlearning models to pinpoint impacted parameters in
+inherited models. By employing FIM, the FIUn method breaks the sequential
+dependencies among the models, facilitating simultaneous unlearning and
+reducing computational overhead. We further design to merge disparate FIMs into
+a single matrix, synchronizing updates across inherited models. Experiments
+confirm the effectiveness of our unlearning framework. For single-class tasks,
+it achieves complete unlearning with 0\% accuracy for unlearned labels while
+maintaining 94.53\% accuracy for retained labels on average. For multi-class
+tasks, the accuracy is 1.07\% for unlearned labels and 84.77\% for retained
+labels on average. Our framework accelerates unlearning by 99\% compared to
+alternative methods. 
+
+",This is a test answer.,"abs-2408.08493v2, abs-2401.04385v4, abs-2412.00126v1, abs-2406.03288v1"
+What is the core purpose of the 'Embarrassingly Parallel GFlowNets' (EP-GFlowNet) method?,abs-2406.03288v1,Summarization / Purpose Identification Questions,"Title: Embarrassingly Parallel GFlowNets 
+Summary: GFlowNets are a promising alternative to MCMC sampling for discrete
+compositional random variables. Training GFlowNets requires repeated
+evaluations of the unnormalized target distribution or reward function.
+However, for large-scale posterior sampling, this may be prohibitive since it
+incurs traversing the data several times. Moreover, if the data are distributed
+across clients, employing standard GFlowNets leads to intensive client-server
+communication. To alleviate both these issues, we propose embarrassingly
+parallel GFlowNet (EP-GFlowNet). EP-GFlowNet is a provably correct
+divide-and-conquer method to sample from product distributions of the form
+$R(\cdot) \propto R_1(\cdot) ... R_N(\cdot)$ -- e.g., in parallel or federated
+Bayes, where each $R_n$ is a local posterior defined on a data partition.
+First, in parallel, we train a local GFlowNet targeting each $R_n$ and send the
+resulting models to the server. Then, the server learns a global GFlowNet by
+enforcing our newly proposed \emph{aggregating balance} condition, requiring a
+single communication step. Importantly, EP-GFlowNets can also be applied to
+multi-objective optimization and model reuse. Our experiments illustrate the
+EP-GFlowNets's effectiveness on many tasks, including parallel Bayesian
+phylogenetics, multi-objective multiset, sequence generation, and federated
+Bayesian structure learning. 
+
+",This is a test answer.,"abs-2409.17889v1, abs-2408.01331v2, abs-2407.01258v3, abs-2407.21236v1"
+"Contrast the role of Transformer architectures in the papers 'Separations in the Representational Capabilities of Transformers and Recurrent Architectures' and 'Graph Unitary Message Passing'. One analyzes theoretical capabilities, while the other applies them to a GNN problem; how do their uses of Transformers differ?","abs-2406.09347v1,abs-2403.11199v1",Comparative & Contrastive Questions,"Title: Separations in the Representational Capabilities of Transformers and
+  Recurrent Architectures 
+Summary: Transformer architectures have been widely adopted in foundation models. Due
+to their high inference costs, there is renewed interest in exploring the
+potential of efficient recurrent architectures (RNNs). In this paper, we
+analyze the differences in the representational capabilities of Transformers
+and RNNs across several tasks of practical relevance, including index lookup,
+nearest neighbor, recognizing bounded Dyck languages, and string equality. For
+the tasks considered, our results show separations based on the size of the
+model required for different architectures. For example, we show that a
+one-layer Transformer of logarithmic width can perform index lookup, whereas an
+RNN requires a hidden state of linear size. Conversely, while constant-size
+RNNs can recognize bounded Dyck languages, we show that one-layer Transformers
+require a linear size for this task. Furthermore, we show that two-layer
+Transformers of logarithmic size can perform decision tasks such as string
+equality or disjointness, whereas both one-layer Transformers and recurrent
+models require linear size for these tasks. We also show that a log-size
+two-layer Transformer can implement the nearest neighbor algorithm in its
+forward pass; on the other hand recurrent models require linear size. Our
+constructions are based on the existence of $N$ nearly orthogonal vectors in
+$O(\log N)$ dimensional space and our lower bounds are based on reductions from
+communication complexity problems. We supplement our theoretical results with
+experiments that highlight the differences in the performance of these
+architectures on practical-size sequences. 
+
+Title: Graph Unitary Message Passing 
+Summary: Message passing mechanism contributes to the success of GNNs in various
+applications, but also brings the oversquashing problem. Recent works combat
+oversquashing by improving the graph spectrums with rewiring techniques,
+disrupting the structural bias in graphs, and having limited improvement on
+oversquashing in terms of oversquashing measure. Motivated by unitary RNN, we
+propose Graph Unitary Message Passing (GUMP) to alleviate oversquashing in GNNs
+by applying unitary adjacency matrix for message passing. To design GUMP, a
+transformation is first proposed to make general graphs have unitary adjacency
+matrix and keep its structural bias. Then, unitary adjacency matrix is obtained
+with a unitary projection algorithm, which is implemented by utilizing the
+intrinsic structure of unitary adjacency matrix and allows GUMP to be
+permutation-equivariant. Experimental results show the effectiveness of GUMP in
+improving the performance on various graph learning tasks. 
+
+",This is a test answer.,"abs-2406.09347v1, abs-2405.20012v1, abs-2401.15030v2, abs-2407.21236v1"
+How might the 'Adaptive Layer Splitting' framework for wireless LLM inference be combined with the 'UnifiedNN' framework for concurrent training to create a system that both trains and deploys multiple models efficiently across a distributed edge-cloud environment?,"abs-2406.02616v5,abs-2408.01331v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Adaptive Layer Splitting for Wireless LLM Inference in Edge Computing: A
+  Model-Based Reinforcement Learning Approach 
+Summary: Optimizing the deployment of large language models (LLMs) in edge computing
+environments is critical for enhancing privacy and computational efficiency.
+Toward efficient wireless LLM inference in edge computing, this study
+comprehensively analyzes the impact of different splitting points in mainstream
+open-source LLMs. On this basis, this study introduces a framework taking
+inspiration from model-based reinforcement learning (MBRL) to determine the
+optimal splitting point across the edge and user equipment (UE). By
+incorporating a reward surrogate model, our approach significantly reduces the
+computational cost of frequent performance evaluations. Extensive simulations
+demonstrate that this method effectively balances inference performance and
+computational load under varying network conditions, providing a robust
+solution for LLM deployment in decentralized settings. 
+
+Title: UnifiedNN: Efficient Neural Network Training on the Cloud 
+Summary: Nowadays, cloud-based services are widely favored over the traditional
+approach of locally training a Neural Network (NN) model. Oftentimes, a cloud
+service processes multiple requests from users--thus training multiple NN
+models concurrently. However, training NN models concurrently is a challenging
+process, which typically requires significant amounts of available computing
+resources and takes a long time to complete. In this paper, we present
+UnifiedNN to effectively train multiple NN models concurrently on the cloud.
+UnifiedNN effectively ""combines"" multiple NN models and features several memory
+and time conservation mechanisms to train multiple NN models simultaneously
+without impacting the accuracy of the training process. Specifically, UnifiedNN
+merges multiple NN models and creates a large singular unified model in order
+to efficiently train all models at once. We have implemented a prototype of
+UnifiedNN in PyTorch and we have compared its performance with relevant
+state-of-the-art frameworks. Our experimental results demonstrate that
+UnifiedNN can reduce memory consumption by up to 53% and training time by up to
+81% when compared with vanilla PyTorch without impacting the model training and
+testing accuracy. Finally, our results indicate that UnifiedNN can reduce
+memory consumption by up to 52% and training time by up to 41% when compared to
+state-of-the-art frameworks when training multiple models concurrently. 
+
+",This is a test answer.,"abs-2406.02616v5, abs-2408.01331v2, abs-2410.21656v1, abs-2408.05765v1"
+"In the 'Streamlined Federated Unlearning' paper, what was the average network bandwidth consumption during the multi-teacher system's operation on the text benchmark datasets?",abs-2412.00126v1,Negative / Unanswerable Questions,"Title: Streamlined Federated Unlearning: Unite as One to Be Highly Efficient 
+Summary: Recently, the enactment of ""right to be forgotten"" laws and regulations has
+imposed new privacy requirements on federated learning (FL). Researchers aim to
+remove the influence of certain data from the trained model without training
+from scratch through federated unlearning (FU). While current FU research has
+shown progress in enhancing unlearning efficiency, it often results in degraded
+model performance upon achieving the goal of data unlearning, necessitating
+additional steps to recover the performance of the unlearned model. Moreover,
+these approaches also suffer from many shortcomings such as high consumption of
+computational and storage resources. To this end, we propose a streamlined
+federated unlearning approach (SFU) aimed at effectively removing the influence
+of target data while preserving the model's performance on the retained data
+without degradation. We design a practical multi-teacher system that achieves
+both target data influence removal and model performance preservation by
+guiding the unlearned model through several distinct teacher models. SFU is
+both computationally and storage-efficient, highly flexible, and generalizable.
+We conducted extensive experiments on both image and text benchmark datasets.
+The results demonstrate that SFU significantly improves time and communication
+efficiency compared to the benchmark retraining method and significantly
+outperforms existing state-of-the-art (SOTA) methods. Additionally, we verified
+the effectiveness of SFU using the backdoor attack. 
+
+",This is a test answer.,"abs-2405.16697v1, abs-2408.01331v2, abs-2410.00074v1, abs-2410.21656v1"
+What does C-MAML stand for in the paper 'Constrained Meta Agnostic Reinforcement Learning'?,abs-2406.14047v1,Direct Fact Retrieval & Definition Questions,"Title: Constrained Meta Agnostic Reinforcement Learning 
+Summary: Meta-Reinforcement Learning (Meta-RL) aims to acquire meta-knowledge for
+quick adaptation to diverse tasks. However, applying these policies in
+real-world environments presents a significant challenge in balancing rapid
+adaptability with adherence to environmental constraints. Our novel approach,
+Constraint Model Agnostic Meta Learning (C-MAML), merges meta learning with
+constrained optimization to address this challenge. C-MAML enables rapid and
+efficient task adaptation by incorporating task-specific constraints directly
+into its meta-algorithm framework during the training phase. This fusion
+results in safer initial parameters for learning new tasks. We demonstrate the
+effectiveness of C-MAML in simulated locomotion with wheeled robot tasks of
+varying complexity, highlighting its practicality and robustness in dynamic
+environments. 
+
+",This is a test answer.,"abs-2406.14047v1, abs-2406.17885v3, abs-2409.17889v1, abs-2405.16267v2"
+Summarize the main problem addressed by the 'Online Convex Optimisation: The Optimal Switching Regret...' paper.,abs-2405.20824v1,Summarization / Purpose Identification Questions,"Title: Online Convex Optimisation: The Optimal Switching Regret for all
+  Segmentations Simultaneously 
+Summary: We consider the classic problem of online convex optimisation. Whereas the
+notion of static regret is relevant for stationary problems, the notion of
+switching regret is more appropriate for non-stationary problems. A switching
+regret is defined relative to any segmentation of the trial sequence, and is
+equal to the sum of the static regrets of each segment. In this paper we show
+that, perhaps surprisingly, we can achieve the asymptotically optimal switching
+regret on every possible segmentation simultaneously. Our algorithm for doing
+so is very efficient: having a space and per-trial time complexity that is
+logarithmic in the time-horizon. Our algorithm also obtains novel bounds on its
+dynamic regret: being adaptive to variations in the rate of change of the
+comparator sequence. 
+
+",This is a test answer.,"abs-2409.04636v1, abs-2402.12711v2, abs-2405.20824v1, abs-2405.16267v2"
+How does the concept of 'list learning' in 'List Sample Compression and Uniform Convergence' differ from the 'multi-objective optimization' approach in 'EP-GFlowNet'?,"abs-2403.10889v1,abs-2406.03288v1",Comparative & Contrastive Questions,"Title: List Sample Compression and Uniform Convergence 
+Summary: List learning is a variant of supervised classification where the learner
+outputs multiple plausible labels for each instance rather than just one. We
+investigate classical principles related to generalization within the context
+of list learning. Our primary goal is to determine whether classical principles
+in the PAC setting retain their applicability in the domain of list PAC
+learning. We focus on uniform convergence (which is the basis of Empirical Risk
+Minimization) and on sample compression (which is a powerful manifestation of
+Occam's Razor). In classical PAC learning, both uniform convergence and sample
+compression satisfy a form of `completeness': whenever a class is learnable, it
+can also be learned by a learning rule that adheres to these principles. We ask
+whether the same completeness holds true in the list learning setting.
+  We show that uniform convergence remains equivalent to learnability in the
+list PAC learning setting. In contrast, our findings reveal surprising results
+regarding sample compression: we prove that when the label space is
+$Y=\{0,1,2\}$, then there are 2-list-learnable classes that cannot be
+compressed. This refutes the list version of the sample compression conjecture
+by Littlestone and Warmuth (1986). We prove an even stronger impossibility
+result, showing that there are $2$-list-learnable classes that cannot be
+compressed even when the reconstructed function can work with lists of
+arbitrarily large size. We prove a similar result for (1-list) PAC learnable
+classes when the label space is unbounded. This generalizes a recent result by
+arXiv:2308.06424. 
+
+Title: Embarrassingly Parallel GFlowNets 
+Summary: GFlowNets are a promising alternative to MCMC sampling for discrete
+compositional random variables. Training GFlowNets requires repeated
+evaluations of the unnormalized target distribution or reward function.
+However, for large-scale posterior sampling, this may be prohibitive since it
+incurs traversing the data several times. Moreover, if the data are distributed
+across clients, employing standard GFlowNets leads to intensive client-server
+communication. To alleviate both these issues, we propose embarrassingly
+parallel GFlowNet (EP-GFlowNet). EP-GFlowNet is a provably correct
+divide-and-conquer method to sample from product distributions of the form
+$R(\cdot) \propto R_1(\cdot) ... R_N(\cdot)$ -- e.g., in parallel or federated
+Bayes, where each $R_n$ is a local posterior defined on a data partition.
+First, in parallel, we train a local GFlowNet targeting each $R_n$ and send the
+resulting models to the server. Then, the server learns a global GFlowNet by
+enforcing our newly proposed \emph{aggregating balance} condition, requiring a
+single communication step. Importantly, EP-GFlowNets can also be applied to
+multi-objective optimization and model reuse. Our experiments illustrate the
+EP-GFlowNets's effectiveness on many tasks, including parallel Bayesian
+phylogenetics, multi-objective multiset, sequence generation, and federated
+Bayesian structure learning. 
+
+",This is a test answer.,"abs-2403.10889v1, abs-2409.19391v1, abs-2406.14404v1, abs-2403.11408v1"
+"The VISAGE safety metric is designed to measure risks in finetuning. How could this metric be applied to evaluate the safety and constraint adherence of policies learned by the 'Constrained Meta Agnostic Reinforcement Learning' (C-MAML) framework when adapting to new, potentially unsafe tasks?","abs-2405.17374v3,abs-2406.14047v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Navigating the Safety Landscape: Measuring Risks in Finetuning Large
+  Language Models 
+Summary: Safety alignment is crucial to ensure that large language models (LLMs)
+behave in ways that align with human preferences and prevent harmful actions
+during inference. However, recent studies show that the alignment can be easily
+compromised through finetuning with only a few adversarially designed training
+examples. We aim to measure the risks in finetuning LLMs through navigating the
+LLM safety landscape. We discover a new phenomenon observed universally in the
+model parameter space of popular open-source LLMs, termed as ""safety basin"":
+random perturbations to model weights maintain the safety level of the original
+aligned model within its local neighborhood. However, outside this local
+region, safety is fully compromised, exhibiting a sharp, step-like drop. This
+safety basin contrasts sharply with the LLM capability landscape, where model
+performance peaks at the origin and gradually declines as random perturbation
+increases. Our discovery inspires us to propose the new VISAGE safety metric
+that measures the safety in LLM finetuning by probing its safety landscape.
+Visualizing the safety landscape of the aligned model enables us to understand
+how finetuning compromises safety by dragging the model away from the safety
+basin. The LLM safety landscape also highlights the system prompt's critical
+role in protecting a model, and that such protection transfers to its perturbed
+variants within the safety basin. These observations from our safety landscape
+research provide new insights for future work on LLM safety community. Our code
+is publicly available at https://github.com/ShengYun-Peng/llm-landscape. 
+
+Title: Constrained Meta Agnostic Reinforcement Learning 
+Summary: Meta-Reinforcement Learning (Meta-RL) aims to acquire meta-knowledge for
+quick adaptation to diverse tasks. However, applying these policies in
+real-world environments presents a significant challenge in balancing rapid
+adaptability with adherence to environmental constraints. Our novel approach,
+Constraint Model Agnostic Meta Learning (C-MAML), merges meta learning with
+constrained optimization to address this challenge. C-MAML enables rapid and
+efficient task adaptation by incorporating task-specific constraints directly
+into its meta-algorithm framework during the training phase. This fusion
+results in safer initial parameters for learning new tasks. We demonstrate the
+effectiveness of C-MAML in simulated locomotion with wheeled robot tasks of
+varying complexity, highlighting its practicality and robustness in dynamic
+environments. 
+
+",This is a test answer.,"abs-2406.14047v1, abs-2405.17374v3, abs-2402.12711v2, abs-2406.03234v1"
+What was the specific programming language used to implement the prototype of the UnifiedNN framework?,abs-2408.01331v2,Negative / Unanswerable Questions,"Title: UnifiedNN: Efficient Neural Network Training on the Cloud 
+Summary: Nowadays, cloud-based services are widely favored over the traditional
+approach of locally training a Neural Network (NN) model. Oftentimes, a cloud
+service processes multiple requests from users--thus training multiple NN
+models concurrently. However, training NN models concurrently is a challenging
+process, which typically requires significant amounts of available computing
+resources and takes a long time to complete. In this paper, we present
+UnifiedNN to effectively train multiple NN models concurrently on the cloud.
+UnifiedNN effectively ""combines"" multiple NN models and features several memory
+and time conservation mechanisms to train multiple NN models simultaneously
+without impacting the accuracy of the training process. Specifically, UnifiedNN
+merges multiple NN models and creates a large singular unified model in order
+to efficiently train all models at once. We have implemented a prototype of
+UnifiedNN in PyTorch and we have compared its performance with relevant
+state-of-the-art frameworks. Our experimental results demonstrate that
+UnifiedNN can reduce memory consumption by up to 53% and training time by up to
+81% when compared with vanilla PyTorch without impacting the model training and
+testing accuracy. Finally, our results indicate that UnifiedNN can reduce
+memory consumption by up to 52% and training time by up to 41% when compared to
+state-of-the-art frameworks when training multiple models concurrently. 
+
+",This is a test answer.,"abs-2408.01331v2, abs-2410.00074v1, abs-2403.11199v1, abs-2407.21236v1"
+What does the acronym SFU stand for in the paper 'Streamlined Federated Unlearning: Unite as One to Be Highly Efficient'?,abs-2412.00126v1,Direct Fact Retrieval & Definition Questions,"Title: Streamlined Federated Unlearning: Unite as One to Be Highly Efficient 
+Summary: Recently, the enactment of ""right to be forgotten"" laws and regulations has
+imposed new privacy requirements on federated learning (FL). Researchers aim to
+remove the influence of certain data from the trained model without training
+from scratch through federated unlearning (FU). While current FU research has
+shown progress in enhancing unlearning efficiency, it often results in degraded
+model performance upon achieving the goal of data unlearning, necessitating
+additional steps to recover the performance of the unlearned model. Moreover,
+these approaches also suffer from many shortcomings such as high consumption of
+computational and storage resources. To this end, we propose a streamlined
+federated unlearning approach (SFU) aimed at effectively removing the influence
+of target data while preserving the model's performance on the retained data
+without degradation. We design a practical multi-teacher system that achieves
+both target data influence removal and model performance preservation by
+guiding the unlearned model through several distinct teacher models. SFU is
+both computationally and storage-efficient, highly flexible, and generalizable.
+We conducted extensive experiments on both image and text benchmark datasets.
+The results demonstrate that SFU significantly improves time and communication
+efficiency compared to the benchmark retraining method and significantly
+outperforms existing state-of-the-art (SOTA) methods. Additionally, we verified
+the effectiveness of SFU using the backdoor attack. 
+
+",This is a test answer.,"abs-2412.00126v1, abs-2408.08493v2, abs-2401.04385v4, abs-2401.00809v1"
+What is the central issue that the 'WassFFed: Wasserstein Fair Federated Learning' framework aims to solve in Federated Learning?,abs-2411.06881v1,Summarization / Purpose Identification Questions,"Title: WassFFed: Wasserstein Fair Federated Learning 
+Summary: Federated Learning (FL) employs a training approach to address scenarios
+where users' data cannot be shared across clients. Achieving fairness in FL is
+imperative since training data in FL is inherently geographically distributed
+among diverse user groups. Existing research on fairness predominantly assumes
+access to the entire training data, making direct transfer to FL challenging.
+However, the limited existing research on fairness in FL does not effectively
+address two key challenges, i.e., (CH1) Current methods fail to deal with the
+inconsistency between fair optimization results obtained with surrogate
+functions and fair classification results. (CH2) Directly aggregating local
+fair models does not always yield a globally fair model due to non Identical
+and Independent data Distributions (non-IID) among clients. To address these
+challenges, we propose a Wasserstein Fair Federated Learning framework, namely
+WassFFed. To tackle CH1, we ensure that the outputs of local models, rather
+than the loss calculated with surrogate functions or classification results
+with a threshold, remain independent of various user groups. To resolve CH2, we
+employ a Wasserstein barycenter calculation of all local models' outputs for
+each user group, bringing local model outputs closer to the global output
+distribution to ensure consistency between the global model and local models.
+We conduct extensive experiments on three real-world datasets, demonstrating
+that WassFFed outperforms existing approaches in striking a balance between
+accuracy and fairness. 
+
+",This is a test answer.,"abs-2401.00809v1, abs-2401.14027v1, abs-2405.14670v1, abs-2411.06881v1"
+Compare the model compression strategies in AdaFish and UnifiedNN. How does AdaFish's focus on second-order information for low-rank fine-tuning differ from UnifiedNN's approach of merging multiple models into a single unified one?,"abs-2403.13128v1,abs-2408.01331v2",Comparative & Contrastive Questions,"Title: AdaFish: Fast low-rank parameter-efficient fine-tuning by using
+  second-order information 
+Summary: Recent advancements in large-scale pretrained models have significantly
+improved performance across a variety of tasks in natural language processing
+and computer vision. However, the extensive number of parameters in these
+models necessitates substantial memory and computational resources for full
+training. To adapt these models for downstream tasks or specific
+application-oriented datasets, parameter-efficient fine-tuning methods
+leveraging pretrained parameters have gained considerable attention. However,
+it can still be time-consuming due to lots of parameters and epochs. In this
+work, we introduce AdaFish, an efficient algorithm of the second-order type
+designed to expedite the training process within low-rank decomposition-based
+fine-tuning frameworks. Our key observation is that the associated generalized
+Fisher information matrix is either low-rank or extremely small-scaled. Such a
+generalized Fisher information matrix is shown to be equivalent to the Hessian
+matrix. Moreover, we prove the global convergence of AdaFish, along with its
+iteration/oracle complexity. Numerical experiments show that our algorithm is
+quite competitive with the state-of-the-art AdamW method. 
+
+Title: UnifiedNN: Efficient Neural Network Training on the Cloud 
+Summary: Nowadays, cloud-based services are widely favored over the traditional
+approach of locally training a Neural Network (NN) model. Oftentimes, a cloud
+service processes multiple requests from users--thus training multiple NN
+models concurrently. However, training NN models concurrently is a challenging
+process, which typically requires significant amounts of available computing
+resources and takes a long time to complete. In this paper, we present
+UnifiedNN to effectively train multiple NN models concurrently on the cloud.
+UnifiedNN effectively ""combines"" multiple NN models and features several memory
+and time conservation mechanisms to train multiple NN models simultaneously
+without impacting the accuracy of the training process. Specifically, UnifiedNN
+merges multiple NN models and creates a large singular unified model in order
+to efficiently train all models at once. We have implemented a prototype of
+UnifiedNN in PyTorch and we have compared its performance with relevant
+state-of-the-art frameworks. Our experimental results demonstrate that
+UnifiedNN can reduce memory consumption by up to 53% and training time by up to
+81% when compared with vanilla PyTorch without impacting the model training and
+testing accuracy. Finally, our results indicate that UnifiedNN can reduce
+memory consumption by up to 52% and training time by up to 41% when compared to
+state-of-the-art frameworks when training multiple models concurrently. 
+
+",This is a test answer.,"abs-2403.13128v1, abs-2408.01331v2, abs-2409.19391v1, abs-2408.08493v2"
+"The 'VISAGE' paper identifies a 'safety basin' in LLMs. How could the 'Streamlined Federated Unlearning' framework be used to intentionally move a federated model out of this safety basin by selectively unlearning safety-aligned data, and could VISAGE then be used to measure this induced vulnerability?","abs-2405.17374v3,abs-2412.00126v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Navigating the Safety Landscape: Measuring Risks in Finetuning Large
+  Language Models 
+Summary: Safety alignment is crucial to ensure that large language models (LLMs)
+behave in ways that align with human preferences and prevent harmful actions
+during inference. However, recent studies show that the alignment can be easily
+compromised through finetuning with only a few adversarially designed training
+examples. We aim to measure the risks in finetuning LLMs through navigating the
+LLM safety landscape. We discover a new phenomenon observed universally in the
+model parameter space of popular open-source LLMs, termed as ""safety basin"":
+random perturbations to model weights maintain the safety level of the original
+aligned model within its local neighborhood. However, outside this local
+region, safety is fully compromised, exhibiting a sharp, step-like drop. This
+safety basin contrasts sharply with the LLM capability landscape, where model
+performance peaks at the origin and gradually declines as random perturbation
+increases. Our discovery inspires us to propose the new VISAGE safety metric
+that measures the safety in LLM finetuning by probing its safety landscape.
+Visualizing the safety landscape of the aligned model enables us to understand
+how finetuning compromises safety by dragging the model away from the safety
+basin. The LLM safety landscape also highlights the system prompt's critical
+role in protecting a model, and that such protection transfers to its perturbed
+variants within the safety basin. These observations from our safety landscape
+research provide new insights for future work on LLM safety community. Our code
+is publicly available at https://github.com/ShengYun-Peng/llm-landscape. 
+
+Title: Streamlined Federated Unlearning: Unite as One to Be Highly Efficient 
+Summary: Recently, the enactment of ""right to be forgotten"" laws and regulations has
+imposed new privacy requirements on federated learning (FL). Researchers aim to
+remove the influence of certain data from the trained model without training
+from scratch through federated unlearning (FU). While current FU research has
+shown progress in enhancing unlearning efficiency, it often results in degraded
+model performance upon achieving the goal of data unlearning, necessitating
+additional steps to recover the performance of the unlearned model. Moreover,
+these approaches also suffer from many shortcomings such as high consumption of
+computational and storage resources. To this end, we propose a streamlined
+federated unlearning approach (SFU) aimed at effectively removing the influence
+of target data while preserving the model's performance on the retained data
+without degradation. We design a practical multi-teacher system that achieves
+both target data influence removal and model performance preservation by
+guiding the unlearned model through several distinct teacher models. SFU is
+both computationally and storage-efficient, highly flexible, and generalizable.
+We conducted extensive experiments on both image and text benchmark datasets.
+The results demonstrate that SFU significantly improves time and communication
+efficiency compared to the benchmark retraining method and significantly
+outperforms existing state-of-the-art (SOTA) methods. Additionally, we verified
+the effectiveness of SFU using the backdoor attack. 
+
+",This is a test answer.,"abs-2405.17374v3, abs-2412.00126v1, abs-2401.14027v1, abs-2401.00809v1"
+What was the exact size of the memory buffer used in the prompt-based continual learning experiments in 'Mixture of Experts Meets Prompt-Based Continual Learning'?,abs-2405.14124v4,Negative / Unanswerable Questions,"Title: Mixture of Experts Meets Prompt-Based Continual Learning 
+Summary: Exploiting the power of pre-trained models, prompt-based approaches stand out
+compared to other continual learning solutions in effectively preventing
+catastrophic forgetting, even with very few learnable parameters and without
+the need for a memory buffer. While existing prompt-based continual learning
+methods excel in leveraging prompts for state-of-the-art performance, they
+often lack a theoretical explanation for the effectiveness of prompting. This
+paper conducts a theoretical analysis to unravel how prompts bestow such
+advantages in continual learning, thus offering a new perspective on prompt
+design. We first show that the attention block of pre-trained models like
+Vision Transformers inherently encodes a special mixture of experts
+architecture, characterized by linear experts and quadratic gating score
+functions. This realization drives us to provide a novel view on prefix tuning,
+reframing it as the addition of new task-specific experts, thereby inspiring
+the design of a novel gating mechanism termed Non-linear Residual Gates
+(NoRGa). Through the incorporation of non-linear activation and residual
+connection, NoRGa enhances continual learning performance while preserving
+parameter efficiency. The effectiveness of NoRGa is substantiated both
+theoretically and empirically across diverse benchmarks and pretraining
+paradigms. Our code is publicly available at
+https://github.com/Minhchuyentoancbn/MoE_PromptCL 
+
+",This is a test answer.,"abs-2405.14124v4, abs-2410.00074v1, abs-2406.05222v1, abs-2409.19391v1"

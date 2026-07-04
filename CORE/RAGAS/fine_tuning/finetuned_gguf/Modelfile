@@ -1,0 +1,17 @@
+# Modelfile for creating a custom custom Qwen2.5-3b model in Ollama
+FROM ./qwen2.5-3b-rages.gguf
+
+# Set up parameters
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+PARAMETER temperature 0.3
+PARAMETER top_p 0.9
+
+# ChatML template for Qwen
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+{{ .Response }}<|im_end|>
+"""

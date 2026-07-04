@@ -1,0 +1,594 @@
+Question,Source Article Index,Question Type,Summary,qwen2.5:3b,documentIDs,context_retrieved
+What is the curse of dimensionality in the context of learning feedforward ReLU neural networks as described in article abs-2411.05453v1?,abs-2411.05453v1,Direct Fact Retrieval & Definition,"Title: The sampling complexity of learning invertible residual neural networks 
+Summary: In recent work it has been shown that determining a feedforward ReLU neural
+network to within high uniform accuracy from point samples suffers from the
+curse of dimensionality in terms of the number of samples needed. As a
+consequence, feedforward ReLU neural networks are of limited use for
+applications where guaranteed high uniform accuracy is required.
+  We consider the question of whether the sampling complexity can be improved
+by restricting the specific neural network architecture. To this end, we
+investigate invertible residual neural networks which are foundational
+architectures in deep learning and are widely employed in models that power
+modern generative methods. Our main result shows that the residual neural
+network architecture and invertibility do not help overcome the complexity
+barriers encountered with simpler feedforward architectures. Specifically, we
+demonstrate that the computational complexity of approximating invertible
+residual neural networks from point samples in the uniform norm suffers from
+the curse of dimensionality. Similar results are established for invertible
+convolutional Residual neural networks. 
+
+","The curse of dimensionality refers to the problem where the number of samples required to train a feedforward ReLU neural network with high uniform accuracy increases exponentially with the input dimension, thereby limiting its practical use for applications requiring guaranteed high uniform accuracy.","abs-2411.05453v1, abs-2305.00608v3, abs-2305.05642v2, abs-2411.09686v1","[""Summary: In recent work it has been shown that determining a feedforward ReLU neural network to within high uniform accuracy from point samples suffers from the curse of dimensionality in terms of the number of samples needed. As a consequence, feedforward ReLU neural networks are of limited use for applications where guaranteed high uniform accuracy is required.   We consider the question of whether the sampling complexity can be improved by restricting the specific neural network architecture. To this end, we investigate invertible residual neural networks which are foundational architectures in deep learning and are widely employed in models that power modern generative methods. Our main result shows that the residual neural network architecture and invertibility do not help overcome the complexity barriers encountered with simpler feedforward architectures. Specifically, we demonstrate that the computational complexity of approximating invertible residual neural networks from"", ""feedforward architectures. Specifically, we demonstrate that the computational complexity of approximating invertible residual neural networks from point samples in the uniform norm suffers from the curse of dimensionality. Similar results are established for invertible convolutional Residual neural networks."", ""Summary: We study the properties of differentiable neural networks activated by rectified power unit (RePU) functions. We show that the partial derivatives of RePU neural networks can be represented by RePUs mixed-activated networks and derive upper bounds for the complexity of the function class of derivatives of RePUs networks. We establish error bounds for simultaneously approximating $C^s$ smooth functions and their derivatives using RePU-activated deep neural networks. Furthermore, we derive improved approximation error bounds when data has an approximate low-dimensional support, demonstrating the ability of RePU networks to mitigate the curse of dimensionality. To illustrate the usefulness of our results, we consider a deep score matching estimator (DSME) and propose a penalized deep isotonic regression (PDIR) using RePU networks. We establish non-asymptotic excess risk bounds for DSME and PDIR under the assumption that the target functions belong to a class of $C^s$ smooth"", ""Summary: We consider the problem of learning functions within the $\\mathcal{F}_{p,\\pi}$ and Barron spaces, which play crucial roles in understanding random feature models (RFMs), two-layer neural networks, as well as kernel methods. Leveraging tools from information-based complexity (IBC), we establish a dual equivalence between approximation and estimation, and then apply it to study the learning of the preceding function spaces. The duality allows us to focus on the more tractable problem between approximation and estimation. To showcase the efficacy of our duality framework, we delve into two important but under-explored problems:   1) Random feature learning beyond kernel regime: We derive sharp bounds for learning $\\mathcal{F}_{p,\\pi}$ using RFMs. Notably, the learning is efficient without the curse of dimensionality for $p>1$. This underscores the extended applicability of RFMs beyond the traditional kernel regime, since $\\mathcal{F}_{p,\\pi}$ with $p<2$ is strictly larger than"", ""Summary: Several statistical models for regression of a function $F$ on $\\mathbb{R}^d$ without the statistical and computational curse of dimensionality exist, for example by imposing and exploiting geometric assumptions on the distribution of the data (e.g. that its support is low-dimensional), or strong smoothness assumptions on $F$, or a special structure $F$. Among the latter, compositional models assume $F=f\\circ g$ with $g$ mapping to $\\mathbb{R}^r$ with $r\\ll d$, have been studied, and include classical single- and multi-index models and recent works on neural networks. While the case where $g$ is linear is rather well-understood, much less is known when $g$ is nonlinear, and in particular for which $g$'s the curse of dimensionality in estimating $F$, or both $f$ and $g$, may be circumvented. In this paper, we consider a model $F(X):=f(\\Pi_\\gamma X) $ where $\\Pi_\\gamma:\\mathbb{R}^d\\to[0,\\rm{len}_\\gamma]$ is the closest-point projection onto the parameter of a regular curve""]"
+What is Bayesian dynamic programming (BDP) as proposed in the paper on latent optimal paths?,abs-2306.02568v3,Direct Fact Retrieval & Definition,"Title: Latent Optimal Paths by Gumbel Propagation for Variational Bayesian
+  Dynamic Programming 
+Summary: We propose the stochastic optimal path which solves the classical optimal
+path problem by a probability-softening solution. This unified approach
+transforms a wide range of DP problems into directed acyclic graphs in which
+all paths follow a Gibbs distribution. We show the equivalence of the Gibbs
+distribution to a message-passing algorithm by the properties of the Gumbel
+distribution and give all the ingredients required for variational Bayesian
+inference of a latent path, namely Bayesian dynamic programming (BDP). We
+demonstrate the usage of BDP in the latent space of variational autoencoders
+(VAEs) and propose the BDP-VAE which captures structured sparse optimal paths
+as latent variables. This enables end-to-end training for generative tasks in
+which models rely on unobserved structural information. At last, we validate
+the behavior of our approach and showcase its applicability in two real-world
+applications: text-to-speech and singing voice synthesis. Our implementation
+code is available at
+\url{https://github.com/XinleiNIU/LatentOptimalPathsBayesianDP}. 
+
+","Bayesian Dynamic Programming (BDP) is introduced as a unified approach to solve variational inference problems for directed acyclic graphs. In this context, BDP captures structured sparse optimal paths as latent variables within the framework of variational autoencoders, enabling end-to-end training for generative tasks that require unobserved structural information.","abs-2306.02568v3, abs-2406.03264v1, abs-2402.07341v2, abs-2408.03569v1","[""Summary: We propose the stochastic optimal path which solves the classical optimal path problem by a probability-softening solution. This unified approach transforms a wide range of DP problems into directed acyclic graphs in which all paths follow a Gibbs distribution. We show the equivalence of the Gibbs distribution to a message-passing algorithm by the properties of the Gumbel distribution and give all the ingredients required for variational Bayesian inference of a latent path, namely Bayesian dynamic programming (BDP). We demonstrate the usage of BDP in the latent space of variational autoencoders (VAEs) and propose the BDP-VAE which captures structured sparse optimal paths as latent variables. This enables end-to-end training for generative tasks in which models rely on unobserved structural information. At last, we validate the behavior of our approach and showcase its applicability in two real-world applications: text-to-speech and singing voice synthesis. Our implementation"", ""Title: Latent Optimal Paths by Gumbel Propagation for Variational Bayesian\n  Dynamic Programming.\nPublished_date: 2023-06-05."", ""Title: No-Regret Algorithms for Safe Bayesian Optimization with Monotonicity\n  Constraints.\nPublished_date: 2024-06-05."", ""Title: Noise-Adaptive Confidence Sets for Linear Bandits and Application to\n  Bayesian Optimization.\nPublished_date: 2024-02-12."", ""Title: Maximum a Posteriori Estimation for Linear Structural Dynamics Models\n  Using Bayesian Optimization with Rational Polynomial Chaos Expansions.\nPublished_date: 2024-08-07.""]"
+Define the DecoR approach for causal inference on time series data.,abs-2406.07005v2,Direct Fact Retrieval & Definition,"Title: DecoR: Deconfounding Time Series with Robust Regression 
+Summary: Causal inference on time series data is a challenging problem, especially in
+the presence of unobserved confounders. This work focuses on estimating the
+causal effect between two time series that are confounded by a third,
+unobserved time series. Assuming spectral sparsity of the confounder, we show
+how in the frequency domain this problem can be framed as an adversarial
+outlier problem. We introduce Deconfounding by Robust regression (DecoR), a
+novel approach that estimates the causal effect using robust linear regression
+in the frequency domain. Considering two different robust regression
+techniques, we first improve existing bounds on the estimation error for such
+techniques. Crucially, our results do not require distributional assumptions on
+the covariates. We can therefore use them in time series settings. Applying
+these results to DecoR, we prove, under suitable assumptions, upper bounds for
+the estimation error of DecoR that imply consistency. We demonstrate DecoR's
+effectiveness through experiments on both synthetic and real-world data from
+Earth system science. The simulation experiments furthermore suggest that DecoR
+is robust with respect to model misspecification. 
+
+","Deconfounding by Robust Regression (DecoR) is a novel approach introduced for estimating the causal effect between two confounded time series. It leverages spectral sparsity of the unobserved confounder in the frequency domain and employs robust linear regression techniques to estimate the causal relationship without requiring distributional assumptions on the covariates. This method aims to improve existing bounds on estimation error, ensuring consistency under suitable assumptions.","abs-2406.07005v2, abs-2310.18654v1, abs-2310.02863v1, abs-2412.19727v1, abs-2305.19244v1","[""Summary: Causal inference on time series data is a challenging problem, especially in the presence of unobserved confounders. This work focuses on estimating the causal effect between two time series that are confounded by a third, unobserved time series. Assuming spectral sparsity of the confounder, we show how in the frequency domain this problem can be framed as an adversarial outlier problem. We introduce Deconfounding by Robust regression (DecoR), a novel approach that estimates the causal effect using robust linear regression in the frequency domain. Considering two different robust regression techniques, we first improve existing bounds on the estimation error for such techniques. Crucially, our results do not require distributional assumptions on the covariates. We can therefore use them in time series settings. Applying these results to DecoR, we prove, under suitable assumptions, upper bounds for the estimation error of DecoR that imply consistency. We demonstrate DecoR's"", ""Title: Causal discovery in a complex industrial system: A time series benchmark.\nPublished_date: 2023-10-28.\nSummary: Causal discovery outputs a causal structure, represented by a graph, from observed data. For time series data, there is a variety of methods, however, it is difficult to evaluate these on real data as realistic use cases very rarely come with a known causal graph to which output can be compared. In this paper, we present a dataset from an industrial subsystem at the European Spallation Source along with its causal graph which has been constructed from expert knowledge. This provides a testbed for causal discovery from time series observations of complex systems, and we believe this can help inform the development of causal discovery methodology."", ""Summary: We introduce Longitudinal Predictive Conformal Inference (LPCI), a novel distribution-free conformal prediction algorithm for longitudinal data. Current conformal prediction approaches for time series data predominantly focus on the univariate setting, and thus lack cross-sectional coverage when applied individually to each time series in a longitudinal dataset. The current state-of-the-art for longitudinal data relies on creating infinitely-wide prediction intervals to guarantee both cross-sectional and asymptotic longitudinal coverage. The proposed LPCI method addresses this by ensuring that both longitudinal and cross-sectional coverages are guaranteed without resorting to infinitely wide intervals. In our approach, we model the residual data as a quantile fixed-effects regression problem, constructing prediction intervals with a trained quantile regressor. Our extensive experiments demonstrate that LPCI achieves valid cross-sectional coverage and outperforms existing"", ""introduced Random Fourier Signature Features, and develop Random Fourier Decayed Signature Features (RFDSF) with Gaussian processes (GPs). This results in a Bayesian time series forecasting algorithm with variational inference, that offers a scalable probabilistic algorithm that processes and transforms a time series into a joint predictive distribution over time steps in one pass using recurrence. For example, processing a sequence of length $10^4$ steps in $\\approx 10^{-2}$ seconds and in $< 1\\text{GB}$ of GPU memory. We demonstrate that it outperforms other GP-based alternatives and competes with state-of-the-art probabilistic time series forecasting algorithms."", ""Summary: The Markov property is widely imposed in analysis of time series data. Correspondingly, testing the Markov property, and relatedly, inferring the order of a Markov model, are of paramount importance. In this article, we propose a nonparametric test for the Markov property in high-dimensional time series via deep conditional generative learning. We also apply the test sequentially to determine the order of the Markov model. We show that the test controls the type-I error asymptotically, and has the power approaching one. Our proposal makes novel contributions in several ways. We utilize and extend state-of-the-art deep generative learning to estimate the conditional density functions, and establish a sharp upper bound on the approximation error of the estimators. We derive a doubly robust test statistic, which employs a nonparametric estimation but achieves a parametric convergence rate. We further adopt sample splitting and cross-fitting to minimize the conditions required to""]"
+What does CR-OMLE stand for and what is its main function?,abs-2402.08991v3,Direct Fact Retrieval & Definition,"Title: Towards Robust Model-Based Reinforcement Learning Against Adversarial
+  Corruption 
+Summary: This study tackles the challenges of adversarial corruption in model-based
+reinforcement learning (RL), where the transition dynamics can be corrupted by
+an adversary. Existing studies on corruption-robust RL mostly focus on the
+setting of model-free RL, where robust least-square regression is often
+employed for value function estimation. However, these techniques cannot be
+directly applied to model-based RL. In this paper, we focus on model-based RL
+and take the maximum likelihood estimation (MLE) approach to learn transition
+model. Our work encompasses both online and offline settings. In the online
+setting, we introduce an algorithm called corruption-robust optimistic MLE
+(CR-OMLE), which leverages total-variation (TV)-based information ratios as
+uncertainty weights for MLE. We prove that CR-OMLE achieves a regret of
+$\tilde{\mathcal{O}}(\sqrt{T} + C)$, where $C$ denotes the cumulative
+corruption level after $T$ episodes. We also prove a lower bound to show that
+the additive dependence on $C$ is optimal. We extend our weighting technique to
+the offline setting, and propose an algorithm named corruption-robust
+pessimistic MLE (CR-PMLE). Under a uniform coverage condition, CR-PMLE exhibits
+suboptimality worsened by $\mathcal{O}(C/n)$, nearly matching the lower bound.
+To the best of our knowledge, this is the first work on corruption-robust
+model-based RL algorithms with provable guarantees. 
+
+","CR-OMLE stands for Corruption-Robust Optimistic Maximum Likelihood Estimation. Its main function is to achieve a regret of \(\tilde{\mathcal{O}}(T + C)\) in the online setting, where \(C\) denotes the cumulative corruption level after \(T\) episodes, by leveraging total-variation (TV)-based information ratios as uncertainty weights for Maximum Likelihood Estimation (MLE).","abs-2402.08991v3, abs-2304.13534v5, abs-2405.09841v1, abs-2405.01761v1","[""Summary: This study tackles the challenges of adversarial corruption in model-based reinforcement learning (RL), where the transition dynamics can be corrupted by an adversary. Existing studies on corruption-robust RL mostly focus on the setting of model-free RL, where robust least-square regression is often employed for value function estimation. However, these techniques cannot be directly applied to model-based RL. In this paper, we focus on model-based RL and take the maximum likelihood estimation (MLE) approach to learn transition model. Our work encompasses both online and offline settings. In the online setting, we introduce an algorithm called corruption-robust optimistic MLE (CR-OMLE), which leverages total-variation (TV)-based information ratios as uncertainty weights for MLE. We prove that CR-OMLE achieves a regret of $\\tilde{\\mathcal{O}}(\\sqrt{T} + C)$, where $C$ denotes the cumulative corruption level after $T$ episodes. We also prove a lower bound to show that the"", ""is a set of coupled forward-backward nonlinear partial differential equations. The mathematical structure described by the MFG optimality conditions identifies the inductive biases of generative flows. We investigate the well-posedness and structure of normalizing flows, unravel the mathematical structure of SGMs, and derive a MFG formulation of Wasserstein gradient flows. From an algorithmic perspective, the optimality conditions yields Hamilton-Jacobi-Bellman (HJB) regularizers for enhanced training of generative models. In particular, we propose and demonstrate an HJB-regularized SGM with improved performance over standard SGMs. We present this framework as an MFG laboratory which serves as a platform for revealing new avenues of experimentation and invention of generative models."", ""Summary: Exploring and detecting community structures hold significant importance in genetics, social sciences, neuroscience, and finance. Especially in graphical models, community detection can encourage the exploration of sets of variables with group-like properties. In this paper, within the framework of Gaussian graphical models, we introduce a novel decomposition of the underlying graphical structure into a sparse part and low-rank diagonal blocks (non-overlapped communities). We illustrate the significance of this decomposition through two modeling perspectives and propose a three-stage estimation procedure with a fast and efficient algorithm for the identification of the sparse structure and communities. Also on the theoretical front, we establish conditions for local identifiability and extend the traditional irrepresentability condition to an adaptive form by constructing an effective norm, which ensures the consistency of model selection for the adaptive $\\ell_1$ penalized"", ""Title: Multivariate Bayesian Last Layer for Regression: Uncertainty\n  Quantification and Disentanglement.\nPublished_date: 2024-05-02.\nSummary: We present new Bayesian Last Layer models in the setting of multivariate regression under heteroscedastic noise, and propose an optimization algorithm for parameter learning. Bayesian Last Layer combines Bayesian modelling of the predictive distribution with neural networks for parameterization of the prior, and has the attractive property of uncertainty quantification with a single forward pass. The proposed framework is capable of disentangling the aleatoric and epistemic uncertainty, and can be used to transfer a canonically trained deep neural network to new data domains with uncertainty-aware capability."", ""Title: Simultaneous Identification of Sparse Structures and Communities in\n  Heterogeneous Graphical Models.\nPublished_date: 2024-05-16.""]"
+What is the primary conclusion of the research on the sampling complexity of invertible residual neural networks?,abs-2411.05453v1,Summarization / Purpose Identification,"Title: The sampling complexity of learning invertible residual neural networks 
+Summary: In recent work it has been shown that determining a feedforward ReLU neural
+network to within high uniform accuracy from point samples suffers from the
+curse of dimensionality in terms of the number of samples needed. As a
+consequence, feedforward ReLU neural networks are of limited use for
+applications where guaranteed high uniform accuracy is required.
+  We consider the question of whether the sampling complexity can be improved
+by restricting the specific neural network architecture. To this end, we
+investigate invertible residual neural networks which are foundational
+architectures in deep learning and are widely employed in models that power
+modern generative methods. Our main result shows that the residual neural
+network architecture and invertibility do not help overcome the complexity
+barriers encountered with simpler feedforward architectures. Specifically, we
+demonstrate that the computational complexity of approximating invertible
+residual neural networks from point samples in the uniform norm suffers from
+the curse of dimensionality. Similar results are established for invertible
+convolutional Residual neural networks. 
+
+","The main conclusion regarding the sampling complexity of invertible residual neural networks is that their architecture and invertibility do not help overcome the computational complexity barriers encountered with simpler feedforward architectures. Specifically, approximating these networks still requires a number of samples proportional to the dimensionality of the input space, similar to simpler architectures.","abs-2411.05453v1, abs-2407.04806v2, abs-2304.02902v1","[""Title: The sampling complexity of learning invertible residual neural networks.\nPublished_date: 2024-11-08."", ""Summary: In recent work it has been shown that determining a feedforward ReLU neural network to within high uniform accuracy from point samples suffers from the curse of dimensionality in terms of the number of samples needed. As a consequence, feedforward ReLU neural networks are of limited use for applications where guaranteed high uniform accuracy is required.   We consider the question of whether the sampling complexity can be improved by restricting the specific neural network architecture. To this end, we investigate invertible residual neural networks which are foundational architectures in deep learning and are widely employed in models that power modern generative methods. Our main result shows that the residual neural network architecture and invertibility do not help overcome the complexity barriers encountered with simpler feedforward architectures. Specifically, we demonstrate that the computational complexity of approximating invertible residual neural networks from"", ""dynamics but trained on the population. To give statistical guarantees, we show that the statistical power associated with the neural network two-sample test goes to 1 as the neural network training samples and test evaluation samples go to infinity. Additionally, we prove that the training times needed to detect the same deviation-level in the null and alternative hypothesis scenarios are well-separated. Finally, we run some experiments showcasing a two-layer neural network two-sample test on a hard two-sample test problem and plot a heatmap of the statistical power of the two-sample test in relation to training time and network complexity."", ""Summary: We construct and analyze a neural network two-sample test to determine whether two datasets came from the same distribution (null hypothesis) or not (alternative hypothesis). We perform time-analysis on a neural tangent kernel (NTK) two-sample test. In particular, we derive the theoretical minimum training time needed to ensure the NTK two-sample test detects a deviation-level between the datasets. Similarly, we derive the theoretical maximum training time before the NTK two-sample test detects a deviation-level. By approximating the neural network dynamics with the NTK dynamics, we extend this time-analysis to the realistic neural network two-sample test generated from time-varying training dynamics and finite training samples. A similar extension is done for the neural network two-sample test generated from time-varying training dynamics but trained on the population. To give statistical guarantees, we show that the statistical power associated with the neural network"", ""activation functions, manifest in different parameter values leading to the same functional output value. We show theoretically that the posterior predictive density in Bayesian neural networks can be restricted to a symmetry-free parameter reference set. By further deriving an upper bound on the number of Monte Carlo chains required to capture the functional diversity, we propose a straightforward approach for feasible Bayesian inference. Our experiments suggest that efficient sampling is indeed possible, opening up a promising path to accurate uncertainty quantification in deep learning.""]"
+Summarize the main challenge addressed by the paper 'Learning under Selective Labels with Data from Heterogeneous Decision-makers'.,abs-2306.07566v2,Summarization / Purpose Identification,"Title: Learning under Selective Labels with Data from Heterogeneous
+  Decision-makers: An Instrumental Variable Approach 
+Summary: We study the problem of learning with selectively labeled data, which arises
+when outcomes are only partially labeled due to historical decision-making. The
+labeled data distribution may substantially differ from the full population,
+especially when the historical decisions and the target outcome can be
+simultaneously affected by some unobserved factors. Consequently, learning with
+only the labeled data may lead to severely biased results when deployed to the
+full population. Our paper tackles this challenge by exploiting the fact that
+in many applications the historical decisions were made by a set of
+heterogeneous decision-makers. In particular, we analyze this setup in a
+principled instrumental variable (IV) framework. We establish conditions for
+the full-population risk of any given prediction rule to be point-identified
+from the observed data and provide sharp risk bounds when the point
+identification fails. We further propose a weighted learning approach that
+learns prediction rules robust to the label selection bias in both
+identification settings. Finally, we apply our proposed approach to a
+semi-synthetic financial dataset and demonstrate its superior performance in
+the presence of selection bias. 
+
+","The paper ""Learning under Selective Labels with Data from Heterogeneous Decision-Makers"" addresses the challenge of learning models when the labels available are selectively collected and may not reflect the true distribution, especially in settings where data comes from multiple heterogeneous decision makers. The authors propose an instrumental variable approach to mitigate these issues and improve the robustness of the learned models.","abs-2306.07566v2, abs-2405.09841v1, abs-2402.05330v2, abs-2310.18186v1, abs-2305.19570v1","[""Title: Learning under Selective Labels with Data from Heterogeneous\n  Decision-makers: An Instrumental Variable Approach.\nPublished_date: 2023-06-13."", ""Title: Simultaneous Identification of Sparse Structures and Communities in\n  Heterogeneous Graphical Models.\nPublished_date: 2024-05-16."", ""Title: Classification under Nuisance Parameters and Generalized Label Shift in\n  Likelihood-Free Inference.\nPublished_date: 2024-02-08."", ""Title: Model-free Posterior Sampling via Learning Rate Randomization.\nPublished_date: 2023-10-27."", ""Title: Online Label Shift: Optimal Dynamic Regret meets Practical Algorithms.\nPublished_date: 2023-05-31.""]"
+What is the core purpose of the 'Dummy Gradient norm Regularization' method for multitask learning?,abs-2409.16651v1,Summarization / Purpose Identification,"Title: Learning Representation for Multitask learning through Self Supervised
+  Auxiliary learning 
+Summary: Multi-task learning is a popular machine learning approach that enables
+simultaneous learning of multiple related tasks, improving algorithmic
+efficiency and effectiveness. In the hard parameter sharing approach, an
+encoder shared through multiple tasks generates data representations passed to
+task-specific predictors. Therefore, it is crucial to have a shared encoder
+that provides decent representations for every and each task. However, despite
+recent advances in multi-task learning, the question of how to improve the
+quality of representations generated by the shared encoder remains open. To
+address this gap, we propose a novel approach called Dummy Gradient norm
+Regularization that aims to improve the universality of the representations
+generated by the shared encoder. Specifically, the method decreases the norm of
+the gradient of the loss function with repect to dummy task-specific predictors
+to improve the universality of the shared encoder's representations. Through
+experiments on multiple multi-task learning benchmark datasets, we demonstrate
+that DGR effectively improves the quality of the shared representations,
+leading to better multi-task prediction performances. Applied to various
+classifiers, the shared representations generated by DGR also show superior
+performance compared to existing multi-task learning methods. Moreover, our
+approach takes advantage of computational efficiency due to its simplicity. The
+simplicity also allows us to seamlessly integrate DGR with the existing
+multi-task learning algorithms. 
+
+","The Dummy Gradient norm Regularization method aims to improve the universality of representations generated by a shared encoder in multi-task learning. Specifically, it does this by decreasing the norm of the gradient of the loss function with respect to task-specific dummy predictors, thereby enhancing the quality and generality of the shared encoder's representations across multiple tasks.","abs-2409.16651v1, abs-2311.14609v1, abs-2409.14980v1, abs-2306.06262v1, abs-2311.07013v1","[""Summary: Multi-task learning is a popular machine learning approach that enables simultaneous learning of multiple related tasks, improving algorithmic efficiency and effectiveness. In the hard parameter sharing approach, an encoder shared through multiple tasks generates data representations passed to task-specific predictors. Therefore, it is crucial to have a shared encoder that provides decent representations for every and each task. However, despite recent advances in multi-task learning, the question of how to improve the quality of representations generated by the shared encoder remains open. To address this gap, we propose a novel approach called Dummy Gradient norm Regularization that aims to improve the universality of the representations generated by the shared encoder. Specifically, the method decreases the norm of the gradient of the loss function with repect to dummy task-specific predictors to improve the universality of the shared encoder's representations. Through"", ""Summary: Recent results show that estimates defined by over-parametrized deep neural networks learned by applying gradient descent to a regularized empirical $L_2$ risk are universally consistent and achieve good rates of convergence. In this paper, we show that the regularization term is not necessary to obtain similar results. In the case of a suitably chosen initialization of the network, a suitable number of gradient descent steps, and a suitable step size we show that an estimate without a regularization term is universally consistent for bounded predictor variables. Additionally, we show that if the regression function is H\\\""older smooth with H\\\""older exponent $1/2 \\leq p \\leq 1$, the $L_2$ error converges to zero with a convergence rate of approximately $n^{-1/(1+d)}$. Furthermore, in case of an interaction model, where the regression function consists of a sum of H\\\""older smooth functions with $d^*$ components, a rate of convergence is derived which does not depend on the"", ""Title: (De)-regularized Maximum Mean Discrepancy Gradient Flow.\nPublished_date: 2024-09-23."", ""Summary: Tensor completion is a core machine learning algorithm used in recommender systems and other domains with missing data. While the matrix case is well-understood, theoretical results for tensor problems are limited, particularly when the sampling patterns are deterministic. Here we bound the generalization error of the solutions of two tensor completion methods, Poisson loss and atomic norm minimization, providing tighter bounds in terms of the target tensor rank. If the ground-truth tensor is order $t$ with CP-rank $r$, the dependence on $r$ is improved from $r^{2(t-1)(t^2-t-1)}$ in arXiv:1910.10692 to $r^{2(t-1)(3t-5)}$. The error in our bounds is deterministically controlled by the spectral gap of the sampling sparsity pattern. We also prove several new properties for the atomic tensor norm, reducing the rank dependence from $r^{3t-3}$ in arXiv:1711.04965 to $r^{3t-5}$ under random sampling schemes. A limitation is that atomic norm minimization, while theoretically"", ""in the interpolating regime. From the provided bound, we quantify how the test error for overparameterized models achieving effectively zero training error depends on the quality of the implicit regularization imposed by e.g. the combination of model, optimizer, and parameter-initialization scheme; the spectrum of the empirical neural tangent kernel; curvature of the loss landscape; and noise present in the data.""]"
+What is the main goal of the BDP-VAE model proposed in article abs-2306.02568v3?,abs-2306.02568v3,Summarization / Purpose Identification,"Title: Latent Optimal Paths by Gumbel Propagation for Variational Bayesian
+  Dynamic Programming 
+Summary: We propose the stochastic optimal path which solves the classical optimal
+path problem by a probability-softening solution. This unified approach
+transforms a wide range of DP problems into directed acyclic graphs in which
+all paths follow a Gibbs distribution. We show the equivalence of the Gibbs
+distribution to a message-passing algorithm by the properties of the Gumbel
+distribution and give all the ingredients required for variational Bayesian
+inference of a latent path, namely Bayesian dynamic programming (BDP). We
+demonstrate the usage of BDP in the latent space of variational autoencoders
+(VAEs) and propose the BDP-VAE which captures structured sparse optimal paths
+as latent variables. This enables end-to-end training for generative tasks in
+which models rely on unobserved structural information. At last, we validate
+the behavior of our approach and showcase its applicability in two real-world
+applications: text-to-speech and singing voice synthesis. Our implementation
+code is available at
+\url{https://github.com/XinleiNIU/LatentOptimalPathsBayesianDP}. 
+
+","The BDP-VAE model proposes a unified approach that integrates Bayesian dynamic programming (BDP) into the latent space of variational autoencoders (VAEs). This integration enables end-to-end training for generative tasks, specifically capturing structured sparse optimal paths as latent variables in the model.","abs-2306.02568v3, abs-2310.06537v1, abs-2303.02060v2, abs-2407.20199v2, abs-2409.16068v1","[""Summary: We propose the stochastic optimal path which solves the classical optimal path problem by a probability-softening solution. This unified approach transforms a wide range of DP problems into directed acyclic graphs in which all paths follow a Gibbs distribution. We show the equivalence of the Gibbs distribution to a message-passing algorithm by the properties of the Gumbel distribution and give all the ingredients required for variational Bayesian inference of a latent path, namely Bayesian dynamic programming (BDP). We demonstrate the usage of BDP in the latent space of variational autoencoders (VAEs) and propose the BDP-VAE which captures structured sparse optimal paths as latent variables. This enables end-to-end training for generative tasks in which models rely on unobserved structural information. At last, we validate the behavior of our approach and showcase its applicability in two real-world applications: text-to-speech and singing voice synthesis. Our implementation"", ""Title: Data-level hybrid strategy selection for disk fault prediction model\n  based on multivariate GAN.\nPublished_date: 2023-10-10."", ""Title: Spectral learning of Bernoulli linear dynamical systems models.\nPublished_date: 2023-03-03."", ""Title: Emergence in non-neural models: grokking modular arithmetic via average\n  gradient outer product.\nPublished_date: 2024-07-29."", ""Title: A decision-theoretic model for a principal-agent collaborative learning\n  problem.\nPublished_date: 2024-09-24.""]"
+Compare the approaches for handling uncertainty in machine learning as presented in 'Valid Conformal Prediction for Dynamic GNNs' (abs-2405.19230v1) and 'Targeted Variance Reduction' for Bayesian optimization (abs-2403.03816v1).,"abs-2405.19230v1,abs-2403.03816v1",Comparative & Contrastive,"Title: Valid Conformal Prediction for Dynamic GNNs 
+Summary: Graph neural networks (GNNs) are powerful black-box models which have shown
+impressive empirical performance. However, without any form of uncertainty
+quantification, it can be difficult to trust such models in high-risk
+scenarios. Conformal prediction aims to address this problem, however, an
+assumption of exchangeability is required for its validity which has limited
+its applicability to static graphs and transductive regimes. We propose to use
+unfolding, which allows any existing static GNN to output a dynamic graph
+embedding with exchangeability properties. Using this, we extend the validity
+of conformal prediction to dynamic GNNs in both transductive and semi-inductive
+regimes. We provide a theoretical guarantee of valid conformal prediction in
+these cases and demonstrate the empirical validity, as well as the performance
+gains, of unfolded GNNs against standard GNN architectures on both simulated
+and real datasets. 
+
+Title: Targeted Variance Reduction: Robust Bayesian Optimization of Black-Box
+  Simulators with Noise Parameters 
+Summary: The optimization of a black-box simulator over control parameters
+$\mathbf{x}$ arises in a myriad of scientific applications. In such
+applications, the simulator often takes the form
+$f(\mathbf{x},\boldsymbol{\theta})$, where $\boldsymbol{\theta}$ are parameters
+that are uncertain in practice. Robust optimization aims to optimize the
+objective $\mathbb{E}[f(\mathbf{x},\boldsymbol{\Theta})]$, where
+$\boldsymbol{\Theta} \sim \mathcal{P}$ is a random variable that models
+uncertainty on $\boldsymbol{\theta}$. For this, existing black-box methods
+typically employ a two-stage approach for selecting the next point
+$(\mathbf{x},\boldsymbol{\theta})$, where $\mathbf{x}$ and
+$\boldsymbol{\theta}$ are optimized separately via different acquisition
+functions. As such, these approaches do not employ a joint acquisition over
+$(\mathbf{x},\boldsymbol{\theta})$, and thus may fail to fully exploit
+control-to-noise interactions for effective robust optimization. To address
+this, we propose a new Bayesian optimization method called Targeted Variance
+Reduction (TVR). The TVR leverages a novel joint acquisition function over
+$(\mathbf{x},\boldsymbol{\theta})$, which targets variance reduction on the
+objective within the desired region of improvement. Under a Gaussian process
+surrogate on $f$, the TVR acquisition can be evaluated in closed form, and
+reveals an insightful exploration-exploitation-precision trade-off for robust
+black-box optimization. The TVR can further accommodate a broad class of
+non-Gaussian distributions on $\mathcal{P}$ via a careful integration of
+normalizing flows. We demonstrate the improved performance of TVR over the
+state-of-the-art in a suite of numerical experiments and an application to the
+robust design of automobile brake discs under operational uncertainty. 
+
+","The paper ""Targeted Variance Reduction"" (abs-2403.03816v1) addresses the challenge of robust black-box optimization under uncertainty by proposing a new Bayesian optimization method, Targeted Variance Reduction (TVR). TVR leverages joint acquisition functions over $(\mathbf{x}, \boldsymbol{\theta})$ to target variance reduction within the desired region of improvement, particularly useful for optimizing objectives with noise parameters. On the other hand, ""Valid Conformal Prediction for Dynamic GNNs"" (abs-2405.19230v1) focuses on conformal prediction techniques for dynamic Graph Neural Networks (GNNs), emphasizing the need for reliable prediction intervals that can adapt to changes in data dynamics without requiring extensive domain knowledge or iterative tuning, suitable for applications like predicting future power outages based on historical and potentially evolving data patterns.","abs-2403.03816v1, abs-2405.19230v1, abs-2310.02863v1, abs-2411.17099v1","[""and thus may fail to fully exploit control-to-noise interactions for effective robust optimization. To address this, we propose a new Bayesian optimization method called Targeted Variance Reduction (TVR). The TVR leverages a novel joint acquisition function over $(\\mathbf{x},\\boldsymbol{\\theta})$, which targets variance reduction on the objective within the desired region of improvement. Under a Gaussian process surrogate on $f$, the TVR acquisition can be evaluated in closed form, and reveals an insightful exploration-exploitation-precision trade-off for robust black-box optimization. The TVR can further accommodate a broad class of non-Gaussian distributions on $\\mathcal{P}$ via a careful integration of normalizing flows. We demonstrate the improved performance of TVR over the state-of-the-art in a suite of numerical experiments and an application to the robust design of automobile brake discs under operational uncertainty."", ""Title: Targeted Variance Reduction: Robust Bayesian Optimization of Black-Box\n  Simulators with Noise Parameters.\nPublished_date: 2024-03-06."", ""Title: Valid Conformal Prediction for Dynamic GNNs.\nPublished_date: 2024-05-29."", ""Title: Conformal Predictions for Longitudinal Data.\nPublished_date: 2023-10-04."", ""Title: Spatio-Temporal Conformal Prediction for Power Outage Data.\nPublished_date: 2024-11-26.\nSummary: In recent years, increasingly unpredictable and severe global weather patterns have frequently caused long-lasting power outages. Building resilience, the ability to withstand, adapt to, and recover from major disruptions, has become crucial for the power industry. To enable rapid recovery, accurately predicting future outage numbers is essential. Rather than relying on simple point estimates, we analyze extensive quarter-hourly outage data and develop a graph conformal prediction method that delivers accurate prediction regions for outage numbers across the states for a time period. We demonstrate the effectiveness of this method through extensive numerical experiments in several states affected by extreme weather events that led to widespread outages.""]"
+Contrast the problem of 'adversarial corruption' in model-based RL (abs-2402.08991v3) with the issue of 'selective labels' from historical decision-making (abs-2306.07566v2).,"abs-2402.08991v3,abs-2306.07566v2",Comparative & Contrastive,"Title: Towards Robust Model-Based Reinforcement Learning Against Adversarial
+  Corruption 
+Summary: This study tackles the challenges of adversarial corruption in model-based
+reinforcement learning (RL), where the transition dynamics can be corrupted by
+an adversary. Existing studies on corruption-robust RL mostly focus on the
+setting of model-free RL, where robust least-square regression is often
+employed for value function estimation. However, these techniques cannot be
+directly applied to model-based RL. In this paper, we focus on model-based RL
+and take the maximum likelihood estimation (MLE) approach to learn transition
+model. Our work encompasses both online and offline settings. In the online
+setting, we introduce an algorithm called corruption-robust optimistic MLE
+(CR-OMLE), which leverages total-variation (TV)-based information ratios as
+uncertainty weights for MLE. We prove that CR-OMLE achieves a regret of
+$\tilde{\mathcal{O}}(\sqrt{T} + C)$, where $C$ denotes the cumulative
+corruption level after $T$ episodes. We also prove a lower bound to show that
+the additive dependence on $C$ is optimal. We extend our weighting technique to
+the offline setting, and propose an algorithm named corruption-robust
+pessimistic MLE (CR-PMLE). Under a uniform coverage condition, CR-PMLE exhibits
+suboptimality worsened by $\mathcal{O}(C/n)$, nearly matching the lower bound.
+To the best of our knowledge, this is the first work on corruption-robust
+model-based RL algorithms with provable guarantees. 
+
+Title: Learning under Selective Labels with Data from Heterogeneous
+  Decision-makers: An Instrumental Variable Approach 
+Summary: We study the problem of learning with selectively labeled data, which arises
+when outcomes are only partially labeled due to historical decision-making. The
+labeled data distribution may substantially differ from the full population,
+especially when the historical decisions and the target outcome can be
+simultaneously affected by some unobserved factors. Consequently, learning with
+only the labeled data may lead to severely biased results when deployed to the
+full population. Our paper tackles this challenge by exploiting the fact that
+in many applications the historical decisions were made by a set of
+heterogeneous decision-makers. In particular, we analyze this setup in a
+principled instrumental variable (IV) framework. We establish conditions for
+the full-population risk of any given prediction rule to be point-identified
+from the observed data and provide sharp risk bounds when the point
+identification fails. We further propose a weighted learning approach that
+learns prediction rules robust to the label selection bias in both
+identification settings. Finally, we apply our proposed approach to a
+semi-synthetic financial dataset and demonstrate its superior performance in
+the presence of selection bias. 
+
+","The paper ""Model-independent variable selection via the rule-based variable priority"" discusses a different problem in model learning, specifically about model-independent variable selection without focusing on adversarial corruption or selective label issues. In contrast, ""Abs-2402.08991v3"" addresses adversarial corruption challenges in Model-Based Reinforcement Learning (MBRL), where the adversary can corrupt transition dynamics of models, while ""Abs-2306.07566v2"" discusses the issue of 'selective labels' from historical decision-making contexts, which is about bias in predictions due to label selection differences between training and target datasets.","abs-2402.08991v3, abs-2409.09003v3, abs-2306.07566v2, abs-2402.05330v2","[""Summary: This study tackles the challenges of adversarial corruption in model-based reinforcement learning (RL), where the transition dynamics can be corrupted by an adversary. Existing studies on corruption-robust RL mostly focus on the setting of model-free RL, where robust least-square regression is often employed for value function estimation. However, these techniques cannot be directly applied to model-based RL. In this paper, we focus on model-based RL and take the maximum likelihood estimation (MLE) approach to learn transition model. Our work encompasses both online and offline settings. In the online setting, we introduce an algorithm called corruption-robust optimistic MLE (CR-OMLE), which leverages total-variation (TV)-based information ratios as uncertainty weights for MLE. We prove that CR-OMLE achieves a regret of $\\tilde{\\mathcal{O}}(\\sqrt{T} + C)$, where $C$ denotes the cumulative corruption level after $T$ episodes. We also prove a lower bound to show that the"", ""+ C)$, where $C$ denotes the cumulative corruption level after $T$ episodes. We also prove a lower bound to show that the additive dependence on $C$ is optimal. We extend our weighting technique to the offline setting, and propose an algorithm named corruption-robust pessimistic MLE (CR-PMLE). Under a uniform coverage condition, CR-PMLE exhibits suboptimality worsened by $\\mathcal{O}(C/n)$, nearly matching the lower bound. To the best of our knowledge, this is the first work on corruption-robust model-based RL algorithms with provable guarantees."", ""Title: Model-independent variable selection via the rule-based variable\n  priority.\nPublished_date: 2024-09-13."", ""from the observed data and provide sharp risk bounds when the point identification fails. We further propose a weighted learning approach that learns prediction rules robust to the label selection bias in both identification settings. Finally, we apply our proposed approach to a semi-synthetic financial dataset and demonstrate its superior performance in the presence of selection bias."", ""Summary: An open scientific challenge is how to classify events with reliable measures of uncertainty, when we have a mechanistic model of the data-generating process but the distribution over both labels and latent nuisance parameters is different between train and target data. We refer to this type of distributional shift as generalized label shift (GLS). Direct classification using observed data $\\mathbf{X}$ as covariates leads to biased predictions and invalid uncertainty estimates of labels $Y$. We overcome these biases by proposing a new method for robust uncertainty quantification that casts classification as a hypothesis testing problem under nuisance parameters. The key idea is to estimate the classifier's receiver operating characteristic (ROC) across the entire nuisance parameter space, which allows us to devise cutoffs that are invariant under GLS. Our method effectively endows a pre-trained classifier with domain adaptation capabilities and returns valid prediction sets""]"
+How does the method for deconfounding time series in DecoR (abs-2406.07005v2) differ from the approach to handling non-stationarity with multi-task Gaussian Processes in abs-2306.11772v1?,"abs-2406.07005v2,abs-2306.11772v1",Comparative & Contrastive,"Title: DecoR: Deconfounding Time Series with Robust Regression 
+Summary: Causal inference on time series data is a challenging problem, especially in
+the presence of unobserved confounders. This work focuses on estimating the
+causal effect between two time series that are confounded by a third,
+unobserved time series. Assuming spectral sparsity of the confounder, we show
+how in the frequency domain this problem can be framed as an adversarial
+outlier problem. We introduce Deconfounding by Robust regression (DecoR), a
+novel approach that estimates the causal effect using robust linear regression
+in the frequency domain. Considering two different robust regression
+techniques, we first improve existing bounds on the estimation error for such
+techniques. Crucially, our results do not require distributional assumptions on
+the covariates. We can therefore use them in time series settings. Applying
+these results to DecoR, we prove, under suitable assumptions, upper bounds for
+the estimation error of DecoR that imply consistency. We demonstrate DecoR's
+effectiveness through experiments on both synthetic and real-world data from
+Earth system science. The simulation experiments furthermore suggest that DecoR
+is robust with respect to model misspecification. 
+
+Title: Time-Varying Transition Matrices with Multi-task Gaussian Processes 
+Summary: In this paper, we present a kernel-based, multi-task Gaussian Process (GP)
+model for approximating the underlying function of an individual's mobility
+state using a time-inhomogeneous Markov Process with two states: moves and
+pauses. Our approach accounts for the correlations between the transition
+probabilities by creating a covariance matrix over the tasks. We also introduce
+time-variability by assuming that an individual's transition probabilities vary
+over time in response to exogenous variables. We enforce the stochasticity and
+non-negativity constraints of probabilities in a Markov process through the
+incorporation of a set of constraint points in the GP. We also discuss
+opportunities to speed up GP estimation and inference in this context by
+exploiting Toeplitz and Kronecker product structures. Our numerical experiments
+demonstrate the ability of our formulation to enforce the desired constraints
+while learning the functional form of transition probabilities. 
+
+","The document `abs-2406.07005v2` discusses DecoR, which tackles deconfounding time series data by using a probabilistic framework to identify and remove confounders from the observed signals without assuming stationarity or specific underlying distributions. In contrast, `abs-2306.11772v1` examines multi-task Gaussian Processes under non-stationary conditions, proposing Dummy Gradient norm Regularization (DGR) to improve the quality of shared representations by encouraging universality across different tasks. DecoR focuses on deconfounding without stationarity constraints, whereas DGR aims at enhancing the quality of a shared encoder in a regime where multiple tasks have similar but not identical linear representations.","abs-2310.02877v2, abs-2409.16651v1, abs-2303.17765v3, abs-2410.02935v1","[""Title: Stationarity without mean reversion in improper Gaussian processes.\nPublished_date: 2023-10-04."", ""Summary: Multi-task learning is a popular machine learning approach that enables simultaneous learning of multiple related tasks, improving algorithmic efficiency and effectiveness. In the hard parameter sharing approach, an encoder shared through multiple tasks generates data representations passed to task-specific predictors. Therefore, it is crucial to have a shared encoder that provides decent representations for every and each task. However, despite recent advances in multi-task learning, the question of how to improve the quality of representations generated by the shared encoder remains open. To address this gap, we propose a novel approach called Dummy Gradient norm Regularization that aims to improve the universality of the representations generated by the shared encoder. Specifically, the method decreases the norm of the gradient of the loss function with repect to dummy task-specific predictors to improve the universality of the shared encoder's representations. Through"", ""Summary: Representation multi-task learning (MTL) has achieved tremendous success in practice. However, the theoretical understanding of these methods is still lacking. Most existing theoretical works focus on cases where all tasks share the same representation, and claim that MTL almost always improves performance. Nevertheless, as the number of tasks grows, assuming all tasks share the same representation is unrealistic. Furthermore, empirical findings often indicate that a shared representation does not necessarily improve single-task learning performance. In this paper, we aim to understand how to learn from tasks with \\textit{similar but not exactly the same} linear representations, while dealing with outlier tasks. Assuming a known intrinsic dimension, we proposed a penalized empirical risk minimization method and a spectral method that are \\textit{adaptive} to the similarity structure and \\textit{robust} to outlier tasks. Both algorithms outperform single-task learning when"", ""of the loss function with repect to dummy task-specific predictors to improve the universality of the shared encoder's representations. Through experiments on multiple multi-task learning benchmark datasets, we demonstrate that DGR effectively improves the quality of the shared representations, leading to better multi-task prediction performances. Applied to various classifiers, the shared representations generated by DGR also show superior performance compared to existing multi-task learning methods. Moreover, our approach takes advantage of computational efficiency due to its simplicity. The simplicity also allows us to seamlessly integrate DGR with the existing multi-task learning algorithms."", ""Gating Functions.\nPublished_date: 2024-10-03.\nSummary: With the growing prominence of the Mixture of Experts (MoE) architecture in developing large-scale foundation models, we investigate the Hierarchical Mixture of Experts (HMoE), a specialized variant of MoE that excels in handling complex inputs and improving performance on targeted tasks. Our investigation highlights the advantages of using varied gating functions, moving beyond softmax gating within HMoE frameworks. We theoretically demonstrate that applying tailored gating functions to each expert group allows HMoE to achieve robust results, even when optimal gating functions are applied only at select hierarchical levels. Empirical validation across diverse scenarios supports these theoretical claims. This includes large-scale multimodal tasks, image classification, and latent domain discovery and prediction tasks, where our modified HMoE models show great performance improvements.""]"
+Compare the theoretical findings on learning complexity in 'The sampling complexity of learning invertible residual neural networks' (abs-2411.05453v1) and 'Tight and fast generalization error bound of graph embedding' (abs-2305.07971v1).,"abs-2411.05453v1,abs-2305.07971v1",Comparative & Contrastive,"Title: The sampling complexity of learning invertible residual neural networks 
+Summary: In recent work it has been shown that determining a feedforward ReLU neural
+network to within high uniform accuracy from point samples suffers from the
+curse of dimensionality in terms of the number of samples needed. As a
+consequence, feedforward ReLU neural networks are of limited use for
+applications where guaranteed high uniform accuracy is required.
+  We consider the question of whether the sampling complexity can be improved
+by restricting the specific neural network architecture. To this end, we
+investigate invertible residual neural networks which are foundational
+architectures in deep learning and are widely employed in models that power
+modern generative methods. Our main result shows that the residual neural
+network architecture and invertibility do not help overcome the complexity
+barriers encountered with simpler feedforward architectures. Specifically, we
+demonstrate that the computational complexity of approximating invertible
+residual neural networks from point samples in the uniform norm suffers from
+the curse of dimensionality. Similar results are established for invertible
+convolutional Residual neural networks. 
+
+Title: Tight and fast generalization error bound of graph embedding in metric
+  space 
+Summary: Recent studies have experimentally shown that we can achieve in non-Euclidean
+metric space effective and efficient graph embedding, which aims to obtain the
+vertices' representations reflecting the graph's structure in the metric space.
+Specifically, graph embedding in hyperbolic space has experimentally succeeded
+in embedding graphs with hierarchical-tree structure, e.g., data in natural
+languages, social networks, and knowledge bases. However, recent theoretical
+analyses have shown a much higher upper bound on non-Euclidean graph
+embedding's generalization error than Euclidean one's, where a high
+generalization error indicates that the incompleteness and noise in the data
+can significantly damage learning performance. It implies that the existing
+bound cannot guarantee the success of graph embedding in non-Euclidean metric
+space in a practical training data size, which can prevent non-Euclidean graph
+embedding's application in real problems. This paper provides a novel upper
+bound of graph embedding's generalization error by evaluating the local
+Rademacher complexity of the model as a function set of the distances of
+representation couples. Our bound clarifies that the performance of graph
+embedding in non-Euclidean metric space, including hyperbolic space, is better
+than the existing upper bounds suggest. Specifically, our new upper bound is
+polynomial in the metric space's geometric radius $R$ and can be
+$O(\frac{1}{S})$ at the fastest, where $S$ is the training data size. Our bound
+is significantly tighter and faster than the existing one, which can be
+exponential to $R$ and $O(\frac{1}{\sqrt{S}})$ at the fastest. Specific
+calculations on example cases show that graph embedding in non-Euclidean metric
+space can outperform that in Euclidean space with much smaller training data
+than the existing bound has suggested. 
+
+","The document ""The sampling complexity of learning invertible residual neural networks"" (abs-2411.05453v1) suggests that the computational complexity for approximating invertible residual neural networks from point samples suffers from the curse of dimensionality, similar to simpler feedforward architectures. In contrast, ""Tight and fast generalization error bound of graph embedding"" (abs-2305.07971v1) does not provide information on learning complexity in neural networks but focuses on the theoretical findings related to the generalization error bounds for graph embeddings. Therefore, a direct comparison between these two documents is limited by their distinct research focus areas.","abs-2411.05453v1, abs-2305.13517v3, abs-2310.18988v1","[""Title: The sampling complexity of learning invertible residual neural networks.\nPublished_date: 2024-11-08."", ""Summary: In recent work it has been shown that determining a feedforward ReLU neural network to within high uniform accuracy from point samples suffers from the curse of dimensionality in terms of the number of samples needed. As a consequence, feedforward ReLU neural networks are of limited use for applications where guaranteed high uniform accuracy is required.   We consider the question of whether the sampling complexity can be improved by restricting the specific neural network architecture. To this end, we investigate invertible residual neural networks which are foundational architectures in deep learning and are widely employed in models that power modern generative methods. Our main result shows that the residual neural network architecture and invertibility do not help overcome the complexity barriers encountered with simpler feedforward architectures. Specifically, we demonstrate that the computational complexity of approximating invertible residual neural networks from"", ""feedforward architectures. Specifically, we demonstrate that the computational complexity of approximating invertible residual neural networks from point samples in the uniform norm suffers from the curse of dimensionality. Similar results are established for invertible convolutional Residual neural networks."", ""Summary: Group-invariant generative adversarial networks (GANs) are a type of GANs in which the generators and discriminators are hardwired with group symmetries. Empirical studies have shown that these networks are capable of learning group-invariant distributions with significantly improved data efficiency. In this study, we aim to rigorously quantify this improvement by analyzing the reduction in sample complexity for group-invariant GANs. Our findings indicate that when learning group-invariant distributions, the number of samples required for group-invariant GANs decreases proportionally by a factor of the group size. Importantly, this sample complexity reduction cannot be achieved merely through data augmentation due to the probabilistic dependence of augmented data. Numerical results substantiate our theory and highlight the stark contrast between learning with group-invariant GANs and using data augmentation. This work presents the first statistical performance guarantees for"", ""Summary: Conventional statistical wisdom established a well-understood relationship between model complexity and prediction error, typically presented as a U-shaped curve reflecting a transition between under- and overfitting regimes. However, motivated by the success of overparametrized neural networks, recent influential work has suggested this theory to be generally incomplete, introducing an additional regime that exhibits a second descent in test error as the parameter count p grows past sample size n - a phenomenon dubbed double descent. While most attention has naturally been given to the deep-learning setting, double descent was shown to emerge more generally across non-neural models: known cases include linear regression, trees, and boosting. In this work, we take a closer look at evidence surrounding these more classical statistical machine learning methods and challenge the claim that observed cases of double descent truly extend the limits of a traditional U-shaped""]"
+How could the Bayesian dynamic programming (BDP) approach from abs-2306.02568v3 be applied to the 'unfolded' dynamic graph embeddings from abs-2405.19230v1 to infer the latent optimal path of a node's state evolution over time?,"abs-2306.02568v3,abs-2405.19230v1",Synthesis & Multi-Hop Reasoning,"Title: Latent Optimal Paths by Gumbel Propagation for Variational Bayesian
+  Dynamic Programming 
+Summary: We propose the stochastic optimal path which solves the classical optimal
+path problem by a probability-softening solution. This unified approach
+transforms a wide range of DP problems into directed acyclic graphs in which
+all paths follow a Gibbs distribution. We show the equivalence of the Gibbs
+distribution to a message-passing algorithm by the properties of the Gumbel
+distribution and give all the ingredients required for variational Bayesian
+inference of a latent path, namely Bayesian dynamic programming (BDP). We
+demonstrate the usage of BDP in the latent space of variational autoencoders
+(VAEs) and propose the BDP-VAE which captures structured sparse optimal paths
+as latent variables. This enables end-to-end training for generative tasks in
+which models rely on unobserved structural information. At last, we validate
+the behavior of our approach and showcase its applicability in two real-world
+applications: text-to-speech and singing voice synthesis. Our implementation
+code is available at
+\url{https://github.com/XinleiNIU/LatentOptimalPathsBayesianDP}. 
+
+Title: Valid Conformal Prediction for Dynamic GNNs 
+Summary: Graph neural networks (GNNs) are powerful black-box models which have shown
+impressive empirical performance. However, without any form of uncertainty
+quantification, it can be difficult to trust such models in high-risk
+scenarios. Conformal prediction aims to address this problem, however, an
+assumption of exchangeability is required for its validity which has limited
+its applicability to static graphs and transductive regimes. We propose to use
+unfolding, which allows any existing static GNN to output a dynamic graph
+embedding with exchangeability properties. Using this, we extend the validity
+of conformal prediction to dynamic GNNs in both transductive and semi-inductive
+regimes. We provide a theoretical guarantee of valid conformal prediction in
+these cases and demonstrate the empirical validity, as well as the performance
+gains, of unfolded GNNs against standard GNN architectures on both simulated
+and real datasets. 
+
+","The BDP approach described in the document `abs-2306.02568v3` could potentially be applied to 'unfolded' dynamic graph embeddings from another source by utilizing Gumbel propagation to infer the latent optimal path of a node's state evolution over time, thus bridging the temporal dynamics within these graphs.
+
+However, without information on how unfolded dynamic graph embeddings are processed or represented in `abs-2405.19230v1`, it is not possible to provide concrete details on this application.","abs-2306.02568v3, abs-2408.03569v1, abs-2406.03264v1, abs-2402.07341v2, abs-2305.19570v1","[""Title: Latent Optimal Paths by Gumbel Propagation for Variational Bayesian\n  Dynamic Programming.\nPublished_date: 2023-06-05."", ""Title: Maximum a Posteriori Estimation for Linear Structural Dynamics Models\n  Using Bayesian Optimization with Rational Polynomial Chaos Expansions.\nPublished_date: 2024-08-07."", ""Title: No-Regret Algorithms for Safe Bayesian Optimization with Monotonicity\n  Constraints.\nPublished_date: 2024-06-05."", ""Title: Noise-Adaptive Confidence Sets for Linear Bandits and Application to\n  Bayesian Optimization.\nPublished_date: 2024-02-12."", ""Title: Online Label Shift: Optimal Dynamic Regret meets Practical Algorithms.\nPublished_date: 2023-05-31.""]"
+Can the feature learning framework for diffusion models (abs-2412.01021v1) be integrated with the feature learning visualization method (abs-2410.04264v1) to empirically demonstrate and visualize how diffusion models learn more 'balanced' representations compared to classification models?,"abs-2412.01021v1,abs-2410.04264v1",Synthesis & Multi-Hop Reasoning,"Title: On the Feature Learning in Diffusion Models 
+Summary: The predominant success of diffusion models in generative modeling has
+spurred significant interest in understanding their theoretical foundations. In
+this work, we propose a feature learning framework aimed at analyzing and
+comparing the training dynamics of diffusion models with those of traditional
+classification models. Our theoretical analysis demonstrates that, under
+identical settings, diffusion models, due to the denoising objective, are
+encouraged to learn more balanced and comprehensive representations of the
+data. In contrast, neural networks with a similar architecture trained for
+classification tend to prioritize learning specific patterns in the data, often
+focusing on easy-to-learn components. To support these theoretical insights, we
+conduct several experiments on both synthetic and real-world datasets, which
+empirically validate our findings and highlight the distinct feature learning
+dynamics in diffusion models compared to classification. 
+
+Title: Visualising Feature Learning in Deep Neural Networks by Diagonalizing
+  the Forward Feature Map 
+Summary: Deep neural networks (DNNs) exhibit a remarkable ability to automatically
+learn data representations, finding appropriate features without human input.
+Here we present a method for analysing feature learning by decomposing DNNs
+into 1) a forward feature-map $\Phi$ that maps the input dataspace to the
+post-activations of the penultimate layer, and 2) a final linear layer that
+classifies the data. We diagonalize $\Phi$ with respect to the gradient descent
+operator and track feature learning by measuring how the eigenfunctions and
+eigenvalues of $\Phi$ change during training. Across many popular architectures
+and classification datasets, we find that DNNs converge, after just a few
+epochs, to a minimal feature (MF) regime dominated by a number of
+eigenfunctions equal to the number of classes. This behaviour resembles the
+neural collapse phenomenon studied at longer training times. For other DNN-data
+combinations, such as a fully connected network on CIFAR10, we find an extended
+feature (EF) regime where significantly more features are used. Optimal
+generalisation performance upon hyperparameter tuning typically coincides with
+the MF regime, but we also find examples of poor performance within the MF
+regime. Finally, we recast the phenomenon of neural collapse into a kernel
+picture which can be extended to broader tasks such as regression. 
+
+","No direct integration or combination of the feature learning framework for diffusion models from abs-2412.01021v1 with the feature learning visualization method from abs-2410.04264v1 is described in the provided documents. The first document discusses the theoretical foundation and empirical validation of diffusion models' balanced representation learning, while the second focuses on visualizing feature learning in deep neural networks using a different approach. Therefore, there is no information to directly answer whether these methods can be integrated for the purpose of demonstration and visualization.","abs-2412.01021v1, abs-2311.05501v1, abs-2410.04264v1, abs-2305.05642v2, abs-2303.17765v3","[""Summary: The predominant success of diffusion models in generative modeling has spurred significant interest in understanding their theoretical foundations. In this work, we propose a feature learning framework aimed at analyzing and comparing the training dynamics of diffusion models with those of traditional classification models. Our theoretical analysis demonstrates that, under identical settings, diffusion models, due to the denoising objective, are encouraged to learn more balanced and comprehensive representations of the data. In contrast, neural networks with a similar architecture trained for classification tend to prioritize learning specific patterns in the data, often focusing on easy-to-learn components. To support these theoretical insights, we conduct several experiments on both synthetic and real-world datasets, which empirically validate our findings and highlight the distinct feature learning dynamics in diffusion models compared to classification."", ""Summary: This work introduces Dirichlet Active Learning (DiAL), a Bayesian-inspired approach to the design of active learning algorithms. Our framework models feature-conditional class probabilities as a Dirichlet random field and lends observational strength between similar features in order to calibrate the random field. This random field can then be utilized in learning tasks: in particular, we can use current estimates of mean and variance to conduct classification and active learning in the context where labeled data is scarce. We demonstrate the applicability of this model to low-label rate graph learning by constructing ``propagation operators'' based upon the graph Laplacian, and offer computational studies demonstrating the method's competitiveness with the state of the art. Finally, we provide rigorous guarantees regarding the ability of this approach to ensure both exploration and exploitation, expressed respectively in terms of cluster exploration and increased attention"", ""Summary: Deep neural networks (DNNs) exhibit a remarkable ability to automatically learn data representations, finding appropriate features without human input. Here we present a method for analysing feature learning by decomposing DNNs into 1) a forward feature-map $\\Phi$ that maps the input dataspace to the post-activations of the penultimate layer, and 2) a final linear layer that classifies the data. We diagonalize $\\Phi$ with respect to the gradient descent operator and track feature learning by measuring how the eigenfunctions and eigenvalues of $\\Phi$ change during training. Across many popular architectures and classification datasets, we find that DNNs converge, after just a few epochs, to a minimal feature (MF) regime dominated by a number of eigenfunctions equal to the number of classes. This behaviour resembles the neural collapse phenomenon studied at longer training times. For other DNN-data combinations, such as a fully connected network on CIFAR10, we find an extended"", ""Summary: We consider the problem of learning functions within the $\\mathcal{F}_{p,\\pi}$ and Barron spaces, which play crucial roles in understanding random feature models (RFMs), two-layer neural networks, as well as kernel methods. Leveraging tools from information-based complexity (IBC), we establish a dual equivalence between approximation and estimation, and then apply it to study the learning of the preceding function spaces. The duality allows us to focus on the more tractable problem between approximation and estimation. To showcase the efficacy of our duality framework, we delve into two important but under-explored problems:   1) Random feature learning beyond kernel regime: We derive sharp bounds for learning $\\mathcal{F}_{p,\\pi}$ using RFMs. Notably, the learning is efficient without the curse of dimensionality for $p>1$. This underscores the extended applicability of RFMs beyond the traditional kernel regime, since $\\mathcal{F}_{p,\\pi}$ with $p<2$ is strictly larger than"", ""Summary: Representation multi-task learning (MTL) has achieved tremendous success in practice. However, the theoretical understanding of these methods is still lacking. Most existing theoretical works focus on cases where all tasks share the same representation, and claim that MTL almost always improves performance. Nevertheless, as the number of tasks grows, assuming all tasks share the same representation is unrealistic. Furthermore, empirical findings often indicate that a shared representation does not necessarily improve single-task learning performance. In this paper, we aim to understand how to learn from tasks with \\textit{similar but not exactly the same} linear representations, while dealing with outlier tasks. Assuming a known intrinsic dimension, we proposed a penalized empirical risk minimization method and a spectral method that are \\textit{adaptive} to the similarity structure and \\textit{robust} to outlier tasks. Both algorithms outperform single-task learning when""]"
+"Could the instrumental variable framework from abs-2306.07566v2 be adapted to the model-based RL setting in abs-2402.08991v3 to identify and correct for corruption, by treating the adversary as a 'heterogeneous decision-maker' that influences the observed transitions?","abs-2306.07566v2,abs-2402.08991v3",Synthesis & Multi-Hop Reasoning,"Title: Learning under Selective Labels with Data from Heterogeneous
+  Decision-makers: An Instrumental Variable Approach 
+Summary: We study the problem of learning with selectively labeled data, which arises
+when outcomes are only partially labeled due to historical decision-making. The
+labeled data distribution may substantially differ from the full population,
+especially when the historical decisions and the target outcome can be
+simultaneously affected by some unobserved factors. Consequently, learning with
+only the labeled data may lead to severely biased results when deployed to the
+full population. Our paper tackles this challenge by exploiting the fact that
+in many applications the historical decisions were made by a set of
+heterogeneous decision-makers. In particular, we analyze this setup in a
+principled instrumental variable (IV) framework. We establish conditions for
+the full-population risk of any given prediction rule to be point-identified
+from the observed data and provide sharp risk bounds when the point
+identification fails. We further propose a weighted learning approach that
+learns prediction rules robust to the label selection bias in both
+identification settings. Finally, we apply our proposed approach to a
+semi-synthetic financial dataset and demonstrate its superior performance in
+the presence of selection bias. 
+
+Title: Towards Robust Model-Based Reinforcement Learning Against Adversarial
+  Corruption 
+Summary: This study tackles the challenges of adversarial corruption in model-based
+reinforcement learning (RL), where the transition dynamics can be corrupted by
+an adversary. Existing studies on corruption-robust RL mostly focus on the
+setting of model-free RL, where robust least-square regression is often
+employed for value function estimation. However, these techniques cannot be
+directly applied to model-based RL. In this paper, we focus on model-based RL
+and take the maximum likelihood estimation (MLE) approach to learn transition
+model. Our work encompasses both online and offline settings. In the online
+setting, we introduce an algorithm called corruption-robust optimistic MLE
+(CR-OMLE), which leverages total-variation (TV)-based information ratios as
+uncertainty weights for MLE. We prove that CR-OMLE achieves a regret of
+$\tilde{\mathcal{O}}(\sqrt{T} + C)$, where $C$ denotes the cumulative
+corruption level after $T$ episodes. We also prove a lower bound to show that
+the additive dependence on $C$ is optimal. We extend our weighting technique to
+the offline setting, and propose an algorithm named corruption-robust
+pessimistic MLE (CR-PMLE). Under a uniform coverage condition, CR-PMLE exhibits
+suboptimality worsened by $\mathcal{O}(C/n)$, nearly matching the lower bound.
+To the best of our knowledge, this is the first work on corruption-robust
+model-based RL algorithms with provable guarantees. 
+
+","The instrumental variable (IV) framework presented in ""abs-2306.07566v2"" could potentially be adapted to the model-based reinforcement learning (RL) setting described in ""abs-2402.08991v3"". In this context, the adversary could be viewed as a set of heterogeneous decision-makers influencing observed transitions, allowing for identification and correction of corruption levels through an IV framework.","abs-2402.08991v3, abs-2306.07566v2, abs-2302.14427v1, abs-2403.10859v1","[""Summary: This study tackles the challenges of adversarial corruption in model-based reinforcement learning (RL), where the transition dynamics can be corrupted by an adversary. Existing studies on corruption-robust RL mostly focus on the setting of model-free RL, where robust least-square regression is often employed for value function estimation. However, these techniques cannot be directly applied to model-based RL. In this paper, we focus on model-based RL and take the maximum likelihood estimation (MLE) approach to learn transition model. Our work encompasses both online and offline settings. In the online setting, we introduce an algorithm called corruption-robust optimistic MLE (CR-OMLE), which leverages total-variation (TV)-based information ratios as uncertainty weights for MLE. We prove that CR-OMLE achieves a regret of $\\tilde{\\mathcal{O}}(\\sqrt{T} + C)$, where $C$ denotes the cumulative corruption level after $T$ episodes. We also prove a lower bound to show that the"", ""+ C)$, where $C$ denotes the cumulative corruption level after $T$ episodes. We also prove a lower bound to show that the additive dependence on $C$ is optimal. We extend our weighting technique to the offline setting, and propose an algorithm named corruption-robust pessimistic MLE (CR-PMLE). Under a uniform coverage condition, CR-PMLE exhibits suboptimality worsened by $\\mathcal{O}(C/n)$, nearly matching the lower bound. To the best of our knowledge, this is the first work on corruption-robust model-based RL algorithms with provable guarantees."", ""Summary: We study the problem of learning with selectively labeled data, which arises when outcomes are only partially labeled due to historical decision-making. The labeled data distribution may substantially differ from the full population, especially when the historical decisions and the target outcome can be simultaneously affected by some unobserved factors. Consequently, learning with only the labeled data may lead to severely biased results when deployed to the full population. Our paper tackles this challenge by exploiting the fact that in many applications the historical decisions were made by a set of heterogeneous decision-makers. In particular, we analyze this setup in a principled instrumental variable (IV) framework. We establish conditions for the full-population risk of any given prediction rule to be point-identified from the observed data and provide sharp risk bounds when the point identification fails. We further propose a weighted learning approach that learns"", ""Title: Federated Covariate Shift Adaptation for Missing Target Output Values.\nPublished_date: 2023-02-28.\nSummary: The most recent multi-source covariate shift algorithm is an efficient hyperparameter optimization algorithm for missing target output. In this paper, we extend this algorithm to the framework of federated learning. For data islands in federated learning and covariate shift adaptation, we propose the federated domain adaptation estimate of the target risk which is asymptotically unbiased with a desirable asymptotic variance property. We construct a weighted model for the target task and propose the federated covariate shift adaptation algorithm which works preferably in our setting. The efficacy of our method is justified both theoretically and empirically."", ""remarkable versatility by seamlessly integrating it into reinforcement learning (RL) contexts. Building on Q-learning, our approach naturally leads to a new variant of distributional RL methods, which demonstrates consistent effectiveness across different environments.""]"
+How can the multi-task Gaussian Process model from abs-2306.11772v1 be used as the surrogate model within the Targeted Variance Reduction (TVR) framework (abs-2403.03816v1) to robustly optimize a simulator where the noise parameters are time-varying?,"abs-2306.11772v1,abs-2403.03816v1",Synthesis & Multi-Hop Reasoning,"Title: Time-Varying Transition Matrices with Multi-task Gaussian Processes 
+Summary: In this paper, we present a kernel-based, multi-task Gaussian Process (GP)
+model for approximating the underlying function of an individual's mobility
+state using a time-inhomogeneous Markov Process with two states: moves and
+pauses. Our approach accounts for the correlations between the transition
+probabilities by creating a covariance matrix over the tasks. We also introduce
+time-variability by assuming that an individual's transition probabilities vary
+over time in response to exogenous variables. We enforce the stochasticity and
+non-negativity constraints of probabilities in a Markov process through the
+incorporation of a set of constraint points in the GP. We also discuss
+opportunities to speed up GP estimation and inference in this context by
+exploiting Toeplitz and Kronecker product structures. Our numerical experiments
+demonstrate the ability of our formulation to enforce the desired constraints
+while learning the functional form of transition probabilities. 
+
+Title: Targeted Variance Reduction: Robust Bayesian Optimization of Black-Box
+  Simulators with Noise Parameters 
+Summary: The optimization of a black-box simulator over control parameters
+$\mathbf{x}$ arises in a myriad of scientific applications. In such
+applications, the simulator often takes the form
+$f(\mathbf{x},\boldsymbol{\theta})$, where $\boldsymbol{\theta}$ are parameters
+that are uncertain in practice. Robust optimization aims to optimize the
+objective $\mathbb{E}[f(\mathbf{x},\boldsymbol{\Theta})]$, where
+$\boldsymbol{\Theta} \sim \mathcal{P}$ is a random variable that models
+uncertainty on $\boldsymbol{\theta}$. For this, existing black-box methods
+typically employ a two-stage approach for selecting the next point
+$(\mathbf{x},\boldsymbol{\theta})$, where $\mathbf{x}$ and
+$\boldsymbol{\theta}$ are optimized separately via different acquisition
+functions. As such, these approaches do not employ a joint acquisition over
+$(\mathbf{x},\boldsymbol{\theta})$, and thus may fail to fully exploit
+control-to-noise interactions for effective robust optimization. To address
+this, we propose a new Bayesian optimization method called Targeted Variance
+Reduction (TVR). The TVR leverages a novel joint acquisition function over
+$(\mathbf{x},\boldsymbol{\theta})$, which targets variance reduction on the
+objective within the desired region of improvement. Under a Gaussian process
+surrogate on $f$, the TVR acquisition can be evaluated in closed form, and
+reveals an insightful exploration-exploitation-precision trade-off for robust
+black-box optimization. The TVR can further accommodate a broad class of
+non-Gaussian distributions on $\mathcal{P}$ via a careful integration of
+normalizing flows. We demonstrate the improved performance of TVR over the
+state-of-the-art in a suite of numerical experiments and an application to the
+robust design of automobile brake discs under operational uncertainty. 
+
+","The multi-task Gaussian Process (GP) model from Document `abs-2306.11772v1` can account for correlations between transition probabilities across different tasks, which is useful for modeling the mobility state of individuals over multiple aspects or contexts. By leveraging these models to capture the dynamics and dependencies within a multi-dimensional system, the Multi-task GP could serve as a robust surrogate model in the TVR framework. The time-varying nature of noise parameters can be addressed by incorporating temporal structures into the GP model, possibly using techniques like Markov processes with varying transition probabilities over time. This integration would allow for a more accurate representation of the system's behavior under operational uncertainty and enable effective exploration-exploitation strategies in the robust optimization framework.","abs-2403.03816v1, abs-2306.11772v1, abs-2409.12301v1, abs-2409.10972v1, abs-2412.11875v1","[""and thus may fail to fully exploit control-to-noise interactions for effective robust optimization. To address this, we propose a new Bayesian optimization method called Targeted Variance Reduction (TVR). The TVR leverages a novel joint acquisition function over $(\\mathbf{x},\\boldsymbol{\\theta})$, which targets variance reduction on the objective within the desired region of improvement. Under a Gaussian process surrogate on $f$, the TVR acquisition can be evaluated in closed form, and reveals an insightful exploration-exploitation-precision trade-off for robust black-box optimization. The TVR can further accommodate a broad class of non-Gaussian distributions on $\\mathcal{P}$ via a careful integration of normalizing flows. We demonstrate the improved performance of TVR over the state-of-the-art in a suite of numerical experiments and an application to the robust design of automobile brake discs under operational uncertainty."", ""Summary: In this paper, we present a kernel-based, multi-task Gaussian Process (GP) model for approximating the underlying function of an individual's mobility state using a time-inhomogeneous Markov Process with two states: moves and pauses. Our approach accounts for the correlations between the transition probabilities by creating a covariance matrix over the tasks. We also introduce time-variability by assuming that an individual's transition probabilities vary over time in response to exogenous variables. We enforce the stochasticity and non-negativity constraints of probabilities in a Markov process through the incorporation of a set of constraint points in the GP. We also discuss opportunities to speed up GP estimation and inference in this context by exploiting Toeplitz and Kronecker product structures. Our numerical experiments demonstrate the ability of our formulation to enforce the desired constraints while learning the functional form of transition probabilities."", ""Summary: Gaussian processes (GPs) are Bayesian nonparametric models for function approximation with principled predictive uncertainty estimates. Deep Gaussian processes (DGPs) are multilayer generalizations of GPs that can represent complex marginal densities as well as complex mappings. As exact inference is either computationally prohibitive or analytically intractable in GPs and extensions thereof, some existing methods resort to variational inference (VI) techniques for tractable approximations. However, the expressivity of conventional approximate GP models critically relies on independent inducing variables that might not be informative enough for some problems. In this work we introduce amortized variational inference for DGPs, which learns an inference function that maps each observation to variational parameters. The resulting method enjoys a more expressive prior conditioned on fewer input dependent inducing variables and a flexible amortized marginal posterior that is able"", ""Summary: The growing demand for accurate, efficient, and scalable solutions in computational mechanics highlights the need for advanced operator learning algorithms that can efficiently handle large datasets while providing reliable uncertainty quantification. This paper introduces a novel Gaussian Process (GP) based neural operator for solving parametric differential equations. The approach proposed leverages the expressive capability of deterministic neural operators and the uncertainty awareness of conventional GP. In particular, we propose a ``neural operator-embedded kernel'' wherein the GP kernel is formulated in the latent space learned using a neural operator. Further, we exploit a stochastic dual descent (SDD) algorithm for simultaneously training the neural operator parameters and the GP hyperparameters. Our approach addresses the (a) resolution dependence and (b) cubic complexity of traditional GP models, allowing for input-resolution independence and scalability in"", ""Summary: Surrogate models are often used as computationally efficient approximations to complex simulation models, enabling tasks such as solving inverse problems, sensitivity analysis, and probabilistic forward predictions, which would otherwise be computationally infeasible. During training, surrogate parameters are fitted such that the surrogate reproduces the simulation model's outputs as closely as possible. However, the simulation model itself is merely a simplification of the real-world system, often missing relevant processes or suffering from misspecifications e.g., in inputs or boundary conditions. Hints about these might be captured in real-world measurement data, and yet, we typically ignore those hints during surrogate building. In this paper, we propose two novel probabilistic approaches to integrate simulation data and real-world measurement data during surrogate training. The first method trains separate surrogate models for each data source and combines their""]"
+What specific type of automobile brake disc was used in the real-world application of the Targeted Variance Reduction (TVR) method?,abs-2403.03816v1,Negative / Unanswerable,"Title: Targeted Variance Reduction: Robust Bayesian Optimization of Black-Box
+  Simulators with Noise Parameters 
+Summary: The optimization of a black-box simulator over control parameters
+$\mathbf{x}$ arises in a myriad of scientific applications. In such
+applications, the simulator often takes the form
+$f(\mathbf{x},\boldsymbol{\theta})$, where $\boldsymbol{\theta}$ are parameters
+that are uncertain in practice. Robust optimization aims to optimize the
+objective $\mathbb{E}[f(\mathbf{x},\boldsymbol{\Theta})]$, where
+$\boldsymbol{\Theta} \sim \mathcal{P}$ is a random variable that models
+uncertainty on $\boldsymbol{\theta}$. For this, existing black-box methods
+typically employ a two-stage approach for selecting the next point
+$(\mathbf{x},\boldsymbol{\theta})$, where $\mathbf{x}$ and
+$\boldsymbol{\theta}$ are optimized separately via different acquisition
+functions. As such, these approaches do not employ a joint acquisition over
+$(\mathbf{x},\boldsymbol{\theta})$, and thus may fail to fully exploit
+control-to-noise interactions for effective robust optimization. To address
+this, we propose a new Bayesian optimization method called Targeted Variance
+Reduction (TVR). The TVR leverages a novel joint acquisition function over
+$(\mathbf{x},\boldsymbol{\theta})$, which targets variance reduction on the
+objective within the desired region of improvement. Under a Gaussian process
+surrogate on $f$, the TVR acquisition can be evaluated in closed form, and
+reveals an insightful exploration-exploitation-precision trade-off for robust
+black-box optimization. The TVR can further accommodate a broad class of
+non-Gaussian distributions on $\mathcal{P}$ via a careful integration of
+normalizing flows. We demonstrate the improved performance of TVR over the
+state-of-the-art in a suite of numerical experiments and an application to the
+robust design of automobile brake discs under operational uncertainty. 
+
+","No Answer. 
+
+The provided documents do not discuss any specific applications related to the Targeted Variance Reduction (TVR) method, nor do they mention any types of automotive brake discs.","abs-2407.17236v2, abs-2303.02060v2, abs-2409.11327v1, abs-2407.13189v1, abs-2408.03569v1","[""nature of Fourier transform characteristics, which record more detailed information about the machine's status, in an effort to enhance early defect detection and diagnosis. Experiments with varying vibration measurement locations (Fan End, Drive End), fault types (ball, inner, and outer race faults), and motor loads (0-3 horsepower) are used to validate the suggested approach. The outcomes illustrate our method's effectiveness in fault detection and point to possible broader uses in industrial maintenance."", ""Summary: Latent linear dynamical systems with Bernoulli observations provide a powerful modeling framework for identifying the temporal dynamics underlying binary time series data, which arise in a variety of contexts such as binary decision-making and discrete stochastic processes (e.g., binned neural spike trains). Here we develop a spectral learning method for fast, efficient fitting of probit-Bernoulli latent linear dynamical system (LDS) models. Our approach extends traditional subspace identification methods to the Bernoulli setting via a transformation of the first and second sample moments. This results in a robust, fixed-cost estimator that avoids the hazards of local optima and the long computation time of iterative fitting procedures like the expectation-maximization (EM) algorithm. In regimes where data is limited or assumptions about the statistical structure of the data are not met, we demonstrate that the spectral estimate provides a good initialization for Laplace-EM"", ""Title: Learning Unstable Continuous-Time Stochastic Linear Control Systems.\nPublished_date: 2024-09-17.\nSummary: We study the problem of system identification for stochastic continuous-time dynamics, based on a single finite-length state trajectory. We present a method for estimating the possibly unstable open-loop matrix by employing properly randomized control inputs. Then, we establish theoretical performance guarantees showing that the estimation error decays with trajectory length, a measure of excitability, and the signal-to-noise ratio, while it grows with dimension. Numerical illustrations that showcase the rates of learning the dynamics, will be provided as well. To perform the theoretical analysis, we develop new technical tools that are of independent interest. That includes non-asymptotic stochastic bounds for highly non-stationary martingales and generalized laws of iterated logarithms, among others."", ""Title: Data-Driven Estimation of Conditional Expectations, Application to\n  Optimal Stopping and Reinforcement Learning.\nPublished_date: 2024-07-18.\nSummary: When the underlying conditional density is known, conditional expectations can be computed analytically or numerically. When, however, such knowledge is not available and instead we are given a collection of training data, the goal of this work is to propose simple and purely data-driven means for estimating directly the desired conditional expectation. Because conditional expectations appear in the description of a number of stochastic optimization problems with the corresponding optimal solution satisfying a system of nonlinear equations, we extend our data-driven method to cover such cases as well. We test our methodology by applying it to Optimal Stopping and Optimal Action Policy in Reinforcement Learning."", ""we introduce a Bayesian optimization approach, which allows to adaptively enrich the experimental design throughout the optimization process of MAP estimation. Thereby, we utilize the expected improvement acquisition function as a means to identify sample points in the input space that are possibly associated with large objective function values. The acquisition function is estimated through Monte Carlo sampling based on the posterior distribution of the expansion coefficients identified in the sparse Bayesian learning process. By combining the sparsity-inducing learning procedure with the sequential experimental design, we effectively reduce the number of model evaluations in the MAP estimation problem. We demonstrate the applicability of the presented methods on the parameter updating problem of an algebraic two-degree-of-freedom system and the finite element model of a cross-laminated timber plate.""]"
+"In the paper 'Learning Representation for Multitask learning through Self Supervised Auxiliary learning', what was the exact number of benchmark datasets used to demonstrate the DGR method?",abs-2409.16651v1,Negative / Unanswerable,"Title: Learning Representation for Multitask learning through Self Supervised
+  Auxiliary learning 
+Summary: Multi-task learning is a popular machine learning approach that enables
+simultaneous learning of multiple related tasks, improving algorithmic
+efficiency and effectiveness. In the hard parameter sharing approach, an
+encoder shared through multiple tasks generates data representations passed to
+task-specific predictors. Therefore, it is crucial to have a shared encoder
+that provides decent representations for every and each task. However, despite
+recent advances in multi-task learning, the question of how to improve the
+quality of representations generated by the shared encoder remains open. To
+address this gap, we propose a novel approach called Dummy Gradient norm
+Regularization that aims to improve the universality of the representations
+generated by the shared encoder. Specifically, the method decreases the norm of
+the gradient of the loss function with repect to dummy task-specific predictors
+to improve the universality of the shared encoder's representations. Through
+experiments on multiple multi-task learning benchmark datasets, we demonstrate
+that DGR effectively improves the quality of the shared representations,
+leading to better multi-task prediction performances. Applied to various
+classifiers, the shared representations generated by DGR also show superior
+performance compared to existing multi-task learning methods. Moreover, our
+approach takes advantage of computational efficiency due to its simplicity. The
+simplicity also allows us to seamlessly integrate DGR with the existing
+multi-task learning algorithms. 
+
+","No Answer.
+
+The provided documents do not contain any information about a paper titled 'Learning Representation for Multitask learning through Self Supervised Auxiliary learning' or mention any benchmark datasets used for demonstrating such a method.","abs-2409.16651v1, abs-2402.05715v1, abs-2405.15358v1, abs-2311.10023v1, abs-2412.13665v1","[""Title: Learning Representation for Multitask learning through Self Supervised\n  Auxiliary learning.\nPublished_date: 2024-09-25."", ""Summary: This paper addresses the multiple two-sample test problem in a graph-structured setting, which is a common scenario in fields such as Spatial Statistics and Neuroscience. Each node $v$ in fixed graph deals with a two-sample testing problem between two node-specific probability density functions (pdfs), $p_v$ and $q_v$. The goal is to identify nodes where the null hypothesis $p_v = q_v$ should be rejected, under the assumption that connected nodes would yield similar test outcomes. We propose the non-parametric collaborative two-sample testing (CTST) framework that efficiently leverages the graph structure and minimizes the assumptions over $p_v$ and $q_v$. Our methodology integrates elements from f-divergence estimation, Kernel Methods, and Multitask Learning. We use synthetic experiments and a real sensor network detecting seismic activity to demonstrate that CTST outperforms state-of-the-art non-parametric statistical tests that apply at each node independently, hence"", ""Title: Coordinated Multi-Neighborhood Learning on a Directed Acyclic Graph.\nPublished_date: 2024-05-24."", ""Title: Online Optimization for Network Resource Allocation and Comparison with\n  Reinforcement Learning Techniques.\nPublished_date: 2023-11-16."", ""Title: Time-Reversible Bridges of Data with Machine Learning.\nPublished_date: 2024-12-18.""]"
+What was the specific programming language used for the implementation of the SVD-QCQP primal-dual algorithm in article abs-2304.07472v3?,abs-2304.07472v3,Negative / Unanswerable,"Title: Efficient Convex Algorithms for Universal Kernel Learning 
+Summary: The accuracy and complexity of machine learning algorithms based on kernel
+optimization are determined by the set of kernels over which they are able to
+optimize. An ideal set of kernels should: admit a linear parameterization (for
+tractability); be dense in the set of all kernels (for robustness); be
+universal (for accuracy). Recently, a framework was proposed for using positive
+matrices to parameterize a class of positive semi-separable kernels. Although
+this class can be shown to meet all three criteria, previous algorithms for
+optimization of such kernels were limited to classification and furthermore
+relied on computationally complex Semidefinite Programming (SDP) algorithms. In
+this paper, we pose the problem of learning semiseparable kernels as a minimax
+optimization problem and propose a SVD-QCQP primal-dual algorithm which
+dramatically reduces the computational complexity as compared with previous
+SDP-based approaches. Furthermore, we provide an efficient implementation of
+this algorithm for both classification and regression -- an implementation
+which enables us to solve problems with 100 features and up to 30,000 datums.
+Finally, when applied to benchmark data, the algorithm demonstrates the
+potential for significant improvement in accuracy over typical (but non-convex)
+approaches such as Neural Nets and Random Forest with similar or better
+computation time. 
+
+","No Answer.
+
+The provided documents do not contain information about the specific programming language used for the implementation of the SVD-QCQP primal-dual algorithm.","abs-2304.07472v3, abs-2305.05642v2, abs-2402.15718v1, abs-2411.04243v1, abs-2409.14980v1","[""Summary: The accuracy and complexity of machine learning algorithms based on kernel optimization are determined by the set of kernels over which they are able to optimize. An ideal set of kernels should: admit a linear parameterization (for tractability); be dense in the set of all kernels (for robustness); be universal (for accuracy). Recently, a framework was proposed for using positive matrices to parameterize a class of positive semi-separable kernels. Although this class can be shown to meet all three criteria, previous algorithms for optimization of such kernels were limited to classification and furthermore relied on computationally complex Semidefinite Programming (SDP) algorithms. In this paper, we pose the problem of learning semiseparable kernels as a minimax optimization problem and propose a SVD-QCQP primal-dual algorithm which dramatically reduces the computational complexity as compared with previous SDP-based approaches. Furthermore, we provide an efficient"", ""Title: A duality framework for analyzing random feature and two-layer neural\n  networks.\nPublished_date: 2023-05-09."", ""Title: A Duality Analysis of Kernel Ridge Regression in the Noiseless Regime.\nPublished_date: 2024-02-24.\nSummary: In this paper, we conduct a comprehensive analysis of generalization properties of Kernel Ridge Regression (KRR) in the noiseless regime, a scenario crucial to scientific computing, where data are often generated via computer simulations. We prove that KRR can attain the minimax optimal rate, which depends on both the eigenvalue decay of the associated kernel and the relative smoothness of target functions. Particularly, when the eigenvalue decays exponentially fast, KRR achieves the spectral accuracy, i.e., a convergence rate faster than any polynomial. Moreover, the numerical experiments well corroborate our theoretical findings. Our proof leverages a novel extension of the duality framework introduced by Chen et al. (2023), which could be useful in analyzing kernel-based methods beyond the scope of this work."", ""Title: ION-C: Integration of Overlapping Networks via Constraints.\nPublished_date: 2024-11-06."", ""Title: (De)-regularized Maximum Mean Discrepancy Gradient Flow.\nPublished_date: 2024-09-23.""]"
+"In the BDP-VAE experiments for text-to-speech synthesis (abs-2306.02568v3), what was the duration in seconds of the audio clips that were generated?",abs-2306.02568v3,Negative / Unanswerable,"Title: Latent Optimal Paths by Gumbel Propagation for Variational Bayesian
+  Dynamic Programming 
+Summary: We propose the stochastic optimal path which solves the classical optimal
+path problem by a probability-softening solution. This unified approach
+transforms a wide range of DP problems into directed acyclic graphs in which
+all paths follow a Gibbs distribution. We show the equivalence of the Gibbs
+distribution to a message-passing algorithm by the properties of the Gumbel
+distribution and give all the ingredients required for variational Bayesian
+inference of a latent path, namely Bayesian dynamic programming (BDP). We
+demonstrate the usage of BDP in the latent space of variational autoencoders
+(VAEs) and propose the BDP-VAE which captures structured sparse optimal paths
+as latent variables. This enables end-to-end training for generative tasks in
+which models rely on unobserved structural information. At last, we validate
+the behavior of our approach and showcase its applicability in two real-world
+applications: text-to-speech and singing voice synthesis. Our implementation
+code is available at
+\url{https://github.com/XinleiNIU/LatentOptimalPathsBayesianDP}. 
+
+",No Answer,"abs-2306.02568v3, abs-2403.03816v1, abs-2409.14980v1, abs-2402.15718v1","[""Summary: We propose the stochastic optimal path which solves the classical optimal path problem by a probability-softening solution. This unified approach transforms a wide range of DP problems into directed acyclic graphs in which all paths follow a Gibbs distribution. We show the equivalence of the Gibbs distribution to a message-passing algorithm by the properties of the Gumbel distribution and give all the ingredients required for variational Bayesian inference of a latent path, namely Bayesian dynamic programming (BDP). We demonstrate the usage of BDP in the latent space of variational autoencoders (VAEs) and propose the BDP-VAE which captures structured sparse optimal paths as latent variables. This enables end-to-end training for generative tasks in which models rely on unobserved structural information. At last, we validate the behavior of our approach and showcase its applicability in two real-world applications: text-to-speech and singing voice synthesis. Our implementation"", ""of our approach and showcase its applicability in two real-world applications: text-to-speech and singing voice synthesis. Our implementation code is available at \\url{https://github.com/XinleiNIU/LatentOptimalPathsBayesianDP}."", ""Title: Targeted Variance Reduction: Robust Bayesian Optimization of Black-Box\n  Simulators with Noise Parameters.\nPublished_date: 2024-03-06."", ""Title: (De)-regularized Maximum Mean Discrepancy Gradient Flow.\nPublished_date: 2024-09-23."", ""Title: A Duality Analysis of Kernel Ridge Regression in the Noiseless Regime.\nPublished_date: 2024-02-24.\nSummary: In this paper, we conduct a comprehensive analysis of generalization properties of Kernel Ridge Regression (KRR) in the noiseless regime, a scenario crucial to scientific computing, where data are often generated via computer simulations. We prove that KRR can attain the minimax optimal rate, which depends on both the eigenvalue decay of the associated kernel and the relative smoothness of target functions. Particularly, when the eigenvalue decays exponentially fast, KRR achieves the spectral accuracy, i.e., a convergence rate faster than any polynomial. Moreover, the numerical experiments well corroborate our theoretical findings. Our proof leverages a novel extension of the duality framework introduced by Chen et al. (2023), which could be useful in analyzing kernel-based methods beyond the scope of this work.""]"

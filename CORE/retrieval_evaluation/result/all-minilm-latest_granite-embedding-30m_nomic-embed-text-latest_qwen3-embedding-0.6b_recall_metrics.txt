@@ -1,0 +1,108 @@
+--- Average Recall across all datasets ---
+                  Model  Recall@N
+      all-minilm-latest  0.853988
+  granite-embedding-30m  0.898988
+nomic-embed-text-latest  0.766667
+   qwen3-embedding-0.6b  0.844286
+
+--- Average Recall Sub-grouped by Years ---
+                  Model   Year Group  Recall@N
+      all-minilm-latest df_2015_2024  0.795000
+      all-minilm-latest df_2020_2024  0.830000
+      all-minilm-latest df_2023_2024  0.895000
+      all-minilm-latest      df_2024  0.895952
+  granite-embedding-30m df_2015_2024  0.870000
+  granite-embedding-30m df_2020_2024  0.905000
+  granite-embedding-30m df_2023_2024  0.885000
+  granite-embedding-30m      df_2024  0.935952
+nomic-embed-text-latest df_2015_2024  0.765000
+nomic-embed-text-latest df_2020_2024  0.760000
+nomic-embed-text-latest df_2023_2024  0.770000
+nomic-embed-text-latest      df_2024  0.771667
+   qwen3-embedding-0.6b df_2015_2024  0.860000
+   qwen3-embedding-0.6b df_2020_2024  0.815000
+   qwen3-embedding-0.6b df_2023_2024  0.890000
+   qwen3-embedding-0.6b      df_2024  0.812143
+
+--- Detailed Results ---
+                  Model   Year Group                                                                 Dataset  Total Questions  Recall@N
+      all-minilm-latest df_2015_2024                                df_2015_2024_Artificial Intelligence.csv               20  0.875000
+      all-minilm-latest df_2015_2024 df_2015_2024_Computation and Language (Natural Language Processing).csv               20  0.750000
+      all-minilm-latest df_2015_2024                df_2015_2024_Computer Vision and Pattern Recognition.csv               20  0.850000
+      all-minilm-latest df_2015_2024                          df_2015_2024_Machine Learning (Statistics).csv               20  0.700000
+      all-minilm-latest df_2015_2024                                       df_2015_2024_Machine Learning.csv               20  0.800000
+      all-minilm-latest df_2020_2024                                df_2020_2024_Artificial Intelligence.csv               20  0.875000
+      all-minilm-latest df_2020_2024 df_2020_2024_Computation and Language (Natural Language Processing).csv               20  0.850000
+      all-minilm-latest df_2020_2024                df_2020_2024_Computer Vision and Pattern Recognition.csv               20  0.825000
+      all-minilm-latest df_2020_2024                          df_2020_2024_Machine Learning (Statistics).csv               20  0.800000
+      all-minilm-latest df_2020_2024                                       df_2020_2024_Machine Learning.csv               20  0.800000
+      all-minilm-latest df_2023_2024                                df_2023_2024_Artificial Intelligence.csv               20  0.975000
+      all-minilm-latest df_2023_2024 df_2023_2024_Computation and Language (Natural Language Processing).csv               20  0.925000
+      all-minilm-latest df_2023_2024                df_2023_2024_Computer Vision and Pattern Recognition.csv               20  0.825000
+      all-minilm-latest df_2023_2024                          df_2023_2024_Machine Learning (Statistics).csv               20  0.900000
+      all-minilm-latest df_2023_2024                                       df_2023_2024_Machine Learning.csv               20  0.850000
+      all-minilm-latest      df_2024                                     df_2024_Artificial Intelligence.csv               20  0.850000
+      all-minilm-latest      df_2024      df_2024_Computation and Language (Natural Language Processing).csv               21  0.904762
+      all-minilm-latest      df_2024                     df_2024_Computer Vision and Pattern Recognition.csv               20  0.875000
+      all-minilm-latest      df_2024                               df_2024_Machine Learning (Statistics).csv               20  0.975000
+      all-minilm-latest      df_2024                                            df_2024_Machine Learning.csv               20  0.875000
+  granite-embedding-30m df_2015_2024                                df_2015_2024_Artificial Intelligence.csv               20  0.825000
+  granite-embedding-30m df_2015_2024 df_2015_2024_Computation and Language (Natural Language Processing).csv               20  0.825000
+  granite-embedding-30m df_2015_2024                df_2015_2024_Computer Vision and Pattern Recognition.csv               20  0.925000
+  granite-embedding-30m df_2015_2024                          df_2015_2024_Machine Learning (Statistics).csv               20  0.925000
+  granite-embedding-30m df_2015_2024                                       df_2015_2024_Machine Learning.csv               20  0.850000
+  granite-embedding-30m df_2020_2024                                df_2020_2024_Artificial Intelligence.csv               20  0.925000
+  granite-embedding-30m df_2020_2024 df_2020_2024_Computation and Language (Natural Language Processing).csv               20  0.875000
+  granite-embedding-30m df_2020_2024                df_2020_2024_Computer Vision and Pattern Recognition.csv               20  0.925000
+  granite-embedding-30m df_2020_2024                          df_2020_2024_Machine Learning (Statistics).csv               20  0.850000
+  granite-embedding-30m df_2020_2024                                       df_2020_2024_Machine Learning.csv               20  0.950000
+  granite-embedding-30m df_2023_2024                                df_2023_2024_Artificial Intelligence.csv               20  0.975000
+  granite-embedding-30m df_2023_2024 df_2023_2024_Computation and Language (Natural Language Processing).csv               20  0.950000
+  granite-embedding-30m df_2023_2024                df_2023_2024_Computer Vision and Pattern Recognition.csv               20  0.875000
+  granite-embedding-30m df_2023_2024                          df_2023_2024_Machine Learning (Statistics).csv               20  0.825000
+  granite-embedding-30m df_2023_2024                                       df_2023_2024_Machine Learning.csv               20  0.800000
+  granite-embedding-30m      df_2024                                     df_2024_Artificial Intelligence.csv               20  0.975000
+  granite-embedding-30m      df_2024      df_2024_Computation and Language (Natural Language Processing).csv               21  0.904762
+  granite-embedding-30m      df_2024                     df_2024_Computer Vision and Pattern Recognition.csv               20  0.975000
+  granite-embedding-30m      df_2024                               df_2024_Machine Learning (Statistics).csv               20  0.925000
+  granite-embedding-30m      df_2024                                            df_2024_Machine Learning.csv               20  0.900000
+nomic-embed-text-latest df_2015_2024                                df_2015_2024_Artificial Intelligence.csv               20  0.800000
+nomic-embed-text-latest df_2015_2024 df_2015_2024_Computation and Language (Natural Language Processing).csv               20  0.650000
+nomic-embed-text-latest df_2015_2024                df_2015_2024_Computer Vision and Pattern Recognition.csv               20  0.850000
+nomic-embed-text-latest df_2015_2024                          df_2015_2024_Machine Learning (Statistics).csv               20  0.825000
+nomic-embed-text-latest df_2015_2024                                       df_2015_2024_Machine Learning.csv               20  0.700000
+nomic-embed-text-latest df_2020_2024                                df_2020_2024_Artificial Intelligence.csv               20  0.825000
+nomic-embed-text-latest df_2020_2024 df_2020_2024_Computation and Language (Natural Language Processing).csv               20  0.725000
+nomic-embed-text-latest df_2020_2024                df_2020_2024_Computer Vision and Pattern Recognition.csv               20  0.750000
+nomic-embed-text-latest df_2020_2024                          df_2020_2024_Machine Learning (Statistics).csv               20  0.825000
+nomic-embed-text-latest df_2020_2024                                       df_2020_2024_Machine Learning.csv               20  0.675000
+nomic-embed-text-latest df_2023_2024                                df_2023_2024_Artificial Intelligence.csv               20  0.775000
+nomic-embed-text-latest df_2023_2024 df_2023_2024_Computation and Language (Natural Language Processing).csv               20  0.675000
+nomic-embed-text-latest df_2023_2024                df_2023_2024_Computer Vision and Pattern Recognition.csv               20  0.825000
+nomic-embed-text-latest df_2023_2024                          df_2023_2024_Machine Learning (Statistics).csv               20  0.725000
+nomic-embed-text-latest df_2023_2024                                       df_2023_2024_Machine Learning.csv               20  0.850000
+nomic-embed-text-latest      df_2024                                     df_2024_Artificial Intelligence.csv               20  0.575000
+nomic-embed-text-latest      df_2024      df_2024_Computation and Language (Natural Language Processing).csv               21  0.833333
+nomic-embed-text-latest      df_2024                     df_2024_Computer Vision and Pattern Recognition.csv               20  0.675000
+nomic-embed-text-latest      df_2024                               df_2024_Machine Learning (Statistics).csv               20  0.850000
+nomic-embed-text-latest      df_2024                                            df_2024_Machine Learning.csv               20  0.925000
+   qwen3-embedding-0.6b df_2015_2024                                df_2015_2024_Artificial Intelligence.csv               20  0.900000
+   qwen3-embedding-0.6b df_2015_2024 df_2015_2024_Computation and Language (Natural Language Processing).csv               20  0.750000
+   qwen3-embedding-0.6b df_2015_2024                df_2015_2024_Computer Vision and Pattern Recognition.csv               20  0.850000
+   qwen3-embedding-0.6b df_2015_2024                          df_2015_2024_Machine Learning (Statistics).csv               20  0.900000
+   qwen3-embedding-0.6b df_2015_2024                                       df_2015_2024_Machine Learning.csv               20  0.900000
+   qwen3-embedding-0.6b df_2020_2024                                df_2020_2024_Artificial Intelligence.csv               20  0.825000
+   qwen3-embedding-0.6b df_2020_2024 df_2020_2024_Computation and Language (Natural Language Processing).csv               20  0.850000
+   qwen3-embedding-0.6b df_2020_2024                df_2020_2024_Computer Vision and Pattern Recognition.csv               20  0.775000
+   qwen3-embedding-0.6b df_2020_2024                          df_2020_2024_Machine Learning (Statistics).csv               20  0.800000
+   qwen3-embedding-0.6b df_2020_2024                                       df_2020_2024_Machine Learning.csv               20  0.825000
+   qwen3-embedding-0.6b df_2023_2024                                df_2023_2024_Artificial Intelligence.csv               20  0.900000
+   qwen3-embedding-0.6b df_2023_2024 df_2023_2024_Computation and Language (Natural Language Processing).csv               20  0.900000
+   qwen3-embedding-0.6b df_2023_2024                df_2023_2024_Computer Vision and Pattern Recognition.csv               20  0.925000
+   qwen3-embedding-0.6b df_2023_2024                          df_2023_2024_Machine Learning (Statistics).csv               20  0.925000
+   qwen3-embedding-0.6b df_2023_2024                                       df_2023_2024_Machine Learning.csv               20  0.800000
+   qwen3-embedding-0.6b      df_2024                                     df_2024_Artificial Intelligence.csv               20  0.700000
+   qwen3-embedding-0.6b      df_2024      df_2024_Computation and Language (Natural Language Processing).csv               21  0.785714
+   qwen3-embedding-0.6b      df_2024                     df_2024_Computer Vision and Pattern Recognition.csv               20  0.825000
+   qwen3-embedding-0.6b      df_2024                               df_2024_Machine Learning (Statistics).csv               20  0.975000
+   qwen3-embedding-0.6b      df_2024                                            df_2024_Machine Learning.csv               20  0.775000

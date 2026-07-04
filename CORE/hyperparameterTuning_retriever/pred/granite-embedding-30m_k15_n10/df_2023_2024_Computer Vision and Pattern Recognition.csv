@@ -1,0 +1,590 @@
+Question,Source Article Index,Question Type,Summary,prediction,documentIDs
+What does the acronym 'M2S' stand for in the paper 'A novel Multi to Single Module for small object detection'?,abs-2303.14977v1,Direct Fact Retrieval & Definition Questions,"Title: A novel Multi to Single Module for small object detection 
+Summary: Small object detection presents a significant challenge in computer vision
+and object detection. The performance of small object detectors is often
+compromised by a lack of pixels and less significant features. This issue stems
+from information misalignment caused by variations in feature scale and
+information loss during feature processing. In response to this challenge, this
+paper proposes a novel the Multi to Single Module (M2S), which enhances a
+specific layer through improving feature extraction and refining features.
+Specifically, M2S includes the proposed Cross-scale Aggregation Module (CAM)
+and explored Dual Relationship Module (DRM) to improve information extraction
+capabilities and feature refinement effects. Moreover, this paper enhances the
+accuracy of small object detection by utilizing M2S to generate an additional
+detection head. The effectiveness of the proposed method is evaluated on two
+datasets, VisDrone2021-DET and SeaDronesSeeV2. The experimental results
+demonstrate its improved performance compared with existing methods. Compared
+to the baseline model (YOLOv5s), M2S improves the accuracy by about 1.1\% on
+the VisDrone2021-DET testing dataset and 15.68\% on the SeaDronesSeeV2
+validation set. 
+
+",This is a test answer.,"abs-2303.14977v1, abs-2306.12996v1, abs-2302.09922v2, abs-2302.10719v2, abs-2412.16219v1, abs-2310.01806v1, abs-2308.05459v2, abs-2308.06904v1, abs-2306.13526v1, abs-2408.08258v2"
+What is the main objective of the DatasetDM model presented in 'DatasetDM: Synthesizing Data with Perception Annotations Using Diffusion Models'?,abs-2308.06160v2,Summarization / Purpose Identification Questions,"Title: DatasetDM: Synthesizing Data with Perception Annotations Using Diffusion
+  Models 
+Summary: Current deep networks are very data-hungry and benefit from training on
+largescale datasets, which are often time-consuming to collect and annotate. By
+contrast, synthetic data can be generated infinitely using generative models
+such as DALL-E and diffusion models, with minimal effort and cost. In this
+paper, we present DatasetDM, a generic dataset generation model that can
+produce diverse synthetic images and the corresponding high-quality perception
+annotations (e.g., segmentation masks, and depth). Our method builds upon the
+pre-trained diffusion model and extends text-guided image synthesis to
+perception data generation. We show that the rich latent code of the diffusion
+model can be effectively decoded as accurate perception annotations using a
+decoder module. Training the decoder only needs less than 1% (around 100
+images) manually labeled images, enabling the generation of an infinitely large
+annotated dataset. Then these synthetic data can be used for training various
+perception models for downstream tasks. To showcase the power of the proposed
+approach, we generate datasets with rich dense pixel-wise labels for a wide
+range of downstream tasks, including semantic segmentation, instance
+segmentation, and depth estimation. Notably, it achieves 1) state-of-the-art
+results on semantic segmentation and instance segmentation; 2) significantly
+more robust on domain generalization than using the real data alone; and
+state-of-the-art results in zero-shot segmentation setting; and 3) flexibility
+for efficient application and novel task composition (e.g., image editing). The
+project website and code can be found at
+https://weijiawu.github.io/DatasetDM_page/ and
+https://github.com/showlab/DatasetDM, respectively 
+
+",This is a test answer.,"abs-2406.14544v1, abs-2406.02507v3, abs-2309.02773v3, abs-2310.01806v1, abs-2307.11904v1, abs-2302.10284v1, abs-2303.14706v1, abs-2308.04142v1, abs-2308.02982v2, abs-2404.07306v1"
+Compare the architectural approaches of EndoDepthL and HTCAN. How does each model uniquely combine CNNs and Transformers for their respective tasks of depth estimation and stereo super-resolution?,"abs-2308.02716v2,abs-2305.05177v1",Comparative & Contrastive Questions,"Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with
+  CNN-Transformer 
+Summary: In this study, we address the key challenges concerning the accuracy and
+effectiveness of depth estimation for endoscopic imaging, with a particular
+emphasis on real-time inference and the impact of light reflections. We propose
+a novel lightweight solution named EndoDepthL that integrates Convolutional
+Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our
+approach includes optimizing the network architecture, incorporating
+multi-scale dilated convolution, and a multi-channel attention mechanism. We
+also introduce a statistical confidence boundary mask to minimize the impact of
+reflective areas. To better evaluate the performance of monocular depth
+estimation in endoscopic imaging, we propose a novel complexity evaluation
+metric that considers network parameter size, floating-point operations, and
+inference frames per second. We comprehensively evaluate our proposed method
+and compare it with existing baseline solutions. The results demonstrate that
+EndoDepthL ensures depth estimation accuracy with a lightweight structure. 
+
+Title: Hybrid Transformer and CNN Attention Network for Stereo Image
+  Super-resolution 
+Summary: Multi-stage strategies are frequently employed in image restoration tasks.
+While transformer-based methods have exhibited high efficiency in single-image
+super-resolution tasks, they have not yet shown significant advantages over
+CNN-based methods in stereo super-resolution tasks. This can be attributed to
+two key factors: first, current single-image super-resolution transformers are
+unable to leverage the complementary stereo information during the process;
+second, the performance of transformers is typically reliant on sufficient
+data, which is absent in common stereo-image super-resolution algorithms. To
+address these issues, we propose a Hybrid Transformer and CNN Attention Network
+(HTCAN), which utilizes a transformer-based network for single-image
+enhancement and a CNN-based network for stereo information fusion. Furthermore,
+we employ a multi-patch training strategy and larger window sizes to activate
+more input pixels for super-resolution. We also revisit other advanced
+techniques, such as data augmentation, data ensemble, and model ensemble to
+reduce overfitting and data bias. Finally, our approach achieved a score of
+23.90dB and emerged as the winner in Track 1 of the NTIRE 2023 Stereo Image
+Super-Resolution Challenge. 
+
+",This is a test answer.,"abs-2308.02716v2, abs-2305.05177v1, abs-2404.07686v1, abs-2302.09922v2, abs-2302.10007v1, abs-2304.03635v1, abs-2306.10988v2, abs-2301.02789v2, abs-2308.05733v1, abs-2306.12996v1"
+How could the Generative Diffusion Prior (GDP) for image restoration be used as a pre-processing step to improve the quality of inputs for the on-orbit low-light image enhancement task before their specialized diffusion model is applied?,"abs-2304.01247v1,abs-2306.14227v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Generative Diffusion Prior for Unified Image Restoration and Enhancement 
+Summary: Existing image restoration methods mostly leverage the posterior distribution
+of natural images. However, they often assume known degradation and also
+require supervised training, which restricts their adaptation to complex real
+applications. In this work, we propose the Generative Diffusion Prior (GDP) to
+effectively model the posterior distributions in an unsupervised sampling
+manner. GDP utilizes a pre-train denoising diffusion generative model (DDPM)
+for solving linear inverse, non-linear, or blind problems. Specifically, GDP
+systematically explores a protocol of conditional guidance, which is verified
+more practical than the commonly used guidance way. Furthermore, GDP is
+strength at optimizing the parameters of degradation model during the denoising
+process, achieving blind image restoration. Besides, we devise hierarchical
+guidance and patch-based methods, enabling the GDP to generate images of
+arbitrary resolutions. Experimentally, we demonstrate GDP's versatility on
+several image datasets for linear problems, such as super-resolution,
+deblurring, inpainting, and colorization, as well as non-linear and blind
+issues, such as low-light enhancement and HDR image recovery. GDP outperforms
+the current leading unsupervised methods on the diverse benchmarks in
+reconstruction quality and perceptual quality. Moreover, GDP also generalizes
+well for natural images or synthesized images with arbitrary sizes from various
+tasks out of the distribution of the ImageNet training set. 
+
+Title: A ground-based dataset and a diffusion model for on-orbit low-light
+  image enhancement 
+Summary: On-orbit service is important for maintaining the sustainability of space
+environment. Space-based visible camera is an economical and lightweight sensor
+for situation awareness during on-orbit service. However, it can be easily
+affected by the low illumination environment. Recently, deep learning has
+achieved remarkable success in image enhancement of natural images, but seldom
+applied in space due to the data bottleneck. In this article, we first propose
+a dataset of the Beidou Navigation Satellite for on-orbit low-light image
+enhancement (LLIE). In the automatic data collection scheme, we focus on
+reducing domain gap and improving the diversity of the dataset. we collect
+hardware in-the-loop images based on a robotic simulation testbed imitating
+space lighting conditions. To evenly sample poses of different orientation and
+distance without collision, a collision-free working space and pose stratified
+sampling is proposed. Afterwards, a novel diffusion model is proposed. To
+enhance the image contrast without over-exposure and blurring details, we
+design a fused attention to highlight the structure and dark region. Finally,
+we compare our method with previous methods using our dataset, which indicates
+that our method has a better capacity in on-orbit LLIE. 
+
+",This is a test answer.,"abs-2304.01247v1, abs-2309.01141v4, abs-2306.14227v2, abs-2308.02228v1, abs-2309.02773v3, abs-2302.03011v1, abs-2306.08251v3, abs-2306.07596v1, abs-2304.11829v2, abs-2304.11118v1"
+"In the 'Self-supervised visual learning for analyzing firearms trafficking' paper, what percentage of the crawled web images came specifically from dark Web sites?",abs-2310.07975v2,Negative / Unanswerable Questions,"Title: Self-supervised visual learning for analyzing firearms trafficking
+  activities on the Web 
+Summary: Automated visual firearms classification from RGB images is an important
+real-world task with applications in public space security, intelligence
+gathering and law enforcement investigations. When applied to images massively
+crawled from the World Wide Web (including social media and dark Web sites), it
+can serve as an important component of systems that attempt to identify
+criminal firearms trafficking networks, by analyzing Big Data from open-source
+intelligence. Deep Neural Networks (DNN) are the state-of-the-art methodology
+for achieving this, with Convolutional Neural Networks (CNN) being typically
+employed. The common transfer learning approach consists of pretraining on a
+large-scale, generic annotated dataset for whole-image classification, such as
+ImageNet-1k, and then finetuning the DNN on a smaller, annotated,
+task-specific, downstream dataset for visual firearms classification. Neither
+Visual Transformer (ViT) neural architectures nor Self-Supervised Learning
+(SSL) approaches have been so far evaluated on this critical task.. 
+
+",This is a test answer.,"abs-2310.07975v2, abs-2308.04528v1, abs-2302.11461v2, abs-2302.09922v2, abs-2306.00543v4, abs-2308.05659v2, abs-2309.01246v1, abs-2303.16570v2, abs-2304.11359v2, abs-2302.02249v1"
+What are the two key factors that the paper 'Global Adaptation meets Local Generalization' identifies as causing performance degradation in 3D human pose lifting models?,abs-2303.16456v2,Direct Fact Retrieval & Definition Questions,"Title: Global Adaptation meets Local Generalization: Unsupervised Domain
+  Adaptation for 3D Human Pose Estimation 
+Summary: When applying a pre-trained 2D-to-3D human pose lifting model to a target
+unseen dataset, large performance degradation is commonly encountered due to
+domain shift issues. We observe that the degradation is caused by two factors:
+1) the large distribution gap over global positions of poses between the source
+and target datasets due to variant camera parameters and settings, and 2) the
+deficient diversity of local structures of poses in training. To this end, we
+combine \textbf{global adaptation} and \textbf{local generalization} in
+\textit{PoseDA}, a simple yet effective framework of unsupervised domain
+adaptation for 3D human pose estimation. Specifically, global adaptation aims
+to align global positions of poses from the source domain to the target domain
+with a proposed global position alignment (GPA) module. And local
+generalization is designed to enhance the diversity of 2D-3D pose mapping with
+a local pose augmentation (LPA) module. These modules bring significant
+performance improvement without introducing additional learnable parameters. In
+addition, we propose local pose augmentation (LPA) to enhance the diversity of
+3D poses following an adversarial training scheme consisting of 1) a
+augmentation generator that generates the parameters of pre-defined pose
+transformations and 2) an anchor discriminator to ensure the reality and
+quality of the augmented data. Our approach can be applicable to almost all
+2D-3D lifting models. \textit{PoseDA} achieves 61.3 mm of MPJPE on MPI-INF-3DHP
+under a cross-dataset evaluation setup, improving upon the previous
+state-of-the-art method by 10.2\%. 
+
+",This is a test answer.,"abs-2303.16456v2, abs-2401.11085v1, abs-2311.17950v3, abs-2304.03635v1, abs-2309.01246v1, abs-2403.09439v1, abs-2308.02982v2, abs-2301.09249v2, abs-2408.07648v1, abs-2304.01247v1"
+What is the primary goal of the ROBUSfT C++ library?,abs-2301.04037v3,Summarization / Purpose Identification Questions,"Title: ROBUSfT: Robust Real-Time Shape-from-Template, a C++ Library 
+Summary: Tracking the 3D shape of a deforming object using only monocular 2D vision is
+a challenging problem. This is because one should (i) infer the 3D shape from a
+2D image, which is a severely underconstrained problem, and (ii) implement the
+whole solution pipeline in real-time. The pipeline typically requires feature
+detection and matching, mismatch filtering, 3D shape inference and feature
+tracking algorithms. We propose ROBUSfT, a conventional pipeline based on a
+template containing the object's rest shape, texturemap and deformation law.
+ROBUSfT is ready-to-use, wide-baseline, capable of handling large deformations,
+fast up to 30 fps, free of training, and robust against partial occlusions and
+discontinuity in video frames. It outperforms the state-of-the-art methods in
+challenging datasets. ROBUSfT is implemented as a publicly available C++
+library and we provide a tutorial on how to use it in
+https://github.com/mrshetab/ROBUSfT 
+
+",This is a test answer.,"abs-2301.04037v3, abs-2303.18230v1, abs-2304.05370v4, abs-2302.06072v2, abs-2309.03473v1, abs-2304.04917v1, abs-2305.18047v1, abs-2310.07975v2, abs-2310.11117v1, abs-2302.10284v1"
+Contrast the problems addressed by 'EndoDepthL' for endoscopic imaging and 'Clean-NeRF' for large-scale scenes. What specific visual artifacts does each method aim to mitigate?,"abs-2308.02716v2,abs-2303.14707v1",Comparative & Contrastive Questions,"Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with
+  CNN-Transformer 
+Summary: In this study, we address the key challenges concerning the accuracy and
+effectiveness of depth estimation for endoscopic imaging, with a particular
+emphasis on real-time inference and the impact of light reflections. We propose
+a novel lightweight solution named EndoDepthL that integrates Convolutional
+Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our
+approach includes optimizing the network architecture, incorporating
+multi-scale dilated convolution, and a multi-channel attention mechanism. We
+also introduce a statistical confidence boundary mask to minimize the impact of
+reflective areas. To better evaluate the performance of monocular depth
+estimation in endoscopic imaging, we propose a novel complexity evaluation
+metric that considers network parameter size, floating-point operations, and
+inference frames per second. We comprehensively evaluate our proposed method
+and compare it with existing baseline solutions. The results demonstrate that
+EndoDepthL ensures depth estimation accuracy with a lightweight structure. 
+
+Title: Clean-NeRF: Reformulating NeRF to account for View-Dependent
+  Observations 
+Summary: While Neural Radiance Fields (NeRFs) had achieved unprecedented novel view
+synthesis results, they have been struggling in dealing with large-scale
+cluttered scenes with sparse input views and highly view-dependent appearances.
+Specifically, existing NeRF-based models tend to produce blurry rendering with
+the volumetric reconstruction often inaccurate, where a lot of reconstruction
+errors are observed in the form of foggy ""floaters"" hovering within the entire
+volume of an opaque 3D scene. Such inaccuracies impede NeRF's potential for
+accurate 3D NeRF registration, object detection, segmentation, etc., which
+possibly accounts for only limited significant research effort so far to
+directly address these important 3D fundamental computer vision problems to
+date. This paper analyzes the NeRF's struggles in such settings and proposes
+Clean-NeRF for accurate 3D reconstruction and novel view rendering in complex
+scenes. Our key insights consist of enforcing effective appearance and geometry
+constraints, which are absent in the conventional NeRF reconstruction, by 1)
+automatically detecting and modeling view-dependent appearances in the training
+views to prevent them from interfering with density estimation, which is
+complete with 2) a geometric correction procedure performed on each traced ray
+during inference. Clean-NeRF can be implemented as a plug-in that can
+immediately benefit existing NeRF-based methods without additional input. Codes
+will be released. 
+
+",This is a test answer.,"abs-2303.14707v1, abs-2308.02716v2, abs-2303.13817v1, abs-2304.00341v1, abs-2309.01351v2, abs-2403.09439v1, abs-2310.11173v1, abs-2306.08251v3, abs-2305.15026v2, abs-2301.03182v2"
+"Considering the privacy-preserving goals of the 'Bullying10K' dataset which uses event cameras, how might the tubelet sparsification and anonymization mechanisms from 'STPrivacy' be integrated to further enhance privacy by altering the event streams themselves?","abs-2306.11546v2,abs-2301.03046v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Bullying10K: A Large-Scale Neuromorphic Dataset towards
+  Privacy-Preserving Bullying Recognition 
+Summary: The prevalence of violence in daily life poses significant threats to
+individuals' physical and mental well-being. Using surveillance cameras in
+public spaces has proven effective in proactively deterring and preventing such
+incidents. However, concerns regarding privacy invasion have emerged due to
+their widespread deployment. To address the problem, we leverage Dynamic Vision
+Sensors (DVS) cameras to detect violent incidents and preserve privacy since it
+captures pixel brightness variations instead of static imagery. We introduce
+the Bullying10K dataset, encompassing various actions, complex movements, and
+occlusions from real-life scenarios. It provides three benchmarks for
+evaluating different tasks: action recognition, temporal action localization,
+and pose estimation. With 10,000 event segments, totaling 12 billion events and
+255 GB of data, Bullying10K contributes significantly by balancing violence
+detection and personal privacy persevering. And it also poses a challenge to
+the neuromorphic dataset. It will serve as a valuable resource for training and
+developing privacy-protecting video systems. The Bullying10K opens new
+possibilities for innovative approaches in these domains. 
+
+Title: STPrivacy: Spatio-Temporal Privacy-Preserving Action Recognition 
+Summary: Existing methods of privacy-preserving action recognition (PPAR) mainly focus
+on frame-level (spatial) privacy removal through 2D CNNs. Unfortunately, they
+have two major drawbacks. First, they may compromise temporal dynamics in input
+videos, which are critical for accurate action recognition. Second, they are
+vulnerable to practical attacking scenarios where attackers probe for privacy
+from an entire video rather than individual frames. To address these issues, we
+propose a novel framework STPrivacy to perform video-level PPAR. For the first
+time, we introduce vision Transformers into PPAR by treating a video as a
+tubelet sequence, and accordingly design two complementary mechanisms, i.e.,
+sparsification and anonymization, to remove privacy from a spatio-temporal
+perspective. In specific, our privacy sparsification mechanism applies adaptive
+token selection to abandon action-irrelevant tubelets. Then, our anonymization
+mechanism implicitly manipulates the remaining action-tubelets to erase privacy
+in the embedding space through adversarial learning. These mechanisms provide
+significant advantages in terms of privacy preservation for human eyes and
+action-privacy trade-off adjustment during deployment. We additionally
+contribute the first two large-scale PPAR benchmarks, VP-HMDB51 and VP-UCF101,
+to the community. Extensive evaluations on them, as well as two other tasks,
+validate the effectiveness and generalization capability of our framework. 
+
+",This is a test answer.,"abs-2301.03046v2, abs-2306.11546v2, abs-2308.04765v1, abs-2308.06393v1, abs-2301.03843v2, abs-2302.12935v1, abs-2403.11328v1, abs-2408.08258v2, abs-2309.03048v3, abs-2308.04528v1"
+What was the exact size in megabytes of the final trained EndoDepthL model?,abs-2308.02716v2,Negative / Unanswerable Questions,"Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with
+  CNN-Transformer 
+Summary: In this study, we address the key challenges concerning the accuracy and
+effectiveness of depth estimation for endoscopic imaging, with a particular
+emphasis on real-time inference and the impact of light reflections. We propose
+a novel lightweight solution named EndoDepthL that integrates Convolutional
+Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our
+approach includes optimizing the network architecture, incorporating
+multi-scale dilated convolution, and a multi-channel attention mechanism. We
+also introduce a statistical confidence boundary mask to minimize the impact of
+reflective areas. To better evaluate the performance of monocular depth
+estimation in endoscopic imaging, we propose a novel complexity evaluation
+metric that considers network parameter size, floating-point operations, and
+inference frames per second. We comprehensively evaluate our proposed method
+and compare it with existing baseline solutions. The results demonstrate that
+EndoDepthL ensures depth estimation accuracy with a lightweight structure. 
+
+",This is a test answer.,"abs-2406.02507v3, abs-2302.12593v1, abs-2302.10284v1, abs-2310.01806v1, abs-2302.12066v1, abs-2305.19412v1, abs-2404.07306v1, abs-2406.14544v1, abs-2402.15587v1, abs-2307.11904v1"
+"According to the paper 'Affine Correspondences between Multi-Camera Systems for Relative Pose Estimation', how many affine correspondences are required for their minimal solution?",abs-2306.12996v1,Direct Fact Retrieval & Definition Questions,"Title: Affine Correspondences between Multi-Camera Systems for Relative Pose
+  Estimation 
+Summary: We present a novel method to compute the relative pose of multi-camera
+systems using two affine correspondences (ACs). Existing solutions to the
+multi-camera relative pose estimation are either restricted to special cases of
+motion, have too high computational complexity, or require too many point
+correspondences (PCs). Thus, these solvers impede an efficient or accurate
+relative pose estimation when applying RANSAC as a robust estimator. This paper
+shows that the 6DOF relative pose estimation problem using ACs permits a
+feasible minimal solution, when exploiting the geometric constraints between
+ACs and multi-camera systems using a special parameterization. We present a
+problem formulation based on two ACs that encompass two common types of ACs
+across two views, i.e., inter-camera and intra-camera. Moreover, the framework
+for generating the minimal solvers can be extended to solve various relative
+pose estimation problems, e.g., 5DOF relative pose estimation with known
+rotation angle prior. Experiments on both virtual and real multi-camera systems
+prove that the proposed solvers are more efficient than the state-of-the-art
+algorithms, while resulting in a better relative pose accuracy. Source code is
+available at https://github.com/jizhaox/relpose-mcs-depth. 
+
+",This is a test answer.,"abs-2306.12996v1, abs-2302.11301v2, abs-2306.12525v2, abs-2308.05733v1, abs-2302.01825v2, abs-2302.11458v1, abs-2304.03635v1, abs-2303.16456v2, abs-2310.06068v1, abs-2308.05459v2"
+What is the main purpose of the 'Auto-Contrastive-Encoder' (ACE) framework?,abs-2302.11705v1,Summarization / Purpose Identification Questions,"Title: ACE: Zero-Shot Image to Image Translation via Pretrained
+  Auto-Contrastive-Encoder 
+Summary: Image-to-image translation is a fundamental task in computer vision. It
+transforms images from one domain to images in another domain so that they have
+particular domain-specific characteristics. Most prior works train a generative
+model to learn the mapping from a source domain to a target domain. However,
+learning such mapping between domains is challenging because data from
+different domains can be highly unbalanced in terms of both quality and
+quantity. To address this problem, we propose a new approach to extract image
+features by learning the similarities and differences of samples within the
+same data distribution via a novel contrastive learning framework, which we
+call Auto-Contrastive-Encoder (ACE). ACE learns the content code as the
+similarity between samples with the same content information and different
+style perturbations. The design of ACE enables us to achieve zero-shot
+image-to-image translation with no training on image translation tasks for the
+first time.
+  Moreover, our learning method can learn the style features of images on
+different domains effectively. Consequently, our model achieves competitive
+results on multimodal image translation tasks with zero-shot learning as well.
+Additionally, we demonstrate the potential of our method in transfer learning.
+With fine-tuning, the quality of translated images improves in unseen domains.
+Even though we use contrastive learning, all of our training can be performed
+on a single GPU with the batch size of 8. 
+
+",This is a test answer.,"abs-2302.11705v1, abs-2304.10310v1, abs-2304.00341v1, abs-2412.16219v1, abs-2306.12010v2, abs-2305.18680v2, abs-2303.13817v1, abs-2310.07975v2, abs-2306.06805v3, abs-2304.07139v2"
+Compare the application of diffusion models in 'Generative Diffusion Prior for Unified Image Restoration' and 'A ground-based dataset and a diffusion model for on-orbit low-light image enhancement'. What is the key difference in how diffusion is leveraged in each paper?,"abs-2304.01247v1,abs-2306.14227v2",Comparative & Contrastive Questions,"Title: Generative Diffusion Prior for Unified Image Restoration and Enhancement 
+Summary: Existing image restoration methods mostly leverage the posterior distribution
+of natural images. However, they often assume known degradation and also
+require supervised training, which restricts their adaptation to complex real
+applications. In this work, we propose the Generative Diffusion Prior (GDP) to
+effectively model the posterior distributions in an unsupervised sampling
+manner. GDP utilizes a pre-train denoising diffusion generative model (DDPM)
+for solving linear inverse, non-linear, or blind problems. Specifically, GDP
+systematically explores a protocol of conditional guidance, which is verified
+more practical than the commonly used guidance way. Furthermore, GDP is
+strength at optimizing the parameters of degradation model during the denoising
+process, achieving blind image restoration. Besides, we devise hierarchical
+guidance and patch-based methods, enabling the GDP to generate images of
+arbitrary resolutions. Experimentally, we demonstrate GDP's versatility on
+several image datasets for linear problems, such as super-resolution,
+deblurring, inpainting, and colorization, as well as non-linear and blind
+issues, such as low-light enhancement and HDR image recovery. GDP outperforms
+the current leading unsupervised methods on the diverse benchmarks in
+reconstruction quality and perceptual quality. Moreover, GDP also generalizes
+well for natural images or synthesized images with arbitrary sizes from various
+tasks out of the distribution of the ImageNet training set. 
+
+Title: A ground-based dataset and a diffusion model for on-orbit low-light
+  image enhancement 
+Summary: On-orbit service is important for maintaining the sustainability of space
+environment. Space-based visible camera is an economical and lightweight sensor
+for situation awareness during on-orbit service. However, it can be easily
+affected by the low illumination environment. Recently, deep learning has
+achieved remarkable success in image enhancement of natural images, but seldom
+applied in space due to the data bottleneck. In this article, we first propose
+a dataset of the Beidou Navigation Satellite for on-orbit low-light image
+enhancement (LLIE). In the automatic data collection scheme, we focus on
+reducing domain gap and improving the diversity of the dataset. we collect
+hardware in-the-loop images based on a robotic simulation testbed imitating
+space lighting conditions. To evenly sample poses of different orientation and
+distance without collision, a collision-free working space and pose stratified
+sampling is proposed. Afterwards, a novel diffusion model is proposed. To
+enhance the image contrast without over-exposure and blurring details, we
+design a fused attention to highlight the structure and dark region. Finally,
+we compare our method with previous methods using our dataset, which indicates
+that our method has a better capacity in on-orbit LLIE. 
+
+",This is a test answer.,"abs-2304.01247v1, abs-2309.01141v4, abs-2302.03011v1, abs-2304.11829v2, abs-2309.02773v3, abs-2306.08251v3, abs-2306.14227v2, abs-2308.02228v1, abs-2304.11118v1, abs-2306.07596v1"
+"How could the DetToolChain prompting paradigm, which uses virtual rulers, be applied to the 'Rad-ReStruct' VQA benchmark to help an MLLM accurately measure and report the size of abnormalities in X-Ray images?","abs-2403.12488v3,abs-2307.05766v4",Synthesis & Multi-Hop Reasoning Questions,"Title: DetToolChain: A New Prompting Paradigm to Unleash Detection Ability of
+  MLLM 
+Summary: We present DetToolChain, a novel prompting paradigm, to unleash the zero-shot
+object detection ability of multimodal large language models (MLLMs), such as
+GPT-4V and Gemini. Our approach consists of a detection prompting toolkit
+inspired by high-precision detection priors and a new Chain-of-Thought to
+implement these prompts. Specifically, the prompts in the toolkit are designed
+to guide the MLLM to focus on regional information (e.g., zooming in), read
+coordinates according to measure standards (e.g., overlaying rulers and
+compasses), and infer from the contextual information (e.g., overlaying scene
+graphs). Building upon these tools, the new detection chain-of-thought can
+automatically decompose the task into simple subtasks, diagnose the
+predictions, and plan for progressive box refinements. The effectiveness of our
+framework is demonstrated across a spectrum of detection tasks, especially hard
+cases. Compared to existing state-of-the-art methods, GPT-4V with our
+DetToolChain improves state-of-the-art object detectors by +21.5% AP50 on MS
+COCO Novel class set for open-vocabulary detection, +24.23% Acc on RefCOCO val
+set for zero-shot referring expression comprehension, +14.5% AP on D-cube
+describe object detection FULL setting. 
+
+Title: Rad-ReStruct: A Novel VQA Benchmark and Method for Structured Radiology
+  Reporting 
+Summary: Radiology reporting is a crucial part of the communication between
+radiologists and other medical professionals, but it can be time-consuming and
+error-prone. One approach to alleviate this is structured reporting, which
+saves time and enables a more accurate evaluation than free-text reports.
+However, there is limited research on automating structured reporting, and no
+public benchmark is available for evaluating and comparing different methods.
+To close this gap, we introduce Rad-ReStruct, a new benchmark dataset that
+provides fine-grained, hierarchically ordered annotations in the form of
+structured reports for X-Ray images. We model the structured reporting task as
+hierarchical visual question answering (VQA) and propose hi-VQA, a novel method
+that considers prior context in the form of previously asked questions and
+answers for populating a structured radiology report. Our experiments show that
+hi-VQA achieves competitive performance to the state-of-the-art on the medical
+VQA benchmark VQARad while performing best among methods without
+domain-specific vision-language pretraining and provides a strong baseline on
+Rad-ReStruct. Our work represents a significant step towards the automated
+population of structured radiology reports and provides a valuable first
+benchmark for future research in this area. Our dataset and code is available
+at https://github.com/ChantalMP/Rad-ReStruct. 
+
+",This is a test answer.,"abs-2403.12488v3, abs-2307.05766v4, abs-2303.14933v2, abs-2304.00436v2, abs-2406.14544v1, abs-2306.13526v1, abs-2305.19920v2, abs-2305.06236v1, abs-2301.03182v2, abs-2303.14977v1"
+What specific type of Gabor layer was implemented in the 'Accelerated Fingerprint Enhancement' paper that was not GPU-optimized?,abs-2306.00272v1,Negative / Unanswerable Questions,"Title: Accelerated Fingerprint Enhancement: A GPU-Optimized Mixed Architecture
+  Approach 
+Summary: This document presents a preliminary approach to latent fingerprint
+enhancement, fundamentally designed around a mixed Unet architecture. It
+combines the capabilities of the Resnet-101 network and Unet encoder, aiming to
+form a potentially powerful composite. This combination, enhanced with
+attention mechanisms and forward skip connections, is intended to optimize the
+enhancement of ridge and minutiae features in fingerprints. One innovative
+element of this approach includes a novel Fingerprint Enhancement Gabor layer,
+specifically designed for GPU computations. This illustrates how modern
+computational resources might be harnessed to expedite enhancement. Given its
+potential functionality as either a CNN or Transformer layer, this Gabor layer
+could offer improved agility and processing speed to the system. However, it is
+important to note that this approach is still in the early stages of
+development and has not yet been fully validated through rigorous experiments.
+As such, it may require additional time and testing to establish its robustness
+and usability in the field of latent fingerprint enhancement. This includes
+improvements in processing speed, enhancement adaptability with distinct latent
+fingerprint types, and full validation in experimental approaches such as
+open-set (identification 1:N) and open-set validation, fingerprint quality
+evaluation, among others. 
+
+",This is a test answer.,"abs-2306.00272v1, abs-2412.16219v1, abs-2304.07139v2, abs-2301.02789v2, abs-2306.12203v1, abs-2301.01928v3, abs-2406.01820v1, abs-2304.00341v1, abs-2304.00436v2, abs-2306.06805v3"
+What does 'LIDAPS' stand for in the context of domain-adaptive panoptic segmentation?,abs-2404.03799v2,Direct Fact Retrieval & Definition Questions,"Title: Language-Guided Instance-Aware Domain-Adaptive Panoptic Segmentation 
+Summary: The increasing relevance of panoptic segmentation is tied to the advancements
+in autonomous driving and AR/VR applications. However, the deployment of such
+models has been limited due to the expensive nature of dense data annotation,
+giving rise to unsupervised domain adaptation (UDA). A key challenge in
+panoptic UDA is reducing the domain gap between a labeled source and an
+unlabeled target domain while harmonizing the subtasks of semantic and instance
+segmentation to limit catastrophic interference. While considerable progress
+has been achieved, existing approaches mainly focus on the adaptation of
+semantic segmentation. In this work, we focus on incorporating instance-level
+adaptation via a novel instance-aware cross-domain mixing strategy IMix. IMix
+significantly enhances the panoptic quality by improving instance segmentation
+performance. Specifically, we propose inserting high-confidence predicted
+instances from the target domain onto source images, retaining the
+exhaustiveness of the resulting pseudo-labels while reducing the injected
+confirmation bias. Nevertheless, such an enhancement comes at the cost of
+degraded semantic performance, attributed to catastrophic forgetting. To
+mitigate this issue, we regularize our semantic branch by employing CLIP-based
+domain alignment (CDA), exploiting the domain-robustness of natural language
+prompts. Finally, we present an end-to-end model incorporating these two
+mechanisms called LIDAPS, achieving state-of-the-art results on all popular
+panoptic UDA benchmarks. 
+
+",This is a test answer.,"abs-2404.03799v2, abs-2303.14360v1, abs-2308.04528v1, abs-2304.00793v1, abs-2309.15372v1, abs-2304.02991v1, abs-2305.06236v1, abs-2303.16456v2, abs-2309.01723v1, abs-2302.01708v1"
+Summarize the problem that the 'Multi-Scale Region-based Active Learning' (MuRAL) method is designed to solve for object detection.,abs-2303.16637v1,Summarization / Purpose Identification Questions,"Title: MuRAL: Multi-Scale Region-based Active Learning for Object Detection 
+Summary: Obtaining large-scale labeled object detection dataset can be costly and
+time-consuming, as it involves annotating images with bounding boxes and class
+labels. Thus, some specialized active learning methods have been proposed to
+reduce the cost by selecting either coarse-grained samples or fine-grained
+instances from unlabeled data for labeling. However, the former approaches
+suffer from redundant labeling, while the latter methods generally lead to
+training instability and sampling bias. To address these challenges, we propose
+a novel approach called Multi-scale Region-based Active Learning (MuRAL) for
+object detection. MuRAL identifies informative regions of various scales to
+reduce annotation costs for well-learned objects and improve training
+performance. The informative region score is designed to consider both the
+predicted confidence of instances and the distribution of each object category,
+enabling our method to focus more on difficult-to-detect classes. Moreover,
+MuRAL employs a scale-aware selection strategy that ensures diverse regions are
+selected from different scales for labeling and downstream finetuning, which
+enhances training stability. Our proposed method surpasses all existing
+coarse-grained and fine-grained baselines on Cityscapes and MS COCO datasets,
+and demonstrates significant improvement in difficult category performance. 
+
+",This is a test answer.,"abs-2303.16637v1, abs-2301.09249v2, abs-2403.06292v1, abs-2306.13301v2, abs-2303.14977v1, abs-2301.03510v1, abs-2304.05370v4, abs-2302.11458v1, abs-2309.01246v1, abs-2403.12488v3"
+"How do the data generation strategies of DatasetDM, which synthesizes images with perception annotations, and the data synthesis procedure in 'Contrastive Attention Networks for Attribution of Early Modern Print', which simulates printing damage, differ in their objectives?","abs-2308.06160v2,abs-2306.07998v1",Comparative & Contrastive Questions,"Title: DatasetDM: Synthesizing Data with Perception Annotations Using Diffusion
+  Models 
+Summary: Current deep networks are very data-hungry and benefit from training on
+largescale datasets, which are often time-consuming to collect and annotate. By
+contrast, synthetic data can be generated infinitely using generative models
+such as DALL-E and diffusion models, with minimal effort and cost. In this
+paper, we present DatasetDM, a generic dataset generation model that can
+produce diverse synthetic images and the corresponding high-quality perception
+annotations (e.g., segmentation masks, and depth). Our method builds upon the
+pre-trained diffusion model and extends text-guided image synthesis to
+perception data generation. We show that the rich latent code of the diffusion
+model can be effectively decoded as accurate perception annotations using a
+decoder module. Training the decoder only needs less than 1% (around 100
+images) manually labeled images, enabling the generation of an infinitely large
+annotated dataset. Then these synthetic data can be used for training various
+perception models for downstream tasks. To showcase the power of the proposed
+approach, we generate datasets with rich dense pixel-wise labels for a wide
+range of downstream tasks, including semantic segmentation, instance
+segmentation, and depth estimation. Notably, it achieves 1) state-of-the-art
+results on semantic segmentation and instance segmentation; 2) significantly
+more robust on domain generalization than using the real data alone; and
+state-of-the-art results in zero-shot segmentation setting; and 3) flexibility
+for efficient application and novel task composition (e.g., image editing). The
+project website and code can be found at
+https://weijiawu.github.io/DatasetDM_page/ and
+https://github.com/showlab/DatasetDM, respectively 
+
+Title: Contrastive Attention Networks for Attribution of Early Modern Print 
+Summary: In this paper, we develop machine learning techniques to identify unknown
+printers in early modern (c.~1500--1800) English printed books. Specifically,
+we focus on matching uniquely damaged character type-imprints in anonymously
+printed books to works with known printers in order to provide evidence of
+their origins. Until now, this work has been limited to manual investigations
+by analytical bibliographers. We present a Contrastive Attention-based Metric
+Learning approach to identify similar damage across character image pairs,
+which is sensitive to very subtle differences in glyph shapes, yet robust to
+various confounding sources of noise associated with digitized historical
+books. To overcome the scarce amount of supervised data, we design a random
+data synthesis procedure that aims to simulate bends, fractures, and inking
+variations induced by the early printing process. Our method successfully
+improves downstream damaged type-imprint matching among printed works from this
+period, as validated by in-domain human experts. The results of our approach on
+two important philosophical works from the Early Modern period demonstrate
+potential to extend the extant historical research about the origins and
+content of these books. 
+
+",This is a test answer.,"abs-2308.06160v2, abs-2304.11118v1, abs-2302.03011v1, abs-2305.13208v2, abs-2306.08687v3, abs-2403.09439v1, abs-2403.11882v1, abs-2304.04917v1, abs-2305.15026v2, abs-2305.13284v1"
+"Could the statistical confidence boundary mask from 'EndoDepthL', used to handle reflections, be adapted to improve the robustness of 'Rendering Humans from Object-Occluded Monocular Videos' when dealing with reflective surfaces on occluding objects?","abs-2308.02716v2,abs-2308.04622v1",Synthesis & Multi-Hop Reasoning Questions,"Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with
+  CNN-Transformer 
+Summary: In this study, we address the key challenges concerning the accuracy and
+effectiveness of depth estimation for endoscopic imaging, with a particular
+emphasis on real-time inference and the impact of light reflections. We propose
+a novel lightweight solution named EndoDepthL that integrates Convolutional
+Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our
+approach includes optimizing the network architecture, incorporating
+multi-scale dilated convolution, and a multi-channel attention mechanism. We
+also introduce a statistical confidence boundary mask to minimize the impact of
+reflective areas. To better evaluate the performance of monocular depth
+estimation in endoscopic imaging, we propose a novel complexity evaluation
+metric that considers network parameter size, floating-point operations, and
+inference frames per second. We comprehensively evaluate our proposed method
+and compare it with existing baseline solutions. The results demonstrate that
+EndoDepthL ensures depth estimation accuracy with a lightweight structure. 
+
+Title: Rendering Humans from Object-Occluded Monocular Videos 
+Summary: 3D understanding and rendering of moving humans from monocular videos is a
+challenging task. Despite recent progress, the task remains difficult in
+real-world scenarios, where obstacles may block the camera view and cause
+partial occlusions in the captured videos. Existing methods cannot handle such
+defects due to two reasons. First, the standard rendering strategy relies on
+point-point mapping, which could lead to dramatic disparities between the
+visible and occluded areas of the body. Second, the naive direct regression
+approach does not consider any feasibility criteria (ie, prior information) for
+rendering under occlusions. To tackle the above drawbacks, we present OccNeRF,
+a neural rendering method that achieves better rendering of humans in severely
+occluded scenes. As direct solutions to the two drawbacks, we propose
+surface-based rendering by integrating geometry and visibility priors. We
+validate our method on both simulated and real-world occlusions and demonstrate
+our method's superiority. 
+
+",This is a test answer.,"abs-2308.02716v2, abs-2308.04622v1, abs-2303.13817v1, abs-2306.12525v2, abs-2301.04037v3, abs-2303.14707v1, abs-2306.08251v3, abs-2403.11882v1, abs-2306.10988v2, abs-2308.05733v1"
+What was the specific brand of smartphone used to capture the images for the 'Child Palm-ID' system?,abs-2305.05161v1,Negative / Unanswerable Questions,"Title: Child Palm-ID: Contactless Palmprint Recognition for Children 
+Summary: Effective distribution of nutritional and healthcare aid for children,
+particularly infants and toddlers, in some of the least developed and most
+impoverished countries of the world, is a major problem due to the lack of
+reliable identification documents. Biometric authentication technology has been
+investigated to address child recognition in the absence of reliable ID
+documents. We present a mobile-based contactless palmprint recognition system,
+called Child Palm-ID, which meets the requirements of usability, hygiene, cost,
+and accuracy for child recognition. Using a contactless child palmprint
+database, Child-PalmDB1, consisting of 19,158 images from 1,020 unique palms
+(in the age range of 6 mos. to 48 mos.), we report a TAR=94.11% @ FAR=0.1%. The
+proposed Child Palm-ID system is also able to recognize adults, achieving a
+TAR=99.4% on the CASIA contactless palmprint database and a TAR=100% on the
+COEP contactless adult palmprint database, both @ FAR=0.1%. These accuracies
+are competitive with the SOTA provided by COTS systems. Despite these high
+accuracies, we show that the TAR for time-separated child-palmprints is only
+78.1% @ FAR=0.1%. 
+
+",This is a test answer.,"abs-2305.05161v1, abs-2403.11328v1, abs-2312.10470v1, abs-2304.04917v1, abs-2308.03200v3, abs-2308.05459v2, abs-2306.11546v2, abs-2303.14977v1, abs-2303.15494v1, abs-2308.04765v1"

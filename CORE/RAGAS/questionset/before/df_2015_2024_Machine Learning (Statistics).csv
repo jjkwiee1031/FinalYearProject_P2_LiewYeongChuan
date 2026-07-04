@@ -1,0 +1,550 @@
+Question,Source Article Index,Question Type,Summary,qwen2.5:3b,documentIDs,context_retrieved
+What does 'sEM' stand for in the paper 'Sinkhorn EM: An Expectation-Maximization algorithm based on entropic optimal transport'?,abs-2006.16548v1,Direct Fact Retrieval & Definition Questions,"Title: Sinkhorn EM: An Expectation-Maximization algorithm based on entropic
+  optimal transport 
+Summary: We study Sinkhorn EM (sEM), a variant of the expectation maximization (EM)
+algorithm for mixtures based on entropic optimal transport. sEM differs from
+the classic EM algorithm in the way responsibilities are computed during the
+expectation step: rather than assign data points to clusters independently, sEM
+uses optimal transport to compute responsibilities by incorporating prior
+information about mixing weights. Like EM, sEM has a natural interpretation as
+a coordinate ascent procedure, which iteratively constructs and optimizes a
+lower bound on the log-likelihood. However, we show theoretically and
+empirically that sEM has better behavior than EM: it possesses better global
+convergence guarantees and is less prone to getting stuck in bad local optima.
+We complement these findings with experiments on simulated data as well as in
+an inference task involving C. elegans neurons and show that sEM learns cell
+labels significantly better than other approaches. 
+
+","'sEM' stands for Sinkhorn EM, a variant of the expectation maximization (EM) algorithm for mixtures that uses optimal transport to compute responsibilities by incorporating prior information about mixing weights. Unlike the classic EM algorithm, sEM iteratively constructs and optimizes a lower bound on the log-likelihood through coordinate ascent, demonstrating better global convergence guarantees and reduced risk of getting stuck in bad local optima.","abs-2006.16548v1, abs-2104.12053v1, abs-1705.08006v2, abs-2202.06930v2, abs-1507.04513v1","[""Summary: We study Sinkhorn EM (sEM), a variant of the expectation maximization (EM) algorithm for mixtures based on entropic optimal transport. sEM differs from the classic EM algorithm in the way responsibilities are computed during the expectation step: rather than assign data points to clusters independently, sEM uses optimal transport to compute responsibilities by incorporating prior information about mixing weights. Like EM, sEM has a natural interpretation as a coordinate ascent procedure, which iteratively constructs and optimizes a lower bound on the log-likelihood. However, we show theoretically and empirically that sEM has better behavior than EM: it possesses better global convergence guarantees and is less prone to getting stuck in bad local optima. We complement these findings with experiments on simulated data as well as in an inference task involving C. elegans neurons and show that sEM learns cell labels significantly better than other approaches."", ""while enforcing the interpretability of the latent factors. Another model class we introduce enables accounting for long-term dependencies when modeling sequential data, which is a challenge when using purely DL or PGM approaches. Finally, DPGM successfully solves several outstanding problems of probabilistic topic models, a widely used family of models in PGM.   DPGM also brings about new algorithms for learning with complex data. We develop reweighted expectation maximization, an algorithm that unifies several existing maximum likelihood-based algorithms for learning models parameterized by neural networks. This unifying view is made possible using expectation maximization, a canonical inference algorithm in PGM. We also develop entropy-regularized adversarial learning, a learning paradigm that deviates from the traditional maximum likelihood approach used in PGM. From the DL perspective, entropy-regularized adversarial learning provides a solution to the long-standing mode collapse"", ""distributions. We develop a novel, computationally efficient Monte Carlo expectation-maximization algorithm for inference. The maximization step boils down to a weighted CSC problem, for which we develop a computationally efficient optimization algorithm. Our results show that the proposed algorithm achieves state-of-the-art convergence speeds. Besides, $\\alpha$CSC is significantly more robust to artifacts when compared to three competing algorithms: it can extract spike bursts, oscillations, and even reveal more subtle phenomena such as cross-frequency coupling when applied to noisy neural time series."", ""and homogeneous polynomials, and combinatorial identities involving Bell polynomials. The primary application of this theory is to estimating GMM parameters (means and covariances) from a set of observations, when formulated as a moment-matching optimization problem. If there is a known and common covariance matrix, we also show it is possible to debias the data observations, in which case the problem of estimating the unknown means reduces to symmetric CP tensor decomposition. Numerical results validate and illustrate the numerical efficiency of our approaches. This work potentially opens the door to the competitiveness of the method of moments as compared to expectation maximization methods for parameter estimation of GMMs."", ""Title: Scalable Gaussian Process Classification via Expectation Propagation.\nPublished_date: 2015-07-16.\nSummary: Variational methods have been recently considered for scaling the training process of Gaussian process classifiers to large datasets. As an alternative, we describe here how to train these classifiers efficiently using expectation propagation. The proposed method allows for handling datasets with millions of data instances. More precisely, it can be used for (i) training in a distributed fashion where the data instances are sent to different nodes in which the required computations are carried out, and for (ii) maximizing an estimate of the marginal likelihood using a stochastic approximation of the gradient. Several experiments indicate that the method described is competitive with the variational approach.""]"
+What is the primary goal of the Metric Elicitation problem as formalized in the paper 'Performance Metric Elicitation from Pairwise Classifier Comparisons'?,abs-1806.01827v2,Summarization / Purpose Identification Questions,"Title: Performance Metric Elicitation from Pairwise Classifier Comparisons 
+Summary: Given a binary prediction problem, which performance metric should the
+classifier optimize? We address this question by formalizing the problem of
+Metric Elicitation. The goal of metric elicitation is to discover the
+performance metric of a practitioner, which reflects her innate rewards (costs)
+for correct (incorrect) classification. In particular, we focus on eliciting
+binary classification performance metrics from pairwise feedback, where a
+practitioner is queried to provide relative preference between two classifiers.
+By exploiting key geometric properties of the space of confusion matrices, we
+obtain provably query efficient algorithms for eliciting linear and
+linear-fractional performance metrics. We further show that our method is
+robust to feedback and finite sample noise. 
+
+","The primary goal of the Metric Elicitation problem, as formalized in the paper ""Performance Metric Elicitation from Pairwise Classifier Comparisons,"" is to discover the performance metric of a practitioner that reflects their innate rewards for correct and incorrect classification. This is achieved by eliciting binary classification performance metrics from pairwise feedback where practitioners are asked to provide relative preferences between two classifiers.","abs-1806.01827v2, abs-2004.14227v1, abs-2111.05986v1, abs-1610.00960v4, abs-2107.02495v3","[""Title: Performance Metric Elicitation from Pairwise Classifier Comparisons.\nPublished_date: 2018-06-05.\nSummary: Given a binary prediction problem, which performance metric should the classifier optimize? We address this question by formalizing the problem of Metric Elicitation. The goal of metric elicitation is to discover the performance metric of a practitioner, which reflects her innate rewards (costs) for correct (incorrect) classification. In particular, we focus on eliciting binary classification performance metrics from pairwise feedback, where a practitioner is queried to provide relative preference between two classifiers. By exploiting key geometric properties of the space of confusion matrices, we obtain provably query efficient algorithms for eliciting linear and linear-fractional performance metrics. We further show that our method is robust to feedback and finite sample noise."", ""Title: Metric learning by Similarity Network for Deep Semi-Supervised Learning.\nPublished_date: 2020-04-29.\nSummary: Deep semi-supervised learning has been widely implemented in the real-world due to the rapid development of deep learning. Recently, attention has shifted to the approaches such as Mean-Teacher to penalize the inconsistency between two perturbed input sets. Although these methods may achieve positive results, they ignore the relationship information between data instances. To solve this problem, we propose a novel method named Metric Learning by Similarity Network (MLSN), which aims to learn a distance metric adaptively on different domains. By co-training with the classification network, similarity network can learn more information about pairwise relationships and performs better on some empirical tasks than state-of-art methods."", ""Summary: A recently proposed class of models attempts to learn latent dynamics from high-dimensional observations, like images, using priors informed by Hamiltonian mechanics. While these models have important potential applications in areas like robotics or autonomous driving, there is currently no good way to evaluate their performance: existing methods primarily rely on image reconstruction quality, which does not always reflect the quality of the learnt latent dynamics. In this work, we empirically highlight the problems with the existing measures and develop a set of new measures, including a binary indicator of whether the underlying Hamiltonian dynamics have been faithfully captured, which we call Symplecticity Metric or SyMetric. Our measures take advantage of the known properties of Hamiltonian dynamics and are more discriminative of the model's ability to capture the underlying dynamics than reconstruction error. Using SyMetric, we identify a set of architectural choices"", ""Title: An Inexact Variable Metric Proximal Point Algorithm for Generic\n  Quasi-Newton Acceleration.\nPublished_date: 2016-10-04."", ""Summary: Here, we show that the InfoNCE objective is equivalent to the ELBO in a new class of probabilistic generative model, the recognition parameterised model (RPM). When we learn the optimal prior, the RPM ELBO becomes equal to the mutual information (MI; up to a constant), establishing a connection to pre-existing self-supervised learning methods such as InfoNCE. However, practical InfoNCE methods do not use the MI as an objective; the MI is invariant to arbitrary invertible transformations, so using an MI objective can lead to highly entangled representations (Tschannen et al., 2019). Instead, the actual InfoNCE objective is a simplified lower bound on the MI which is loose even in the infinite sample limit. Thus, an objective that works (i.e. the actual InfoNCE objective) appears to be motivated as a loose bound on an objective that does not work (i.e. the true MI which gives arbitrarily entangled representations). We give an alternative motivation for the actual InfoNCE""]"
+Compare the methods for handling unknown cluster/topic counts in 'Conic Scan-and-Cover algorithms for nonparametric topic modeling' and 'Bayesian Mean-parameterized Nonnegative Binary Matrix Factorization'.,"abs-1710.02952v1,abs-1812.06866v3",Comparative & Contrastive Questions,"Title: Conic Scan-and-Cover algorithms for nonparametric topic modeling 
+Summary: We propose new algorithms for topic modeling when the number of topics is
+unknown. Our approach relies on an analysis of the concentration of mass and
+angular geometry of the topic simplex, a convex polytope constructed by taking
+the convex hull of vertices representing the latent topics. Our algorithms are
+shown in practice to have accuracy comparable to a Gibbs sampler in terms of
+topic estimation, which requires the number of topics be given. Moreover, they
+are one of the fastest among several state of the art parametric techniques.
+Statistical consistency of our estimator is established under some conditions. 
+
+Title: Bayesian Mean-parameterized Nonnegative Binary Matrix Factorization 
+Summary: Binary data matrices can represent many types of data such as social
+networks, votes, or gene expression. In some cases, the analysis of binary
+matrices can be tackled with nonnegative matrix factorization (NMF), where the
+observed data matrix is approximated by the product of two smaller nonnegative
+matrices. In this context, probabilistic NMF assumes a generative model where
+the data is usually Bernoulli-distributed. Often, a link function is used to
+map the factorization to the $[0,1]$ range, ensuring a valid Bernoulli mean
+parameter. However, link functions have the potential disadvantage to lead to
+uninterpretable models. Mean-parameterized NMF, on the contrary, overcomes this
+problem. We propose a unified framework for Bayesian mean-parameterized
+nonnegative binary matrix factorization models (NBMF). We analyze three models
+which correspond to three possible constraints that respect the
+mean-parametrization without the need for link functions. Furthermore, we
+derive a novel collapsed Gibbs sampler and a collapsed variational algorithm to
+infer the posterior distribution of the factors. Next, we extend the proposed
+models to a nonparametric setting where the number of used latent dimensions is
+automatically driven by the observed data. We analyze the performance of our
+NBMF methods in multiple datasets for different tasks such as dictionary
+learning and prediction of missing data. Experiments show that our methods
+provide similar or superior results than the state of the art, while
+automatically detecting the number of relevant components. 
+
+","The document ""Conic Scan-and-Cover algorithms for nonparametric topic modeling"" proposes new algorithms for automatic determination of the number of topics without prior specification, based on the concentration analysis of a convex polytope. In contrast, Bayesian Mean-parameterized Nonnegative Binary Matrix Factorization does not address unknown cluster counts directly; instead, it focuses on mean parameter estimation within a nonnegative matrix factorization framework, which is typically used for data decomposition rather than clustering or topic modeling with an unknown number of clusters/topics.","abs-1710.02952v1, abs-1803.07868v1, abs-1610.01417v1, abs-1909.13189v2, abs-2411.19653v1","[""Title: Conic Scan-and-Cover algorithms for nonparametric topic modeling.\nPublished_date: 2017-10-09.\nSummary: We propose new algorithms for topic modeling when the number of topics is unknown. Our approach relies on an analysis of the concentration of mass and angular geometry of the topic simplex, a convex polytope constructed by taking the convex hull of vertices representing the latent topics. Our algorithms are shown in practice to have accuracy comparable to a Gibbs sampler in terms of topic estimation, which requires the number of topics be given. Moreover, they are one of the fastest among several state of the art parametric techniques. Statistical consistency of our estimator is established under some conditions."", ""Title: Scalable Generalized Dynamic Topic Models.\nPublished_date: 2018-03-21."", ""Title: Decentralized Topic Modelling with Latent Dirichlet Allocation.\nPublished_date: 2016-10-05."", ""Title: Learning Sparse Nonparametric DAGs.\nPublished_date: 2019-09-29."", ""Title: Nonparametric Instrumental Regression via Kernel Methods is Minimax\n  Optimal.\nPublished_date: 2024-11-29.""]"
+"How could the concept of 'proxy variables' for causal discovery be used to create features for the Mondrian kernel to better model the relationship between static, causally-linked entities like an original photo and its modified version?","abs-1702.07306v1,abs-1606.05241v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Causal Discovery Using Proxy Variables 
+Summary: Discovering causal relations is fundamental to reasoning and intelligence. In
+particular, observational causal discovery algorithms estimate the cause-effect
+relation between two random entities $X$ and $Y$, given $n$ samples from
+$P(X,Y)$.
+  In this paper, we develop a framework to estimate the cause-effect relation
+between two static entities $x$ and $y$: for instance, an art masterpiece $x$
+and its fraudulent copy $y$. To this end, we introduce the notion of proxy
+variables, which allow the construction of a pair of random entities $(A,B)$
+from the pair of static entities $(x,y)$. Then, estimating the cause-effect
+relation between $A$ and $B$ using an observational causal discovery algorithm
+leads to an estimation of the cause-effect relation between $x$ and $y$. For
+example, our framework detects the causal relation between unprocessed
+photographs and their modifications, and orders in time a set of shuffled
+frames from a video.
+  As our main case study, we introduce a human-elicited dataset of 10,000 pairs
+of casually-linked pairs of words from natural language. Our methods discover
+75% of these causal relations. Finally, we discuss the role of proxy variables
+in machine learning, as a general tool to incorporate static knowledge into
+prediction tasks. 
+
+Title: The Mondrian Kernel 
+Summary: We introduce the Mondrian kernel, a fast random feature approximation to the
+Laplace kernel. It is suitable for both batch and online learning, and admits a
+fast kernel-width-selection procedure as the random features can be re-used
+efficiently for all kernel widths. The features are constructed by sampling
+trees via a Mondrian process [Roy and Teh, 2009], and we highlight the
+connection to Mondrian forests [Lakshminarayanan et al., 2014], where trees are
+also sampled via a Mondrian process, but fit independently. This link provides
+a new insight into the relationship between kernel methods and random forests. 
+
+","The use of proxy variables in causal discovery can help identify key features that are robust across different scenarios. These proxy variables could serve as a bridge to create features from original photos and their modifications for better modeling using the Mondrian kernel, ensuring that static causally-linked entities like an original photo and its modified version are adequately represented.
+
+No Answer
+
+The provided documents do not contain specific information relevant to the use of proxy variables in causal discovery context for creating features with a Mondrian kernel.","abs-1702.07306v1, abs-2001.11940v2, abs-2210.08140v2, abs-2310.19794v2, abs-2411.00213v1","[""Title: Causal Discovery Using Proxy Variables.\nPublished_date: 2017-02-23."", ""Title: Causal Structure Discovery from Distributions Arising from Mixtures of\n  DAGs.\nPublished_date: 2020-01-31."", ""Title: A Kernel Approach for PDE Discovery and Operator Learning.\nPublished_date: 2022-10-14.\nSummary: This article presents a three-step framework for learning and solving partial differential equations (PDEs) using kernel methods. Given a training set consisting of pairs of noisy PDE solutions and source/boundary terms on a mesh, kernel smoothing is utilized to denoise the data and approximate derivatives of the solution. This information is then used in a kernel regression model to learn the algebraic form of the PDE. The learned PDE is then used within a kernel based solver to approximate the solution of the PDE with a new source/boundary term, thereby constituting an operator learning framework. Numerical experiments compare the method to state-of-the-art algorithms and demonstrate its competitive performance."", ""Title: Robust Causal Bandits for Linear Models.\nPublished_date: 2023-10-30."", ""Title: Learning Mixtures of Unknown Causal Interventions.\nPublished_date: 2024-10-31.""]"
+"In the 'Sinkhorn EM' paper, what was the average convergence time of the sEM algorithm on the C. elegans neurons dataset when run on a single CPU core?",abs-2006.16548v1,Negative / Unanswerable Questions,"Title: Sinkhorn EM: An Expectation-Maximization algorithm based on entropic
+  optimal transport 
+Summary: We study Sinkhorn EM (sEM), a variant of the expectation maximization (EM)
+algorithm for mixtures based on entropic optimal transport. sEM differs from
+the classic EM algorithm in the way responsibilities are computed during the
+expectation step: rather than assign data points to clusters independently, sEM
+uses optimal transport to compute responsibilities by incorporating prior
+information about mixing weights. Like EM, sEM has a natural interpretation as
+a coordinate ascent procedure, which iteratively constructs and optimizes a
+lower bound on the log-likelihood. However, we show theoretically and
+empirically that sEM has better behavior than EM: it possesses better global
+convergence guarantees and is less prone to getting stuck in bad local optima.
+We complement these findings with experiments on simulated data as well as in
+an inference task involving C. elegans neurons and show that sEM learns cell
+labels significantly better than other approaches. 
+
+","No Answer
+
+The retrieved documents do not provide information about the average convergence time of the Sinkhorn EM (sEM) algorithm specifically on the C. elegans neurons dataset when run on a single CPU core.","abs-2006.16548v1, abs-1605.09658v6, abs-2403.05425v1, abs-2106.01986v1, abs-1805.01648v4","[""Summary: We study Sinkhorn EM (sEM), a variant of the expectation maximization (EM) algorithm for mixtures based on entropic optimal transport. sEM differs from the classic EM algorithm in the way responsibilities are computed during the expectation step: rather than assign data points to clusters independently, sEM uses optimal transport to compute responsibilities by incorporating prior information about mixing weights. Like EM, sEM has a natural interpretation as a coordinate ascent procedure, which iteratively constructs and optimizes a lower bound on the log-likelihood. However, we show theoretically and empirically that sEM has better behavior than EM: it possesses better global convergence guarantees and is less prone to getting stuck in bad local optima. We complement these findings with experiments on simulated data as well as in an inference task involving C. elegans neurons and show that sEM learns cell labels significantly better than other approaches."", ""We demonstrate on both simulated and high-dimensional structural neuroimaging data that CONESTA significantly outperforms many state-of-the-art solvers in regard to convergence speed and precision."", ""and function optimization, and the convergence rate of our algorithm in high-dimensional contexts has been established. Numerical experiments validate the efficacy of our method in challenging scenarios."", ""Summary: In this paper, we propose a gradient boosting algorithm for large-scale regression problems called \\textit{Gradient Boosted Binary Histogram Ensemble} (GBBHE) based on binary histogram partition and ensemble learning. From the theoretical perspective, by assuming the H\\\""{o}lder continuity of the target function, we establish the statistical convergence rate of GBBHE in the space $C^{0,\\alpha}$ and $C^{1,0}$, where a lower bound of the convergence rate for the base learner demonstrates the advantage of boosting. Moreover, in the space $C^{1,0}$, we prove that the number of iterations to achieve the fast convergence rate can be reduced by using ensemble regressor as the base learner, which improves the computational efficiency. In the experiments, compared with other state-of-the-art algorithms such as gradient boosted regression tree (GBRT), Breiman's forest, and kernel-based methods, our GBBHE algorithm shows promising performance with less running time on large-scale"", ""Title: Sharp convergence rates for Langevin dynamics in the nonconvex setting.\nPublished_date: 2018-05-04.""]"
+What does NN-GPP stand for in the context of the paper on resolving learning rates adaptively?,abs-2001.05113v1,Direct Fact Retrieval & Definition Questions,"Title: Resolving learning rates adaptively by locating Stochastic Non-Negative
+  Associated Gradient Projection Points using line searches 
+Summary: Learning rates in stochastic neural network training are currently determined
+a priori to training, using expensive manual or automated iterative tuning.
+This study proposes gradient-only line searches to resolve the learning rate
+for neural network training algorithms. Stochastic sub-sampling during training
+decreases computational cost and allows the optimization algorithms to progress
+over local minima. However, it also results in discontinuous cost functions.
+Minimization line searches are not effective in this context, as they use a
+vanishing derivative (first order optimality condition), which often do not
+exist in a discontinuous cost function and therefore converge to
+discontinuities as opposed to minima from the data trends. Instead, we base
+candidate solutions along a search direction purely on gradient information, in
+particular by a directional derivative sign change from negative to positive (a
+Non-negative Associative Gradient Projection Point (NN- GPP)). Only considering
+a sign change from negative to positive always indicates a minimum, thus
+NN-GPPs contain second order information. Conversely, a vanishing gradient is
+purely a first order condition, which may indicate a minimum, maximum or saddle
+point. This insight allows the learning rate of an algorithm to be reliably
+resolved as the step size along a search direction, increasing convergence
+performance and eliminating an otherwise expensive hyperparameter. 
+
+",No Answer,"abs-1911.05350v2, abs-1704.06885v1, abs-1707.07976v1, abs-2001.05172v1, abs-2305.02657v4","[""Title: Exponential Convergence Rates of Classification Errors on Learning with\n  SGD and Random Features.\nPublished_date: 2019-11-13."", ""Title: A General Theory for Training Learning Machine.\nPublished_date: 2017-04-23."", ""Title: Scaled Nuclear Norm Minimization for Low-Rank Tensor Completion.\nPublished_date: 2017-07-25.\nSummary: Minimizing the nuclear norm of a matrix has been shown to be very efficient in reconstructing a low-rank sampled matrix. Furthermore, minimizing the sum of nuclear norms of matricizations of a tensor has been shown to be very efficient in recovering a low-Tucker-rank sampled tensor. In this paper, we propose to recover a low-TT-rank sampled tensor by minimizing a weighted sum of nuclear norms of unfoldings of the tensor. We provide numerical results to show that our proposed method requires significantly less number of samples to recover to the original tensor in comparison with simply minimizing the sum of nuclear norms since the structure of the unfoldings in the TT tensor model is fundamentally different from that of matricizations in the Tucker tensor model."", ""Title: Physics Informed Deep Learning for Transport in Porous Media. Buckley\n  Leverett Problem.\nPublished_date: 2020-01-15."", ""Title: On the Eigenvalue Decay Rates of a Class of Neural-Network Related\n  Kernel Functions Defined on General Domains.\nPublished_date: 2023-05-04.""]"
+Summarize the main contribution of the 'Mondrian Kernel' paper.,abs-1606.05241v1,Summarization / Purpose Identification Questions,"Title: The Mondrian Kernel 
+Summary: We introduce the Mondrian kernel, a fast random feature approximation to the
+Laplace kernel. It is suitable for both batch and online learning, and admits a
+fast kernel-width-selection procedure as the random features can be re-used
+efficiently for all kernel widths. The features are constructed by sampling
+trees via a Mondrian process [Roy and Teh, 2009], and we highlight the
+connection to Mondrian forests [Lakshminarayanan et al., 2014], where trees are
+also sampled via a Mondrian process, but fit independently. This link provides
+a new insight into the relationship between kernel methods and random forests. 
+
+","No Answer. The provided documents do not contain any information about a ""Mondrian Kernel"" or any related contributions.","abs-2106.02346v2, abs-2105.09994v1, abs-1604.05251v2, abs-2006.04976v2, abs-2102.10032v3","[""Title: Provably Strict Generalisation Benefit for Invariance in Kernel Methods.\nPublished_date: 2021-06-04."", ""Title: Kernel Stein Discrepancy Descent.\nPublished_date: 2021-05-20."", ""Title: Kernel Distribution Embeddings: Universal Kernels, Characteristic\n  Kernels and Kernel Metrics on Distributions.\nPublished_date: 2016-04-18."", ""Title: Physics Informed Deep Kernel Learning.\nPublished_date: 2020-06-08."", ""Title: Approximation and Learning with Deep Convolutional Models: a Kernel\n  Perspective.\nPublished_date: 2021-02-19.""]"
+"Contrast the approaches to handling imbalanced data in 'Balanced Random Survival Forests for Extremely Unbalanced, Right Censored Data' and 'VOS: a Method for Variational Oversampling of Imbalanced Data'.","abs-1803.09177v2,abs-1809.02596v1",Comparative & Contrastive Questions,"Title: Balanced Random Survival Forests for Extremely Unbalanced, Right
+  Censored Data 
+Summary: Accuracies of survival models for life expectancy prediction as well as
+critical-care applications are significantly compromised due to the sparsity of
+samples and extreme imbalance between the survival (usually, the majority) and
+mortality class sizes. While a recent random survival forest (RSF) model
+overcomes the limitations of the proportional hazard assumption, an imbalance
+in the data results in an underestimation (overestimation) of the hazard of the
+mortality (survival) classes. A balanced random survival forests (BRSF) model,
+based on training the RSF model with data generated from a synthetic minority
+sampling scheme is presented to address this gap. Theoretical results on the
+effect of balancing on prediction accuracies in BRSF are reported. Benchmarking
+studies were conducted using five datasets with different levels of class
+imbalance from public repositories and an imbalanced dataset of 267 acute
+cardiac patients, collected at the Heart, Artery, and Vein Center of Fresno,
+CA. Investigations suggest that BRSF provides an improved discriminatory
+strength between the survival and the mortality classes. It outperformed both
+optimized Cox (without and with balancing) and RSF with an average reduction of
+55\% in the prediction error over the next best alternative. 
+
+Title: VOS: a Method for Variational Oversampling of Imbalanced Data 
+Summary: Class imbalanced datasets are common in real-world applications that range
+from credit card fraud detection to rare disease diagnostics. Several popular
+classification algorithms assume that classes are approximately balanced, and
+hence build the accompanying objective function to maximize an overall accuracy
+rate. In these situations, optimizing the overall accuracy will lead to highly
+skewed predictions towards the majority class. Moreover, the negative business
+impact resulting from false positives (positive samples incorrectly classified
+as negative) can be detrimental. Many methods have been proposed to address the
+class imbalance problem, including methods such as over-sampling,
+under-sampling and cost-sensitive methods. In this paper, we consider the
+over-sampling method, where the aim is to augment the original dataset with
+synthetically created observations of the minority classes. In particular,
+inspired by the recent advances in generative modelling techniques (e.g.,
+Variational Inference and Generative Adversarial Networks), we introduce a new
+oversampling technique based on variational autoencoders. Our experiments show
+that the new method is superior in augmenting datasets for downstream
+classification tasks when compared to traditional oversampling methods. 
+
+","In ""Balanced Random Survival Forests for Extremely Unbalanced, Right-Censored Data,"" the approach focuses on developing a balanced random survival forest (BRSF) model to address class imbalance in survival analysis problems. This is achieved by training an RSF model using synthetic data generated from minority classes through a sampling scheme.
+
+In contrast, ""VOS: A Method for Variational Oversampling of Imbalanced Data"" proposes the VOS method aimed at handling class imbalances in datasets with the objective of augmenting the original dataset with synthetically created observations of the minority classes. The goal here is to correct the skewness in predictions caused by an imbalance between majority and minority classes, thereby improving overall discriminatory strength without relying on sampling techniques as used in BRSF.","abs-1803.09177v2, abs-1809.02596v1","[""Summary: Accuracies of survival models for life expectancy prediction as well as critical-care applications are significantly compromised due to the sparsity of samples and extreme imbalance between the survival (usually, the majority) and mortality class sizes. While a recent random survival forest (RSF) model overcomes the limitations of the proportional hazard assumption, an imbalance in the data results in an underestimation (overestimation) of the hazard of the mortality (survival) classes. A balanced random survival forests (BRSF) model, based on training the RSF model with data generated from a synthetic minority sampling scheme is presented to address this gap. Theoretical results on the effect of balancing on prediction accuracies in BRSF are reported. Benchmarking studies were conducted using five datasets with different levels of class imbalance from public repositories and an imbalanced dataset of 267 acute cardiac patients, collected at the Heart, Artery, and Vein Center"", ""Title: Balanced Random Survival Forests for Extremely Unbalanced, Right\n  Censored Data.\nPublished_date: 2018-03-24."", ""Title: VOS: a Method for Variational Oversampling of Imbalanced Data.\nPublished_date: 2018-09-07."", ""Summary: Class imbalanced datasets are common in real-world applications that range from credit card fraud detection to rare disease diagnostics. Several popular classification algorithms assume that classes are approximately balanced, and hence build the accompanying objective function to maximize an overall accuracy rate. In these situations, optimizing the overall accuracy will lead to highly skewed predictions towards the majority class. Moreover, the negative business impact resulting from false positives (positive samples incorrectly classified as negative) can be detrimental. Many methods have been proposed to address the class imbalance problem, including methods such as over-sampling, under-sampling and cost-sensitive methods. In this paper, we consider the over-sampling method, where the aim is to augment the original dataset with synthetically created observations of the minority classes. In particular, inspired by the recent advances in generative modelling techniques"", ""of class imbalance from public repositories and an imbalanced dataset of 267 acute cardiac patients, collected at the Heart, Artery, and Vein Center of Fresno, CA. Investigations suggest that BRSF provides an improved discriminatory strength between the survival and the mortality classes. It outperformed both optimized Cox (without and with balancing) and RSF with an average reduction of 55\\% in the prediction error over the next best alternative.""]"
+How might the message passing algorithms from 'Realising Synthetic Active Inference Agents' be integrated with the Bayesian NBMF model to create a system where agents actively infer the latent binary matrix factors?,"abs-2306.02733v3,abs-1812.06866v3",Synthesis & Multi-Hop Reasoning Questions,"Title: Realising Synthetic Active Inference Agents, Part II: Variational
+  Message Updates 
+Summary: The Free Energy Principle (FEP) describes (biological) agents as minimising a
+variational Free Energy (FE) with respect to a generative model of their
+environment. Active Inference (AIF) is a corollary of the FEP that describes
+how agents explore and exploit their environment by minimising an expected FE
+objective. In two related papers, we describe a scalable, epistemic approach to
+synthetic AIF, by message passing on free-form Forney-style Factor Graphs
+(FFGs). A companion paper (part I) introduces a Constrained FFG (CFFG) notation
+that visually represents (generalised) FE objectives for AIF. The current paper
+(part II) derives message passing algorithms that minimise (generalised) FE
+objectives on a CFFG by variational calculus. A comparison between simulated
+Bethe and generalised FE agents illustrates how the message passing approach to
+synthetic AIF induces epistemic behaviour on a T-maze navigation task.
+Extension of the T-maze simulation to 1) learning goal statistics, and 2) a
+multi-agent bargaining setting, illustrate how this approach encourages reuse
+of nodes and updates in alternative settings. With a full message passing
+account of synthetic AIF agents, it becomes possible to derive and reuse
+message updates across models and move closer to industrial applications of
+synthetic AIF. 
+
+Title: Bayesian Mean-parameterized Nonnegative Binary Matrix Factorization 
+Summary: Binary data matrices can represent many types of data such as social
+networks, votes, or gene expression. In some cases, the analysis of binary
+matrices can be tackled with nonnegative matrix factorization (NMF), where the
+observed data matrix is approximated by the product of two smaller nonnegative
+matrices. In this context, probabilistic NMF assumes a generative model where
+the data is usually Bernoulli-distributed. Often, a link function is used to
+map the factorization to the $[0,1]$ range, ensuring a valid Bernoulli mean
+parameter. However, link functions have the potential disadvantage to lead to
+uninterpretable models. Mean-parameterized NMF, on the contrary, overcomes this
+problem. We propose a unified framework for Bayesian mean-parameterized
+nonnegative binary matrix factorization models (NBMF). We analyze three models
+which correspond to three possible constraints that respect the
+mean-parametrization without the need for link functions. Furthermore, we
+derive a novel collapsed Gibbs sampler and a collapsed variational algorithm to
+infer the posterior distribution of the factors. Next, we extend the proposed
+models to a nonparametric setting where the number of used latent dimensions is
+automatically driven by the observed data. We analyze the performance of our
+NBMF methods in multiple datasets for different tasks such as dictionary
+learning and prediction of missing data. Experiments show that our methods
+provide similar or superior results than the state of the art, while
+automatically detecting the number of relevant components. 
+
+",No Answer. The provided documents do not contain information related to integrating message passing algorithms with the Bayesian Nonnegative Matrix Factorization (BaNMF) model or synthetic active inference agents. These are specific topics that are not discussed in the given documents.,"abs-2104.11212v1, abs-2403.08941v2, abs-1705.07224v2, abs-1510.05257v2","[""Summary: We develop a deep generative model built on a fully differentiable simulator for multi-agent trajectory prediction. Agents are modeled with conditional recurrent variational neural networks (CVRNNs), which take as input an ego-centric birdview image representing the current state of the world and output an action, consisting of steering and acceleration, which is used to derive the subsequent agent state using a kinematic bicycle model. The full simulation state is then differentiably rendered for each agent, initiating the next time step. We achieve state-of-the-art results on the INTERACTION dataset, using standard neural architectures and a standard variational training objective, producing realistic multi-modal predictions without any ad-hoc diversity-inducing losses. We conduct ablation studies to examine individual components of the simulator, finding that both the kinematic bicycle model and the continuous feedback from the birdview image are crucial for achieving this"", ""Summary: Inference for Variational Autoencoders (VAEs) consists of learning two models: (1) a generative model, which transforms a simple distribution over a latent space into the distribution over observed data, and (2) an inference model, which approximates the posterior of the latent codes given data. The two components are learned jointly via a lower bound to the generative model's log marginal likelihood. In early phases of joint training, the inference model poorly approximates the latent code posteriors. Recent work showed that this leads optimization to get stuck in local optima, negatively impacting the learned generative model. As such, recent work suggests ensuring a high-quality inference model via iterative training: maximizing the objective function relative to the inference model before every update to the generative model. Unfortunately, iterative training is inefficient, requiring heuristic criteria for reverting from iterative to joint training for speed. Here, we"", ""Summary: Approximate probabilistic inference algorithms are central to many fields. Examples include sequential Monte Carlo inference in robotics, variational inference in machine learning, and Markov chain Monte Carlo inference in statistics. A key problem faced by practitioners is measuring the accuracy of an approximate inference algorithm on a specific data set. This paper introduces the auxiliary inference divergence estimator (AIDE), an algorithm for measuring the accuracy of approximate inference algorithms. AIDE is based on the observation that inference algorithms can be treated as probabilistic models and the random variables used within the inference algorithm can be viewed as auxiliary variables. This view leads to a new estimator for the symmetric KL divergence between the approximating distributions of two inference algorithms. The paper illustrates application of AIDE to algorithms for inference in regression, hidden Markov, and Dirichlet process mixture models. The"", ""Title: Scalable inference for a full multivariate stochastic volatility model.\nPublished_date: 2015-10-18."", ""The paper illustrates application of AIDE to algorithms for inference in regression, hidden Markov, and Dirichlet process mixture models. The experiments show that AIDE captures the qualitative behavior of a broad class of inference algorithms and can detect failure modes of inference algorithms that are missed by standard heuristics.""]"
+What was the specific programming language used to implement the coordinate descent algorithm in 'A Cluster Elastic Net for Multivariate Regression'?,abs-1707.03530v2,Negative / Unanswerable Questions,"Title: A Cluster Elastic Net for Multivariate Regression 
+Summary: We propose a method for estimating coefficients in multivariate regression
+when there is a clustering structure to the response variables. The proposed
+method includes a fusion penalty, to shrink the difference in fitted values
+from responses in the same cluster, and an L1 penalty for simultaneous variable
+selection and estimation. The method can be used when the grouping structure of
+the response variables is known or unknown. When the clustering structure is
+unknown the method will simultaneously estimate the clusters of the response
+and the regression coefficients. Theoretical results are presented for the
+penalized least squares case, including asymptotic results allowing for p >> n.
+We extend our method to the setting where the responses are binomial variables.
+We propose a coordinate descent algorithm for both the normal and binomial
+likelihood, which can easily be extended to other generalized linear model
+(GLM) settings. Simulations and data examples from business operations and
+genomics are presented to show the merits of both the least squares and
+binomial methods. 
+
+","No Answer. The provided documents do not specify the programming language used to implement the coordinate descent algorithm in ""A Cluster Elastic Net for Multivariate Regression"".","abs-1707.03530v2, abs-2011.04558v3, abs-1705.02047v3, abs-1609.07386v2, abs-1504.00377v1","[""Summary: We propose a method for estimating coefficients in multivariate regression when there is a clustering structure to the response variables. The proposed method includes a fusion penalty, to shrink the difference in fitted values from responses in the same cluster, and an L1 penalty for simultaneous variable selection and estimation. The method can be used when the grouping structure of the response variables is known or unknown. When the clustering structure is unknown the method will simultaneously estimate the clusters of the response and the regression coefficients. Theoretical results are presented for the penalized least squares case, including asymptotic results allowing for p >> n. We extend our method to the setting where the responses are binomial variables. We propose a coordinate descent algorithm for both the normal and binomial likelihood, which can easily be extended to other generalized linear model (GLM) settings. Simulations and data examples from business"", ""Title: Spectral clustering on spherical coordinates under the degree-corrected\n  stochastic blockmodel.\nPublished_date: 2020-11-09."", ""systems, using the observation that higher powers of a graph transition probability matrix encode the probability that a random walker will hit that node in a given number of steps. We develop a coordinate descent algorithm to solve the resulting optimization, that makes explicit computation of the higher order powers of the matrix redundant, preserving sparsity and making computations efficient. Experiments on several datasets show that our method, that can use higher order information, outperforms methods that only use explicitly available side information, those that use only second-order implicit information and in some cases, methods based on deep neural networks as well."", ""predictors.\nPublished_date: 2016-09-23.\nSummary: We propose a penalized likelihood method to fit the linear discriminant analysis model when the predictor is matrix valued. We simultaneously estimate the means and the precision matrix, which we assume has a Kronecker product decomposition. Our penalties encourage pairs of response category mean matrices to have equal entries and also encourage zeros in the precision matrix. To compute our estimators, we use a blockwise coordinate descent algorithm. To update the optimization variables corresponding to response category mean matrices, we use an alternating minimization algorithm that takes advantage of the Kronecker structure of the precision matrix. We show that our method can outperform relevant competitors in classification, even when our modeling assumptions are violated. We analyze an EEG dataset to demonstrate our method's interpretability and classification accuracy."", ""Summary: Unsupervised clustering of curves according to their shapes is an important problem with broad scientific applications. The existing model-based clustering techniques either rely on simple probability models (e.g., Gaussian) that are not generally valid for shape analysis or assume the number of clusters. We develop an efficient Bayesian method to cluster curve data using an elastic shape metric that is based on joint registration and comparison of shapes of curves. The elastic-inner product matrix obtained from the data is modeled using a Wishart distribution whose parameters are assigned carefully chosen prior distributions to allow for automatic inference on the number of clusters. Posterior is sampled through an efficient Markov chain Monte Carlo procedure based on the Chinese restaurant process to infer (1) the posterior distribution on the number of clusters, and (2) clustering configuration of shapes. This method is demonstrated on a variety of synthetic data and real""]"
+"According to the paper 'Sparsity in Multivariate Extremes with Applications to Anomaly Detection', what non-parametric characterization of extremal dependence is used?",abs-1507.05899v2,Direct Fact Retrieval & Definition Questions,"Title: Sparsity in Multivariate Extremes with Applications to Anomaly Detection 
+Summary: Capturing the dependence structure of multivariate extreme events is a major
+concern in many fields involving the management of risks stemming from multiple
+sources, e.g. portfolio monitoring, insurance, environmental risk management
+and anomaly detection. One convenient (non-parametric) characterization of
+extremal dependence in the framework of multivariate Extreme Value Theory (EVT)
+is the angular measure, which provides direct information about the probable
+'directions' of extremes, that is, the relative contribution of each
+feature/coordinate of the 'largest' observations. Modeling the angular measure
+in high dimensional problems is a major challenge for the multivariate analysis
+of rare events. The present paper proposes a novel methodology aiming at
+exhibiting a sparsity pattern within the dependence structure of extremes. This
+is done by estimating the amount of mass spread by the angular measure on
+representative sets of directions, corresponding to specific sub-cones of
+$R^d\_+$. This dimension reduction technique paves the way towards scaling up
+existing multivariate EVT methods. Beyond a non-asymptotic study providing a
+theoretical validity framework for our method, we propose as a direct
+application a --first-- anomaly detection algorithm based on multivariate EVT.
+This algorithm builds a sparse 'normal profile' of extreme behaviours, to be
+confronted with new (possibly abnormal) extreme observations. Illustrative
+experimental results provide strong empirical evidence of the relevance of our
+approach. 
+
+","The paper ""Sparsity in Multivariate Extremes with Applications to Anomaly Detection"" uses the angular measure as a non-parametric characterization of extremal dependence. The angular measure provides direct information about the probable directions of extremes, reflecting the relative contribution of each feature/coordinate of the 'largest' observations.","abs-1507.05899v2, abs-2006.05345v1, abs-2410.09133v1, abs-2306.10189v3","[""Summary: Capturing the dependence structure of multivariate extreme events is a major concern in many fields involving the management of risks stemming from multiple sources, e.g. portfolio monitoring, insurance, environmental risk management and anomaly detection. One convenient (non-parametric) characterization of extremal dependence in the framework of multivariate Extreme Value Theory (EVT) is the angular measure, which provides direct information about the probable 'directions' of extremes, that is, the relative contribution of each feature/coordinate of the 'largest' observations. Modeling the angular measure in high dimensional problems is a major challenge for the multivariate analysis of rare events. The present paper proposes a novel methodology aiming at exhibiting a sparsity pattern within the dependence structure of extremes. This is done by estimating the amount of mass spread by the angular measure on representative sets of directions, corresponding to specific"", ""extremes. This is done by estimating the amount of mass spread by the angular measure on representative sets of directions, corresponding to specific sub-cones of $R^d\\_+$. This dimension reduction technique paves the way towards scaling up existing multivariate EVT methods. Beyond a non-asymptotic study providing a theoretical validity framework for our method, we propose as a direct application a --first-- anomaly detection algorithm based on multivariate EVT. This algorithm builds a sparse 'normal profile' of extreme behaviours, to be confronted with new (possibly abnormal) extreme observations. Illustrative experimental results provide strong empirical evidence of the relevance of our approach."", ""Summary: High-dimensional vector autoregressive (VAR) models are important tools for the analysis of multivariate time series. This paper focuses on high-dimensional time series and on the different regularized estimation procedures proposed for fitting sparse VAR models to such time series. Attention is paid to the different sparsity assumptions imposed on the VAR parameters and how these sparsity assumptions are related to the particular consistency properties of the estimators established. A sparsity scheme for high-dimensional VAR models is proposed which is found to be more appropriate for the time series setting considered. Furthermore, it is shown that, under this sparsity setting, threholding extents the consistency properties of regularized estimators to a wide range of matrix norms. Among other things, this enables application of the VAR parameters estimators to different inference problems, like forecasting or estimating the second-order characteristics of the underlying"", ""Summary: In probabilistic time series forecasting, the multivariate Gaussian (MVG) distribution is widely used as predictive distribution for correlated continuous random variables. Current deep probabilistic models typically employ neural networks to parameterize the mean vector and covariance matrix of the distribution, with log-score (i.e., negative log-likelihood) as the default loss function. However, log-score is highly sensitive to outliers, leading to significant errors when anomalies are present in the data. Motivated by the use of the continuous ranked probability score (CRPS) in learning univariate distributions, we propose a robust loss function specifically designed for high-dimensional MVG outputs. The proposed MVG-CRPS loss function has a closed-form expression based on the neural network outputs, making it easily integrable into deep learning models. We evaluate MVG-CRPS on two probabilistic forecasting tasks -- multivariate autoregressive and univariate"", ""Published_date: 2023-06-16.\nSummary: Learning a nonparametric system of ordinary differential equations from trajectories in a $d$-dimensional state space requires learning $d$ functions of $d$ variables. Explicit formulations often scale quadratically in $d$ unless additional knowledge about system properties, such as sparsity and symmetries, is available. In this work, we propose a linear approach, the multivariate occupation kernel method (MOCK), using the implicit formulation provided by vector-valued reproducing kernel Hilbert spaces. The solution for the vector field relies on multivariate occupation kernel functions associated with the trajectories and scales linearly with the dimension of the state space. We validate through experiments on a variety of simulated and real datasets ranging from 2 to 1024 dimensions. MOCK outperforms all other comparators on 3 of the 9 datasets on full trajectory prediction and 4 out of the 9 datasets on next-point prediction.""]"
+What is the central problem that 'Adaptive Discretization in Online Reinforcement Learning' aims to solve with its theoretical analysis?,abs-2110.15843v3,Summarization / Purpose Identification Questions,"Title: Adaptive Discretization in Online Reinforcement Learning 
+Summary: Discretization based approaches to solving online reinforcement learning
+problems have been studied extensively in practice on applications ranging from
+resource allocation to cache management. Two major questions in designing
+discretization-based algorithms are how to create the discretization and when
+to refine it. While there have been several experimental results investigating
+heuristic solutions to these questions, there has been little theoretical
+treatment. In this paper we provide a unified theoretical analysis of
+tree-based hierarchical partitioning methods for online reinforcement learning,
+providing model-free and model-based algorithms. We show how our algorithms are
+able to take advantage of inherent structure of the problem by providing
+guarantees that scale with respect to the 'zooming dimension' instead of the
+ambient dimension, an instance-dependent quantity measuring the benignness of
+the optimal $Q_h^\star$ function.
+  Many applications in computing systems and operations research requires
+algorithms that compete on three facets: low sample complexity, mild storage
+requirements, and low computational burden. Our algorithms are easily adapted
+to operating constraints, and our theory provides explicit bounds across each
+of the three facets. This motivates its use in practical applications as our
+approach automatically adapts to underlying problem structure even when very
+little is known a priori about the system. 
+
+","The paper ""Adaptive Discretization in Online Reinforcement Learning"" aims to provide a unified theoretical analysis of tree-based hierarchical partitioning methods for addressing two major questions: how to create the discretization and when to refine it. This work offers model-free and model-based algorithms, focusing on leveraging the inherent structure of the problem by scaling guarantees with respect to an instance-dependent quantity called the ""zooming dimension,"" which measures the benignness of the optimal $Q_h^\\star$ function.","abs-2110.15843v3, abs-1510.00757v4, abs-1712.01447v2, abs-2310.14036v1","[""Title: Adaptive Discretization in Online Reinforcement Learning.\nPublished_date: 2021-10-29."", ""Summary: Discretization based approaches to solving online reinforcement learning problems have been studied extensively in practice on applications ranging from resource allocation to cache management. Two major questions in designing discretization-based algorithms are how to create the discretization and when to refine it. While there have been several experimental results investigating heuristic solutions to these questions, there has been little theoretical treatment. In this paper we provide a unified theoretical analysis of tree-based hierarchical partitioning methods for online reinforcement learning, providing model-free and model-based algorithms. We show how our algorithms are able to take advantage of inherent structure of the problem by providing guarantees that scale with respect to the 'zooming dimension' instead of the ambient dimension, an instance-dependent quantity measuring the benignness of the optimal $Q_h^\\star$ function.   Many applications in computing systems"", ""Title: A Survey of Online Experiment Design with the Stochastic Multi-Armed\n  Bandit.\nPublished_date: 2015-10-02.\nSummary: Adaptive and sequential experiment design is a well-studied area in numerous domains. We survey and synthesize the work of the online statistical learning paradigm referred to as multi-armed bandits integrating the existing research as a resource for a certain class of online experiments. We first explore the traditional stochastic model of a multi-armed bandit, then explore a taxonomic scheme of complications to that model, for each complication relating it to a specific requirement or consideration of the experiment design context. Finally, at the end of the paper, we present a table of known upper-bounds of regret for all studied algorithms providing both perspectives for future theoretical work and a decision-making tool for practitioners looking for theoretical guarantees."", ""Title: Gaussian Process bandits with adaptive discretization.\nPublished_date: 2017-12-05."", ""Title: On discretisation drift and smoothness regularisation in neural network\n  training.\nPublished_date: 2023-10-21.""]"
+Compare the multi-task learning frameworks of 'Joint auto-encoders' and 'Multi-task additive models with shared transfer functions'. How do their architectures differ in sharing information across tasks?,"abs-1705.10494v1,abs-1505.04966v1",Comparative & Contrastive Questions,"Title: Joint auto-encoders: a flexible multi-task learning framework 
+Summary: The incorporation of prior knowledge into learning is essential in achieving
+good performance based on small noisy samples. Such knowledge is often
+incorporated through the availability of related data arising from domains and
+tasks similar to the one of current interest. Ideally one would like to allow
+both the data for the current task and for previous related tasks to
+self-organize the learning system in such a way that commonalities and
+differences between the tasks are learned in a data-driven fashion. We develop
+a framework for learning multiple tasks simultaneously, based on sharing
+features that are common to all tasks, achieved through the use of a modular
+deep feedforward neural network consisting of shared branches, dealing with the
+common features of all tasks, and private branches, learning the specific
+unique aspects of each task. Once an appropriate weight sharing architecture
+has been established, learning takes place through standard algorithms for
+feedforward networks, e.g., stochastic gradient descent and its variations. The
+method deals with domain adaptation and multi-task learning in a unified
+fashion, and can easily deal with data arising from different types of sources.
+Numerical experiments demonstrate the effectiveness of learning in domain
+adaptation and transfer learning setups, and provide evidence for the flexible
+and task-oriented representations arising in the network. 
+
+Title: Multi-task additive models with shared transfer functions based on
+  dictionary learning 
+Summary: Additive models form a widely popular class of regression models which
+represent the relation between covariates and response variables as the sum of
+low-dimensional transfer functions. Besides flexibility and accuracy, a key
+benefit of these models is their interpretability: the transfer functions
+provide visual means for inspecting the models and identifying domain-specific
+relations between inputs and outputs. However, in large-scale problems
+involving the prediction of many related tasks, learning independently additive
+models results in a loss of model interpretability, and can cause overfitting
+when training data is scarce. We introduce a novel multi-task learning approach
+which provides a corpus of accurate and interpretable additive models for a
+large number of related forecasting tasks. Our key idea is to share transfer
+functions across models in order to reduce the model complexity and ease the
+exploration of the corpus. We establish a connection with sparse dictionary
+learning and propose a new efficient fitting algorithm which alternates between
+sparse coding and transfer function updates. The former step is solved via an
+extension of Orthogonal Matching Pursuit, whose properties are analyzed using a
+novel recovery condition which extends existing results in the literature. The
+latter step is addressed using a traditional dictionary update rule.
+Experiments on real-world data demonstrate that our approach compares favorably
+to baseline methods while yielding an interpretable corpus of models, revealing
+structure among the individual tasks and being more robust when training data
+is scarce. Our framework therefore extends the well-known benefits of additive
+models to common regression settings possibly involving thousands of tasks. 
+
+","The ""Joint auto-encoders"" framework, as described in ""Joint auto-encoders: a flexible multi-task learning framework,"" focuses on the flexibility of a single flexible model for multiple tasks, without explicitly detailing how information is shared across different modalities or tasks. On the other hand, the ""Multi-task additive models with shared transfer functions"" approach, outlined in ""Multi-task additive models with shared transfer functions based on dictionary learning,"" introduces a novel multi-task learning mechanism where a common set of low-dimensional transfer functions are shared among multiple models to predict various related tasks. This sharing reduces model complexity and promotes interpretability through the use of sparse dictionaries.
+
+In summary, while both frameworks aim for efficient multi-task learning, they differ in their architecture: ""Joint auto-encoders"" does not explicitly detail task-specific information sharing, whereas ""Multi-task additive models with shared transfer functions"" introduces a mechanism to share common transfer functions across multiple tasks.","abs-1705.10494v1, abs-1505.04966v1, abs-2305.11832v1, abs-2409.16651v1","[""Title: Joint auto-encoders: a flexible multi-task learning framework.\nPublished_date: 2017-05-30."", ""Title: Multi-task additive models with shared transfer functions based on\n  dictionary learning.\nPublished_date: 2015-05-19."", ""Title: Improving Multimodal Joint Variational Autoencoders through Normalizing\n  Flows and Correlation Analysis.\nPublished_date: 2023-05-19.\nSummary: We propose a new multimodal variational autoencoder that enables to generate from the joint distribution and conditionally to any number of complex modalities. The unimodal posteriors are conditioned on the Deep Canonical Correlation Analysis embeddings which preserve the shared information across modalities leading to more coherent cross-modal generations. Furthermore, we use Normalizing Flows to enrich the unimodal posteriors and achieve more diverse data generation. Finally, we propose to use a Product of Experts for inferring one modality from several others which makes the model scalable to any number of modalities. We demonstrate that our method improves likelihood estimates, diversity of the generations and in particular coherence metrics in the conditional generations on several datasets."", ""Summary: Additive models form a widely popular class of regression models which represent the relation between covariates and response variables as the sum of low-dimensional transfer functions. Besides flexibility and accuracy, a key benefit of these models is their interpretability: the transfer functions provide visual means for inspecting the models and identifying domain-specific relations between inputs and outputs. However, in large-scale problems involving the prediction of many related tasks, learning independently additive models results in a loss of model interpretability, and can cause overfitting when training data is scarce. We introduce a novel multi-task learning approach which provides a corpus of accurate and interpretable additive models for a large number of related forecasting tasks. Our key idea is to share transfer functions across models in order to reduce the model complexity and ease the exploration of the corpus. We establish a connection with sparse"", ""Summary: Multi-task learning is a popular machine learning approach that enables simultaneous learning of multiple related tasks, improving algorithmic efficiency and effectiveness. In the hard parameter sharing approach, an encoder shared through multiple tasks generates data representations passed to task-specific predictors. Therefore, it is crucial to have a shared encoder that provides decent representations for every and each task. However, despite recent advances in multi-task learning, the question of how to improve the quality of representations generated by the shared encoder remains open. To address this gap, we propose a novel approach called Dummy Gradient norm Regularization that aims to improve the universality of the representations generated by the shared encoder. Specifically, the method decreases the norm of the gradient of the loss function with repect to dummy task-specific predictors to improve the universality of the shared encoder's representations. Through""]"
+How could the 'zooming dimension' from 'Adaptive Discretization in Online Reinforcement Learning' be used to inform the partitioning strategy in 'Sparse Pseudo-input Local Kriging for Large Spatial Datasets'?,"abs-2110.15843v3,abs-1508.01248v4",Synthesis & Multi-Hop Reasoning Questions,"Title: Adaptive Discretization in Online Reinforcement Learning 
+Summary: Discretization based approaches to solving online reinforcement learning
+problems have been studied extensively in practice on applications ranging from
+resource allocation to cache management. Two major questions in designing
+discretization-based algorithms are how to create the discretization and when
+to refine it. While there have been several experimental results investigating
+heuristic solutions to these questions, there has been little theoretical
+treatment. In this paper we provide a unified theoretical analysis of
+tree-based hierarchical partitioning methods for online reinforcement learning,
+providing model-free and model-based algorithms. We show how our algorithms are
+able to take advantage of inherent structure of the problem by providing
+guarantees that scale with respect to the 'zooming dimension' instead of the
+ambient dimension, an instance-dependent quantity measuring the benignness of
+the optimal $Q_h^\star$ function.
+  Many applications in computing systems and operations research requires
+algorithms that compete on three facets: low sample complexity, mild storage
+requirements, and low computational burden. Our algorithms are easily adapted
+to operating constraints, and our theory provides explicit bounds across each
+of the three facets. This motivates its use in practical applications as our
+approach automatically adapts to underlying problem structure even when very
+little is known a priori about the system. 
+
+Title: Sparse Pseudo-input Local Kriging for Large Spatial Datasets with
+  Exogenous Variables 
+Summary: We study large-scale spatial systems that contain exogenous variables, e.g.
+environmental factors that are significant predictors in spatial processes.
+Building predictive models for such processes is challenging because the large
+numbers of observations present makes it inefficient to apply full Kriging. In
+order to reduce computational complexity, this paper proposes Sparse
+Pseudo-input Local Kriging (SPLK), which utilizes hyperplanes to partition a
+domain into smaller subdomains and then applies a sparse approximation of the
+full Kriging to each subdomain. We also develop an optimization procedure to
+find the desired hyperplanes. To alleviate the problem of discontinuity in the
+global predictor, we impose continuity constraints on the boundaries of the
+neighboring subdomains. Furthermore, partitioning the domain into smaller
+subdomains makes it possible to use different parameter values for the
+covariance function in each region and, therefore, the heterogeneity in the
+data structure can be effectively captured. Numerical experiments demonstrate
+that SPLK outperforms, or is comparable to, the algorithms commonly applied to
+spatial datasets. 
+
+","The 'zooming dimension', which measures the benignness of the optimal \(Q_h^{\star}\) function, provides a principled approach to dynamically adjust the level of detail (or granularity) of partitioning in online reinforcement learning problems. This concept could be applied by using it as a criterion for refining or coarsening the discretization strategy in 'Sparse Pseudo-input Local Kriging for Large Spatial Datasets', ensuring that the partitioning is optimized based on the specific problem's structure and complexity, thus improving the scalability and efficiency of the method used for modeling large spatial datasets.","abs-2110.15843v3, abs-2304.05091v1, abs-1811.01159v1, abs-1810.09447v1, abs-1712.01447v2","[""Summary: Discretization based approaches to solving online reinforcement learning problems have been studied extensively in practice on applications ranging from resource allocation to cache management. Two major questions in designing discretization-based algorithms are how to create the discretization and when to refine it. While there have been several experimental results investigating heuristic solutions to these questions, there has been little theoretical treatment. In this paper we provide a unified theoretical analysis of tree-based hierarchical partitioning methods for online reinforcement learning, providing model-free and model-based algorithms. We show how our algorithms are able to take advantage of inherent structure of the problem by providing guarantees that scale with respect to the 'zooming dimension' instead of the ambient dimension, an instance-dependent quantity measuring the benignness of the optimal $Q_h^\\star$ function.   Many applications in computing systems"", ""Summary: Gaussian processes (GPs) are typically criticised for their unfavourable scaling in both computational and memory requirements. For large datasets, sparse GPs reduce these demands by conditioning on a small set of inducing variables designed to summarise the data. In practice however, for large datasets requiring many inducing variables, such as low-lengthscale spatial data, even sparse GPs can become computationally expensive, limited by the number of inducing variables one can use. In this work, we propose a new class of inter-domain variational GP, constructed by projecting a GP onto a set of compactly supported B-spline basis functions. The key benefit of our approach is that the compact support of the B-spline basis functions admits the use of sparse linear algebra to significantly speed up matrix operations and drastically reduce the memory footprint. This allows us to very efficiently model fast-varying spatial phenomena with tens of thousands of inducing variables,"", ""the following findings. In terms of scalability, most of the scalable GPs own a time complexity that is linear to the training size. In terms of capability, the sparse approximations capture the long-term spatial correlations, the local aggregations capture the local patterns but suffer from over-fitting in some scenarios. In terms of controllability, we could improve the performance of sparse approximations by simply increasing the inducing size. But this is not the case for local aggregations. In terms of robustness, local aggregations are robust to various initializations of hyperparameters due to the local attention mechanism. Finally, we highlight that the proper hybrid of global and local scalable GPs may be a promising way to improve both the model capability and scalability for big data."", ""Summary: Classification methods based on sparse estimation have drawn much attention recently, due to their effectiveness in processing high-dimensional data such as images. In this paper, a method to improve the performance of a sparse representation classification (SRC) approach is proposed; it is then applied to the problem of online process monitoring of human workers, specifically manual material handling (MMH) operations monitored using wearable sensors (involving 111 sensor channels). Our proposed method optimizes the design matrix (aka dictionary) in the linear model used for SRC, minimizing its ill-posedness to achieve a sparse solution. This procedure is based on the idea of dictionary learning (DL): we optimize the design matrix formed by training datasets to minimize both redundancy and coherency as well as reducing the size of these datasets. Use of such optimized training data can subsequently improve classification accuracy and help decrease the computational time"", ""Title: Gaussian Process bandits with adaptive discretization.\nPublished_date: 2017-12-05.""]"
+What was the exact accuracy percentage achieved by the proposed exercise fatigue detection model on subjects performing biceps curls?,abs-1803.07952v1,Negative / Unanswerable Questions,"Title: An Exercise Fatigue Detection Model Based on Machine Learning Methods 
+Summary: This study proposes an exercise fatigue detection model based on real-time
+clinical data which includes time domain analysis, frequency domain analysis,
+detrended fluctuation analysis, approximate entropy, and sample entropy.
+Furthermore, this study proposed a feature extraction method which is combined
+with an analytical hierarchy process to analyze and extract critical features.
+Finally, machine learning algorithms were adopted to analyze the data of each
+feature for the detection of exercise fatigue. The practical experimental
+results showed that the proposed exercise fatigue detection model and feature
+extraction method could precisely detect the level of exercise fatigue, and the
+accuracy of exercise fatigue detection could be improved up to 98.65%. 
+
+",No Answer. The provided documents do not contain specific information about the accuracy percentage achieved by the proposed exercise fatigue detection model in a particular set of exercises like biceps curls. They only mention an overall accuracy of 98.65% for detecting levels of exercise fatigue using real-time clinical data.,"abs-1803.07952v1, abs-2111.06748v1, abs-1712.02734v2, abs-1705.07224v2, abs-1607.00669v3","[""Title: An Exercise Fatigue Detection Model Based on Machine Learning Methods.\nPublished_date: 2018-03-07.\nSummary: This study proposes an exercise fatigue detection model based on real-time clinical data which includes time domain analysis, frequency domain analysis, detrended fluctuation analysis, approximate entropy, and sample entropy. Furthermore, this study proposed a feature extraction method which is combined with an analytical hierarchy process to analyze and extract critical features. Finally, machine learning algorithms were adopted to analyze the data of each feature for the detection of exercise fatigue. The practical experimental results showed that the proposed exercise fatigue detection model and feature extraction method could precisely detect the level of exercise fatigue, and the accuracy of exercise fatigue detection could be improved up to 98.65%."", ""comparable or even higher accuracy than state-of-the-art GNN models in nine benchmark datasets for the node classification task, with remarkable improvements up to 51.1%."", ""Summary: With access to large datasets, deep neural networks (DNN) have achieved human-level accuracy in image and speech recognition tasks. However, in chemistry, data is inherently small and fragmented. In this work, we develop an approach of using rule-based knowledge for training ChemNet, a transferable and generalizable deep neural network for chemical property prediction that learns in a weak-supervised manner from large unlabeled chemical databases. When coupled with transfer learning approaches to predict other smaller datasets for chemical properties that it was not originally trained on, we show that ChemNet's accuracy outperforms contemporary DNN models that were trained using conventional supervised learning. Furthermore, we demonstrate that the ChemNet pre-training approach is equally effective on both CNN (Chemception) and RNN (SMILES2vec) models, indicating that this approach is network architecture agnostic and is effective across multiple data modalities. Our results"", ""Summary: Approximate probabilistic inference algorithms are central to many fields. Examples include sequential Monte Carlo inference in robotics, variational inference in machine learning, and Markov chain Monte Carlo inference in statistics. A key problem faced by practitioners is measuring the accuracy of an approximate inference algorithm on a specific data set. This paper introduces the auxiliary inference divergence estimator (AIDE), an algorithm for measuring the accuracy of approximate inference algorithms. AIDE is based on the observation that inference algorithms can be treated as probabilistic models and the random variables used within the inference algorithm can be viewed as auxiliary variables. This view leads to a new estimator for the symmetric KL divergence between the approximating distributions of two inference algorithms. The paper illustrates application of AIDE to algorithms for inference in regression, hidden Markov, and Dirichlet process mixture models. The"", ""employed stochastic gradient descent (SGD) on-line learning algorithm in the specific context of a support vector machine (SVM). Lower bounds on the data precision are derived in terms of the the desired classification accuracy and precision of the hyperparameters used in the classifier. Additionally, lower bounds on the hyperparameter precision in the SGD training algorithm are obtained. These bounds are validated using both synthetic and the UCI breast cancer dataset. Additionally, the impact of these precisions on the energy consumption of a fixed-point SVM with on-line training is studied.""]"
+"In the context of 'Realising Synthetic Active Inference Agents', what does FEP stand for?",abs-2306.02733v3,Direct Fact Retrieval & Definition Questions,"Title: Realising Synthetic Active Inference Agents, Part II: Variational
+  Message Updates 
+Summary: The Free Energy Principle (FEP) describes (biological) agents as minimising a
+variational Free Energy (FE) with respect to a generative model of their
+environment. Active Inference (AIF) is a corollary of the FEP that describes
+how agents explore and exploit their environment by minimising an expected FE
+objective. In two related papers, we describe a scalable, epistemic approach to
+synthetic AIF, by message passing on free-form Forney-style Factor Graphs
+(FFGs). A companion paper (part I) introduces a Constrained FFG (CFFG) notation
+that visually represents (generalised) FE objectives for AIF. The current paper
+(part II) derives message passing algorithms that minimise (generalised) FE
+objectives on a CFFG by variational calculus. A comparison between simulated
+Bethe and generalised FE agents illustrates how the message passing approach to
+synthetic AIF induces epistemic behaviour on a T-maze navigation task.
+Extension of the T-maze simulation to 1) learning goal statistics, and 2) a
+multi-agent bargaining setting, illustrate how this approach encourages reuse
+of nodes and updates in alternative settings. With a full message passing
+account of synthetic AIF agents, it becomes possible to derive and reuse
+message updates across models and move closer to industrial applications of
+synthetic AIF. 
+
+","The Free Energy Principle (FEP) is a theoretical framework that describes biological agents as minimizing a variational Free Energy with respect to a generative model of their environment. In the context of synthetic active inference, this principle informs how such agents explore and exploit their environment by minimizing expected Free Energy objectives through message passing on Forney-style Factor Graphs (FFGs).","abs-2306.02733v3, abs-2306.00541v3, abs-1806.07085v1, abs-1804.05589v1, abs-1710.04872v1","[""Summary: The Free Energy Principle (FEP) describes (biological) agents as minimising a variational Free Energy (FE) with respect to a generative model of their environment. Active Inference (AIF) is a corollary of the FEP that describes how agents explore and exploit their environment by minimising an expected FE objective. In two related papers, we describe a scalable, epistemic approach to synthetic AIF, by message passing on free-form Forney-style Factor Graphs (FFGs). A companion paper (part I) introduces a Constrained FFG (CFFG) notation that visually represents (generalised) FE objectives for AIF. The current paper (part II) derives message passing algorithms that minimise (generalised) FE objectives on a CFFG by variational calculus. A comparison between simulated Bethe and generalised FE agents illustrates how the message passing approach to synthetic AIF induces epistemic behaviour on a T-maze navigation task. Extension of the T-maze simulation to 1) learning goal statistics,"", ""Title: Decomposing Global Feature Effects Based on Feature Interactions.\nPublished_date: 2023-06-01."", ""Title: Enhancing Identification of Causal Effects by Pruning.\nPublished_date: 2018-06-19.\nSummary: Causal models communicate our assumptions about causes and effects in real-world phe- nomena. Often the interest lies in the identification of the effect of an action which means deriving an expression from the observed probability distribution for the interventional distribution resulting from the action. In many cases an identifiability algorithm may return a complicated expression that contains variables that are in fact unnecessary. In practice this can lead to additional computational burden and increased bias or inefficiency of estimates when dealing with measurement error or missing data. We present graphical criteria to detect variables which are redundant in identifying causal effects. We also provide an improved version of a well-known identifiability algorithm that implements these criteria."", ""experiments: (1) comparison of SPSA-FS as a (wrapper) feature selection method against sequential methods as well as genetic algorithms, (2) comparison of SPSA-FS as a feature ranking method in a classification setting against random forest importance, chi-squared, and information main methods, and (3) comparison of SPSA-FS as a feature ranking method in a regression setting against minimum redundancy maximum relevance (MRMR), RELIEF, and linear correlation methods. The number of features in the datasets we use range from a few dozens to a few thousands. Our results indicate that SPSA-FS converges to a good feature set in no more than 100 iterations and therefore it is quite fast for a wrapper method. SPSA-FS also outperforms popular feature selection as well as feature ranking methods in majority of test cases, sometimes by a large margin, and it stands as a promising new feature selection and ranking method."", ""of multi-penalty regularization based on Nystr{\\\""o}m type subsampling on Caltech-101 data set for multi-class image classification and NSL-KDD benchmark data set for intrusion detection problem.""]"
+What is the core idea of the 'Conic Scan-and-Cover' algorithms for topic modeling?,abs-1710.02952v1,Summarization / Purpose Identification Questions,"Title: Conic Scan-and-Cover algorithms for nonparametric topic modeling 
+Summary: We propose new algorithms for topic modeling when the number of topics is
+unknown. Our approach relies on an analysis of the concentration of mass and
+angular geometry of the topic simplex, a convex polytope constructed by taking
+the convex hull of vertices representing the latent topics. Our algorithms are
+shown in practice to have accuracy comparable to a Gibbs sampler in terms of
+topic estimation, which requires the number of topics be given. Moreover, they
+are one of the fastest among several state of the art parametric techniques.
+Statistical consistency of our estimator is established under some conditions. 
+
+","The Conic Scan-and-Cover algorithms propose a novel approach for nonparametric topic modeling when the number of topics is unknown, leveraging an analysis of the concentration of mass and angular geometry of the topic simplex. These algorithms aim to estimate latent topics accurately with comparable performance to a Gibbs sampler while being one of the fastest among state-of-the-art parametric techniques. Statistical consistency of their estimator is established under certain conditions.","abs-1710.02952v1, abs-1803.07868v1, abs-1612.03957v3, abs-1612.01678v1, abs-2001.07861v1","[""Title: Conic Scan-and-Cover algorithms for nonparametric topic modeling.\nPublished_date: 2017-10-09.\nSummary: We propose new algorithms for topic modeling when the number of topics is unknown. Our approach relies on an analysis of the concentration of mass and angular geometry of the topic simplex, a convex polytope constructed by taking the convex hull of vertices representing the latent topics. Our algorithms are shown in practice to have accuracy comparable to a Gibbs sampler in terms of topic estimation, which requires the number of topics be given. Moreover, they are one of the fastest among several state of the art parametric techniques. Statistical consistency of our estimator is established under some conditions."", ""Summary: Dynamic topic models (DTMs) model the evolution of prevalent themes in literature, online media, and other forms of text over time. DTMs assume that word co-occurrence statistics change continuously and therefore impose continuous stochastic process priors on their model parameters. These dynamical priors make inference much harder than in regular topic models, and also limit scalability. In this paper, we present several new results around DTMs. First, we extend the class of tractable priors from Wiener processes to the generic class of Gaussian processes (GPs). This allows us to explore topics that develop smoothly over time, that have a long-term memory or are temporally concentrated (for event detection). Second, we show how to perform scalable approximate inference in these models based on ideas around stochastic variational inference and sparse Gaussian processes. This way we can train a rich family of DTMs to massive data. Our experiments on several large-scale"", ""learning in non-conjugate models. For models with latent Gaussian variables we propose a hybrid algorithm, using both standard and natural gradients, which is shown to improve stability and convergence. Applications in mixed effects models, sparse Gaussian processes, probabilistic matrix factorization and correlated topic models demonstrate the generality of the approach and the advantages of the proposed algorithms."", ""Title: Supervised topic models for clinical interpretability.\nPublished_date: 2016-12-06.\nSummary: Supervised topic models can help clinical researchers find interpretable cooccurence patterns in count data that are relevant for diagnostics. However, standard formulations of supervised Latent Dirichlet Allocation have two problems. First, when documents have many more words than labels, the influence of the labels will be negligible. Second, due to conditional independence assumptions in the graphical model the impact of supervised labels on the learned topic-word probabilities is often minimal, leading to poor predictions on heldout data. We investigate penalized optimization methods for training sLDA that produce interpretable topic-word parameters and useful heldout predictions, using recognition networks to speed-up inference. We report preliminary results on synthetic data and on predicting successful anti-depressant medication given a patient's diagnostic history."", ""Title: Optimal estimation of sparse topic models.\nPublished_date: 2020-01-22.""]"
+Contrast the methods for handling streaming or online data in 'Adaptive Discretization in Online Reinforcement Learning' and 'Online Active Linear Regression via Thresholding'.,"abs-2110.15843v3,abs-1602.02845v4",Comparative & Contrastive Questions,"Title: Adaptive Discretization in Online Reinforcement Learning 
+Summary: Discretization based approaches to solving online reinforcement learning
+problems have been studied extensively in practice on applications ranging from
+resource allocation to cache management. Two major questions in designing
+discretization-based algorithms are how to create the discretization and when
+to refine it. While there have been several experimental results investigating
+heuristic solutions to these questions, there has been little theoretical
+treatment. In this paper we provide a unified theoretical analysis of
+tree-based hierarchical partitioning methods for online reinforcement learning,
+providing model-free and model-based algorithms. We show how our algorithms are
+able to take advantage of inherent structure of the problem by providing
+guarantees that scale with respect to the 'zooming dimension' instead of the
+ambient dimension, an instance-dependent quantity measuring the benignness of
+the optimal $Q_h^\star$ function.
+  Many applications in computing systems and operations research requires
+algorithms that compete on three facets: low sample complexity, mild storage
+requirements, and low computational burden. Our algorithms are easily adapted
+to operating constraints, and our theory provides explicit bounds across each
+of the three facets. This motivates its use in practical applications as our
+approach automatically adapts to underlying problem structure even when very
+little is known a priori about the system. 
+
+Title: Online Active Linear Regression via Thresholding 
+Summary: We consider the problem of online active learning to collect data for
+regression modeling. Specifically, we consider a decision maker with a limited
+experimentation budget who must efficiently learn an underlying linear
+population model. Our main contribution is a novel threshold-based algorithm
+for selection of most informative observations; we characterize its performance
+and fundamental lower bounds. We extend the algorithm and its guarantees to
+sparse linear regression in high-dimensional settings. Simulations suggest the
+algorithm is remarkably robust: it provides significant benefits over passive
+random sampling in real-world datasets that exhibit high nonlinearity and high
+dimensionality --- significantly reducing both the mean and variance of the
+squared error. 
+
+","In ""Adaptive Discretization in Online Reinforcement Learning,"" adaptive discretization is employed to handle streaming or online data by dynamically refining the discretization based on the incoming reinforcement learning scenarios. In contrast, ""Online Active Linear Regression via Thresholding"" uses coefficient thresholds integrated with an approximate Markov Chain Monte Carlo (MCMC) method for inference and model selection in an online setting, providing a robust approach under noisy conditions.","abs-2110.15843v3, abs-1712.01447v2, abs-1910.02119v1, abs-2310.14036v1, abs-2102.01432v2","[""Title: Adaptive Discretization in Online Reinforcement Learning.\nPublished_date: 2021-10-29."", ""Title: Gaussian Process bandits with adaptive discretization.\nPublished_date: 2017-12-05."", ""Title: AKM$^2$D : An Adaptive Framework for Online Sensing and Anomaly\n  Quantification.\nPublished_date: 2019-10-04."", ""Title: On discretisation drift and smoothness regularisation in neural network\n  training.\nPublished_date: 2023-10-21."", ""inference through the integration of coefficient thresholds as an approximate MCMC method. Moreover, from the quantified uncertainties, we propose a Bayesian total error bar criteria for model selection, which outperforms classic metrics including the root mean square and the Akaike information criterion. The capability of this method is illustrated by the discovery of several classical benchmark PDEs with spatially or temporally varying coefficients from solution data obtained from the reference simulations. In the experiments, we show that the tBGL-SS method is more robust than the baseline methods under noisy environments and provides better model selection criteria along the regularization path.""]"
+"Considering the feature-based geometric interpretation of regression from 'The Geometry of Over-parameterized Regression...', how does the fusion penalty in 'A Cluster Elastic Net for Multivariate Regression' impose a specific structure on this feature space?","abs-2103.14108v2,abs-1707.03530v2",Synthesis & Multi-Hop Reasoning Questions,"Title: The Geometry of Over-parameterized Regression and Adversarial
+  Perturbations 
+Summary: Classical regression has a simple geometric description in terms of a
+projection of the training labels onto the column space of the design matrix.
+However, for over-parameterized models -- where the number of fit parameters is
+large enough to perfectly fit the training data -- this picture becomes
+uninformative. Here, we present an alternative geometric interpretation of
+regression that applies to both under- and over-parameterized models. Unlike
+the classical picture which takes place in the space of training labels, our
+new picture resides in the space of input features. This new feature-based
+perspective provides a natural geometric interpretation of the double-descent
+phenomenon in the context of bias and variance, explaining why it can occur
+even in the absence of label noise. Furthermore, we show that adversarial
+perturbations -- small perturbations to the input features that result in large
+changes in label values -- are a generic feature of biased models, arising from
+the underlying geometry. We demonstrate these ideas by analyzing three minimal
+models for over-parameterized linear least squares regression: without basis
+functions (input features equal model features) and with linear or nonlinear
+basis functions (two-layer neural networks with linear or nonlinear activation
+functions, respectively). 
+
+Title: A Cluster Elastic Net for Multivariate Regression 
+Summary: We propose a method for estimating coefficients in multivariate regression
+when there is a clustering structure to the response variables. The proposed
+method includes a fusion penalty, to shrink the difference in fitted values
+from responses in the same cluster, and an L1 penalty for simultaneous variable
+selection and estimation. The method can be used when the grouping structure of
+the response variables is known or unknown. When the clustering structure is
+unknown the method will simultaneously estimate the clusters of the response
+and the regression coefficients. Theoretical results are presented for the
+penalized least squares case, including asymptotic results allowing for p >> n.
+We extend our method to the setting where the responses are binomial variables.
+We propose a coordinate descent algorithm for both the normal and binomial
+likelihood, which can easily be extended to other generalized linear model
+(GLM) settings. Simulations and data examples from business operations and
+genomics are presented to show the merits of both the least squares and
+binomial methods. 
+
+","No Answer.
+
+The documents provided do not contain information about the fusion penalty or its application to the feature-based geometric interpretation of regression. Therefore, there is no relevant answer based solely on the given references.","abs-2103.14108v2, abs-1902.03544v3, abs-1703.03020v3, abs-1504.00083v1, abs-1903.12286v1","[""Summary: Classical regression has a simple geometric description in terms of a projection of the training labels onto the column space of the design matrix. However, for over-parameterized models -- where the number of fit parameters is large enough to perfectly fit the training data -- this picture becomes uninformative. Here, we present an alternative geometric interpretation of regression that applies to both under- and over-parameterized models. Unlike the classical picture which takes place in the space of training labels, our new picture resides in the space of input features. This new feature-based perspective provides a natural geometric interpretation of the double-descent phenomenon in the context of bias and variance, explaining why it can occur even in the absence of label noise. Furthermore, we show that adversarial perturbations -- small perturbations to the input features that result in large changes in label values -- are a generic feature of biased models, arising"", ""Maximization.\nPublished_date: 2019-02-10.\nSummary: Feature selection and reducing the dimensionality of data is an essential step in data analysis. In this work, we propose a new criterion for feature selection that is formulated as conditional information between features given the labeled variable. Instead of using the standard mutual information measure based on Kullback-Leibler divergence, we use our proposed criterion to filter out redundant features for the purpose of multiclass classification. This approach results in an efficient and fast non-parametric implementation of feature selection as it can be directly estimated using a geometric measure of dependency, the global Friedman-Rafsky (FR) multivariate run test statistic constructed by a global minimal spanning tree (MST). We demonstrate the advantages of our proposed feature selection approach through simulation. In addition the proposed feature selection method is applied to the MNIST data set."", ""associated with image-based feature vectors and the edges encode phenotypic information. This structure was used to train a GCN model on partially labelled graphs, aiming to infer the classes of unlabelled nodes from the node features and pairwise associations between subjects. We demonstrate the potential of the method on the challenging ADNI and ABIDE databases, as a proof of concept of the benefit from integrating contextual information in classification tasks. This has a clear impact on the quality of the predictions, leading to 69.5% accuracy for ABIDE (outperforming the current state of the art of 66.8%) and 77% for ADNI for prediction of MCI conversion, significantly outperforming standard linear classifiers where only individual features are considered."", ""Title: A Theory of Feature Learning.\nPublished_date: 2015-04-01.\nSummary: Feature Learning aims to extract relevant information contained in data sets in an automated fashion. It is driving force behind the current deep learning trend, a set of methods that have had widespread empirical success. What is lacking is a theoretical understanding of different feature learning schemes. This work provides a theoretical framework for feature learning and then characterizes when features can be learnt in an unsupervised fashion. We also provide means to judge the quality of features via rate-distortion theory and its generalizations."", ""morphing. Minimal distance geodesic between two points in uniform distribution on latent space of angles becomes a line, however, torus topology allows us to choose such lines in alternative ways, going through different edges of $[-\\pi,\\pi]^d$.   Further applications to explore can be for example trying to learn real-life topologically nontrivial spaces of features, like rotations to automatically recognize 2D rotation of an object in picture by training on relative angles, or even 3D rotations by additionally using spherical features - this way morphing should be close to object rotation.""]"
+"In the paper 'Learning from Comparisons and Choices', what specific brand of consumer products was used in the real-world dataset for preference learning?",abs-1704.07228v2,Negative / Unanswerable Questions,"Title: Learning from Comparisons and Choices 
+Summary: When tracking user-specific online activities, each user's preference is
+revealed in the form of choices and comparisons. For example, a user's purchase
+history is a record of her choices, i.e. which item was chosen among a subset
+of offerings. A user's preferences can be observed either explicitly as in
+movie ratings or implicitly as in viewing times of news articles. Given such
+individualized ordinal data in the form of comparisons and choices, we address
+the problem of collaboratively learning representations of the users and the
+items. The learned features can be used to predict a user's preference of an
+unseen item to be used in recommendation systems. This also allows one to
+compute similarities among users and items to be used for categorization and
+search. Motivated by the empirical successes of the MultiNomial Logit (MNL)
+model in marketing and transportation, and also more recent successes in word
+embedding and crowdsourced image embedding, we pose this problem as learning
+the MNL model parameters that best explain the data. We propose a convex
+relaxation for learning the MNL model, and show that it is minimax optimal up
+to a logarithmic factor by comparing its performance to a fundamental lower
+bound. This characterizes the minimax sample complexity of the problem, and
+proves that the proposed estimator cannot be improved upon other than by a
+logarithmic factor. Further, the analysis identifies how the accuracy depends
+on the topology of sampling via the spectrum of the sampling graph. This
+provides a guideline for designing surveys when one can choose which items are
+to be compared. This is accompanied by numerical simulations on synthetic and
+real data sets, confirming our theoretical predictions. 
+
+","No Answer.
+
+The provided documents do not mention any specific brand of consumer products or datasets used for preference learning. They discuss methodologies for learning preferences from user choices and comparisons but do not specify a particular real-world application or dataset containing such data.","abs-1704.07228v2, abs-2108.07872v1, abs-2002.09615v2, abs-2003.03616v1, abs-1711.09195v1","[""Summary: When tracking user-specific online activities, each user's preference is revealed in the form of choices and comparisons. For example, a user's purchase history is a record of her choices, i.e. which item was chosen among a subset of offerings. A user's preferences can be observed either explicitly as in movie ratings or implicitly as in viewing times of news articles. Given such individualized ordinal data in the form of comparisons and choices, we address the problem of collaboratively learning representations of the users and the items. The learned features can be used to predict a user's preference of an unseen item to be used in recommendation systems. This also allows one to compute similarities among users and items to be used for categorization and search. Motivated by the empirical successes of the MultiNomial Logit (MNL) model in marketing and transportation, and also more recent successes in word embedding and crowdsourced image embedding, we pose this problem as"", ""Summary: E-commerce websites use machine learned ranking models to serve shopping results to customers. Typically, the websites log the customer search events, which include the query entered and the resulting engagement with the shopping results, such as clicks and purchases. Each customer search event serves as input training data for the models, and the individual customer engagement serves as a signal for customer preference. So a purchased shopping result, for example, is perceived to be more important than one that is not. However, new or under-impressed products do not have enough customer engagement signals and end up at a disadvantage when being ranked alongside popular products. In this paper, we propose a novel method for data curation that aggregates all customer engagements within a day for the same query to use as input training data. This aggregated customer engagement gives the models a complete picture of the relative importance of shopping results. Training models on"", ""Published_date: 2020-02-22.\nSummary: We consider the problem of estimating a ranking on a set of items from noisy pairwise comparisons given item features. We address the fact that pairwise comparison data often reflects irrational choice, e.g. intransitivity. Our key observation is that two items compared in isolation from other items may be compared based on only a salient subset of features. Formalizing this framework, we propose the salient feature preference model and prove a finite sample complexity result for learning the parameters of our model and the underlying ranking with maximum likelihood estimation. We also provide empirical results that support our theoretical bounds and illustrate how our model explains systematic intransitivity. Finally we demonstrate strong performance of maximum likelihood estimation of our model on both synthetic data and two real data sets: the UT Zappos50K data set and comparison data about the compactness of legislative districts in the US."", ""the efficacy of the proposed algorithms in terms of both speed and accuracy. Throughout, comparisons with related methods are made, in order to illustrate the distinct advantages of DSD for datasets exhibiting multiscale structure."", ""Title: Feature Selection Facilitates Learning Mixtures of Discrete Product\n  Distributions.\nPublished_date: 2017-11-25.\nSummary: Feature selection can facilitate the learning of mixtures of discrete random variables as they arise, e.g. in crowdsourcing tasks. Intuitively, not all workers are equally reliable but, if the less reliable ones could be eliminated, then learning should be more robust. By analogy with Gaussian mixture models, we seek a low-order statistical approach, and here introduce an algorithm based on the (pairwise) mutual information. This induces an order over workers that is well structured for the `one coin' model. More generally, it is justified by a goodness-of-fit measure and is validated empirically. Improvement in real data sets can be substantial.""]"

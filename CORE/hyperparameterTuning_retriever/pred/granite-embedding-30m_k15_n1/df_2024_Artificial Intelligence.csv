@@ -1,0 +1,569 @@
+Question,Source Article Index,Question Type,Summary,Unnamed: 4,prediction,documentIDs
+What does the acronym 'O&M' stand for in the context of the TelOps paper?,abs-2412.04731v1,Direct Fact Retrieval & Definition Questions,"Title: TelOps: AI-driven Operations and Maintenance for Telecommunication
+  Networks 
+Summary: Telecommunication Networks (TNs) have become the most important
+infrastructure for data communications over the last century. Operations and
+maintenance (O&M) is extremely important to ensure the availability,
+effectiveness, and efficiency of TN communications. Different from the popular
+O&M technique for IT systems (e.g., the cloud), artificial intelligence for IT
+Operations (AIOps), O&M for TNs meets the following three fundamental
+challenges: topological dependence of network components, highly heterogeneous
+software, and restricted failure data. This article presents TelOps, the first
+AI-driven O&M framework for TNs, systematically enhanced with mechanism, data,
+and empirical knowledge. We provide a comprehensive comparison between TelOps
+and AIOps, and conduct a proof-of-concept case study on a typical O&M task
+(failure diagnosis) for a real industrial TN. As the first systematic AI-driven
+O&M framework for TNs, TelOps opens a new door to applying AI techniques to TN
+automation. 
+
+",,This is a test answer.,abs-2412.04731v1
+What is the main purpose of the SMAUG framework in multi-agent reinforcement learning?,abs-2403.01816v1,Summarization / Purpose Identification Questions,"Title: SMAUG: A Sliding Multidimensional Task Window-Based MARL Framework for
+  Adaptive Real-Time Subtask Recognition 
+Summary: Instead of making behavioral decisions directly from the exponentially
+expanding joint observational-action space, subtask-based multi-agent
+reinforcement learning (MARL) methods enable agents to learn how to tackle
+different subtasks. Most existing subtask-based MARL methods are based on
+hierarchical reinforcement learning (HRL). However, these approaches often
+limit the number of subtasks, perform subtask recognition periodically, and can
+only identify and execute a specific subtask within the predefined fixed time
+period, which makes them inflexible and not suitable for diverse and dynamic
+scenarios with constantly changing subtasks. To break through above
+restrictions, a \textbf{S}liding \textbf{M}ultidimensional t\textbf{A}sk window
+based m\textbf{U}ti-agent reinforcement learnin\textbf{G} framework (SMAUG) is
+proposed for adaptive real-time subtask recognition. It leverages a sliding
+multidimensional task window to extract essential information of subtasks from
+trajectory segments concatenated based on observed and predicted trajectories
+in varying lengths. An inference network is designed to iteratively predict
+future trajectories with the subtask-oriented policy network. Furthermore,
+intrinsic motivation rewards are defined to promote subtask exploration and
+behavior diversity. SMAUG can be integrated with any Q-learning-based approach.
+Experiments on StarCraft II show that SMAUG not only demonstrates performance
+superiority in comparison with all baselines but also presents a more prominent
+and swift rise in rewards during the initial training stage. 
+
+",,This is a test answer.,abs-2403.01816v1
+Compare the role of large language models in the AI-Based IVR system versus their role in the AutoTrain framework. What are their primary functions in these two different applications?,"abs-2408.10549v1,abs-2410.15735v1",Comparative & Contrastive Questions,"Title: AI-Based IVR 
+Summary: The use of traditional IVR (Interactive Voice Response) methods often proves
+insufficient to meet customer needs. This article examines the application of
+artificial intelligence (AI) technologies to enhance the efficiency of IVR
+systems in call centers. A proposed approach is based on the integration of
+speech-to-text conversion solutions, text query classification using large
+language models (LLM), and speech synthesis. Special attention is given to
+adapting these technologies to work with the Kazakh language, including
+fine-tuning models on specialized datasets. The practical aspects of
+implementing the developed system in a real call center for query
+classification are described. The research results demonstrate that the
+application of AI technologies in call center IVR systems reduces operator
+workload, improves customer service quality, and increases the efficiency of
+query processing. The proposed approach can be adapted for use in call centers
+operating with various languages. 
+
+Title: AutoTrain: No-code training for state-of-the-art models 
+Summary: With the advancements in open-source models, training (or finetuning) models
+on custom datasets has become a crucial part of developing solutions which are
+tailored to specific industrial or open-source applications. Yet, there is no
+single tool which simplifies the process of training across different types of
+modalities or tasks. We introduce AutoTrain (aka AutoTrain Advanced) -- an
+open-source, no code tool/library which can be used to train (or finetune)
+models for different kinds of tasks such as: large language model (LLM)
+finetuning, text classification/regression, token classification,
+sequence-to-sequence task, finetuning of sentence transformers, visual language
+model (VLM) finetuning, image classification/regression and even classification
+and regression tasks on tabular data. AutoTrain Advanced is an open-source
+library providing best practices for training models on custom datasets. The
+library is available at https://github.com/huggingface/autotrain-advanced.
+AutoTrain can be used in fully local mode or on cloud machines and works with
+tens of thousands of models shared on Hugging Face Hub and their variations. 
+
+",,This is a test answer.,abs-2408.10549v1
+"The paper 'Budget-Constrained Tool Learning with Planning' uses dynamic programming to create a plan. How could the QPO framework, which uses offline reinforcement learning, be adapted to learn a policy for creating these budget-constrained plans instead of relying on dynamic programming?","abs-2402.15960v2,abs-2408.10504v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Budget-Constrained Tool Learning with Planning 
+Summary: Despite intensive efforts devoted to tool learning, the problem of
+budget-constrained tool learning, which focuses on resolving user queries
+within a specific budget constraint, has been widely overlooked. This paper
+proposes a novel method for budget-constrained tool learning. Our approach
+involves creating a preferable plan under the budget constraint before
+utilizing the tools. This plan outlines the feasible tools and the maximum
+number of times they can be employed, offering a comprehensive overview of the
+tool learning process for large language models. This allows them to allocate
+the budget from a broader perspective. To devise the plan without incurring
+significant extra costs, we suggest initially estimating the usefulness of the
+candidate tools based on past experience. Subsequently, we employ dynamic
+programming to formulate the plan. Experimental results demonstrate that our
+method can be integrated with various tool learning methods, significantly
+enhancing their effectiveness under strict budget constraints. 
+
+Title: QPO: Query-dependent Prompt Optimization via Multi-Loop Offline
+  Reinforcement Learning 
+Summary: Prompt engineering has demonstrated remarkable success in enhancing the
+performance of large language models (LLMs) across diverse tasks. However, most
+existing prompt optimization methods only focus on the task-level performance,
+overlooking the importance of query-preferred prompts, which leads to
+suboptimal performances. Additionally, these methods rely heavily on frequent
+interactions with LLMs to obtain feedback for guiding the optimization process,
+incurring substantial redundant interaction costs. In this paper, we introduce
+Query-dependent Prompt Optimization (QPO), which leverages multi-loop offline
+reinforcement learning to iteratively fine-tune a small pretrained language
+model to generate optimal prompts tailored to the input queries, thus
+significantly improving the prompting effect on the large target LLM. We derive
+insights from offline prompting demonstration data, which already exists in
+large quantities as a by-product of benchmarking diverse prompts on
+open-sourced tasks, thereby circumventing the expenses of online interactions.
+Furthermore, we continuously augment the offline dataset with the generated
+prompts in each loop, as the prompts from the fine-tuned model are supposed to
+outperform the source prompts in the original dataset. These iterative loops
+bootstrap the model towards generating optimal prompts. Experiments on various
+LLM scales and diverse NLP and math tasks demonstrate the efficacy and
+cost-efficiency of our method in both zero-shot and few-shot scenarios. 
+
+",,This is a test answer.,abs-2408.10504v1
+"In the 'AI-Based IVR' paper, what was the specific name of the real call center where the system was implemented for query classification?",abs-2408.10549v1,Negative / Unanswerable Questions,"Title: AI-Based IVR 
+Summary: The use of traditional IVR (Interactive Voice Response) methods often proves
+insufficient to meet customer needs. This article examines the application of
+artificial intelligence (AI) technologies to enhance the efficiency of IVR
+systems in call centers. A proposed approach is based on the integration of
+speech-to-text conversion solutions, text query classification using large
+language models (LLM), and speech synthesis. Special attention is given to
+adapting these technologies to work with the Kazakh language, including
+fine-tuning models on specialized datasets. The practical aspects of
+implementing the developed system in a real call center for query
+classification are described. The research results demonstrate that the
+application of AI technologies in call center IVR systems reduces operator
+workload, improves customer service quality, and increases the efficiency of
+query processing. The proposed approach can be adapted for use in call centers
+operating with various languages. 
+
+",,This is a test answer.,abs-2408.10549v1
+What does the acronym RFFT stand for in the paper 'Case-Based or Rule-Based: How Do Transformers Do the Math?',abs-2402.17709v2,Direct Fact Retrieval & Definition Questions,"Title: Case-Based or Rule-Based: How Do Transformers Do the Math? 
+Summary: Despite the impressive performance in a variety of complex tasks, modern
+large language models (LLMs) still have trouble dealing with some math problems
+that are simple and intuitive for humans, such as addition. While we can easily
+learn basic rules of addition and apply them to new problems of any length,
+LLMs struggle to do the same. Instead, they may rely on similar cases seen in
+the training corpus for help. We define these two different reasoning
+mechanisms as ""rule-based reasoning"" and ""case-based reasoning"". Since
+rule-based reasoning is essential for acquiring systematic generalization
+ability, we aim to explore exactly whether transformers use rule-based or
+case-based reasoning for math problems. Through carefully designed intervention
+experiments on five math tasks, we confirm that transformers are performing
+case-based reasoning, no matter whether scratchpad is used, which aligns with
+the previous observations that transformers use subgraph matching/shortcut
+learning to reason. To mitigate such problems, we propose a Rule-Following
+Fine-Tuning (RFFT) technique to teach transformers to perform rule-based
+reasoning. Specifically, we provide explicit rules in the input and then
+instruct transformers to recite and follow the rules step by step. Through
+RFFT, we successfully enable LLMs fine-tuned on 1-5 digit addition to
+generalize to up to 12-digit addition with over 95% accuracy, which is over 40%
+higher than scratchpad. The significant improvement demonstrates that teaching
+LLMs to use rules explicitly helps them learn rule-based reasoning and
+generalize better in length. 
+
+",,This is a test answer.,abs-2402.17709v2
+"According to the paper on AGI tests, what are the four facets of intelligence that cognitive science-inspired AGI tests aim to encompass?",abs-2402.02547v2,Summarization / Purpose Identification Questions,"Title: Integration of cognitive tasks into artificial general intelligence test
+  for large models 
+Summary: During the evolution of large models, performance evaluation is necessarily
+performed to assess their capabilities and ensure safety before practical
+application. However, current model evaluations mainly rely on specific tasks
+and datasets, lacking a united framework for assessing the multidimensional
+intelligence of large models. In this perspective, we advocate for a
+comprehensive framework of cognitive science-inspired artificial general
+intelligence (AGI) tests, aimed at fulfilling the testing needs of large models
+with enhanced capabilities. The cognitive science-inspired AGI tests encompass
+the full spectrum of intelligence facets, including crystallized intelligence,
+fluid intelligence, social intelligence, and embodied intelligence. To assess
+the multidimensional intelligence of large models, the AGI tests consist of a
+battery of well-designed cognitive tests adopted from human intelligence tests,
+and then naturally encapsulates into an immersive virtual community. We propose
+increasing the complexity of AGI testing tasks commensurate with advancements
+in large models and emphasizing the necessity for the interpretation of test
+results to avoid false negatives and false positives. We believe that cognitive
+science-inspired AGI tests will effectively guide the targeted improvement of
+large models in specific dimensions of intelligence and accelerate the
+integration of large models into human society. 
+
+",,This is a test answer.,abs-2402.02547v2
+Contrast the approach of ToolNet with the method for budget-constrained tool learning. How does ToolNet's graph-based navigation differ from the planning-based approach in the other paper?,"abs-2403.00839v1,abs-2402.15960v2",Comparative & Contrastive Questions,"Title: ToolNet: Connecting Large Language Models with Massive Tools via Tool
+  Graph 
+Summary: While achieving remarkable progress in a broad range of tasks, large language
+models (LLMs) remain significantly limited in properly using massive external
+tools. Existing in-context learning approaches simply format tools into a list
+of plain text descriptions and input them to LLMs, from which, LLMs generate a
+sequence of tool calls to solve problems step by step. Such a paradigm ignores
+the intrinsic dependency between tools and offloads all reasoning loads to
+LLMs, making them restricted to a limited number of specifically designed
+tools. It thus remains challenging for LLMs to operate on a library of massive
+tools, casting a great limitation when confronted with real-world scenarios.
+This paper proposes ToolNet, a plug-and-play framework that scales up the
+number of tools to thousands with a moderate increase in token consumption.
+ToolNet organizes tools into a directed graph. Each node represents a tool, and
+weighted edges denote tool transition. Starting from an initial tool node, an
+LLM navigates in the graph by iteratively choosing the next one from its
+successors until the task is resolved. Extensive experiments show that ToolNet
+can achieve impressive results in challenging multi-hop tool learning datasets
+and is resilient to tool failures. 
+
+Title: Budget-Constrained Tool Learning with Planning 
+Summary: Despite intensive efforts devoted to tool learning, the problem of
+budget-constrained tool learning, which focuses on resolving user queries
+within a specific budget constraint, has been widely overlooked. This paper
+proposes a novel method for budget-constrained tool learning. Our approach
+involves creating a preferable plan under the budget constraint before
+utilizing the tools. This plan outlines the feasible tools and the maximum
+number of times they can be employed, offering a comprehensive overview of the
+tool learning process for large language models. This allows them to allocate
+the budget from a broader perspective. To devise the plan without incurring
+significant extra costs, we suggest initially estimating the usefulness of the
+candidate tools based on past experience. Subsequently, we employ dynamic
+programming to formulate the plan. Experimental results demonstrate that our
+method can be integrated with various tool learning methods, significantly
+enhancing their effectiveness under strict budget constraints. 
+
+",,This is a test answer.,abs-2402.15960v2
+The paper 'Enhance Reasoning for Large Language Models in the Game Werewolf' uses a 'Thinker' module for logical analysis. How could the metacognitive reinforcement learning models from 'Experience-driven discovery of planning strategies' be used to train this 'Thinker' module to discover new reasoning strategies for the game autonomously?,"abs-2402.02330v2,abs-2412.03111v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Enhance Reasoning for Large Language Models in the Game Werewolf 
+Summary: This paper presents an innovative framework that integrates Large Language
+Models (LLMs) with an external Thinker module to enhance the reasoning
+capabilities of LLM-based agents. Unlike augmenting LLMs with prompt
+engineering, Thinker directly harnesses knowledge from databases and employs
+various optimization techniques. The framework forms a reasoning hierarchy
+where LLMs handle intuitive System-1 tasks such as natural language processing,
+while the Thinker focuses on cognitive System-2 tasks that require complex
+logical analysis and domain-specific knowledge. Our framework is presented
+using a 9-player Werewolf game that demands dual-system reasoning. We introduce
+a communication protocol between LLMs and the Thinker, and train the Thinker
+using data from 18800 human sessions and reinforcement learning. Experiments
+demonstrate the framework's effectiveness in deductive reasoning, speech
+generation, and online game evaluation. Additionally, we fine-tune a 6B LLM to
+surpass GPT4 when integrated with the Thinker. This paper also contributes the
+largest dataset for social deduction games to date. 
+
+Title: Experience-driven discovery of planning strategies 
+Summary: One explanation for how people can plan efficiently despite limited cognitive
+resources is that we possess a set of adaptive planning strategies and know
+when and how to use them. But how are these strategies acquired? While previous
+research has studied how individuals learn to choose among existing strategies,
+little is known about the process of forming new planning strategies. In this
+work, we propose that new planning strategies are discovered through
+metacognitive reinforcement learning. To test this, we designed a novel
+experiment to investigate the discovery of new planning strategies. We then
+present metacognitive reinforcement learning models and demonstrate their
+capability for strategy discovery as well as show that they provide a better
+explanation of human strategy discovery than alternative learning mechanisms.
+However, when fitted to human data, these models exhibit a slower discovery
+rate than humans, leaving room for improvement. 
+
+",,This is a test answer.,abs-2402.02330v2
+"In the paper 'Case-Based or Rule-Based: How Do Transformers Do the Math?', which specific pre-trained transformer model was used for the fine-tuning experiments?",abs-2402.17709v2,Negative / Unanswerable Questions,"Title: Case-Based or Rule-Based: How Do Transformers Do the Math? 
+Summary: Despite the impressive performance in a variety of complex tasks, modern
+large language models (LLMs) still have trouble dealing with some math problems
+that are simple and intuitive for humans, such as addition. While we can easily
+learn basic rules of addition and apply them to new problems of any length,
+LLMs struggle to do the same. Instead, they may rely on similar cases seen in
+the training corpus for help. We define these two different reasoning
+mechanisms as ""rule-based reasoning"" and ""case-based reasoning"". Since
+rule-based reasoning is essential for acquiring systematic generalization
+ability, we aim to explore exactly whether transformers use rule-based or
+case-based reasoning for math problems. Through carefully designed intervention
+experiments on five math tasks, we confirm that transformers are performing
+case-based reasoning, no matter whether scratchpad is used, which aligns with
+the previous observations that transformers use subgraph matching/shortcut
+learning to reason. To mitigate such problems, we propose a Rule-Following
+Fine-Tuning (RFFT) technique to teach transformers to perform rule-based
+reasoning. Specifically, we provide explicit rules in the input and then
+instruct transformers to recite and follow the rules step by step. Through
+RFFT, we successfully enable LLMs fine-tuned on 1-5 digit addition to
+generalize to up to 12-digit addition with over 95% accuracy, which is over 40%
+higher than scratchpad. The significant improvement demonstrates that teaching
+LLMs to use rules explicitly helps them learn rule-based reasoning and
+generalize better in length. 
+
+",,This is a test answer.,abs-2402.10083v1
+What is the name of the multimodal dataset introduced in the 'Emotion-LLaMA' paper for emotion recognition and reasoning?,abs-2406.11161v2,Direct Fact Retrieval & Definition Questions,"Title: Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with
+  Instruction Tuning 
+Summary: Accurate emotion perception is crucial for various applications, including
+human-computer interaction, education, and counseling. However, traditional
+single-modality approaches often fail to capture the complexity of real-world
+emotional expressions, which are inherently multimodal. Moreover, existing
+Multimodal Large Language Models (MLLMs) face challenges in integrating audio
+and recognizing subtle facial micro-expressions. To address this, we introduce
+the MERR dataset, containing 28,618 coarse-grained and 4,487 fine-grained
+annotated samples across diverse emotional categories. This dataset enables
+models to learn from varied scenarios and generalize to real-world
+applications. Furthermore, we propose Emotion-LLaMA, a model that seamlessly
+integrates audio, visual, and textual inputs through emotion-specific encoders.
+By aligning features into a shared space and employing a modified LLaMA model
+with instruction tuning, Emotion-LLaMA significantly enhances both emotional
+recognition and reasoning capabilities. Extensive evaluations show
+Emotion-LLaMA outperforms other MLLMs, achieving top scores in Clue Overlap
+(7.83) and Label Overlap (6.25) on EMER, an F1 score of 0.9036 on MER2023-SEMI
+challenge, and the highest UAR (45.59) and WAR (59.37) in zero-shot evaluations
+on DFEW dataset. 
+
+",,This is a test answer.,abs-2406.11161v2
+What is the primary goal of the COMET model as described in 'COMET: 'Cone of experience' enhanced large multimodal model for mathematical problem generation'?,abs-2407.11315v1,Summarization / Purpose Identification Questions,"Title: COMET: ""Cone of experience"" enhanced large multimodal model for
+  mathematical problem generation 
+Summary: The automatic generation of high-quality mathematical problems is practically
+valuable in many educational scenarios. Large multimodal model provides a novel
+technical approach for the mathematical problem generation because of its wide
+success in cross-modal data scenarios. However, the traditional method of
+separating problem solving from problem generation and the mainstream
+fine-tuning framework of monotonous data structure with homogeneous training
+objectives limit the application of large multimodal model in mathematical
+problem generation. Addressing these challenges, this paper proposes COMET, a
+""Cone of Experience"" enhanced large multimodal model for mathematical problem
+generation. Firstly, from the perspective of mutual ability promotion and
+application logic, we unify stem generation and problem solving into
+mathematical problem generation. Secondly, a three-stage fine-turning framework
+guided by the ""Cone of Experience"" is proposed. The framework divides the
+fine-tuning data into symbolic experience, iconic experience, and direct
+experience to draw parallels with experiences in the career growth of teachers.
+Several fine-grained data construction and injection methods are designed in
+this framework. Finally, we construct a Chinese multimodal mathematical problem
+dataset to fill the vacancy of Chinese multimodal data in this field. Combined
+with objective and subjective indicators, experiments on multiple datasets
+fully verify the effectiveness of the proposed framework and model. 
+
+",,This is a test answer.,abs-2407.11315v1
+Both SMAUG and the method for the Stochastic Vehicle Routing Problem (SVRP) use reinforcement learning. Compare the core challenges they address: how does adaptive subtask recognition in SMAUG differ from optimizing travel costs under uncertainty in SVRP?,"abs-2403.01816v1,abs-2402.09765v1",Comparative & Contrastive Questions,"Title: SMAUG: A Sliding Multidimensional Task Window-Based MARL Framework for
+  Adaptive Real-Time Subtask Recognition 
+Summary: Instead of making behavioral decisions directly from the exponentially
+expanding joint observational-action space, subtask-based multi-agent
+reinforcement learning (MARL) methods enable agents to learn how to tackle
+different subtasks. Most existing subtask-based MARL methods are based on
+hierarchical reinforcement learning (HRL). However, these approaches often
+limit the number of subtasks, perform subtask recognition periodically, and can
+only identify and execute a specific subtask within the predefined fixed time
+period, which makes them inflexible and not suitable for diverse and dynamic
+scenarios with constantly changing subtasks. To break through above
+restrictions, a \textbf{S}liding \textbf{M}ultidimensional t\textbf{A}sk window
+based m\textbf{U}ti-agent reinforcement learnin\textbf{G} framework (SMAUG) is
+proposed for adaptive real-time subtask recognition. It leverages a sliding
+multidimensional task window to extract essential information of subtasks from
+trajectory segments concatenated based on observed and predicted trajectories
+in varying lengths. An inference network is designed to iteratively predict
+future trajectories with the subtask-oriented policy network. Furthermore,
+intrinsic motivation rewards are defined to promote subtask exploration and
+behavior diversity. SMAUG can be integrated with any Q-learning-based approach.
+Experiments on StarCraft II show that SMAUG not only demonstrates performance
+superiority in comparison with all baselines but also presents a more prominent
+and swift rise in rewards during the initial training stage. 
+
+Title: Reinforcement Learning for Solving Stochastic Vehicle Routing Problem
+  with Time Windows 
+Summary: This paper introduces a reinforcement learning approach to optimize the
+Stochastic Vehicle Routing Problem with Time Windows (SVRP), focusing on
+reducing travel costs in goods delivery. We develop a novel SVRP formulation
+that accounts for uncertain travel costs and demands, alongside specific
+customer time windows. An attention-based neural network trained through
+reinforcement learning is employed to minimize routing costs. Our approach
+addresses a gap in SVRP research, which traditionally relies on heuristic
+methods, by leveraging machine learning. The model outperforms the Ant-Colony
+Optimization algorithm, achieving a 1.73% reduction in travel costs. It
+uniquely integrates external information, demonstrating robustness in diverse
+environments, making it a valuable benchmark for future SVRP studies and
+industry application. 
+
+",,This is a test answer.,abs-2402.09765v1
+"CLR-Bench evaluates LLMs on college-level reasoning, while the 'Integration of cognitive tasks into artificial general intelligence test' paper proposes a broader AGI test. How could the Q->AR metric from CLR-Bench be incorporated into the proposed AGI test to provide a more rigorous evaluation of an LLM's fluid intelligence?","abs-2410.17558v2,abs-2402.02547v2",Synthesis & Multi-Hop Reasoning Questions,"Title: CLR-Bench: Evaluating Large Language Models in College-level Reasoning 
+Summary: Large language models (LLMs) have demonstrated their remarkable performance
+across various language understanding tasks. While emerging benchmarks have
+been proposed to evaluate LLMs in various domains such as mathematics and
+computer science, they merely measure the accuracy in terms of the final
+prediction on multi-choice questions. However, it remains insufficient to
+verify the essential understanding of LLMs given a chosen choice. To fill this
+gap, we present CLR-Bench to comprehensively evaluate the LLMs in complex
+college-level reasoning. Specifically, (i) we prioritize 16 challenging college
+disciplines in computer science and artificial intelligence. The dataset
+contains 5 types of questions, while each question is associated with detailed
+explanations from experts. (ii) To quantify a fair evaluation of LLMs'
+reasoning ability, we formalize the criteria with two novel metrics.
+Q$\rightarrow$A is utilized to measure the performance of direct answer
+prediction, and Q$\rightarrow$AR effectively considers the joint ability to
+answer the question and provide rationale simultaneously. Extensive experiments
+are conducted with 40 LLMs over 1,018 discipline-specific questions. The
+results demonstrate the key insights that LLMs, even the best closed-source
+LLM, i.e., GPT-4 turbo, tend to `guess' the college-level answers. It shows a
+dramatic decrease in accuracy from 63.31% Q$\rightarrow$A to 39.00%
+Q$\rightarrow$AR, indicating an unsatisfactory reasoning ability. 
+
+Title: Integration of cognitive tasks into artificial general intelligence test
+  for large models 
+Summary: During the evolution of large models, performance evaluation is necessarily
+performed to assess their capabilities and ensure safety before practical
+application. However, current model evaluations mainly rely on specific tasks
+and datasets, lacking a united framework for assessing the multidimensional
+intelligence of large models. In this perspective, we advocate for a
+comprehensive framework of cognitive science-inspired artificial general
+intelligence (AGI) tests, aimed at fulfilling the testing needs of large models
+with enhanced capabilities. The cognitive science-inspired AGI tests encompass
+the full spectrum of intelligence facets, including crystallized intelligence,
+fluid intelligence, social intelligence, and embodied intelligence. To assess
+the multidimensional intelligence of large models, the AGI tests consist of a
+battery of well-designed cognitive tests adopted from human intelligence tests,
+and then naturally encapsulates into an immersive virtual community. We propose
+increasing the complexity of AGI testing tasks commensurate with advancements
+in large models and emphasizing the necessity for the interpretation of test
+results to avoid false negatives and false positives. We believe that cognitive
+science-inspired AGI tests will effectively guide the targeted improvement of
+large models in specific dimensions of intelligence and accelerate the
+integration of large models into human society. 
+
+",,This is a test answer.,abs-2410.17558v2
+"In the survey on role-playing with language models, what specific programming language was used for the code examples provided in the supplementary materials?",abs-2407.11484v9,Negative / Unanswerable Questions,"Title: The Oscars of AI Theater: A Survey on Role-Playing with Language Models 
+Summary: This survey explores the burgeoning field of role-playing with language
+models, focusing on their development from early persona-based models to
+advanced character-driven simulations facilitated by Large Language Models
+(LLMs). Initially confined to simple persona consistency due to limited model
+capabilities, role-playing tasks have now expanded to embrace complex character
+portrayals involving character consistency, behavioral alignment, and overall
+attractiveness. We provide a comprehensive taxonomy of the critical components
+in designing these systems, including data, models and alignment, agent
+architecture and evaluation. This survey not only outlines the current
+methodologies and challenges, such as managing dynamic personal profiles and
+achieving high-level persona consistency but also suggests avenues for future
+research in improving the depth and realism of role-playing applications. The
+goal is to guide future research by offering a structured overview of current
+methodologies and identifying potential areas for improvement. Related
+resources and papers are available at
+https://github.com/nuochenpku/Awesome-Role-Play-Papers. 
+
+",,This is a test answer.,abs-2407.18968v1
+What does the acronym HMKNF-KBs stand for in the paper 'On the Foundations of Conflict-Driven Solving for Hybrid MKNF Knowledge Bases'?,abs-2408.09626v1,Direct Fact Retrieval & Definition Questions,"Title: On the Foundations of Conflict-Driven Solving for Hybrid MKNF Knowledge
+  Bases 
+Summary: Hybrid MKNF Knowledge Bases (HMKNF-KBs) constitute a formalism for tightly
+integrated reasoning over closed-world rules and open-world ontologies. This
+approach allows for accurate modeling of real-world systems, which often rely
+on both categorical and normative reasoning. Conflict-driven solving is the
+leading approach for computationally hard problems, such as satisfiability
+(SAT) and answer set programming (ASP), in which MKNF is rooted. This paper
+investigates the theoretical underpinnings required for a conflict-driven
+solver of HMKNF-KBs. The approach defines a set of completion and loop
+formulas, whose satisfaction characterizes MKNF models. This forms the basis
+for a set of nogoods, which in turn can be used as the backbone for a
+conflict-driven solver. 
+
+",,This is a test answer.,abs-2408.09626v1
+"According to the 'TelOps' paper, what are the three fundamental challenges that distinguish O&M for Telecommunication Networks from AIOps for IT systems?",abs-2412.04731v1,Summarization / Purpose Identification Questions,"Title: TelOps: AI-driven Operations and Maintenance for Telecommunication
+  Networks 
+Summary: Telecommunication Networks (TNs) have become the most important
+infrastructure for data communications over the last century. Operations and
+maintenance (O&M) is extremely important to ensure the availability,
+effectiveness, and efficiency of TN communications. Different from the popular
+O&M technique for IT systems (e.g., the cloud), artificial intelligence for IT
+Operations (AIOps), O&M for TNs meets the following three fundamental
+challenges: topological dependence of network components, highly heterogeneous
+software, and restricted failure data. This article presents TelOps, the first
+AI-driven O&M framework for TNs, systematically enhanced with mechanism, data,
+and empirical knowledge. We provide a comprehensive comparison between TelOps
+and AIOps, and conduct a proof-of-concept case study on a typical O&M task
+(failure diagnosis) for a real industrial TN. As the first systematic AI-driven
+O&M framework for TNs, TelOps opens a new door to applying AI techniques to TN
+automation. 
+
+",,This is a test answer.,abs-2412.04731v1
+"Compare the frameworks for AI safety proposed in 'Trustworthy, Responsible, and Safe AI' and the threats surveyed in 'Navigating the Risks'. How does the three-perspective architectural framework (Trustworthy, Responsible, Safe) relate to the taxonomy of threats based on sources and impacts?","abs-2408.12935v3,abs-2411.09523v1",Comparative & Contrastive Questions,"Title: Trustworthy, Responsible, and Safe AI: A Comprehensive Architectural
+  Framework for AI Safety with Challenges and Mitigations 
+Summary: AI Safety is an emerging area of critical importance to the safe adoption and
+deployment of AI systems. With the rapid proliferation of AI and especially
+with the recent advancement of Generative AI (or GAI), the technology ecosystem
+behind the design, development, adoption, and deployment of AI systems has
+drastically changed, broadening the scope of AI Safety to address impacts on
+public safety and national security. In this paper, we propose a novel
+architectural framework for understanding and analyzing AI Safety; defining its
+characteristics from three perspectives: Trustworthy AI, Responsible AI, and
+Safe AI. We provide an extensive review of current research and advancements in
+AI safety from these perspectives, highlighting their key challenges and
+mitigation approaches. Through examples from state-of-the-art technologies,
+particularly Large Language Models (LLMs), we present innovative mechanism,
+methodologies, and techniques for designing and testing AI safety. Our goal is
+to promote advancement in AI safety research, and ultimately enhance people's
+trust in digital transformation. 
+
+Title: Navigating the Risks: A Survey of Security, Privacy, and Ethics Threats
+  in LLM-Based Agents 
+Summary: With the continuous development of large language models (LLMs),
+transformer-based models have made groundbreaking advances in numerous natural
+language processing (NLP) tasks, leading to the emergence of a series of agents
+that use LLMs as their control hub. While LLMs have achieved success in various
+tasks, they face numerous security and privacy threats, which become even more
+severe in the agent scenarios. To enhance the reliability of LLM-based
+applications, a range of research has emerged to assess and mitigate these
+risks from different perspectives.
+  To help researchers gain a comprehensive understanding of various risks, this
+survey collects and analyzes the different threats faced by these agents. To
+address the challenges posed by previous taxonomies in handling cross-module
+and cross-stage threats, we propose a novel taxonomy framework based on the
+sources and impacts. Additionally, we identify six key features of LLM-based
+agents, based on which we summarize the current research progress and analyze
+their limitations. Subsequently, we select four representative agents as case
+studies to analyze the risks they may face in practical use. Finally, based on
+the aforementioned analyses, we propose future research directions from the
+perspectives of data, methodology, and policy, respectively. 
+
+",,This is a test answer.,abs-2408.12935v3
+"Both ToolNet and Hive are frameworks for selecting and sequencing models to solve user queries. How could ToolNet's graph-based organization of tools be integrated into the Hive framework to improve the efficiency of Hive's model selection phase, before it proceeds to PDDL-based planning?","abs-2403.00839v1,abs-2412.12839v1",Synthesis & Multi-Hop Reasoning Questions,"Title: ToolNet: Connecting Large Language Models with Massive Tools via Tool
+  Graph 
+Summary: While achieving remarkable progress in a broad range of tasks, large language
+models (LLMs) remain significantly limited in properly using massive external
+tools. Existing in-context learning approaches simply format tools into a list
+of plain text descriptions and input them to LLMs, from which, LLMs generate a
+sequence of tool calls to solve problems step by step. Such a paradigm ignores
+the intrinsic dependency between tools and offloads all reasoning loads to
+LLMs, making them restricted to a limited number of specifically designed
+tools. It thus remains challenging for LLMs to operate on a library of massive
+tools, casting a great limitation when confronted with real-world scenarios.
+This paper proposes ToolNet, a plug-and-play framework that scales up the
+number of tools to thousands with a moderate increase in token consumption.
+ToolNet organizes tools into a directed graph. Each node represents a tool, and
+weighted edges denote tool transition. Starting from an initial tool node, an
+LLM navigates in the graph by iteratively choosing the next one from its
+successors until the task is resolved. Extensive experiments show that ToolNet
+can achieve impressive results in challenging multi-hop tool learning datasets
+and is resilient to tool failures. 
+
+Title: From An LLM Swarm To A PDDL-Empowered HIVE: Planning Self-Executed
+  Instructions In A Multi-Modal Jungle 
+Summary: In response to the call for agent-based solutions that leverage the
+ever-increasing capabilities of the deep models' ecosystem, we introduce Hive
+-- a comprehensive solution for selecting appropriate models and subsequently
+planning a set of atomic actions to satisfy the end-users' instructions. Hive
+operates over sets of models and, upon receiving natural language instructions
+(i.e. user queries), schedules and executes explainable plans of atomic
+actions. These actions can involve one or more of the available models to
+achieve the overall task, while respecting end-users specific constraints.
+Notably, Hive handles tasks that involve multi-modal inputs and outputs,
+enabling it to handle complex, real-world queries. Our system is capable of
+planning complex chains of actions while guaranteeing explainability, using an
+LLM-based formal logic backbone empowered by PDDL operations. We introduce the
+MuSE benchmark in order to offer a comprehensive evaluation of the multi-modal
+capabilities of agent systems. Our findings show that our framework redefines
+the state-of-the-art for task selection, outperforming other competing systems
+that plan operations across multiple models while offering transparency
+guarantees while fully adhering to user constraints. 
+
+",,This is a test answer.,abs-2403.00839v1
+"In the PokerGPT paper, what was the average response speed in milliseconds achieved by the fine-tuned model during testing?",abs-2401.06781v1,Negative / Unanswerable Questions,"Title: PokerGPT: An End-to-End Lightweight Solver for Multi-Player Texas
+  Hold'em via Large Language Model 
+Summary: Poker, also known as Texas Hold'em, has always been a typical research target
+within imperfect information games (IIGs). IIGs have long served as a measure
+of artificial intelligence (AI) development. Representative prior works, such
+as DeepStack and Libratus heavily rely on counterfactual regret minimization
+(CFR) to tackle heads-up no-limit Poker. However, it is challenging for
+subsequent researchers to learn CFR from previous models and apply it to other
+real-world applications due to the expensive computational cost of CFR
+iterations. Additionally, CFR is difficult to apply to multi-player games due
+to the exponential growth of the game tree size. In this work, we introduce
+PokerGPT, an end-to-end solver for playing Texas Hold'em with arbitrary number
+of players and gaining high win rates, established on a lightweight large
+language model (LLM). PokerGPT only requires simple textual information of
+Poker games for generating decision-making advice, thus guaranteeing the
+convenient interaction between AI and humans. We mainly transform a set of
+textual records acquired from real games into prompts, and use them to
+fine-tune a lightweight pre-trained LLM using reinforcement learning human
+feedback technique. To improve fine-tuning performance, we conduct prompt
+engineering on raw data, including filtering useful information, selecting
+behaviors of players with high win rates, and further processing them into
+textual instruction using multiple prompt engineering techniques. Through the
+experiments, we demonstrate that PokerGPT outperforms previous approaches in
+terms of win rate, model size, training time, and response speed, indicating
+the great potential of LLMs in solving IIGs. 
+
+",,This is a test answer.,abs-2401.06781v1

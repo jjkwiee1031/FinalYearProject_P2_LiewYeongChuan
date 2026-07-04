@@ -1,0 +1,604 @@
+Question,Source Article Index,Question Type,Summary,qwen2.5:3b,documentIDs,context_retrieved
+What does the acronym 'M2S' stand for in the paper 'A novel Multi to Single Module for small object detection'?,abs-2303.14977v1,Direct Fact Retrieval & Definition Questions,"Title: A novel Multi to Single Module for small object detection 
+Summary: Small object detection presents a significant challenge in computer vision
+and object detection. The performance of small object detectors is often
+compromised by a lack of pixels and less significant features. This issue stems
+from information misalignment caused by variations in feature scale and
+information loss during feature processing. In response to this challenge, this
+paper proposes a novel the Multi to Single Module (M2S), which enhances a
+specific layer through improving feature extraction and refining features.
+Specifically, M2S includes the proposed Cross-scale Aggregation Module (CAM)
+and explored Dual Relationship Module (DRM) to improve information extraction
+capabilities and feature refinement effects. Moreover, this paper enhances the
+accuracy of small object detection by utilizing M2S to generate an additional
+detection head. The effectiveness of the proposed method is evaluated on two
+datasets, VisDrone2021-DET and SeaDronesSeeV2. The experimental results
+demonstrate its improved performance compared with existing methods. Compared
+to the baseline model (YOLOv5s), M2S improves the accuracy by about 1.1\% on
+the VisDrone2021-DET testing dataset and 15.68\% on the SeaDronesSeeV2
+validation set. 
+
+","No Answer
+
+The provided documents do not contain any information about a paper titled ""A novel Multi to Single Module for small object detection"" or the acronym M2S. Therefore, no answer can be generated based on the given information.","abs-2304.09609v1, abs-2412.06647v1, abs-2304.03428v1, abs-2301.09249v2, abs-2309.01351v2","[""Title: MMDR: A Result Feature Fusion Object Detection Approach for Autonomous\n  System.\nPublished_date: 2023-04-19."", ""Title: Object Detection using Event Camera: A MoE Heat Conduction based\n  Detector and A New Benchmark Dataset.\nPublished_date: 2024-12-09."", ""Title: TinyDet: Accurate Small Object Detection in Lightweight Generic\n  Detectors.\nPublished_date: 2023-04-07."", ""Title: Exploring Active 3D Object Detection from a Generalization Perspective.\nPublished_date: 2023-01-23."", ""Title: Adv3D: Generating 3D Adversarial Examples for 3D Object Detection in\n  Driving Scenarios with NeRF.\nPublished_date: 2023-09-04.""]"
+What is the main objective of the DatasetDM model presented in 'DatasetDM: Synthesizing Data with Perception Annotations Using Diffusion Models'?,abs-2308.06160v2,Summarization / Purpose Identification Questions,"Title: DatasetDM: Synthesizing Data with Perception Annotations Using Diffusion
+  Models 
+Summary: Current deep networks are very data-hungry and benefit from training on
+largescale datasets, which are often time-consuming to collect and annotate. By
+contrast, synthetic data can be generated infinitely using generative models
+such as DALL-E and diffusion models, with minimal effort and cost. In this
+paper, we present DatasetDM, a generic dataset generation model that can
+produce diverse synthetic images and the corresponding high-quality perception
+annotations (e.g., segmentation masks, and depth). Our method builds upon the
+pre-trained diffusion model and extends text-guided image synthesis to
+perception data generation. We show that the rich latent code of the diffusion
+model can be effectively decoded as accurate perception annotations using a
+decoder module. Training the decoder only needs less than 1% (around 100
+images) manually labeled images, enabling the generation of an infinitely large
+annotated dataset. Then these synthetic data can be used for training various
+perception models for downstream tasks. To showcase the power of the proposed
+approach, we generate datasets with rich dense pixel-wise labels for a wide
+range of downstream tasks, including semantic segmentation, instance
+segmentation, and depth estimation. Notably, it achieves 1) state-of-the-art
+results on semantic segmentation and instance segmentation; 2) significantly
+more robust on domain generalization than using the real data alone; and
+state-of-the-art results in zero-shot segmentation setting; and 3) flexibility
+for efficient application and novel task composition (e.g., image editing). The
+project website and code can be found at
+https://weijiawu.github.io/DatasetDM_page/ and
+https://github.com/showlab/DatasetDM, respectively 
+
+","The primary objective of the DatasetDM model is to generate diverse synthetic images and their corresponding high-quality perception annotations (such as segmentation masks and depth) using a generic dataset generation model that builds upon pre-trained diffusion models. This allows for the production of an infinitely large annotated dataset with minimal effort, which can then be utilized for training various deep learning models efficiently.","abs-2308.06160v2, abs-2309.01141v4, abs-2406.02507v3, abs-2306.14227v2, abs-2308.01948v1","[""Summary: Current deep networks are very data-hungry and benefit from training on largescale datasets, which are often time-consuming to collect and annotate. By contrast, synthetic data can be generated infinitely using generative models such as DALL-E and diffusion models, with minimal effort and cost. In this paper, we present DatasetDM, a generic dataset generation model that can produce diverse synthetic images and the corresponding high-quality perception annotations (e.g., segmentation masks, and depth). Our method builds upon the pre-trained diffusion model and extends text-guided image synthesis to perception data generation. We show that the rich latent code of the diffusion model can be effectively decoded as accurate perception annotations using a decoder module. Training the decoder only needs less than 1% (around 100 images) manually labeled images, enabling the generation of an infinitely large annotated dataset. Then these synthetic data can be used for training various"", ""Summary: Large-scale text-to-image diffusion models have shown impressive capabilities for generative tasks by leveraging strong vision-language alignment from pre-training. However, most vision-language discriminative tasks require extensive fine-tuning on carefully-labeled datasets to acquire such alignment, with great cost in time and computing resources. In this work, we explore directly applying a pre-trained generative diffusion model to the challenging discriminative task of visual grounding without any fine-tuning and additional training dataset. Specifically, we propose VGDiffZero, a simple yet effective zero-shot visual grounding framework based on text-to-image diffusion models. We also design a comprehensive region-scoring method considering both global and local contexts of each isolated proposal. Extensive experiments on RefCOCO, RefCOCO+, and RefCOCOg show that VGDiffZero achieves strong performance on zero-shot visual grounding. Our code is available at"", ""Summary: The primary axes of interest in image-generating diffusion models are image quality, the amount of variation in the results, and how well the results align with a given condition, e.g., a class label or a text prompt. The popular classifier-free guidance approach uses an unconditional model to guide a conditional model, leading to simultaneously better prompt alignment and higher-quality images at the cost of reduced variation. These effects seem inherently entangled, and thus hard to control. We make the surprising observation that it is possible to obtain disentangled control over image quality without compromising the amount of variation by guiding generation using a smaller, less-trained version of the model itself rather than an unconditional model. This leads to significant improvements in ImageNet generation, setting record FIDs of 1.01 for 64x64 and 1.25 for 512x512, using publicly available networks. Furthermore, the method is also applicable to unconditional"", ""Title: A ground-based dataset and a diffusion model for on-orbit low-light\n  image enhancement.\nPublished_date: 2023-06-25."", ""Summary: The embedding spaces of image models have been shown to encode a range of social biases such as racism and sexism. Here, we investigate specific factors that contribute to the emergence of these biases in Vision Transformers (ViT). Therefore, we measure the impact of training data, model architecture, and training objectives on social biases in the learned representations of ViTs. Our findings indicate that counterfactual augmentation training using diffusion-based image editing can mitigate biases, but does not eliminate them. Moreover, we find that larger models are less biased than smaller models, and that models trained using discriminative objectives are less biased than those trained using generative objectives. In addition, we observe inconsistencies in the learned social biases. To our surprise, ViTs can exhibit opposite biases when trained on the same data set using different self-supervised objectives. Our findings give insights into the factors that contribute to""]"
+Compare the architectural approaches of EndoDepthL and HTCAN. How does each model uniquely combine CNNs and Transformers for their respective tasks of depth estimation and stereo super-resolution?,"abs-2308.02716v2,abs-2305.05177v1",Comparative & Contrastive Questions,"Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with
+  CNN-Transformer 
+Summary: In this study, we address the key challenges concerning the accuracy and
+effectiveness of depth estimation for endoscopic imaging, with a particular
+emphasis on real-time inference and the impact of light reflections. We propose
+a novel lightweight solution named EndoDepthL that integrates Convolutional
+Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our
+approach includes optimizing the network architecture, incorporating
+multi-scale dilated convolution, and a multi-channel attention mechanism. We
+also introduce a statistical confidence boundary mask to minimize the impact of
+reflective areas. To better evaluate the performance of monocular depth
+estimation in endoscopic imaging, we propose a novel complexity evaluation
+metric that considers network parameter size, floating-point operations, and
+inference frames per second. We comprehensively evaluate our proposed method
+and compare it with existing baseline solutions. The results demonstrate that
+EndoDepthL ensures depth estimation accuracy with a lightweight structure. 
+
+Title: Hybrid Transformer and CNN Attention Network for Stereo Image
+  Super-resolution 
+Summary: Multi-stage strategies are frequently employed in image restoration tasks.
+While transformer-based methods have exhibited high efficiency in single-image
+super-resolution tasks, they have not yet shown significant advantages over
+CNN-based methods in stereo super-resolution tasks. This can be attributed to
+two key factors: first, current single-image super-resolution transformers are
+unable to leverage the complementary stereo information during the process;
+second, the performance of transformers is typically reliant on sufficient
+data, which is absent in common stereo-image super-resolution algorithms. To
+address these issues, we propose a Hybrid Transformer and CNN Attention Network
+(HTCAN), which utilizes a transformer-based network for single-image
+enhancement and a CNN-based network for stereo information fusion. Furthermore,
+we employ a multi-patch training strategy and larger window sizes to activate
+more input pixels for super-resolution. We also revisit other advanced
+techniques, such as data augmentation, data ensemble, and model ensemble to
+reduce overfitting and data bias. Finally, our approach achieved a score of
+23.90dB and emerged as the winner in Track 1 of the NTIRE 2023 Stereo Image
+Super-Resolution Challenge. 
+
+","No Answer.
+
+The provided documents do not contain any information about a model named HTCAN or its architecture, nor do they discuss how it compares to EndoDepthL in terms of combining CNNs and transformers. The focus is primarily on the EndoDepthL method for endoscopic depth estimation using a combination of Convolutional Neural Networks (CNN) and Transformers, as well as other related works involving Transformers and CNNs in various imaging tasks.","abs-2308.02716v2, abs-2301.03505v3, abs-2302.01825v2, abs-2305.05177v1","[""Summary: In this study, we address the key challenges concerning the accuracy and effectiveness of depth estimation for endoscopic imaging, with a particular emphasis on real-time inference and the impact of light reflections. We propose a novel lightweight solution named EndoDepthL that integrates Convolutional Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our approach includes optimizing the network architecture, incorporating multi-scale dilated convolution, and a multi-channel attention mechanism. We also introduce a statistical confidence boundary mask to minimize the impact of reflective areas. To better evaluate the performance of monocular depth estimation in endoscopic imaging, we propose a novel complexity evaluation metric that considers network parameter size, floating-point operations, and inference frames per second. We comprehensively evaluate our proposed method and compare it with existing baseline solutions. The results demonstrate that"", ""Summary: The remarkable performance of the Transformer architecture in natural language processing has recently also triggered broad interest in Computer Vision. Among other merits, Transformers are witnessed as capable of learning long-range dependencies and spatial correlations, which is a clear advantage over convolutional neural networks (CNNs), which have been the de facto standard in Computer Vision problems so far. Thus, Transformers have become an integral part of modern medical image analysis. In this review, we provide an encyclopedic review of the applications of Transformers in medical imaging. Specifically, we present a systematic and thorough review of relevant recent Transformer literature for different medical image analysis tasks, including classification, segmentation, detection, registration, synthesis, and clinical report generation. For each of these applications, we investigate the novelty, strengths and weaknesses of the different proposed strategies and develop"", ""modern CNN techniques are integrated into the transformer-based architecture, balancing the trade-off between performance and efficiency. HDFormer significantly outperforms state-of-the-art (SOTA) models on Human3.6M and MPI-INF-3DHP datasets, requiring only 1/10 of the parameters and significantly lower computational costs. Moreover, HDFormer demonstrates broad real-world applicability, enabling real-time, accurate 3D pose estimation. The source code is in https://github.com/hyer/HDFormer"", ""frames per second. We comprehensively evaluate our proposed method and compare it with existing baseline solutions. The results demonstrate that EndoDepthL ensures depth estimation accuracy with a lightweight structure."", ""Title: Hybrid Transformer and CNN Attention Network for Stereo Image\n  Super-resolution.\nPublished_date: 2023-05-09.""]"
+How could the Generative Diffusion Prior (GDP) for image restoration be used as a pre-processing step to improve the quality of inputs for the on-orbit low-light image enhancement task before their specialized diffusion model is applied?,"abs-2304.01247v1,abs-2306.14227v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Generative Diffusion Prior for Unified Image Restoration and Enhancement 
+Summary: Existing image restoration methods mostly leverage the posterior distribution
+of natural images. However, they often assume known degradation and also
+require supervised training, which restricts their adaptation to complex real
+applications. In this work, we propose the Generative Diffusion Prior (GDP) to
+effectively model the posterior distributions in an unsupervised sampling
+manner. GDP utilizes a pre-train denoising diffusion generative model (DDPM)
+for solving linear inverse, non-linear, or blind problems. Specifically, GDP
+systematically explores a protocol of conditional guidance, which is verified
+more practical than the commonly used guidance way. Furthermore, GDP is
+strength at optimizing the parameters of degradation model during the denoising
+process, achieving blind image restoration. Besides, we devise hierarchical
+guidance and patch-based methods, enabling the GDP to generate images of
+arbitrary resolutions. Experimentally, we demonstrate GDP's versatility on
+several image datasets for linear problems, such as super-resolution,
+deblurring, inpainting, and colorization, as well as non-linear and blind
+issues, such as low-light enhancement and HDR image recovery. GDP outperforms
+the current leading unsupervised methods on the diverse benchmarks in
+reconstruction quality and perceptual quality. Moreover, GDP also generalizes
+well for natural images or synthesized images with arbitrary sizes from various
+tasks out of the distribution of the ImageNet training set. 
+
+Title: A ground-based dataset and a diffusion model for on-orbit low-light
+  image enhancement 
+Summary: On-orbit service is important for maintaining the sustainability of space
+environment. Space-based visible camera is an economical and lightweight sensor
+for situation awareness during on-orbit service. However, it can be easily
+affected by the low illumination environment. Recently, deep learning has
+achieved remarkable success in image enhancement of natural images, but seldom
+applied in space due to the data bottleneck. In this article, we first propose
+a dataset of the Beidou Navigation Satellite for on-orbit low-light image
+enhancement (LLIE). In the automatic data collection scheme, we focus on
+reducing domain gap and improving the diversity of the dataset. we collect
+hardware in-the-loop images based on a robotic simulation testbed imitating
+space lighting conditions. To evenly sample poses of different orientation and
+distance without collision, a collision-free working space and pose stratified
+sampling is proposed. Afterwards, a novel diffusion model is proposed. To
+enhance the image contrast without over-exposure and blurring details, we
+design a fused attention to highlight the structure and dark region. Finally,
+we compare our method with previous methods using our dataset, which indicates
+that our method has a better capacity in on-orbit LLIE. 
+
+","The Generative Diffusion Prior (GDP) can serve as a pre-processing step in image restoration by effectively modeling posterior distributions in an unsupervised manner. This approach utilizes a pre-trained denoising diffusion generative model (DDPM) to handle various types of inverse problems, including linear, non-linear, and blind issues. GDP systematically employs conditional guidance protocols that are more practical than conventional methods, enabling the optimization of degradation models during the denoising process for blind image restoration. This preprocessing step can enhance the quality of inputs for subsequent specialized diffusion models applied to on-orbit low-light image enhancement tasks.","abs-2304.01247v1, abs-2304.11829v2, abs-2306.07596v1, abs-2309.01141v4","[""Summary: Existing image restoration methods mostly leverage the posterior distribution of natural images. However, they often assume known degradation and also require supervised training, which restricts their adaptation to complex real applications. In this work, we propose the Generative Diffusion Prior (GDP) to effectively model the posterior distributions in an unsupervised sampling manner. GDP utilizes a pre-train denoising diffusion generative model (DDPM) for solving linear inverse, non-linear, or blind problems. Specifically, GDP systematically explores a protocol of conditional guidance, which is verified more practical than the commonly used guidance way. Furthermore, GDP is strength at optimizing the parameters of degradation model during the denoising process, achieving blind image restoration. Besides, we devise hierarchical guidance and patch-based methods, enabling the GDP to generate images of arbitrary resolutions. Experimentally, we demonstrate GDP's versatility on"", ""Title: Generative Diffusion Prior for Unified Image Restoration and Enhancement.\nPublished_date: 2023-04-03."", ""Summary: Diffusion models have attained impressive visual quality for image synthesis. However, how to interpret and manipulate the latent space of diffusion models has not been extensively explored. Prior work diffusion autoencoders encode the semantic representations into a semantic latent code, which fails to reflect the rich information of details and the intrinsic feature hierarchy. To mitigate those limitations, we propose Hierarchical Diffusion Autoencoders (HDAE) that exploit the fine-grained-to-abstract and lowlevel-to-high-level feature hierarchy for the latent space of diffusion models. The hierarchical latent space of HDAE inherently encodes different abstract levels of semantics and provides more comprehensive semantic representations. In addition, we propose a truncated-feature-based approach for disentangled image manipulation. We demonstrate the effectiveness of our proposed approach with extensive experiments and applications on image reconstruction, style mixing,"", ""Title: Paste, Inpaint and Harmonize via Denoising: Subject-Driven Image Editing\n  with Pre-Trained Diffusion Model.\nPublished_date: 2023-06-13."", ""Title: VGDiffZero: Text-to-image Diffusion Models Can Be Zero-shot Visual\n  Grounders.\nPublished_date: 2023-09-03.""]"
+"In the 'Self-supervised visual learning for analyzing firearms trafficking' paper, what percentage of the crawled web images came specifically from dark Web sites?",abs-2310.07975v2,Negative / Unanswerable Questions,"Title: Self-supervised visual learning for analyzing firearms trafficking
+  activities on the Web 
+Summary: Automated visual firearms classification from RGB images is an important
+real-world task with applications in public space security, intelligence
+gathering and law enforcement investigations. When applied to images massively
+crawled from the World Wide Web (including social media and dark Web sites), it
+can serve as an important component of systems that attempt to identify
+criminal firearms trafficking networks, by analyzing Big Data from open-source
+intelligence. Deep Neural Networks (DNN) are the state-of-the-art methodology
+for achieving this, with Convolutional Neural Networks (CNN) being typically
+employed. The common transfer learning approach consists of pretraining on a
+large-scale, generic annotated dataset for whole-image classification, such as
+ImageNet-1k, and then finetuning the DNN on a smaller, annotated,
+task-specific, downstream dataset for visual firearms classification. Neither
+Visual Transformer (ViT) neural architectures nor Self-Supervised Learning
+(SSL) approaches have been so far evaluated on this critical task.. 
+
+",No Answer. The provided documents do not contain information about the percentage of dark Web sources in the crawled web images for this specific study.,"abs-2306.00543v4, abs-2310.07975v2, abs-2408.08258v2, abs-2301.01928v3, abs-2309.01246v1","[""behavior detection. Firstly, a self-supervised learning framework for masked image modeling (MIM) is introduced to solve the serious human and material consumption issues caused by dataset labeling. Secondly, the Swin Transformer is employed as an encoder. Performance is enhanced by reconfiguring the Swin Transformer block and adjusting the distribution of the number of window multi-head self-attention (W-MSA) and shifted window multi-head self-attention (SW-MSA) detection heads across all stages, which leads to model more lightening. Finally, various data augmentation strategies are used along with the best random masking strategy to strengthen the model's recognition and generalization ability. Test results on a large-scale driver distraction behavior dataset show that the self-supervised learning method proposed in this paper achieves an accuracy of 99.60%, approximating the excellent performance of advanced supervised learning methods. Our code is publicly available at"", ""Title: Self-supervised visual learning for analyzing firearms trafficking\n  activities on the Web.\nPublished_date: 2023-10-12."", ""Summary: Whole Slide Image (WSI) classification with multiple instance learning (MIL) in digital pathology faces significant computational challenges. Current methods mostly rely on extensive self-supervised learning (SSL) for satisfactory performance, requiring long training periods and considerable computational resources. At the same time, no pre-training affects performance due to domain shifts from natural images to WSIs. We introduce Snuffy architecture, a novel MIL-pooling method based on sparse transformers that mitigates performance loss with limited pre-training and enables continual few-shot pre-training as a competitive option. Our sparsity pattern is tailored for pathology and is theoretically proven to be a universal approximator with the tightest probabilistic sharp bound on the number of layers for sparse transformers, to date. We demonstrate Snuffy's effectiveness on CAMELYON16 and TCGA Lung cancer datasets, achieving superior WSI and patch-level accuracies. The code"", ""Summary: This paper proposes a pre-trained neural network for handling event camera data. Our model is a self-supervised learning framework, and uses paired event camera data and natural RGB images for training.   Our method contains three modules connected in a sequence: i) a family of event data augmentations, generating meaningful event images for self-supervised training; ii) a conditional masking strategy to sample informative event patches from event images, encouraging our model to capture the spatial layout of a scene and accelerating training; iii) a contrastive learning approach, enforcing the similarity of embeddings between matching event images, and between paired event and RGB images. An embedding projection loss is proposed to avoid the model collapse when enforcing the event image embedding similarities. A probability distribution alignment loss is proposed to encourage the event image to be consistent with its paired RGB image in the feature space.   Transfer learning"", ""Summary: As advanced image manipulation techniques emerge, detecting the manipulation becomes increasingly important. Despite the success of recent learning-based approaches for image manipulation detection, they typically require expensive pixel-level annotations to train, while exhibiting degraded performance when testing on images that are differently manipulated compared with training images. To address these limitations, we propose weakly-supervised image manipulation detection, such that only binary image-level labels (authentic or tampered with) are required for training purpose. Such a weakly-supervised setting can leverage more training images and has the potential to adapt quickly to new manipulation techniques. To improve the generalization ability, we propose weakly-supervised self-consistency learning (WSCL) to leverage the weakly annotated images. Specifically, two consistency properties are learned: multi-source consistency (MSC) and inter-patch consistency (IPC). MSC""]"
+What are the two key factors that the paper 'Global Adaptation meets Local Generalization' identifies as causing performance degradation in 3D human pose lifting models?,abs-2303.16456v2,Direct Fact Retrieval & Definition Questions,"Title: Global Adaptation meets Local Generalization: Unsupervised Domain
+  Adaptation for 3D Human Pose Estimation 
+Summary: When applying a pre-trained 2D-to-3D human pose lifting model to a target
+unseen dataset, large performance degradation is commonly encountered due to
+domain shift issues. We observe that the degradation is caused by two factors:
+1) the large distribution gap over global positions of poses between the source
+and target datasets due to variant camera parameters and settings, and 2) the
+deficient diversity of local structures of poses in training. To this end, we
+combine \textbf{global adaptation} and \textbf{local generalization} in
+\textit{PoseDA}, a simple yet effective framework of unsupervised domain
+adaptation for 3D human pose estimation. Specifically, global adaptation aims
+to align global positions of poses from the source domain to the target domain
+with a proposed global position alignment (GPA) module. And local
+generalization is designed to enhance the diversity of 2D-3D pose mapping with
+a local pose augmentation (LPA) module. These modules bring significant
+performance improvement without introducing additional learnable parameters. In
+addition, we propose local pose augmentation (LPA) to enhance the diversity of
+3D poses following an adversarial training scheme consisting of 1) a
+augmentation generator that generates the parameters of pre-defined pose
+transformations and 2) an anchor discriminator to ensure the reality and
+quality of the augmented data. Our approach can be applicable to almost all
+2D-3D lifting models. \textit{PoseDA} achieves 61.3 mm of MPJPE on MPI-INF-3DHP
+under a cross-dataset evaluation setup, improving upon the previous
+state-of-the-art method by 10.2\%. 
+
+","The paper 'Global Adaptation meets Local Generalization' identifies two key factors as causes of performance degradation in 3D human pose lifting models: a large distribution gap over global positions of poses between the source and target datasets due to variant camera parameters and settings, and the deficient diversity of local structures of poses in training.","abs-2303.16456v2, abs-2302.11301v2, abs-2401.11085v1, abs-2304.03635v1","[""Summary: When applying a pre-trained 2D-to-3D human pose lifting model to a target unseen dataset, large performance degradation is commonly encountered due to domain shift issues. We observe that the degradation is caused by two factors: 1) the large distribution gap over global positions of poses between the source and target datasets due to variant camera parameters and settings, and 2) the deficient diversity of local structures of poses in training. To this end, we combine \\textbf{global adaptation} and \\textbf{local generalization} in \\textit{PoseDA}, a simple yet effective framework of unsupervised domain adaptation for 3D human pose estimation. Specifically, global adaptation aims to align global positions of poses from the source domain to the target domain with a proposed global position alignment (GPA) module. And local generalization is designed to enhance the diversity of 2D-3D pose mapping with a local pose augmentation (LPA) module. These modules bring significant"", ""is designed to enhance the diversity of 2D-3D pose mapping with a local pose augmentation (LPA) module. These modules bring significant performance improvement without introducing additional learnable parameters. In addition, we propose local pose augmentation (LPA) to enhance the diversity of 3D poses following an adversarial training scheme consisting of 1) a augmentation generator that generates the parameters of pre-defined pose transformations and 2) an anchor discriminator to ensure the reality and quality of the augmented data. Our approach can be applicable to almost all 2D-3D lifting models. \\textit{PoseDA} achieves 61.3 mm of MPJPE on MPI-INF-3DHP under a cross-dataset evaluation setup, improving upon the previous state-of-the-art method by 10.2\\%."", ""Summary: The rapid development of multi-view 3D human pose estimation (HPE) is attributed to the maturation of monocular 2D HPE and the geometry of 3D reconstruction. However, 2D detection outliers in occluded views due to neglect of view consistency, and 3D implausible poses due to lack of pose coherence, remain challenges. To solve this, we introduce a Multi-View Fusion module to refine 2D results by establishing view correlations. Then, Holistic Triangulation is proposed to infer the whole pose as an entirety, and anatomy prior is injected to maintain the pose coherence and improve the plausibility. Anatomy prior is extracted by PCA whose input is skeletal structure features, which can factor out global context and joint-by-joint relationship from abstract to concrete. Benefiting from the closed-form solution, the whole framework is trained end-to-end. Our method outperforms the state of the art in both precision and plausibility which is assessed by a new metric."", ""Summary: Domain shift poses a significant challenge in Cross-Domain Facial Expression Recognition (CD-FER) due to the distribution variation across different domains. Current works mainly focus on learning domain-invariant features through global feature adaptation, while neglecting the transferability of local features. Additionally, these methods lack discriminative supervision during training on target datasets, resulting in deteriorated feature representation in target domain. To address these limitations, we propose an Adaptive Global-Local Representation Learning and Selection (AGLRLS) framework. The framework incorporates global-local adversarial adaptation and semantic-aware pseudo label generation to enhance the learning of domain-invariant and discriminative feature during training. Meanwhile, a global-local prediction consistency learning is introduced to improve classification results during inference. Specifically, the framework consists of separate global-local"", ""Summary: 3D interacting hand pose estimation from a single RGB image is a challenging task, due to serious self-occlusion and inter-occlusion towards hands, confusing similar appearance patterns between 2 hands, ill-posed joint position mapping from 2D to 3D, etc.. To address these, we propose to extend A2J-the state-of-the-art depth-based 3D single hand pose estimation method-to RGB domain under interacting hand condition. Our key idea is to equip A2J with strong local-global aware ability to well capture interacting hands' local fine details and global articulated clues among joints jointly. To this end, A2J is evolved under Transformer's non-local encoding-decoding framework to build A2J-Transformer. It holds 3 main advantages over A2J. First, self-attention across local anchor points is built to make them global spatial context aware to better capture joints' articulation clues for resisting occlusion. Secondly, each anchor point is regarded as learnable query with adaptive""]"
+What is the primary goal of the ROBUSfT C++ library?,abs-2301.04037v3,Summarization / Purpose Identification Questions,"Title: ROBUSfT: Robust Real-Time Shape-from-Template, a C++ Library 
+Summary: Tracking the 3D shape of a deforming object using only monocular 2D vision is
+a challenging problem. This is because one should (i) infer the 3D shape from a
+2D image, which is a severely underconstrained problem, and (ii) implement the
+whole solution pipeline in real-time. The pipeline typically requires feature
+detection and matching, mismatch filtering, 3D shape inference and feature
+tracking algorithms. We propose ROBUSfT, a conventional pipeline based on a
+template containing the object's rest shape, texturemap and deformation law.
+ROBUSfT is ready-to-use, wide-baseline, capable of handling large deformations,
+fast up to 30 fps, free of training, and robust against partial occlusions and
+discontinuity in video frames. It outperforms the state-of-the-art methods in
+challenging datasets. ROBUSfT is implemented as a publicly available C++
+library and we provide a tutorial on how to use it in
+https://github.com/mrshetab/ROBUSfT 
+
+","No Answer
+
+The provided documents do not contain any information about the ROBUSfT C++ library or its primary goals. They discuss various research papers and projects related to visual learning, text-guided image editing, and model performance on benchmarks, but none of these references pertain to ROBUSfT or similar libraries.","abs-2304.04748v1, abs-2308.04142v1, abs-2309.01141v4, abs-2305.18047v1, abs-2303.16624v1","[""Title: Exploring Effective Factors for Improving Visual In-Context Learning.\nPublished_date: 2023-04-10."", ""learning and show that CSRMS can be incorporated with any state-of-the-art visual representation learning models for performance gains. The source codes and demos have been released at https://github.com/czt117/CSRMS."", ""on RefCOCO, RefCOCO+, and RefCOCOg show that VGDiffZero achieves strong performance on zero-shot visual grounding. Our code is available at https://github.com/xuyang-liu16/VGDiffZero."", ""Summary: Recent works have explored text-guided image editing using diffusion models and generated edited images based on text prompts. However, the models struggle to accurately locate the regions to be edited and faithfully perform precise edits. In this work, we propose a framework termed InstructEdit that can do fine-grained editing based on user instructions. Our proposed framework has three components: language processor, segmenter, and image editor. The first component, the language processor, processes the user instruction using a large language model. The goal of this processing is to parse the user instruction and output prompts for the segmenter and captions for the image editor. We adopt ChatGPT and optionally BLIP2 for this step. The second component, the segmenter, uses the segmentation prompt provided by the language processor. We employ a state-of-the-art segmentation framework Grounded Segment Anything to automatically generate a high-quality mask based on the"", ""results on five standard benchmarks demonstrate that our ASTR performs favorably against state-of-the-art methods. Our code will be released on https://astr2023.github.io.""]"
+Contrast the problems addressed by 'EndoDepthL' for endoscopic imaging and 'Clean-NeRF' for large-scale scenes. What specific visual artifacts does each method aim to mitigate?,"abs-2308.02716v2,abs-2303.14707v1",Comparative & Contrastive Questions,"Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with
+  CNN-Transformer 
+Summary: In this study, we address the key challenges concerning the accuracy and
+effectiveness of depth estimation for endoscopic imaging, with a particular
+emphasis on real-time inference and the impact of light reflections. We propose
+a novel lightweight solution named EndoDepthL that integrates Convolutional
+Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our
+approach includes optimizing the network architecture, incorporating
+multi-scale dilated convolution, and a multi-channel attention mechanism. We
+also introduce a statistical confidence boundary mask to minimize the impact of
+reflective areas. To better evaluate the performance of monocular depth
+estimation in endoscopic imaging, we propose a novel complexity evaluation
+metric that considers network parameter size, floating-point operations, and
+inference frames per second. We comprehensively evaluate our proposed method
+and compare it with existing baseline solutions. The results demonstrate that
+EndoDepthL ensures depth estimation accuracy with a lightweight structure. 
+
+Title: Clean-NeRF: Reformulating NeRF to account for View-Dependent
+  Observations 
+Summary: While Neural Radiance Fields (NeRFs) had achieved unprecedented novel view
+synthesis results, they have been struggling in dealing with large-scale
+cluttered scenes with sparse input views and highly view-dependent appearances.
+Specifically, existing NeRF-based models tend to produce blurry rendering with
+the volumetric reconstruction often inaccurate, where a lot of reconstruction
+errors are observed in the form of foggy ""floaters"" hovering within the entire
+volume of an opaque 3D scene. Such inaccuracies impede NeRF's potential for
+accurate 3D NeRF registration, object detection, segmentation, etc., which
+possibly accounts for only limited significant research effort so far to
+directly address these important 3D fundamental computer vision problems to
+date. This paper analyzes the NeRF's struggles in such settings and proposes
+Clean-NeRF for accurate 3D reconstruction and novel view rendering in complex
+scenes. Our key insights consist of enforcing effective appearance and geometry
+constraints, which are absent in the conventional NeRF reconstruction, by 1)
+automatically detecting and modeling view-dependent appearances in the training
+views to prevent them from interfering with density estimation, which is
+complete with 2) a geometric correction procedure performed on each traced ray
+during inference. Clean-NeRF can be implemented as a plug-in that can
+immediately benefit existing NeRF-based methods without additional input. Codes
+will be released. 
+
+","'EndoDepthL' addresses issues in lightweight endoscopic monocular depth estimation, ensuring accurate depth estimation with a significantly reduced computational load compared to existing methods. In contrast, 'Clean-NeRF' tackles the problem of accurate 3D reconstruction and novel view rendering in complex scenes, specifically focusing on mitigating visual artifacts such as incorrect density estimation due to interfering view-dependent appearances by enforcing effective appearance and geometry constraints during training and inference.","abs-2303.14707v1, abs-2308.02716v2, abs-2303.13817v1, abs-2308.06904v1","[""Clean-NeRF for accurate 3D reconstruction and novel view rendering in complex scenes. Our key insights consist of enforcing effective appearance and geometry constraints, which are absent in the conventional NeRF reconstruction, by 1) automatically detecting and modeling view-dependent appearances in the training views to prevent them from interfering with density estimation, which is complete with 2) a geometric correction procedure performed on each traced ray during inference. Clean-NeRF can be implemented as a plug-in that can immediately benefit existing NeRF-based methods without additional input. Codes will be released."", ""Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with\n  CNN-Transformer.\nPublished_date: 2023-08-04."", ""frames per second. We comprehensively evaluate our proposed method and compare it with existing baseline solutions. The results demonstrate that EndoDepthL ensures depth estimation accuracy with a lightweight structure."", ""Title: ABLE-NeRF: Attention-Based Rendering with Learnable Embeddings for\n  Neural Radiance Field.\nPublished_date: 2023-03-24."", ""Title: Exploring Lightweight Hierarchical Vision Transformers for Efficient\n  Visual Tracking.\nPublished_date: 2023-08-14.""]"
+"Considering the privacy-preserving goals of the 'Bullying10K' dataset which uses event cameras, how might the tubelet sparsification and anonymization mechanisms from 'STPrivacy' be integrated to further enhance privacy by altering the event streams themselves?","abs-2306.11546v2,abs-2301.03046v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Bullying10K: A Large-Scale Neuromorphic Dataset towards
+  Privacy-Preserving Bullying Recognition 
+Summary: The prevalence of violence in daily life poses significant threats to
+individuals' physical and mental well-being. Using surveillance cameras in
+public spaces has proven effective in proactively deterring and preventing such
+incidents. However, concerns regarding privacy invasion have emerged due to
+their widespread deployment. To address the problem, we leverage Dynamic Vision
+Sensors (DVS) cameras to detect violent incidents and preserve privacy since it
+captures pixel brightness variations instead of static imagery. We introduce
+the Bullying10K dataset, encompassing various actions, complex movements, and
+occlusions from real-life scenarios. It provides three benchmarks for
+evaluating different tasks: action recognition, temporal action localization,
+and pose estimation. With 10,000 event segments, totaling 12 billion events and
+255 GB of data, Bullying10K contributes significantly by balancing violence
+detection and personal privacy persevering. And it also poses a challenge to
+the neuromorphic dataset. It will serve as a valuable resource for training and
+developing privacy-protecting video systems. The Bullying10K opens new
+possibilities for innovative approaches in these domains. 
+
+Title: STPrivacy: Spatio-Temporal Privacy-Preserving Action Recognition 
+Summary: Existing methods of privacy-preserving action recognition (PPAR) mainly focus
+on frame-level (spatial) privacy removal through 2D CNNs. Unfortunately, they
+have two major drawbacks. First, they may compromise temporal dynamics in input
+videos, which are critical for accurate action recognition. Second, they are
+vulnerable to practical attacking scenarios where attackers probe for privacy
+from an entire video rather than individual frames. To address these issues, we
+propose a novel framework STPrivacy to perform video-level PPAR. For the first
+time, we introduce vision Transformers into PPAR by treating a video as a
+tubelet sequence, and accordingly design two complementary mechanisms, i.e.,
+sparsification and anonymization, to remove privacy from a spatio-temporal
+perspective. In specific, our privacy sparsification mechanism applies adaptive
+token selection to abandon action-irrelevant tubelets. Then, our anonymization
+mechanism implicitly manipulates the remaining action-tubelets to erase privacy
+in the embedding space through adversarial learning. These mechanisms provide
+significant advantages in terms of privacy preservation for human eyes and
+action-privacy trade-off adjustment during deployment. We additionally
+contribute the first two large-scale PPAR benchmarks, VP-HMDB51 and VP-UCF101,
+to the community. Extensive evaluations on them, as well as two other tasks,
+validate the effectiveness and generalization capability of our framework. 
+
+","The tubelet sparsification mechanism in STPrivacy could be adapted for use with event camera data by applying adaptive token selection to abandon action-irrelevant events, thereby preserving privacy without compromising accuracy. The anonymization mechanism could then manipulate the remaining relevant events through a similar approach, ensuring that any information retained is not personally identifiable, thus balancing privacy preservation and maintaining the utility of the dataset for security applications.","abs-2306.11546v2, abs-2301.03046v2, abs-2412.06647v1, abs-2301.01928v3","[""Summary: The prevalence of violence in daily life poses significant threats to individuals' physical and mental well-being. Using surveillance cameras in public spaces has proven effective in proactively deterring and preventing such incidents. However, concerns regarding privacy invasion have emerged due to their widespread deployment. To address the problem, we leverage Dynamic Vision Sensors (DVS) cameras to detect violent incidents and preserve privacy since it captures pixel brightness variations instead of static imagery. We introduce the Bullying10K dataset, encompassing various actions, complex movements, and occlusions from real-life scenarios. It provides three benchmarks for evaluating different tasks: action recognition, temporal action localization, and pose estimation. With 10,000 event segments, totaling 12 billion events and 255 GB of data, Bullying10K contributes significantly by balancing violence detection and personal privacy persevering. And it also poses a"", ""Summary: Existing methods of privacy-preserving action recognition (PPAR) mainly focus on frame-level (spatial) privacy removal through 2D CNNs. Unfortunately, they have two major drawbacks. First, they may compromise temporal dynamics in input videos, which are critical for accurate action recognition. Second, they are vulnerable to practical attacking scenarios where attackers probe for privacy from an entire video rather than individual frames. To address these issues, we propose a novel framework STPrivacy to perform video-level PPAR. For the first time, we introduce vision Transformers into PPAR by treating a video as a tubelet sequence, and accordingly design two complementary mechanisms, i.e., sparsification and anonymization, to remove privacy from a spatio-temporal perspective. In specific, our privacy sparsification mechanism applies adaptive token selection to abandon action-irrelevant tubelets. Then, our anonymization mechanism implicitly manipulates the remaining"", ""Summary: Object detection in event streams has emerged as a cutting-edge research area, demonstrating superior performance in low-light conditions, scenarios with motion blur, and rapid movements. Current detectors leverage spiking neural networks, Transformers, or convolutional neural networks as their core architectures, each with its own set of limitations including restricted performance, high computational overhead, or limited local receptive fields. This paper introduces a novel MoE (Mixture of Experts) heat conduction-based object detection algorithm that strikingly balances accuracy and computational efficiency. Initially, we employ a stem network for event data embedding, followed by processing through our innovative MoE-HCO blocks. Each block integrates various expert modules to mimic heat conduction within event streams. Subsequently, an IoU-based query selection module is utilized for efficient token extraction, which is then channeled into a detection head for the final"", ""an IoU-based query selection module is utilized for efficient token extraction, which is then channeled into a detection head for the final object detection process. Furthermore, we are pleased to introduce EvDET200K, a novel benchmark dataset for event-based object detection. Captured with a high-definition Prophesee EVK4-HD event camera, this dataset encompasses 10 distinct categories, 200,000 bounding boxes, and 10,054 samples, each spanning 2 to 5 seconds. We also provide comprehensive results from over 15 state-of-the-art detectors, offering a solid foundation for future research and comparison. The source code of this paper will be released on: https://github.com/Event-AHU/OpenEvDET"", ""Summary: This paper proposes a pre-trained neural network for handling event camera data. Our model is a self-supervised learning framework, and uses paired event camera data and natural RGB images for training.   Our method contains three modules connected in a sequence: i) a family of event data augmentations, generating meaningful event images for self-supervised training; ii) a conditional masking strategy to sample informative event patches from event images, encouraging our model to capture the spatial layout of a scene and accelerating training; iii) a contrastive learning approach, enforcing the similarity of embeddings between matching event images, and between paired event and RGB images. An embedding projection loss is proposed to avoid the model collapse when enforcing the event image embedding similarities. A probability distribution alignment loss is proposed to encourage the event image to be consistent with its paired RGB image in the feature space.   Transfer learning""]"
+What was the exact size in megabytes of the final trained EndoDepthL model?,abs-2308.02716v2,Negative / Unanswerable Questions,"Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with
+  CNN-Transformer 
+Summary: In this study, we address the key challenges concerning the accuracy and
+effectiveness of depth estimation for endoscopic imaging, with a particular
+emphasis on real-time inference and the impact of light reflections. We propose
+a novel lightweight solution named EndoDepthL that integrates Convolutional
+Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our
+approach includes optimizing the network architecture, incorporating
+multi-scale dilated convolution, and a multi-channel attention mechanism. We
+also introduce a statistical confidence boundary mask to minimize the impact of
+reflective areas. To better evaluate the performance of monocular depth
+estimation in endoscopic imaging, we propose a novel complexity evaluation
+metric that considers network parameter size, floating-point operations, and
+inference frames per second. We comprehensively evaluate our proposed method
+and compare it with existing baseline solutions. The results demonstrate that
+EndoDepthL ensures depth estimation accuracy with a lightweight structure. 
+
+","No Answer
+
+The provided documents do not contain any information regarding the specific size in megabytes of the final trained EndoDepthL model. They focus on the architecture, multi-scale depth maps prediction, and its application in endoscopic imaging rather than detailing the model's size.","abs-2308.02716v2, abs-2310.11173v1, abs-2303.15343v4, abs-2406.02507v3","[""Summary: In this study, we address the key challenges concerning the accuracy and effectiveness of depth estimation for endoscopic imaging, with a particular emphasis on real-time inference and the impact of light reflections. We propose a novel lightweight solution named EndoDepthL that integrates Convolutional Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our approach includes optimizing the network architecture, incorporating multi-scale dilated convolution, and a multi-channel attention mechanism. We also introduce a statistical confidence boundary mask to minimize the impact of reflective areas. To better evaluate the performance of monocular depth estimation in endoscopic imaging, we propose a novel complexity evaluation metric that considers network parameter size, floating-point operations, and inference frames per second. We comprehensively evaluate our proposed method and compare it with existing baseline solutions. The results demonstrate that"", ""frames per second. We comprehensively evaluate our proposed method and compare it with existing baseline solutions. The results demonstrate that EndoDepthL ensures depth estimation accuracy with a lightweight structure."", ""Summary: The development of artificial intelligence systems for colonoscopy analysis often necessitates expert-annotated image datasets. However, limitations in dataset size and diversity impede model performance and generalisation. Image-text colonoscopy records from routine clinical practice, comprising millions of images and text reports, serve as a valuable data source, though annotating them is labour-intensive. Here we leverage recent advancements in large language and vision models and propose EndoKED, a data mining paradigm for deep knowledge extraction and distillation. EndoKED automates the transformation of raw colonoscopy records into image datasets with pixel-level annotation. We validate EndoKED using multi-centre datasets of raw colonoscopy records (~1 million images), demonstrating its superior performance in training polyp detection and segmentation models. Furthermore, the EndoKED pre-trained vision backbone enables data-efficient and generalisable learning for"", ""a more reasonable batch size of 32k being sufficient. We release our models at https://github.com/google-research/big_vision and hope our research motivates further explorations in improving the quality and efficiency of language-image pre-training."", ""record FIDs of 1.01 for 64x64 and 1.25 for 512x512, using publicly available networks. Furthermore, the method is also applicable to unconditional diffusion models, drastically improving their quality.""]"
+"According to the paper 'Affine Correspondences between Multi-Camera Systems for Relative Pose Estimation', how many affine correspondences are required for their minimal solution?",abs-2306.12996v1,Direct Fact Retrieval & Definition Questions,"Title: Affine Correspondences between Multi-Camera Systems for Relative Pose
+  Estimation 
+Summary: We present a novel method to compute the relative pose of multi-camera
+systems using two affine correspondences (ACs). Existing solutions to the
+multi-camera relative pose estimation are either restricted to special cases of
+motion, have too high computational complexity, or require too many point
+correspondences (PCs). Thus, these solvers impede an efficient or accurate
+relative pose estimation when applying RANSAC as a robust estimator. This paper
+shows that the 6DOF relative pose estimation problem using ACs permits a
+feasible minimal solution, when exploiting the geometric constraints between
+ACs and multi-camera systems using a special parameterization. We present a
+problem formulation based on two ACs that encompass two common types of ACs
+across two views, i.e., inter-camera and intra-camera. Moreover, the framework
+for generating the minimal solvers can be extended to solve various relative
+pose estimation problems, e.g., 5DOF relative pose estimation with known
+rotation angle prior. Experiments on both virtual and real multi-camera systems
+prove that the proposed solvers are more efficient than the state-of-the-art
+algorithms, while resulting in a better relative pose accuracy. Source code is
+available at https://github.com/jizhaox/relpose-mcs-depth. 
+
+","The paper ""Affine Correspondences between Multi-Camera Systems for Relative Pose Estimation"" does not specify the exact number of affine correspondences (ACs) required for their minimal solution. However, it mentions that the method uses two ACs to formulate a problem formulation encompassing inter-camera and intra-camera ACs across two views.","abs-2306.12996v1, abs-2302.11301v2, abs-2308.05733v1, abs-2308.05459v2","[""Summary: We present a novel method to compute the relative pose of multi-camera systems using two affine correspondences (ACs). Existing solutions to the multi-camera relative pose estimation are either restricted to special cases of motion, have too high computational complexity, or require too many point correspondences (PCs). Thus, these solvers impede an efficient or accurate relative pose estimation when applying RANSAC as a robust estimator. This paper shows that the 6DOF relative pose estimation problem using ACs permits a feasible minimal solution, when exploiting the geometric constraints between ACs and multi-camera systems using a special parameterization. We present a problem formulation based on two ACs that encompass two common types of ACs across two views, i.e., inter-camera and intra-camera. Moreover, the framework for generating the minimal solvers can be extended to solve various relative pose estimation problems, e.g., 5DOF relative pose estimation with known"", ""for generating the minimal solvers can be extended to solve various relative pose estimation problems, e.g., 5DOF relative pose estimation with known rotation angle prior. Experiments on both virtual and real multi-camera systems prove that the proposed solvers are more efficient than the state-of-the-art algorithms, while resulting in a better relative pose accuracy. Source code is available at https://github.com/jizhaox/relpose-mcs-depth."", ""Summary: The rapid development of multi-view 3D human pose estimation (HPE) is attributed to the maturation of monocular 2D HPE and the geometry of 3D reconstruction. However, 2D detection outliers in occluded views due to neglect of view consistency, and 3D implausible poses due to lack of pose coherence, remain challenges. To solve this, we introduce a Multi-View Fusion module to refine 2D results by establishing view correlations. Then, Holistic Triangulation is proposed to infer the whole pose as an entirety, and anatomy prior is injected to maintain the pose coherence and improve the plausibility. Anatomy prior is extracted by PCA whose input is skeletal structure features, which can factor out global context and joint-by-joint relationship from abstract to concrete. Benefiting from the closed-form solution, the whole framework is trained end-to-end. Our method outperforms the state of the art in both precision and plausibility which is assessed by a new metric."", ""Summary: 3D scene reconstruction is a long-standing vision task. Existing approaches can be categorized into geometry-based and learning-based methods. The former leverages multi-view geometry but can face catastrophic failures due to the reliance on accurate pixel correspondence across views. The latter was proffered to mitigate these issues by learning 2D or 3D representation directly. However, without a large-scale video or 3D training data, it can hardly generalize to diverse real-world scenarios due to the presence of tens of millions or even billions of optimization parameters in the deep network. Recently, robust monocular depth estimation models trained with large-scale datasets have been proven to possess weak 3D geometry prior, but they are insufficient for reconstruction due to the unknown camera parameters, the affine-invariant property, and inter-frame inconsistency. Here, we propose a novel test-time optimization approach that can transfer the robustness of"", ""Summary: Markerless Mobile Augmented Reality (AR) aims to anchor digital content in the physical world without using specific 2D or 3D objects. Absolute Pose Regressors (APR) are end-to-end machine learning solutions that infer the device's pose from a single monocular image. Thanks to their low computation cost, they can be directly executed on the constrained hardware of mobile AR devices. However, APR methods tend to yield significant inaccuracies for input images that are too distant from the training set. This paper introduces KS-APR, a pipeline that assesses the reliability of an estimated pose with minimal overhead by combining the inference results of the APR and the prior images in the training set. Mobile AR systems tend to rely upon visual-inertial odometry to track the relative pose of the device during the experience. As such, KS-APR favours reliability over frequency, discarding unreliable poses. This pipeline can integrate most existing APR methods to improve accuracy""]"
+What is the main purpose of the 'Auto-Contrastive-Encoder' (ACE) framework?,abs-2302.11705v1,Summarization / Purpose Identification Questions,"Title: ACE: Zero-Shot Image to Image Translation via Pretrained
+  Auto-Contrastive-Encoder 
+Summary: Image-to-image translation is a fundamental task in computer vision. It
+transforms images from one domain to images in another domain so that they have
+particular domain-specific characteristics. Most prior works train a generative
+model to learn the mapping from a source domain to a target domain. However,
+learning such mapping between domains is challenging because data from
+different domains can be highly unbalanced in terms of both quality and
+quantity. To address this problem, we propose a new approach to extract image
+features by learning the similarities and differences of samples within the
+same data distribution via a novel contrastive learning framework, which we
+call Auto-Contrastive-Encoder (ACE). ACE learns the content code as the
+similarity between samples with the same content information and different
+style perturbations. The design of ACE enables us to achieve zero-shot
+image-to-image translation with no training on image translation tasks for the
+first time.
+  Moreover, our learning method can learn the style features of images on
+different domains effectively. Consequently, our model achieves competitive
+results on multimodal image translation tasks with zero-shot learning as well.
+Additionally, we demonstrate the potential of our method in transfer learning.
+With fine-tuning, the quality of translated images improves in unseen domains.
+Even though we use contrastive learning, all of our training can be performed
+on a single GPU with the batch size of 8. 
+
+",No Answer. The provided documents do not contain information about an Auto-Contrastive-Encoder (ACE) framework or its purposes.,"abs-2309.03921v1, abs-2308.02228v1, abs-2305.18047v1, abs-2304.02991v1, abs-2309.01246v1","[""Title: C-CLIP: Contrastive Image-Text Encoders to Close the\n  Descriptive-Commentative Gap.\nPublished_date: 2023-09-06."", ""Summary: Painterly image harmonization aims to insert photographic objects into paintings and obtain artistically coherent composite images. Previous methods for this task mainly rely on inference optimization or generative adversarial network, but they are either very time-consuming or struggling at fine control of the foreground objects (e.g., texture and content details). To address these issues, we propose a novel Painterly Harmonization stable Diffusion model (PHDiffusion), which includes a lightweight adaptive encoder and a Dual Encoder Fusion (DEF) module. Specifically, the adaptive encoder and the DEF module first stylize foreground features within each encoder. Then, the stylized foreground features from both encoders are combined to guide the harmonization process. During training, besides the noise loss in diffusion model, we additionally employ content loss and two style losses, i.e., AdaIN style loss and contrastive style loss, aiming to balance the trade-off between"", ""processor. We employ a state-of-the-art segmentation framework Grounded Segment Anything to automatically generate a high-quality mask based on the segmentation prompt. The third component, the image editor, uses the captions from the language processor and the masks from the segmenter to compute the edited image. We adopt Stable Diffusion and the mask-guided generation from DiffEdit for this purpose. Experiments show that our method outperforms previous editing methods in fine-grained editing applications where the input image contains a complex object or multiple objects. We improve the mask quality over DiffEdit and thus improve the quality of edited images. We also show that our framework can accept multiple forms of user instructions as input. We provide the code at https://github.com/QianWangX/InstructEdit."", ""Title: Exploiting the Complementarity of 2D and 3D Networks to Address\n  Domain-Shift in 3D Semantic Segmentation.\nPublished_date: 2023-04-06."", ""Title: Towards Generic Image Manipulation Detection with Weakly-Supervised\n  Self-Consistency Learning.\nPublished_date: 2023-09-03.""]"
+Compare the application of diffusion models in 'Generative Diffusion Prior for Unified Image Restoration' and 'A ground-based dataset and a diffusion model for on-orbit low-light image enhancement'. What is the key difference in how diffusion is leveraged in each paper?,"abs-2304.01247v1,abs-2306.14227v2",Comparative & Contrastive Questions,"Title: Generative Diffusion Prior for Unified Image Restoration and Enhancement 
+Summary: Existing image restoration methods mostly leverage the posterior distribution
+of natural images. However, they often assume known degradation and also
+require supervised training, which restricts their adaptation to complex real
+applications. In this work, we propose the Generative Diffusion Prior (GDP) to
+effectively model the posterior distributions in an unsupervised sampling
+manner. GDP utilizes a pre-train denoising diffusion generative model (DDPM)
+for solving linear inverse, non-linear, or blind problems. Specifically, GDP
+systematically explores a protocol of conditional guidance, which is verified
+more practical than the commonly used guidance way. Furthermore, GDP is
+strength at optimizing the parameters of degradation model during the denoising
+process, achieving blind image restoration. Besides, we devise hierarchical
+guidance and patch-based methods, enabling the GDP to generate images of
+arbitrary resolutions. Experimentally, we demonstrate GDP's versatility on
+several image datasets for linear problems, such as super-resolution,
+deblurring, inpainting, and colorization, as well as non-linear and blind
+issues, such as low-light enhancement and HDR image recovery. GDP outperforms
+the current leading unsupervised methods on the diverse benchmarks in
+reconstruction quality and perceptual quality. Moreover, GDP also generalizes
+well for natural images or synthesized images with arbitrary sizes from various
+tasks out of the distribution of the ImageNet training set. 
+
+Title: A ground-based dataset and a diffusion model for on-orbit low-light
+  image enhancement 
+Summary: On-orbit service is important for maintaining the sustainability of space
+environment. Space-based visible camera is an economical and lightweight sensor
+for situation awareness during on-orbit service. However, it can be easily
+affected by the low illumination environment. Recently, deep learning has
+achieved remarkable success in image enhancement of natural images, but seldom
+applied in space due to the data bottleneck. In this article, we first propose
+a dataset of the Beidou Navigation Satellite for on-orbit low-light image
+enhancement (LLIE). In the automatic data collection scheme, we focus on
+reducing domain gap and improving the diversity of the dataset. we collect
+hardware in-the-loop images based on a robotic simulation testbed imitating
+space lighting conditions. To evenly sample poses of different orientation and
+distance without collision, a collision-free working space and pose stratified
+sampling is proposed. Afterwards, a novel diffusion model is proposed. To
+enhance the image contrast without over-exposure and blurring details, we
+design a fused attention to highlight the structure and dark region. Finally,
+we compare our method with previous methods using our dataset, which indicates
+that our method has a better capacity in on-orbit LLIE. 
+
+","In ""Generative Diffusion Prior for Unified Image Restoration,"" diffusion models are employed to effectively model posterior distributions of natural images in an unsupervised manner, focusing on denoising and restoring images with various degradation types. In contrast, the application described in 'A ground-based dataset and a diffusion model for on-orbit low-light image enhancement' leverages a diffusion model specifically for improving the quality of low-light images captured from satellites or other orbiting platforms, emphasizing real-world, data-driven training using a ground-based dataset to enhance the performance of the diffusion model.","abs-2304.01247v1, abs-2403.09439v1, abs-2305.05177v1, abs-2308.04682v1, abs-2303.13817v1","[""Summary: Existing image restoration methods mostly leverage the posterior distribution of natural images. However, they often assume known degradation and also require supervised training, which restricts their adaptation to complex real applications. In this work, we propose the Generative Diffusion Prior (GDP) to effectively model the posterior distributions in an unsupervised sampling manner. GDP utilizes a pre-train denoising diffusion generative model (DDPM) for solving linear inverse, non-linear, or blind problems. Specifically, GDP systematically explores a protocol of conditional guidance, which is verified more practical than the commonly used guidance way. Furthermore, GDP is strength at optimizing the parameters of degradation model during the denoising process, achieving blind image restoration. Besides, we devise hierarchical guidance and patch-based methods, enabling the GDP to generate images of arbitrary resolutions. Experimentally, we demonstrate GDP's versatility on"", ""with higher quality by exploiting the natural image prior from 2D diffusion model as well as the global 3D information of the current scene. Our extensive experiments demonstrate that, in comparison to previous methods, our approach supports wide variety of scene generation and arbitrary camera trajectories with improved visual quality and 3D consistency."", ""Summary: Multi-stage strategies are frequently employed in image restoration tasks. While transformer-based methods have exhibited high efficiency in single-image super-resolution tasks, they have not yet shown significant advantages over CNN-based methods in stereo super-resolution tasks. This can be attributed to two key factors: first, current single-image super-resolution transformers are unable to leverage the complementary stereo information during the process; second, the performance of transformers is typically reliant on sufficient data, which is absent in common stereo-image super-resolution algorithms. To address these issues, we propose a Hybrid Transformer and CNN Attention Network (HTCAN), which utilizes a transformer-based network for single-image enhancement and a CNN-based network for stereo information fusion. Furthermore, we employ a multi-patch training strategy and larger window sizes to activate more input pixels for super-resolution. We also revisit other"", ""optimizing the variational image posterior. Such a procedure adaptively applies cheap score priors to denoising. Additionally, we exploit a Non-$i.i.d$ Gaussian mixture model and variational noise posterior to model the real-world noise. This scheme also enables the pixel-wise fusion of multiple image priors and variational image posteriors. Besides, we develop a noise-aware prior assignment strategy that dynamically adjusts the weight of image priors in the optimization. Our method outperforms other single image-based real-world denoising methods and achieves comparable performance to dataset-based unsupervised methods."", ""Learnable Embeddings to capture view dependent effects within the scene. Our method, which we call ABLE-NeRF, significantly reduces `blurry' glossy surfaces in rendering and produces realistic translucent surfaces which lack in prior art. In the Blender dataset, ABLE-NeRF achieves SOTA results and surpasses Ref-NeRF in all 3 image quality metrics PSNR, SSIM, LPIPS.""]"
+"How could the DetToolChain prompting paradigm, which uses virtual rulers, be applied to the 'Rad-ReStruct' VQA benchmark to help an MLLM accurately measure and report the size of abnormalities in X-Ray images?","abs-2403.12488v3,abs-2307.05766v4",Synthesis & Multi-Hop Reasoning Questions,"Title: DetToolChain: A New Prompting Paradigm to Unleash Detection Ability of
+  MLLM 
+Summary: We present DetToolChain, a novel prompting paradigm, to unleash the zero-shot
+object detection ability of multimodal large language models (MLLMs), such as
+GPT-4V and Gemini. Our approach consists of a detection prompting toolkit
+inspired by high-precision detection priors and a new Chain-of-Thought to
+implement these prompts. Specifically, the prompts in the toolkit are designed
+to guide the MLLM to focus on regional information (e.g., zooming in), read
+coordinates according to measure standards (e.g., overlaying rulers and
+compasses), and infer from the contextual information (e.g., overlaying scene
+graphs). Building upon these tools, the new detection chain-of-thought can
+automatically decompose the task into simple subtasks, diagnose the
+predictions, and plan for progressive box refinements. The effectiveness of our
+framework is demonstrated across a spectrum of detection tasks, especially hard
+cases. Compared to existing state-of-the-art methods, GPT-4V with our
+DetToolChain improves state-of-the-art object detectors by +21.5% AP50 on MS
+COCO Novel class set for open-vocabulary detection, +24.23% Acc on RefCOCO val
+set for zero-shot referring expression comprehension, +14.5% AP on D-cube
+describe object detection FULL setting. 
+
+Title: Rad-ReStruct: A Novel VQA Benchmark and Method for Structured Radiology
+  Reporting 
+Summary: Radiology reporting is a crucial part of the communication between
+radiologists and other medical professionals, but it can be time-consuming and
+error-prone. One approach to alleviate this is structured reporting, which
+saves time and enables a more accurate evaluation than free-text reports.
+However, there is limited research on automating structured reporting, and no
+public benchmark is available for evaluating and comparing different methods.
+To close this gap, we introduce Rad-ReStruct, a new benchmark dataset that
+provides fine-grained, hierarchically ordered annotations in the form of
+structured reports for X-Ray images. We model the structured reporting task as
+hierarchical visual question answering (VQA) and propose hi-VQA, a novel method
+that considers prior context in the form of previously asked questions and
+answers for populating a structured radiology report. Our experiments show that
+hi-VQA achieves competitive performance to the state-of-the-art on the medical
+VQA benchmark VQARad while performing best among methods without
+domain-specific vision-language pretraining and provides a strong baseline on
+Rad-ReStruct. Our work represents a significant step towards the automated
+population of structured radiology reports and provides a valuable first
+benchmark for future research in this area. Our dataset and code is available
+at https://github.com/ChantalMP/Rad-ReStruct. 
+
+","The DetToolChain prompting paradigm, which utilizes virtual rulers for precise measurements, could potentially be adapted for the Rad-ReStruct VQA benchmark by designing prompts that guide a multimodal large language model (MLLM) to focus on reading coordinates from X-ray images. These prompts would help the MLLM to accurately measure and report the size of abnormalities such as pulp chambers, restorations, decay, and cysts in X-ray images, thereby enhancing the detection accuracy of zero-shot object detectors for dental diseases.
+
+However, since no specific document addresses this exact application, a direct adaptation from DetToolChain is not provided. The effectiveness of such an approach would need to be tested empirically.","abs-2403.12488v3, abs-2305.06236v1, abs-2404.07306v1, abs-2404.07686v1","[""Summary: We present DetToolChain, a novel prompting paradigm, to unleash the zero-shot object detection ability of multimodal large language models (MLLMs), such as GPT-4V and Gemini. Our approach consists of a detection prompting toolkit inspired by high-precision detection priors and a new Chain-of-Thought to implement these prompts. Specifically, the prompts in the toolkit are designed to guide the MLLM to focus on regional information (e.g., zooming in), read coordinates according to measure standards (e.g., overlaying rulers and compasses), and infer from the contextual information (e.g., overlaying scene graphs). Building upon these tools, the new detection chain-of-thought can automatically decompose the task into simple subtasks, diagnose the predictions, and plan for progressive box refinements. The effectiveness of our framework is demonstrated across a spectrum of detection tasks, especially hard cases. Compared to existing state-of-the-art methods, GPT-4V with our"", ""framework is demonstrated across a spectrum of detection tasks, especially hard cases. Compared to existing state-of-the-art methods, GPT-4V with our DetToolChain improves state-of-the-art object detectors by +21.5% AP50 on MS COCO Novel class set for open-vocabulary detection, +24.23% Acc on RefCOCO val set for zero-shot referring expression comprehension, +14.5% AP on D-cube describe object detection FULL setting."", ""Mask2Former in Semantic Segmentation.\nPublished_date: 2023-05-10.\nSummary: X-ray images are the first steps for diagnosing and further treating dental problems. So, early diagnosis prevents the development and increase of oral and dental diseases. In this paper, we developed a semantic segmentation algorithm based on BEIT adaptor and Mask2Former to detect and identify teeth, roots, and multiple dental diseases and abnormalities such as pulp chamber, restoration, endodontics, crown, decay, pin, composite, bridge, pulpitis, orthodontics, radicular cyst, periapical cyst, cyst, implant, and bone graft material in panoramic, periapical, and bitewing X-ray images. We compared the result of our algorithm to two state-of-the-art algorithms in image segmentation named: Deeplabv3 and Segformer on our own data set. We discovered that Radious outperformed those algorithms by increasing the mIoU scores by 9% and 33% in Deeplabv3+ and Segformer, respectively."", ""Summary: From a process development perspective, diamond growth via chemical vapor deposition has made significant strides. However, challenges persist in achieving high quality and large-area material production. These difficulties include controlling conditions to maintain uniform growth rates for the entire growth surface. As growth progresses, various factors or defect states emerge, altering the uniform conditions. These changes affect the growth rate and result in the formation of crystalline defects at the microscale. However, there is a distinct lack of methods to identify these defect states and their geometry using images taken during the growth process. This paper details seminal work on defect segmentation pipeline using in-situ optical images to identify features that indicate defective states that are visible at the macroscale. Using a semantic segmentation approach as applied in our previous work, these defect states and corresponding derivative features are isolated"", ""Title: Depth Estimation using Weighted-loss and Transfer Learning.\nPublished_date: 2024-04-11.""]"
+What specific type of Gabor layer was implemented in the 'Accelerated Fingerprint Enhancement' paper that was not GPU-optimized?,abs-2306.00272v1,Negative / Unanswerable Questions,"Title: Accelerated Fingerprint Enhancement: A GPU-Optimized Mixed Architecture
+  Approach 
+Summary: This document presents a preliminary approach to latent fingerprint
+enhancement, fundamentally designed around a mixed Unet architecture. It
+combines the capabilities of the Resnet-101 network and Unet encoder, aiming to
+form a potentially powerful composite. This combination, enhanced with
+attention mechanisms and forward skip connections, is intended to optimize the
+enhancement of ridge and minutiae features in fingerprints. One innovative
+element of this approach includes a novel Fingerprint Enhancement Gabor layer,
+specifically designed for GPU computations. This illustrates how modern
+computational resources might be harnessed to expedite enhancement. Given its
+potential functionality as either a CNN or Transformer layer, this Gabor layer
+could offer improved agility and processing speed to the system. However, it is
+important to note that this approach is still in the early stages of
+development and has not yet been fully validated through rigorous experiments.
+As such, it may require additional time and testing to establish its robustness
+and usability in the field of latent fingerprint enhancement. This includes
+improvements in processing speed, enhancement adaptability with distinct latent
+fingerprint types, and full validation in experimental approaches such as
+open-set (identification 1:N) and open-set validation, fingerprint quality
+evaluation, among others. 
+
+",The document does not specify a particular Gabor layer or mention any non-GPU-optimized Gabor layer. It focuses on a novel Fingerprint Enhancement Gabor layer designed specifically for GPU computations to accelerate fingerprint enhancement.,"abs-2306.00272v1, abs-2310.01806v1, abs-2303.14977v1, abs-2304.00424v1","[""Summary: This document presents a preliminary approach to latent fingerprint enhancement, fundamentally designed around a mixed Unet architecture. It combines the capabilities of the Resnet-101 network and Unet encoder, aiming to form a potentially powerful composite. This combination, enhanced with attention mechanisms and forward skip connections, is intended to optimize the enhancement of ridge and minutiae features in fingerprints. One innovative element of this approach includes a novel Fingerprint Enhancement Gabor layer, specifically designed for GPU computations. This illustrates how modern computational resources might be harnessed to expedite enhancement. Given its potential functionality as either a CNN or Transformer layer, this Gabor layer could offer improved agility and processing speed to the system. However, it is important to note that this approach is still in the early stages of development and has not yet been fully validated through rigorous experiments. As such,"", ""Title: Accelerated Fingerprint Enhancement: A GPU-Optimized Mixed Architecture\n  Approach.\nPublished_date: 2023-06-01."", ""Title: Improvement and Enhancement of YOLOv5 Small Target Recognition Based on\n  Multi-module Optimization.\nPublished_date: 2023-10-03.\nSummary: In this paper, the limitations of YOLOv5s model on small target detection task are deeply studied and improved. The performance of the model is successfully enhanced by introducing GhostNet-based convolutional module, RepGFPN-based Neck module optimization, CA and Transformer's attention mechanism, and loss function improvement using NWD. The experimental results validate the positive impact of these improvement strategies on model precision, recall and mAP. In particular, the improved model shows significant superiority in dealing with complex backgrounds and tiny targets in real-world application tests. This study provides an effective optimization strategy for the YOLOv5s model on small target detection, and lays a solid foundation for future related research and applications."", ""Summary: Small object detection presents a significant challenge in computer vision and object detection. The performance of small object detectors is often compromised by a lack of pixels and less significant features. This issue stems from information misalignment caused by variations in feature scale and information loss during feature processing. In response to this challenge, this paper proposes a novel the Multi to Single Module (M2S), which enhances a specific layer through improving feature extraction and refining features. Specifically, M2S includes the proposed Cross-scale Aggregation Module (CAM) and explored Dual Relationship Module (DRM) to improve information extraction capabilities and feature refinement effects. Moreover, this paper enhances the accuracy of small object detection by utilizing M2S to generate an additional detection head. The effectiveness of the proposed method is evaluated on two datasets, VisDrone2021-DET and SeaDronesSeeV2. The experimental results"", ""Summary: Single domain generalization aims to train a generalizable model with only one source domain to perform well on arbitrary unseen target domains. Image augmentation based on Random Convolutions (RandConv), consisting of one convolution layer randomly initialized for each mini-batch, enables the model to learn generalizable visual representations by distorting local textures despite its simple and lightweight structure. However, RandConv has structural limitations in that the generated image easily loses semantics as the kernel size increases, and lacks the inherent diversity of a single convolution operation. To solve the problem, we propose a Progressive Random Convolution (Pro-RandConv) method that recursively stacks random convolution layers with a small kernel size instead of increasing the kernel size. This progressive approach can not only mitigate semantic distortions by reducing the influence of pixels away from the center in the theoretical receptive field, but also""]"
+What does 'LIDAPS' stand for in the context of domain-adaptive panoptic segmentation?,abs-2404.03799v2,Direct Fact Retrieval & Definition Questions,"Title: Language-Guided Instance-Aware Domain-Adaptive Panoptic Segmentation 
+Summary: The increasing relevance of panoptic segmentation is tied to the advancements
+in autonomous driving and AR/VR applications. However, the deployment of such
+models has been limited due to the expensive nature of dense data annotation,
+giving rise to unsupervised domain adaptation (UDA). A key challenge in
+panoptic UDA is reducing the domain gap between a labeled source and an
+unlabeled target domain while harmonizing the subtasks of semantic and instance
+segmentation to limit catastrophic interference. While considerable progress
+has been achieved, existing approaches mainly focus on the adaptation of
+semantic segmentation. In this work, we focus on incorporating instance-level
+adaptation via a novel instance-aware cross-domain mixing strategy IMix. IMix
+significantly enhances the panoptic quality by improving instance segmentation
+performance. Specifically, we propose inserting high-confidence predicted
+instances from the target domain onto source images, retaining the
+exhaustiveness of the resulting pseudo-labels while reducing the injected
+confirmation bias. Nevertheless, such an enhancement comes at the cost of
+degraded semantic performance, attributed to catastrophic forgetting. To
+mitigate this issue, we regularize our semantic branch by employing CLIP-based
+domain alignment (CDA), exploiting the domain-robustness of natural language
+prompts. Finally, we present an end-to-end model incorporating these two
+mechanisms called LIDAPS, achieving state-of-the-art results on all popular
+panoptic UDA benchmarks. 
+
+","'LIDAPS' stands for an end-to-end model that incorporates instance-level adaptation via a novel instance-aware cross-domain mixing strategy IMix, along with semantic branch regularization using CLIP-based domain alignment (CDA). This approach achieves state-of-the-art results on popular panoptic UDA benchmarks by enhancing the panoptic quality through improved instance segmentation performance.","abs-2404.03799v2, abs-2303.14360v1, abs-2308.04528v1, abs-2304.02991v1","[""Summary: The increasing relevance of panoptic segmentation is tied to the advancements in autonomous driving and AR/VR applications. However, the deployment of such models has been limited due to the expensive nature of dense data annotation, giving rise to unsupervised domain adaptation (UDA). A key challenge in panoptic UDA is reducing the domain gap between a labeled source and an unlabeled target domain while harmonizing the subtasks of semantic and instance segmentation to limit catastrophic interference. While considerable progress has been achieved, existing approaches mainly focus on the adaptation of semantic segmentation. In this work, we focus on incorporating instance-level adaptation via a novel instance-aware cross-domain mixing strategy IMix. IMix significantly enhances the panoptic quality by improving instance segmentation performance. Specifically, we propose inserting high-confidence predicted instances from the target domain onto source images, retaining the"", ""performance. Specifically, we propose inserting high-confidence predicted instances from the target domain onto source images, retaining the exhaustiveness of the resulting pseudo-labels while reducing the injected confirmation bias. Nevertheless, such an enhancement comes at the cost of degraded semantic performance, attributed to catastrophic forgetting. To mitigate this issue, we regularize our semantic branch by employing CLIP-based domain alignment (CDA), exploiting the domain-robustness of natural language prompts. Finally, we present an end-to-end model incorporating these two mechanisms called LIDAPS, achieving state-of-the-art results on all popular panoptic UDA benchmarks."", ""Summary: The ability of scene understanding has sparked active research for panoramic image semantic segmentation. However, the performance is hampered by distortion of the equirectangular projection (ERP) and a lack of pixel-wise annotations. For this reason, some works treat the ERP and pinhole images equally and transfer knowledge from the pinhole to ERP images via unsupervised domain adaptation (UDA). However, they fail to handle the domain gaps caused by: 1) the inherent differences between camera sensors and captured scenes; 2) the distinct image formats (e.g., ERP and pinhole images). In this paper, we propose a novel yet flexible dual-path UDA framework, DPPASS, taking ERP and tangent projection (TP) images as inputs. To reduce the domain gaps, we propose cross-projection and intra-projection training. The cross-projection training includes tangent-wise feature contrastive training and prediction consistency training. That is, the former formulates the features with the same"", ""unsupervised domain adaptation task (UCOS-DA), where both source labels and target labels are absent during the whole model training process. Specifically, we define a source model consisting of self-supervised vision transformers pre-trained on ImageNet. On the other hand, the target domain includes a simple linear layer (i.e., our target model) and unlabeled camouflaged objects. We then design a pipeline for foreground-background-contrastive self-adversarial domain adaptation, to achieve robust UCOS. As a result, our baseline model achieves superior segmentation performance when compared with competing unsupervised models on the UCOS benchmark, with the training set which's scale is only one tenth of the supervised COS counterpart."", ""Summary: 3D semantic segmentation is a critical task in many real-world applications, such as autonomous driving, robotics, and mixed reality. However, the task is extremely challenging due to ambiguities coming from the unstructured, sparse, and uncolored nature of the 3D point clouds. A possible solution is to combine the 3D information with others coming from sensors featuring a different modality, such as RGB cameras. Recent multi-modal 3D semantic segmentation networks exploit these modalities relying on two branches that process the 2D and 3D information independently, striving to maintain the strength of each modality. In this work, we first explain why this design choice is effective and then show how it can be improved to make the multi-modal semantic segmentation more robust to domain shift. Our surprisingly simple contribution achieves state-of-the-art performances on four popular multi-modal unsupervised domain adaptation benchmarks, as well as better results in a domain""]"
+Summarize the problem that the 'Multi-Scale Region-based Active Learning' (MuRAL) method is designed to solve for object detection.,abs-2303.16637v1,Summarization / Purpose Identification Questions,"Title: MuRAL: Multi-Scale Region-based Active Learning for Object Detection 
+Summary: Obtaining large-scale labeled object detection dataset can be costly and
+time-consuming, as it involves annotating images with bounding boxes and class
+labels. Thus, some specialized active learning methods have been proposed to
+reduce the cost by selecting either coarse-grained samples or fine-grained
+instances from unlabeled data for labeling. However, the former approaches
+suffer from redundant labeling, while the latter methods generally lead to
+training instability and sampling bias. To address these challenges, we propose
+a novel approach called Multi-scale Region-based Active Learning (MuRAL) for
+object detection. MuRAL identifies informative regions of various scales to
+reduce annotation costs for well-learned objects and improve training
+performance. The informative region score is designed to consider both the
+predicted confidence of instances and the distribution of each object category,
+enabling our method to focus more on difficult-to-detect classes. Moreover,
+MuRAL employs a scale-aware selection strategy that ensures diverse regions are
+selected from different scales for labeling and downstream finetuning, which
+enhances training stability. Our proposed method surpasses all existing
+coarse-grained and fine-grained baselines on Cityscapes and MS COCO datasets,
+and demonstrates significant improvement in difficult category performance. 
+
+","The MuRAL method addresses the challenges of obtaining cost-effective and high-quality labeled datasets for object detection. Specifically, it tackles the issues of redundant labeling when using coarse-grained samples and training instability and sampling bias that arise from fine-grained instance selection. By identifying informative regions at different scales, MuRAL aims to reduce annotation costs while improving the performance on well-learned objects.","abs-2303.16637v1, abs-2302.01708v1, abs-2302.11461v2, abs-2303.16570v2","[""Title: MuRAL: Multi-Scale Region-based Active Learning for Object Detection.\nPublished_date: 2023-03-29."", ""Summary: Obtaining large-scale labeled object detection dataset can be costly and time-consuming, as it involves annotating images with bounding boxes and class labels. Thus, some specialized active learning methods have been proposed to reduce the cost by selecting either coarse-grained samples or fine-grained instances from unlabeled data for labeling. However, the former approaches suffer from redundant labeling, while the latter methods generally lead to training instability and sampling bias. To address these challenges, we propose a novel approach called Multi-scale Region-based Active Learning (MuRAL) for object detection. MuRAL identifies informative regions of various scales to reduce annotation costs for well-learned objects and improve training performance. The informative region score is designed to consider both the predicted confidence of instances and the distribution of each object category, enabling our method to focus more on difficult-to-detect classes. Moreover,"", ""Title: Crucial Semantic Classifier-based Adversarial Learning for Unsupervised\n  Domain Adaptation.\nPublished_date: 2023-02-03."", ""Title: Saliency Guided Contrastive Learning on Scene Images.\nPublished_date: 2023-02-22."", ""Title: Point2Vec for Self-Supervised Representation Learning on Point Clouds.\nPublished_date: 2023-03-29.""]"
+"How do the data generation strategies of DatasetDM, which synthesizes images with perception annotations, and the data synthesis procedure in 'Contrastive Attention Networks for Attribution of Early Modern Print', which simulates printing damage, differ in their objectives?","abs-2308.06160v2,abs-2306.07998v1",Comparative & Contrastive Questions,"Title: DatasetDM: Synthesizing Data with Perception Annotations Using Diffusion
+  Models 
+Summary: Current deep networks are very data-hungry and benefit from training on
+largescale datasets, which are often time-consuming to collect and annotate. By
+contrast, synthetic data can be generated infinitely using generative models
+such as DALL-E and diffusion models, with minimal effort and cost. In this
+paper, we present DatasetDM, a generic dataset generation model that can
+produce diverse synthetic images and the corresponding high-quality perception
+annotations (e.g., segmentation masks, and depth). Our method builds upon the
+pre-trained diffusion model and extends text-guided image synthesis to
+perception data generation. We show that the rich latent code of the diffusion
+model can be effectively decoded as accurate perception annotations using a
+decoder module. Training the decoder only needs less than 1% (around 100
+images) manually labeled images, enabling the generation of an infinitely large
+annotated dataset. Then these synthetic data can be used for training various
+perception models for downstream tasks. To showcase the power of the proposed
+approach, we generate datasets with rich dense pixel-wise labels for a wide
+range of downstream tasks, including semantic segmentation, instance
+segmentation, and depth estimation. Notably, it achieves 1) state-of-the-art
+results on semantic segmentation and instance segmentation; 2) significantly
+more robust on domain generalization than using the real data alone; and
+state-of-the-art results in zero-shot segmentation setting; and 3) flexibility
+for efficient application and novel task composition (e.g., image editing). The
+project website and code can be found at
+https://weijiawu.github.io/DatasetDM_page/ and
+https://github.com/showlab/DatasetDM, respectively 
+
+Title: Contrastive Attention Networks for Attribution of Early Modern Print 
+Summary: In this paper, we develop machine learning techniques to identify unknown
+printers in early modern (c.~1500--1800) English printed books. Specifically,
+we focus on matching uniquely damaged character type-imprints in anonymously
+printed books to works with known printers in order to provide evidence of
+their origins. Until now, this work has been limited to manual investigations
+by analytical bibliographers. We present a Contrastive Attention-based Metric
+Learning approach to identify similar damage across character image pairs,
+which is sensitive to very subtle differences in glyph shapes, yet robust to
+various confounding sources of noise associated with digitized historical
+books. To overcome the scarce amount of supervised data, we design a random
+data synthesis procedure that aims to simulate bends, fractures, and inking
+variations induced by the early printing process. Our method successfully
+improves downstream damaged type-imprint matching among printed works from this
+period, as validated by in-domain human experts. The results of our approach on
+two important philosophical works from the Early Modern period demonstrate
+potential to extend the extant historical research about the origins and
+content of these books. 
+
+","DatasetDM synthesizes diverse synthetic images along with high-quality perception annotations (e.g., segmentation masks, depth), aiming to address the scarcity of labeled data through minimal effort. In contrast, 'Contrastive Attention Networks for Attribution of Early Modern Print' simulates printing damage on synthetic images without producing corresponding annotations; its objective is to create realistic image datasets that mimic historical print artifacts for research purposes related to attribution in early modern print studies.","abs-2308.06160v2, abs-2301.00725v1, abs-2306.14259v1, abs-2301.01928v3, abs-2309.03048v3","[""Summary: Current deep networks are very data-hungry and benefit from training on largescale datasets, which are often time-consuming to collect and annotate. By contrast, synthetic data can be generated infinitely using generative models such as DALL-E and diffusion models, with minimal effort and cost. In this paper, we present DatasetDM, a generic dataset generation model that can produce diverse synthetic images and the corresponding high-quality perception annotations (e.g., segmentation masks, and depth). Our method builds upon the pre-trained diffusion model and extends text-guided image synthesis to perception data generation. We show that the rich latent code of the diffusion model can be effectively decoded as accurate perception annotations using a decoder module. Training the decoder only needs less than 1% (around 100 images) manually labeled images, enabling the generation of an infinitely large annotated dataset. Then these synthetic data can be used for training various"", ""Summary: This work focuses on unsupervised representation learning in person re-identification (ReID). Recent self-supervised contrastive learning methods learn invariance by maximizing the representation similarity between two augmented views of a same image. However, traditional data augmentation may bring to the fore undesirable distortions on identity features, which is not always favorable in id-sensitive ReID tasks. In this paper, we propose to replace traditional data augmentation with a generative adversarial network (GAN) that is targeted to generate augmented views for contrastive learning. A 3D mesh guided person image generator is proposed to disentangle a person image into id-related and id-unrelated features. Deviating from previous GAN-based ReID methods that only work in id-unrelated space (pose and camera style), we conduct GAN-based augmentation on both id-unrelated and id-related features. We further propose specific contrastive losses to help our network learn"", ""Summary: Distinctive Image Captioning (DIC) -- generating distinctive captions that describe the unique details of a target image -- has received considerable attention over the last few years. A recent DIC method proposes to generate distinctive captions by comparing the target image with a set of semantic-similar reference images, i.e., reference-based DIC (Ref-DIC). It aims to force the generated captions to distinguish between the target image and the reference image. To ensure Ref-DIC models really perceive the unique objects (or attributes) in target images, we propose two new Ref-DIC benchmarks and develop a Transformer-based Ref-DIC baseline TransDIC. The model only extracts visual features from the target image, but also encodes the differences between objects in the target and reference images. Taking one step further, we propose a stronger TransDIC++, which consists of an extra contrastive learning module to make full use of the reference images. This new module is"", ""Summary: This paper proposes a pre-trained neural network for handling event camera data. Our model is a self-supervised learning framework, and uses paired event camera data and natural RGB images for training.   Our method contains three modules connected in a sequence: i) a family of event data augmentations, generating meaningful event images for self-supervised training; ii) a conditional masking strategy to sample informative event patches from event images, encouraging our model to capture the spatial layout of a scene and accelerating training; iii) a contrastive learning approach, enforcing the similarity of embeddings between matching event images, and between paired event and RGB images. An embedding projection loss is proposed to avoid the model collapse when enforcing the event image embedding similarities. A probability distribution alignment loss is proposed to encourage the event image to be consistent with its paired RGB image in the feature space.   Transfer learning"", ""Summary: In surgical computer vision applications, obtaining labeled training data is challenging due to data-privacy concerns and the need for expert annotation. Unpaired image-to-image translation techniques have been explored to automatically generate large annotated datasets by translating synthetic images to the realistic domain. However, preserving the structure and semantic consistency between the input and translated images presents significant challenges, mainly when there is a distributional mismatch in the semantic characteristics of the domains. This study empirically investigates unpaired image translation methods for generating suitable data in surgical applications, explicitly focusing on semantic consistency. We extensively evaluate various state-of-the-art image translation models on two challenging surgical datasets and downstream semantic segmentation tasks. We find that a simple combination of structural-similarity loss and contrastive learning yields the most""]"
+"Could the statistical confidence boundary mask from 'EndoDepthL', used to handle reflections, be adapted to improve the robustness of 'Rendering Humans from Object-Occluded Monocular Videos' when dealing with reflective surfaces on occluding objects?","abs-2308.02716v2,abs-2308.04622v1",Synthesis & Multi-Hop Reasoning Questions,"Title: EndoDepthL: Lightweight Endoscopic Monocular Depth Estimation with
+  CNN-Transformer 
+Summary: In this study, we address the key challenges concerning the accuracy and
+effectiveness of depth estimation for endoscopic imaging, with a particular
+emphasis on real-time inference and the impact of light reflections. We propose
+a novel lightweight solution named EndoDepthL that integrates Convolutional
+Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our
+approach includes optimizing the network architecture, incorporating
+multi-scale dilated convolution, and a multi-channel attention mechanism. We
+also introduce a statistical confidence boundary mask to minimize the impact of
+reflective areas. To better evaluate the performance of monocular depth
+estimation in endoscopic imaging, we propose a novel complexity evaluation
+metric that considers network parameter size, floating-point operations, and
+inference frames per second. We comprehensively evaluate our proposed method
+and compare it with existing baseline solutions. The results demonstrate that
+EndoDepthL ensures depth estimation accuracy with a lightweight structure. 
+
+Title: Rendering Humans from Object-Occluded Monocular Videos 
+Summary: 3D understanding and rendering of moving humans from monocular videos is a
+challenging task. Despite recent progress, the task remains difficult in
+real-world scenarios, where obstacles may block the camera view and cause
+partial occlusions in the captured videos. Existing methods cannot handle such
+defects due to two reasons. First, the standard rendering strategy relies on
+point-point mapping, which could lead to dramatic disparities between the
+visible and occluded areas of the body. Second, the naive direct regression
+approach does not consider any feasibility criteria (ie, prior information) for
+rendering under occlusions. To tackle the above drawbacks, we present OccNeRF,
+a neural rendering method that achieves better rendering of humans in severely
+occluded scenes. As direct solutions to the two drawbacks, we propose
+surface-based rendering by integrating geometry and visibility priors. We
+validate our method on both simulated and real-world occlusions and demonstrate
+our method's superiority. 
+
+","The statistical confidence boundary mask developed for handling reflections in EndoDepthL could potentially be adapted to enhance the robustness of rendering humans from object-occluded monocular videos. This approach might help in mitigating the effects of reflective surfaces on occluding objects, thereby improving the overall accuracy and realism of human renderings.
+
+However, direct adaptation may require modifications to account for differences in the specific challenges and data characteristics of human occlusion scenarios compared to endoscopic imaging.","abs-2308.02716v2, abs-2303.13817v1, abs-2308.04622v1","[""Summary: In this study, we address the key challenges concerning the accuracy and effectiveness of depth estimation for endoscopic imaging, with a particular emphasis on real-time inference and the impact of light reflections. We propose a novel lightweight solution named EndoDepthL that integrates Convolutional Neural Networks (CNN) and Transformers to predict multi-scale depth maps. Our approach includes optimizing the network architecture, incorporating multi-scale dilated convolution, and a multi-channel attention mechanism. We also introduce a statistical confidence boundary mask to minimize the impact of reflective areas. To better evaluate the performance of monocular depth estimation in endoscopic imaging, we propose a novel complexity evaluation metric that considers network parameter size, floating-point operations, and inference frames per second. We comprehensively evaluate our proposed method and compare it with existing baseline solutions. The results demonstrate that"", ""frames per second. We comprehensively evaluate our proposed method and compare it with existing baseline solutions. The results demonstrate that EndoDepthL ensures depth estimation accuracy with a lightweight structure."", ""Learnable Embeddings to capture view dependent effects within the scene. Our method, which we call ABLE-NeRF, significantly reduces `blurry' glossy surfaces in rendering and produces realistic translucent surfaces which lack in prior art. In the Blender dataset, ABLE-NeRF achieves SOTA results and surpasses Ref-NeRF in all 3 image quality metrics PSNR, SSIM, LPIPS."", ""Summary: Neural Radiance Field (NeRF) is a popular method in representing 3D scenes by optimising a continuous volumetric scene function. Its large success which lies in applying volumetric rendering (VR) is also its Achilles' heel in producing view-dependent effects. As a consequence, glossy and transparent surfaces often appear murky. A remedy to reduce these artefacts is to constrain this VR equation by excluding volumes with back-facing normal. While this approach has some success in rendering glossy surfaces, translucent objects are still poorly represented. In this paper, we present an alternative to the physics-based VR approach by introducing a self-attention-based framework on volumes along a ray. In addition, inspired by modern game engines which utilise Light Probes to store local lighting passing through the scene, we incorporate Learnable Embeddings to capture view dependent effects within the scene. Our method, which we call ABLE-NeRF, significantly reduces `blurry'"", ""rendering by integrating geometry and visibility priors. We validate our method on both simulated and real-world occlusions and demonstrate our method's superiority.""]"
+What was the specific brand of smartphone used to capture the images for the 'Child Palm-ID' system?,abs-2305.05161v1,Negative / Unanswerable Questions,"Title: Child Palm-ID: Contactless Palmprint Recognition for Children 
+Summary: Effective distribution of nutritional and healthcare aid for children,
+particularly infants and toddlers, in some of the least developed and most
+impoverished countries of the world, is a major problem due to the lack of
+reliable identification documents. Biometric authentication technology has been
+investigated to address child recognition in the absence of reliable ID
+documents. We present a mobile-based contactless palmprint recognition system,
+called Child Palm-ID, which meets the requirements of usability, hygiene, cost,
+and accuracy for child recognition. Using a contactless child palmprint
+database, Child-PalmDB1, consisting of 19,158 images from 1,020 unique palms
+(in the age range of 6 mos. to 48 mos.), we report a TAR=94.11% @ FAR=0.1%. The
+proposed Child Palm-ID system is also able to recognize adults, achieving a
+TAR=99.4% on the CASIA contactless palmprint database and a TAR=100% on the
+COEP contactless adult palmprint database, both @ FAR=0.1%. These accuracies
+are competitive with the SOTA provided by COTS systems. Despite these high
+accuracies, we show that the TAR for time-separated child-palmprints is only
+78.1% @ FAR=0.1%. 
+
+","No Answer. 
+
+The provided documents do not specify the exact brand of smartphones used to capture the palmprint images for the 'Child Palm-ID' system. The focus is on the technology and accuracy metrics rather than the specific camera models used.","abs-2305.05161v1, abs-2308.03200v3, abs-2304.04917v1","[""Summary: Effective distribution of nutritional and healthcare aid for children, particularly infants and toddlers, in some of the least developed and most impoverished countries of the world, is a major problem due to the lack of reliable identification documents. Biometric authentication technology has been investigated to address child recognition in the absence of reliable ID documents. We present a mobile-based contactless palmprint recognition system, called Child Palm-ID, which meets the requirements of usability, hygiene, cost, and accuracy for child recognition. Using a contactless child palmprint database, Child-PalmDB1, consisting of 19,158 images from 1,020 unique palms (in the age range of 6 mos. to 48 mos.), we report a TAR=94.11% @ FAR=0.1%. The proposed Child Palm-ID system is also able to recognize adults, achieving a TAR=99.4% on the CASIA contactless palmprint database and a TAR=100% on the COEP contactless adult palmprint database, both @ FAR=0.1%. These accuracies"", ""Summary: The prevalence and mobility of smartphones make these a widely used tool for environmental health research. However, their potential for determining aggregated air quality index (AQI) based on PM2.5 concentration in specific locations remains largely unexplored in the existing literature. In this paper, we thoroughly examine the challenges associated with predicting location-specific PM2.5 concentration using images taken with smartphone cameras. The focus of our study is on Dhaka, the capital of Bangladesh, due to its significant air pollution levels and the large population exposed to it. Our research involves the development of a Deep Convolutional Neural Network (DCNN), which we train using over a thousand outdoor images taken and annotated. These photos are captured at various locations in Dhaka, and their labels are based on PM2.5 concentration data obtained from the local US consulate, calculated using the NowCast algorithm. Through supervised learning, our model"", ""Summary: All-in-Focus (AIF) photography is expected to be a commercial selling point for modern smartphones. Standard AIF synthesis requires manual, time-consuming operations such as focal stack compositing, which is unfriendly to ordinary people. To achieve point-and-shoot AIF photography with a smartphone, we expect that an AIF photo can be generated from one shot of the scene, instead of from multiple photos captured by the same camera. Benefiting from the multi-camera module in modern smartphones, we introduce a new task of AIF synthesis from main (wide) and ultra-wide cameras. The goal is to recover sharp details from defocused regions in the main-camera photo with the help of the ultra-wide-camera one. The camera setting poses new challenges such as parallax-induced occlusions and inconsistent color between cameras. To overcome the challenges, we introduce a predict-and-refine network to mitigate occlusions and propose dynamic frequency-domain alignment for color correction. To"", ""on the CASIA contactless palmprint database and a TAR=100% on the COEP contactless adult palmprint database, both @ FAR=0.1%. These accuracies are competitive with the SOTA provided by COTS systems. Despite these high accuracies, we show that the TAR for time-separated child-palmprints is only 78.1% @ FAR=0.1%."", ""Title: Uncovering local aggregated air quality index with smartphone captured\n  images leveraging efficient deep convolutional neural network.\nPublished_date: 2023-08-06.""]"

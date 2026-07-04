@@ -1,0 +1,464 @@
+Question,Source Article Index,Question Type,Summary,prediction,documentIDs
+What single digit error percentage did the RNN-SPN model achieve on the cluttered MNIST dataset?,abs-1509.05329v1,Direct Fact Retrieval & Definition Questions,"Title: Recurrent Spatial Transformer Networks 
+Summary: We integrate the recently proposed spatial transformer network (SPN)
+[Jaderberg et. al 2015] into a recurrent neural network (RNN) to form an
+RNN-SPN model. We use the RNN-SPN to classify digits in cluttered MNIST
+sequences. The proposed model achieves a single digit error of 1.5% compared to
+2.9% for a convolutional networks and 2.0% for convolutional networks with SPN
+layers. The SPN outputs a zoomed, rotated and skewed version of the input
+image. We investigate different down-sampling factors (ratio of pixel in input
+and output) for the SPN and show that the RNN-SPN model is able to down-sample
+the input images without deteriorating performance. The down-sampling in
+RNN-SPN can be thought of as adaptive down-sampling that minimizes the
+information loss in the regions of interest. We attribute the superior
+performance of the RNN-SPN to the fact that it can attend to a sequence of
+regions of interest. 
+
+",This is a test answer.,"abs-1509.05329v1, abs-1811.08278v2, abs-1905.13147v1"
+What does the acronym PAC stand for in the context of the PointAtrousGraph paper?,abs-1907.09798v2,Direct Fact Retrieval & Definition Questions,"Title: PointAtrousGraph: Deep Hierarchical Encoder-Decoder with Point Atrous
+  Convolution for Unorganized 3D Points 
+Summary: Motivated by the success of encoding multi-scale contextual information for
+image analysis, we propose our PointAtrousGraph (PAG) - a deep
+permutation-invariant hierarchical encoder-decoder for efficiently exploiting
+multi-scale edge features in point clouds. Our PAG is constructed by several
+novel modules, such as Point Atrous Convolution (PAC), Edge-preserved Pooling
+(EP) and Edge-preserved Unpooling (EU). Similar with atrous convolution, our
+PAC can effectively enlarge receptive fields of filters and thus densely learn
+multi-scale point features. Following the idea of non-overlapping max-pooling
+operations, we propose our EP to preserve critical edge features during
+subsampling. Correspondingly, our EU modules gradually recover spatial
+information for edge features. In addition, we introduce chained skip
+subsampling/upsampling modules that directly propagate edge features to the
+final stage. Particularly, our proposed auxiliary loss functions can further
+improve our performance. Experimental results show that our PAG outperform
+previous state-of-the-art methods on various 3D semantic perception
+applications. 
+
+",This is a test answer.,"abs-1907.09798v2, abs-1612.00593v2, abs-2110.03170v3"
+What two types of information does the paper 'Covapixels' propose to use for summarizing image tiles?,abs-2010.09016v1,Direct Fact Retrieval & Definition Questions,"Title: Covapixels 
+Summary: We propose and discuss the summarization of superpixel-type image
+tiles/patches using mean and covariance information. We refer to the resulting
+objects as covapixels. 
+
+",This is a test answer.,"abs-2010.09016v1, abs-2103.07348v1, abs-2011.11314v2"
+"According to the abstract for 'EfficientSeg', what was the mIoU score achieved by their most successful model in the ECCV 2020 VIPriors challenge?",abs-2009.06469v2,Direct Fact Retrieval & Definition Questions,"Title: EfficientSeg: An Efficient Semantic Segmentation Network 
+Summary: Deep neural network training without pre-trained weights and few data is
+shown to need more training iterations. It is also known that, deeper models
+are more successful than their shallow counterparts for semantic segmentation
+task. Thus, we introduce EfficientSeg architecture, a modified and scalable
+version of U-Net, which can be efficiently trained despite its depth. We
+evaluated EfficientSeg architecture on Minicity dataset and outperformed U-Net
+baseline score (40% mIoU) using the same parameter count (51.5% mIoU). Our most
+successful model obtained 58.1% mIoU score and got the fourth place in semantic
+segmentation track of ECCV 2020 VIPriors challenge. 
+
+",This is a test answer.,"abs-2009.06469v2, abs-2004.01803v2, abs-2211.13137v1"
+What is the main goal of the multi-scale discriminative region discovery method described in paper abs-1909.10698v1?,abs-1909.10698v1,Summarization / Purpose Identification Questions,"Title: Multi-scale discriminative Region Discovery for Weakly-Supervised Object
+  Localization 
+Summary: Localizing objects with weak supervision in an image is a key problem of the
+research in computer vision community. Many existing Weakly-Supervised Object
+Localization (WSOL) approaches tackle this problem by estimating the most
+discriminative regions with feature maps (activation maps) obtained by Deep
+Convolutional Neural Network, that is, only the objects or parts of them with
+the most discriminative response will be located. However, the activation maps
+often display different local maximum responses or relatively weak response
+when one image contains multiple objects with the same type or small objects.
+In this paper, we propose a simple yet effective multi-scale discriminative
+region discovery method to localize not only more integral objects but also as
+many as possible with only image-level class labels. The gradient weights
+flowing into different convolutional layers of CNN are taken as the input of
+our method, which is different from previous methods only considering that of
+the final convolutional layer. To mine more discriminative regions for the task
+of object localization, the multiple local maximum from the gradient weight
+maps are leveraged to generate the localization map with a parallel sliding
+window. Furthermore, multi-scale localization maps from different convolutional
+layers are fused to produce the final result. We evaluate the proposed method
+with the foundation of VGGnet on the ILSVRC 2016, CUB-200-2011 and PASCAL VOC
+2012 datasets. On ILSVRC 2016, the proposed method yields the Top-1
+localization error of 48.65\%, which outperforms previous results by 2.75\%. On
+PASCAL VOC 2012, our approach achieve the highest localization accuracy of
+0.43. Even for CUB-200-2011 dataset, our method still achieves competitive
+results. 
+
+",This is a test answer.,"abs-1909.10698v1, abs-1910.04562v1, abs-1612.05322v2"
+What is the primary objective of the Skip-Attention (SkipAt) method for vision transformers?,abs-2301.02240v2,Summarization / Purpose Identification Questions,"Title: Skip-Attention: Improving Vision Transformers by Paying Less Attention 
+Summary: This work aims to improve the efficiency of vision transformers (ViT). While
+ViTs use computationally expensive self-attention operations in every layer, we
+identify that these operations are highly correlated across layers -- a key
+redundancy that causes unnecessary computations. Based on this observation, we
+propose SkipAt, a method to reuse self-attention computation from preceding
+layers to approximate attention at one or more subsequent layers. To ensure
+that reusing self-attention blocks across layers does not degrade the
+performance, we introduce a simple parametric function, which outperforms the
+baseline transformer's performance while running computationally faster. We
+show the effectiveness of our method in image classification and
+self-supervised learning on ImageNet-1K, semantic segmentation on ADE20K, image
+denoising on SIDD, and video denoising on DAVIS. We achieve improved throughput
+at the same-or-higher accuracy levels in all these tasks. 
+
+",This is a test answer.,"abs-2301.02240v2, abs-2205.11239v2, abs-2111.12994v2"
+What problem does the paper 'Accelerate 3D Object Processing via Spectral Layout' aim to solve?,abs-2110.12621v2,Summarization / Purpose Identification Questions,"Title: Accelerate 3D Object Processing via Spectral Layout 
+Summary: 3D image processing is an important problem in computer vision and pattern
+recognition fields. Compared with 2D image processing, its computation
+difficulty and cost are much higher due to the extra dimension. To
+fundamentally address this problem, we propose to embed the essential
+information in a 3D object into 2D space via spectral layout. Specifically, we
+construct a 3D adjacency graph to capture spatial structure of the 3D voxel
+grid. Then we calculate the eigenvectors corresponding to the second and third
+smallest eigenvalues of its graph Laplacian and perform spectral layout to map
+each voxel into a pixel in 2D Cartesian coordinate plane. The proposed method
+can achieve high quality 2D representations for 3D objects, which enables to
+use 2D-based methods to process 3D objects. The experimental results
+demonstrate the effectiveness and efficiency of our method. 
+
+",This is a test answer.,"abs-2110.12621v2, abs-2201.05761v2, abs-1612.00606v1"
+What is the primary purpose of the Deep Spherical Manifold Gaussian Kernel (DSGK) framework presented in paper abs-2105.02089v1?,abs-2105.02089v1,Summarization / Purpose Identification Questions,"Title: Deep Spherical Manifold Gaussian Kernel for Unsupervised Domain
+  Adaptation 
+Summary: Unsupervised Domain adaptation is an effective method in addressing the
+domain shift issue when transferring knowledge from an existing richly labeled
+domain to a new domain. Existing manifold-based methods either are based on
+traditional models or largely rely on Grassmannian manifold via minimizing
+differences of single covariance matrices of two domains. In addition, existing
+pseudo-labeling algorithms inadequately consider the quality of pseudo labels
+in aligning the conditional distribution between two domains. In this work, a
+deep spherical manifold Gaussian kernel (DSGK) framework is proposed to map the
+source and target subspaces into a spherical manifold and reduce the
+discrepancy between them by embedding both extracted features and a Gaussian
+kernel. To align the conditional distributions, we further develop an
+easy-to-hard pseudo label refinement process to improve the quality of the
+pseudo labels and then reduce categorical spherical manifold Gaussian kernel
+geodesic loss. Extensive experimental results show that DSGK outperforms
+state-of-the-art methods, especially on challenging cross-domain learning
+tasks. 
+
+",This is a test answer.,"abs-2105.02089v1, abs-1805.11918v1, abs-2008.07090v1"
+How do the approaches in 'Recurrent Spatial Transformer Networks' (abs-1509.05329v1) and 'Skip-Attention' (abs-2301.02240v2) differ in their methods for improving the efficiency of vision models?,"abs-1509.05329v1,abs-2301.02240v2",Comparative & Contrastive Questions,"Title: Recurrent Spatial Transformer Networks 
+Summary: We integrate the recently proposed spatial transformer network (SPN)
+[Jaderberg et. al 2015] into a recurrent neural network (RNN) to form an
+RNN-SPN model. We use the RNN-SPN to classify digits in cluttered MNIST
+sequences. The proposed model achieves a single digit error of 1.5% compared to
+2.9% for a convolutional networks and 2.0% for convolutional networks with SPN
+layers. The SPN outputs a zoomed, rotated and skewed version of the input
+image. We investigate different down-sampling factors (ratio of pixel in input
+and output) for the SPN and show that the RNN-SPN model is able to down-sample
+the input images without deteriorating performance. The down-sampling in
+RNN-SPN can be thought of as adaptive down-sampling that minimizes the
+information loss in the regions of interest. We attribute the superior
+performance of the RNN-SPN to the fact that it can attend to a sequence of
+regions of interest. 
+
+Title: Skip-Attention: Improving Vision Transformers by Paying Less Attention 
+Summary: This work aims to improve the efficiency of vision transformers (ViT). While
+ViTs use computationally expensive self-attention operations in every layer, we
+identify that these operations are highly correlated across layers -- a key
+redundancy that causes unnecessary computations. Based on this observation, we
+propose SkipAt, a method to reuse self-attention computation from preceding
+layers to approximate attention at one or more subsequent layers. To ensure
+that reusing self-attention blocks across layers does not degrade the
+performance, we introduce a simple parametric function, which outperforms the
+baseline transformer's performance while running computationally faster. We
+show the effectiveness of our method in image classification and
+self-supervised learning on ImageNet-1K, semantic segmentation on ADE20K, image
+denoising on SIDD, and video denoising on DAVIS. We achieve improved throughput
+at the same-or-higher accuracy levels in all these tasks. 
+
+",This is a test answer.,"abs-1509.05329v1, abs-2301.02240v2, abs-1704.02581v2"
+Contrast the methods for handling multi-scale information in 'Multi-scale discriminative Region Discovery for Weakly-Supervised Object Localization' (abs-1909.10698v1) and 'PointAtrousGraph' (abs-1907.09798v2).,"abs-1909.10698v1,abs-1907.09798v2",Comparative & Contrastive Questions,"Title: Multi-scale discriminative Region Discovery for Weakly-Supervised Object
+  Localization 
+Summary: Localizing objects with weak supervision in an image is a key problem of the
+research in computer vision community. Many existing Weakly-Supervised Object
+Localization (WSOL) approaches tackle this problem by estimating the most
+discriminative regions with feature maps (activation maps) obtained by Deep
+Convolutional Neural Network, that is, only the objects or parts of them with
+the most discriminative response will be located. However, the activation maps
+often display different local maximum responses or relatively weak response
+when one image contains multiple objects with the same type or small objects.
+In this paper, we propose a simple yet effective multi-scale discriminative
+region discovery method to localize not only more integral objects but also as
+many as possible with only image-level class labels. The gradient weights
+flowing into different convolutional layers of CNN are taken as the input of
+our method, which is different from previous methods only considering that of
+the final convolutional layer. To mine more discriminative regions for the task
+of object localization, the multiple local maximum from the gradient weight
+maps are leveraged to generate the localization map with a parallel sliding
+window. Furthermore, multi-scale localization maps from different convolutional
+layers are fused to produce the final result. We evaluate the proposed method
+with the foundation of VGGnet on the ILSVRC 2016, CUB-200-2011 and PASCAL VOC
+2012 datasets. On ILSVRC 2016, the proposed method yields the Top-1
+localization error of 48.65\%, which outperforms previous results by 2.75\%. On
+PASCAL VOC 2012, our approach achieve the highest localization accuracy of
+0.43. Even for CUB-200-2011 dataset, our method still achieves competitive
+results. 
+
+Title: PointAtrousGraph: Deep Hierarchical Encoder-Decoder with Point Atrous
+  Convolution for Unorganized 3D Points 
+Summary: Motivated by the success of encoding multi-scale contextual information for
+image analysis, we propose our PointAtrousGraph (PAG) - a deep
+permutation-invariant hierarchical encoder-decoder for efficiently exploiting
+multi-scale edge features in point clouds. Our PAG is constructed by several
+novel modules, such as Point Atrous Convolution (PAC), Edge-preserved Pooling
+(EP) and Edge-preserved Unpooling (EU). Similar with atrous convolution, our
+PAC can effectively enlarge receptive fields of filters and thus densely learn
+multi-scale point features. Following the idea of non-overlapping max-pooling
+operations, we propose our EP to preserve critical edge features during
+subsampling. Correspondingly, our EU modules gradually recover spatial
+information for edge features. In addition, we introduce chained skip
+subsampling/upsampling modules that directly propagate edge features to the
+final stage. Particularly, our proposed auxiliary loss functions can further
+improve our performance. Experimental results show that our PAG outperform
+previous state-of-the-art methods on various 3D semantic perception
+applications. 
+
+",This is a test answer.,"abs-1909.10698v1, abs-1910.04562v1, abs-2003.00874v3"
+Compare the goals of the generative models in 'Defense-GAN' (abs-1805.06605v2) and 'DualGAN' (abs-1704.02510v4). How are they applied differently for image manipulation tasks?,"abs-1805.06605v2,abs-1704.02510v4",Comparative & Contrastive Questions,"Title: Defense-GAN: Protecting Classifiers Against Adversarial Attacks Using
+  Generative Models 
+Summary: In recent years, deep neural network approaches have been widely adopted for
+machine learning tasks, including classification. However, they were shown to
+be vulnerable to adversarial perturbations: carefully crafted small
+perturbations can cause misclassification of legitimate images. We propose
+Defense-GAN, a new framework leveraging the expressive capability of generative
+models to defend deep neural networks against such attacks. Defense-GAN is
+trained to model the distribution of unperturbed images. At inference time, it
+finds a close output to a given image which does not contain the adversarial
+changes. This output is then fed to the classifier. Our proposed method can be
+used with any classification model and does not modify the classifier structure
+or training procedure. It can also be used as a defense against any attack as
+it does not assume knowledge of the process for generating the adversarial
+examples. We empirically show that Defense-GAN is consistently effective
+against different attack methods and improves on existing defense strategies.
+Our code has been made publicly available at
+https://github.com/kabkabm/defensegan 
+
+Title: DualGAN: Unsupervised Dual Learning for Image-to-Image Translation 
+Summary: Conditional Generative Adversarial Networks (GANs) for cross-domain
+image-to-image translation have made much progress recently. Depending on the
+task complexity, thousands to millions of labeled image pairs are needed to
+train a conditional GAN. However, human labeling is expensive, even
+impractical, and large quantities of data may not always be available. Inspired
+by dual learning from natural language translation, we develop a novel dual-GAN
+mechanism, which enables image translators to be trained from two sets of
+unlabeled images from two domains. In our architecture, the primal GAN learns
+to translate images from domain U to those in domain V, while the dual GAN
+learns to invert the task. The closed loop made by the primal and dual tasks
+allows images from either domain to be translated and then reconstructed. Hence
+a loss function that accounts for the reconstruction error of images can be
+used to train the translators. Experiments on multiple image translation tasks
+with unlabeled data show considerable performance gain of DualGAN over a single
+GAN. For some tasks, DualGAN can even achieve comparable or slightly better
+results than conditional GAN trained on fully labeled data. 
+
+",This is a test answer.,"abs-1704.02510v4, abs-1805.06605v2, abs-2209.12050v1"
+How do the strategies for unsupervised domain adaptation in 'Deep Spherical Manifold Gaussian Kernel' (abs-2105.02089v1) and 'Multi-Adversarial Domain Adaptation' (abs-1809.02176v1) differ in their core mechanisms for feature alignment?,"abs-2105.02089v1,abs-1809.02176v1",Comparative & Contrastive Questions,"Title: Deep Spherical Manifold Gaussian Kernel for Unsupervised Domain
+  Adaptation 
+Summary: Unsupervised Domain adaptation is an effective method in addressing the
+domain shift issue when transferring knowledge from an existing richly labeled
+domain to a new domain. Existing manifold-based methods either are based on
+traditional models or largely rely on Grassmannian manifold via minimizing
+differences of single covariance matrices of two domains. In addition, existing
+pseudo-labeling algorithms inadequately consider the quality of pseudo labels
+in aligning the conditional distribution between two domains. In this work, a
+deep spherical manifold Gaussian kernel (DSGK) framework is proposed to map the
+source and target subspaces into a spherical manifold and reduce the
+discrepancy between them by embedding both extracted features and a Gaussian
+kernel. To align the conditional distributions, we further develop an
+easy-to-hard pseudo label refinement process to improve the quality of the
+pseudo labels and then reduce categorical spherical manifold Gaussian kernel
+geodesic loss. Extensive experimental results show that DSGK outperforms
+state-of-the-art methods, especially on challenging cross-domain learning
+tasks. 
+
+Title: Multi-Adversarial Domain Adaptation 
+Summary: Recent advances in deep domain adaptation reveal that adversarial learning
+can be embedded into deep networks to learn transferable features that reduce
+distribution discrepancy between the source and target domains. Existing domain
+adversarial adaptation methods based on single domain discriminator only align
+the source and target data distributions without exploiting the complex
+multimode structures. In this paper, we present a multi-adversarial domain
+adaptation (MADA) approach, which captures multimode structures to enable
+fine-grained alignment of different data distributions based on multiple domain
+discriminators. The adaptation can be achieved by stochastic gradient descent
+with the gradients computed by back-propagation in linear-time. Empirical
+evidence demonstrates that the proposed model outperforms state of the art
+methods on standard domain adaptation datasets. 
+
+",This is a test answer.,"abs-2208.01195v1, abs-2110.14240v1, abs-2302.01287v1"
+How could the synthetic data generation method for Indic handwritten text (abs-1804.06254v1) be used to create a more robust training set for the recognition system described in 'Handwritten character recognition using some (anti)-diagonal structural features' (abs-1707.08951v3)?,"abs-1804.06254v1,abs-1707.08951v3",Synthesis & Multi-Hop Reasoning Questions,"Title: Synthetic data generation for Indic handwritten text recognition 
+Summary: This paper presents a novel approach to generate synthetic dataset for
+handwritten word recognition systems. It is difficult to recognize handwritten
+scripts for which sufficient training data is not readily available or it may
+be expensive to collect such data. Hence, it becomes hard to train recognition
+systems owing to lack of proper dataset. To overcome such problems, synthetic
+data could be used to create or expand the existing training dataset to improve
+recognition performance. Any available digital data from online newspaper and
+such sources can be used to generate synthetic data. In this paper, we propose
+to add distortion/deformation to digital data in such a way that the underlying
+pattern is preserved, so that the image so produced bears a close similarity to
+actual handwritten samples. The images thus produced can be used independently
+to train the system or be combined with natural handwritten data to augment the
+original dataset and improve the recognition system. We experimented using
+synthetic data to improve the recognition accuracy of isolated characters and
+words. The framework is tested on 2 Indic scripts - Devanagari (Hindi) and
+Bengali (Bangla), for numeral, character and word recognition. We have obtained
+encouraging results from the experiment. Finally, the experiment with Latin
+text verifies the utility of the approach. 
+
+Title: Handwritten character recognition using some (anti)-diagonal structural
+  features 
+Summary: In this paper, we present a methodology for off-line handwritten character
+recognition. The proposed methodology relies on a new feature extraction
+technique based on structural characteristics, histograms and profiles. As
+novelty, we propose the extraction of new eight histograms and four profiles
+from the $32\times 32$ matrices that represent the characters, creating
+256-dimension feature vectors. These feature vectors are then employed in a
+classification step that uses a $k$-means algorithm. We performed experiments
+using the NIST database to evaluate our proposal. Namely, the recognition
+system was trained using 1000 samples and 64 classes for each symbol and was
+tested on 500 samples for each symbol. We obtain promising accuracy results
+that vary from 81.74\% to 93.75\%, depending on the difficulty of the character
+category, showing better accuracy results than other methods from the state of
+the art also based on structural characteristics. 
+
+",This is a test answer.,"abs-1804.06254v1, abs-2208.07943v1, abs-2111.13327v2"
+"Considering the findings in 'Skip-Attention' (abs-2301.02240v2) about attention redundancy, how could the ViT or DeiT models evaluated in 'Vision Transformers in 2022' (abs-2205.10660v1) be modified to improve their efficiency on the Tiny ImageNet task?","abs-2301.02240v2,abs-2205.10660v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Skip-Attention: Improving Vision Transformers by Paying Less Attention 
+Summary: This work aims to improve the efficiency of vision transformers (ViT). While
+ViTs use computationally expensive self-attention operations in every layer, we
+identify that these operations are highly correlated across layers -- a key
+redundancy that causes unnecessary computations. Based on this observation, we
+propose SkipAt, a method to reuse self-attention computation from preceding
+layers to approximate attention at one or more subsequent layers. To ensure
+that reusing self-attention blocks across layers does not degrade the
+performance, we introduce a simple parametric function, which outperforms the
+baseline transformer's performance while running computationally faster. We
+show the effectiveness of our method in image classification and
+self-supervised learning on ImageNet-1K, semantic segmentation on ADE20K, image
+denoising on SIDD, and video denoising on DAVIS. We achieve improved throughput
+at the same-or-higher accuracy levels in all these tasks. 
+
+Title: Vision Transformers in 2022: An Update on Tiny ImageNet 
+Summary: The recent advances in image transformers have shown impressive results and
+have largely closed the gap between traditional CNN architectures. The standard
+procedure is to train on large datasets like ImageNet-21k and then finetune on
+ImageNet-1k. After finetuning, researches will often consider the transfer
+learning performance on smaller datasets such as CIFAR-10/100 but have left out
+Tiny ImageNet. This paper offers an update on vision transformers' performance
+on Tiny ImageNet. I include Vision Transformer (ViT) , Data Efficient Image
+Transformer (DeiT), Class Attention in Image Transformer (CaiT), and Swin
+Transformers. In addition, Swin Transformers beats the current state-of-the-art
+result with a validation accuracy of 91.35%. Code is available here:
+https://github.com/ehuynh1106/TinyImageNet-Transformers 
+
+",This is a test answer.,"abs-2205.10660v1, abs-2111.12994v2, abs-2301.02240v2"
+"How might the 'Adversarial Noise Layer' (ANL) from paper abs-1805.08000v2 be integrated into the 'EfficientSeg' (abs-2009.06469v2) architecture to improve its training, especially when only a small amount of data is available?","abs-1805.08000v2,abs-2009.06469v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Adversarial Noise Layer: Regularize Neural Network By Adding Noise 
+Summary: In this paper, we introduce a novel regularization method called Adversarial
+Noise Layer (ANL) and its efficient version called Class Adversarial Noise
+Layer (CANL), which are able to significantly improve CNN's generalization
+ability by adding carefully crafted noise into the intermediate layer
+activations. ANL and CANL can be easily implemented and integrated with most of
+the mainstream CNN-based models. We compared the effects of the different types
+of noise and visually demonstrate that our proposed adversarial noise instruct
+CNN models to learn to extract cleaner feature maps, which further reduce the
+risk of over-fitting. We also conclude that models trained with ANL or CANL are
+more robust to the adversarial examples generated by FGSM than the traditional
+adversarial training approaches. 
+
+Title: EfficientSeg: An Efficient Semantic Segmentation Network 
+Summary: Deep neural network training without pre-trained weights and few data is
+shown to need more training iterations. It is also known that, deeper models
+are more successful than their shallow counterparts for semantic segmentation
+task. Thus, we introduce EfficientSeg architecture, a modified and scalable
+version of U-Net, which can be efficiently trained despite its depth. We
+evaluated EfficientSeg architecture on Minicity dataset and outperformed U-Net
+baseline score (40% mIoU) using the same parameter count (51.5% mIoU). Our most
+successful model obtained 58.1% mIoU score and got the fourth place in semantic
+segmentation track of ECCV 2020 VIPriors challenge. 
+
+",This is a test answer.,"abs-1805.08000v2, abs-1712.02328v3, abs-1810.00162v2"
+Could the 'covapixels' representation from paper abs-2010.09016v1 be used as an input feature for the patch-based refinement in 'Patch-based 3D Human Pose Refinement' (abs-1905.08231v1) to potentially improve robustness to texture variations?,"abs-2010.09016v1,abs-1905.08231v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Covapixels 
+Summary: We propose and discuss the summarization of superpixel-type image
+tiles/patches using mean and covariance information. We refer to the resulting
+objects as covapixels. 
+
+Title: Patch-based 3D Human Pose Refinement 
+Summary: State-of-the-art 3D human pose estimation approaches typically estimate pose
+from the entire RGB image in a single forward run. In this paper, we develop a
+post-processing step to refine 3D human pose estimation from body part patches.
+Using local patches as input has two advantages. First, the fine details around
+body parts are zoomed in to high resolution for preciser 3D pose prediction.
+Second, it enables the part appearance to be shared between poses to benefit
+rare poses. In order to acquire informative representation of patches, we
+explore different input modalities and validate the superiority of fusing
+predicted segmentation with RGB. We show that our method consistently boosts
+the accuracy of state-of-the-art 3D human pose methods. 
+
+",This is a test answer.,"abs-1905.08231v1, abs-2010.09016v1, abs-1911.07347v1"
+What specific learning rate was used to train the RNN-SPN model described in paper abs-1509.05329v1?,abs-1509.05329v1,Negative / Unanswerable Questions,"Title: Recurrent Spatial Transformer Networks 
+Summary: We integrate the recently proposed spatial transformer network (SPN)
+[Jaderberg et. al 2015] into a recurrent neural network (RNN) to form an
+RNN-SPN model. We use the RNN-SPN to classify digits in cluttered MNIST
+sequences. The proposed model achieves a single digit error of 1.5% compared to
+2.9% for a convolutional networks and 2.0% for convolutional networks with SPN
+layers. The SPN outputs a zoomed, rotated and skewed version of the input
+image. We investigate different down-sampling factors (ratio of pixel in input
+and output) for the SPN and show that the RNN-SPN model is able to down-sample
+the input images without deteriorating performance. The down-sampling in
+RNN-SPN can be thought of as adaptive down-sampling that minimizes the
+information loss in the regions of interest. We attribute the superior
+performance of the RNN-SPN to the fact that it can attend to a sequence of
+regions of interest. 
+
+",This is a test answer.,"abs-1509.05329v1, abs-2212.14658v1, abs-2112.15358v4"
+"In the 'PointAtrousGraph' paper (abs-1907.09798v2), what was the exact number of layers used in the deep hierarchical encoder-decoder?",abs-1907.09798v2,Negative / Unanswerable Questions,"Title: PointAtrousGraph: Deep Hierarchical Encoder-Decoder with Point Atrous
+  Convolution for Unorganized 3D Points 
+Summary: Motivated by the success of encoding multi-scale contextual information for
+image analysis, we propose our PointAtrousGraph (PAG) - a deep
+permutation-invariant hierarchical encoder-decoder for efficiently exploiting
+multi-scale edge features in point clouds. Our PAG is constructed by several
+novel modules, such as Point Atrous Convolution (PAC), Edge-preserved Pooling
+(EP) and Edge-preserved Unpooling (EU). Similar with atrous convolution, our
+PAC can effectively enlarge receptive fields of filters and thus densely learn
+multi-scale point features. Following the idea of non-overlapping max-pooling
+operations, we propose our EP to preserve critical edge features during
+subsampling. Correspondingly, our EU modules gradually recover spatial
+information for edge features. In addition, we introduce chained skip
+subsampling/upsampling modules that directly propagate edge features to the
+final stage. Particularly, our proposed auxiliary loss functions can further
+improve our performance. Experimental results show that our PAG outperform
+previous state-of-the-art methods on various 3D semantic perception
+applications. 
+
+",This is a test answer.,"abs-1907.09798v2, abs-2012.10162v1, abs-1803.04022v1"
+The paper 'Accelerate 3D Object Processing via Spectral Layout' (abs-2110.12621v2) mentions mapping voxels to a 2D plane. What was the final resolution of this 2D plane in pixels?,abs-2110.12621v2,Negative / Unanswerable Questions,"Title: Accelerate 3D Object Processing via Spectral Layout 
+Summary: 3D image processing is an important problem in computer vision and pattern
+recognition fields. Compared with 2D image processing, its computation
+difficulty and cost are much higher due to the extra dimension. To
+fundamentally address this problem, we propose to embed the essential
+information in a 3D object into 2D space via spectral layout. Specifically, we
+construct a 3D adjacency graph to capture spatial structure of the 3D voxel
+grid. Then we calculate the eigenvectors corresponding to the second and third
+smallest eigenvalues of its graph Laplacian and perform spectral layout to map
+each voxel into a pixel in 2D Cartesian coordinate plane. The proposed method
+can achieve high quality 2D representations for 3D objects, which enables to
+use 2D-based methods to process 3D objects. The experimental results
+demonstrate the effectiveness and efficiency of our method. 
+
+",This is a test answer.,"abs-2110.12621v2, abs-2308.06791v6, abs-1704.05165v1"
+What was the financial cost of manually annotating the images for the 'Gland Instance Segmentation Using Deep Multichannel Neural Networks' study (abs-1611.06661v3)?,abs-1611.06661v3,Negative / Unanswerable Questions,"Title: Gland Instance Segmentation Using Deep Multichannel Neural Networks 
+Summary: Objective: A new image instance segmentation method is proposed to segment
+individual glands (instances) in colon histology images. This process is
+challenging since the glands not only need to be segmented from a complex
+background, they must also be individually identified. Methods: We leverage the
+idea of image-to-image prediction in recent deep learning by designing an
+algorithm that automatically exploits and fuses complex multichannel
+information - regional, location, and boundary cues - in gland histology
+images. Our proposed algorithm, a deep multichannel framework, alleviates heavy
+feature design due to the use of convolutional neural networks and is able to
+meet multifarious requirements by altering channels. Results: Compared with
+methods reported in the 2015 MICCAI Gland Segmentation Challenge and other
+currently prevalent instance segmentation methods, we observe state-of-the-art
+results based on the evaluation metrics. Conclusion: The proposed deep
+multichannel algorithm is an effective method for gland instance segmentation.
+Significance: The generalization ability of our model not only enable the
+algorithm to solve gland instance segmentation problems, but the channel is
+also alternative that can be replaced for a specific task. 
+
+",This is a test answer.,"abs-1611.08588v2, abs-1703.09039v2, abs-1911.03621v1"

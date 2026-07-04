@@ -1,0 +1,534 @@
+Question,Source Article Index,Question Type,Summary,prediction,documentIDs
+What does 'MIL' stand for in the context of distantly supervised relation extraction?,abs-2104.07512v1,Direct Fact Retrieval & Definition,"Title: A Sample-Based Training Method for Distantly Supervised Relation
+  Extraction with Pre-Trained Transformers 
+Summary: Multiple instance learning (MIL) has become the standard learning paradigm
+for distantly supervised relation extraction (DSRE). However, due to relation
+extraction being performed at bag level, MIL has significant hardware
+requirements for training when coupled with large sentence encoders such as
+deep transformer neural networks. In this paper, we propose a novel sampling
+method for DSRE that relaxes these hardware requirements. In the proposed
+method, we limit the number of sentences in a batch by randomly sampling
+sentences from the bags in the batch. However, this comes at the cost of losing
+valid sentences from bags. To alleviate the issues caused by random sampling,
+we use an ensemble of trained models for prediction. We demonstrate the
+effectiveness of our approach by using our proposed learning setting to
+fine-tuning BERT on the widely NYT dataset. Our approach significantly
+outperforms previous state-of-the-art methods in terms of AUC and P@N metrics. 
+
+",This is a test answer.,abs-2104.07512v1
+What does the acronym 'TCBERT' represent?,abs-2211.11304v1,Direct Fact Retrieval & Definition,"Title: TCBERT: A Technical Report for Chinese Topic Classification BERT 
+Summary: Bidirectional Encoder Representations from Transformers or
+BERT~\cite{devlin-etal-2019-bert} has been one of the base models for various
+NLP tasks due to its remarkable performance. Variants customized for different
+languages and tasks are proposed to further improve the performance. In this
+work, we investigate supervised continued
+pre-training~\cite{gururangan-etal-2020-dont} on BERT for Chinese topic
+classification task. Specifically, we incorporate prompt-based learning and
+contrastive learning into the pre-training. To adapt to the task of Chinese
+topic classification, we collect around 2.1M Chinese data spanning various
+topics. The pre-trained Chinese Topic Classification BERTs (TCBERTs) with
+different parameter sizes are open-sourced at
+\url{https://huggingface.co/IDEA-CCNL}. 
+
+",This is a test answer.,abs-2211.11304v1
+What is the 'Instruction Following Score' (IFS) designed to measure in language models?,abs-2307.03692v1,Direct Fact Retrieval & Definition,"Title: Becoming self-instruct: introducing early stopping criteria for minimal
+  instruct tuning 
+Summary: In this paper, we introduce the Instruction Following Score (IFS), a metric
+that detects language models' ability to follow instructions. The metric has a
+dual purpose. First, IFS can be used to distinguish between base and instruct
+models. We benchmark publicly available base and instruct models, and show that
+the ratio of well formatted responses to partial and full sentences can be an
+effective measure between those two model classes. Secondly, the metric can be
+used as an early stopping criteria for instruct tuning. We compute IFS for
+Supervised Fine-Tuning (SFT) of 7B and 13B LLaMA models, showing that models
+learn to follow instructions relatively early in the training process, and the
+further finetuning can result in changes in the underlying base model
+semantics. As an example of semantics change we show the objectivity of model
+predictions, as defined by an auxiliary metric ObjecQA. We show that in this
+particular case, semantic changes are the steepest when the IFS tends to
+plateau. We hope that decomposing instruct tuning into IFS and semantic factors
+starts a new trend in better controllable instruct tuning and opens
+possibilities for designing minimal instruct interfaces querying foundation
+models. 
+
+",This is a test answer.,abs-2307.03692v1
+"According to article abs-2308.00319v2, what is a hard-label attack?",abs-2308.00319v2,Direct Fact Retrieval & Definition,"Title: LimeAttack: Local Explainable Method for Textual Hard-Label Adversarial
+  Attack 
+Summary: Natural language processing models are vulnerable to adversarial examples.
+Previous textual adversarial attacks adopt gradients or confidence scores to
+calculate word importance ranking and generate adversarial examples. However,
+this information is unavailable in the real world. Therefore, we focus on a
+more realistic and challenging setting, named hard-label attack, in which the
+attacker can only query the model and obtain a discrete prediction label.
+Existing hard-label attack algorithms tend to initialize adversarial examples
+by random substitution and then utilize complex heuristic algorithms to
+optimize the adversarial perturbation. These methods require a lot of model
+queries and the attack success rate is restricted by adversary initialization.
+In this paper, we propose a novel hard-label attack algorithm named LimeAttack,
+which leverages a local explainable method to approximate word importance
+ranking, and then adopts beam search to find the optimal solution. Extensive
+experiments show that LimeAttack achieves the better attacking performance
+compared with existing hard-label attack under the same query budget. In
+addition, we evaluate the effectiveness of LimeAttack on large language models,
+and results indicate that adversarial examples remain a significant threat to
+large language models. The adversarial examples crafted by LimeAttack are
+highly transferable and effectively improve model robustness in adversarial
+training. 
+
+",This is a test answer.,abs-2308.00319v2
+What is the main goal of the 'Multi-User MultiWOZ' dataset?,abs-2310.20479v1,Summarization / Purpose Identification,"Title: Multi-User MultiWOZ: Task-Oriented Dialogues among Multiple Users 
+Summary: While most task-oriented dialogues assume conversations between the agent and
+one user at a time, dialogue systems are increasingly expected to communicate
+with multiple users simultaneously who make decisions collaboratively. To
+facilitate development of such systems, we release the Multi-User MultiWOZ
+dataset: task-oriented dialogues among two users and one agent. To collect this
+dataset, each user utterance from MultiWOZ 2.2 was replaced with a small chat
+between two users that is semantically and pragmatically consistent with the
+original user utterance, thus resulting in the same dialogue state and system
+response. These dialogues reflect interesting dynamics of collaborative
+decision-making in task-oriented scenarios, e.g., social chatter and
+deliberation. Supported by this data, we propose the novel task of multi-user
+contextual query rewriting: to rewrite a task-oriented chat between two users
+as a concise task-oriented query that retains only task-relevant information
+and that is directly consumable by the dialogue system. We demonstrate that in
+multi-user dialogues, using predicted rewrites substantially improves dialogue
+state tracking without modifying existing dialogue systems that are trained for
+single-user dialogues. Further, this method surpasses training a medium-sized
+model directly on multi-user dialogues and generalizes to unseen domains. 
+
+",This is a test answer.,abs-2310.20479v1
+Summarize the primary purpose of the 'AdapterFusion' framework for transfer learning.,abs-2005.00247v3,Summarization / Purpose Identification,"Title: AdapterFusion: Non-Destructive Task Composition for Transfer Learning 
+Summary: Sequential fine-tuning and multi-task learning are methods aiming to
+incorporate knowledge from multiple tasks; however, they suffer from
+catastrophic forgetting and difficulties in dataset balancing. To address these
+shortcomings, we propose AdapterFusion, a new two stage learning algorithm that
+leverages knowledge from multiple tasks. First, in the knowledge extraction
+stage we learn task specific parameters called adapters, that encapsulate the
+task-specific information. We then combine the adapters in a separate knowledge
+composition step. We show that by separating the two stages, i.e., knowledge
+extraction and knowledge composition, the classifier can effectively exploit
+the representations learned from multiple tasks in a non-destructive manner. We
+empirically evaluate AdapterFusion on 16 diverse NLU tasks, and find that it
+effectively combines various types of knowledge at different layers of the
+model. We show that our approach outperforms traditional strategies such as
+full fine-tuning as well as multi-task learning. Our code and adapters are
+available at AdapterHub.ml. 
+
+",This is a test answer.,abs-2005.00247v3
+What problem does the 'LimeAttack' algorithm aim to solve in the context of adversarial attacks?,abs-2308.00319v2,Summarization / Purpose Identification,"Title: LimeAttack: Local Explainable Method for Textual Hard-Label Adversarial
+  Attack 
+Summary: Natural language processing models are vulnerable to adversarial examples.
+Previous textual adversarial attacks adopt gradients or confidence scores to
+calculate word importance ranking and generate adversarial examples. However,
+this information is unavailable in the real world. Therefore, we focus on a
+more realistic and challenging setting, named hard-label attack, in which the
+attacker can only query the model and obtain a discrete prediction label.
+Existing hard-label attack algorithms tend to initialize adversarial examples
+by random substitution and then utilize complex heuristic algorithms to
+optimize the adversarial perturbation. These methods require a lot of model
+queries and the attack success rate is restricted by adversary initialization.
+In this paper, we propose a novel hard-label attack algorithm named LimeAttack,
+which leverages a local explainable method to approximate word importance
+ranking, and then adopts beam search to find the optimal solution. Extensive
+experiments show that LimeAttack achieves the better attacking performance
+compared with existing hard-label attack under the same query budget. In
+addition, we evaluate the effectiveness of LimeAttack on large language models,
+and results indicate that adversarial examples remain a significant threat to
+large language models. The adversarial examples crafted by LimeAttack are
+highly transferable and effectively improve model robustness in adversarial
+training. 
+
+",This is a test answer.,abs-2308.00319v2
+What is the main objective of the Evol-Instruct method as applied in the WizardCoder paper?,abs-2306.08568v1,Summarization / Purpose Identification,"Title: WizardCoder: Empowering Code Large Language Models with Evol-Instruct 
+Summary: Code Large Language Models (Code LLMs), such as StarCoder, have demonstrated
+exceptional performance in code-related tasks. However, most existing models
+are solely pre-trained on extensive raw code data without instruction
+fine-tuning. In this paper, we introduce WizardCoder, which empowers Code LLMs
+with complex instruction fine-tuning, by adapting the Evol-Instruct method to
+the domain of code. Through comprehensive experiments on four prominent code
+generation benchmarks, namely HumanEval, HumanEval+, MBPP, and DS-1000, we
+unveil the exceptional capabilities of our model. It surpasses all other
+open-source Code LLMs by a substantial margin. Moreover, our model even
+outperforms the largest closed LLMs, Anthropic's Claude and Google's Bard, on
+HumanEval and HumanEval+. Our code, model weights, and data are public at
+https://github.com/nlpxucan/WizardLM 
+
+",This is a test answer.,abs-2306.08568v1
+Compare the approaches to data augmentation for low-resource scenarios in 'TreeSwap' (abs-2311.02355v1) and 'Adversarial Word Dilution' (abs-2305.09287v2).,"abs-2311.02355v1,abs-2305.09287v2",Comparative & Contrastive,"Title: TreeSwap: Data Augmentation for Machine Translation via Dependency
+  Subtree Swapping 
+Summary: Data augmentation methods for neural machine translation are particularly
+useful when limited amount of training data is available, which is often the
+case when dealing with low-resource languages. We introduce a novel
+augmentation method, which generates new sentences by swapping objects and
+subjects across bisentences. This is performed simultaneously based on the
+dependency parse trees of the source and target sentences. We name this method
+TreeSwap. Our results show that TreeSwap achieves consistent improvements over
+baseline models in 4 language pairs in both directions on resource-constrained
+datasets. We also explore domain-specific corpora, but find that our method
+does not make significant improvements on law, medical and IT data. We report
+the scores of similar augmentation methods and find that TreeSwap performs
+comparably. We also analyze the generated sentences qualitatively and find that
+the augmentation produces a correct translation in most cases. Our code is
+available on Github. 
+
+Title: Adversarial Word Dilution as Text Data Augmentation in Low-Resource
+  Regime 
+Summary: Data augmentation is widely used in text classification, especially in the
+low-resource regime where a few examples for each class are available during
+training. Despite the success, generating data augmentations as hard positive
+examples that may increase their effectiveness is under-explored. This paper
+proposes an Adversarial Word Dilution (AWD) method that can generate hard
+positive examples as text data augmentations to train the low-resource text
+classification model efficiently. Our idea of augmenting the text data is to
+dilute the embedding of strong positive words by weighted mixing with
+unknown-word embedding, making the augmented inputs hard to be recognized as
+positive by the classification model. We adversarially learn the dilution
+weights through a constrained min-max optimization process with the guidance of
+the labels. Empirical studies on three benchmark datasets show that AWD can
+generate more effective data augmentations and outperform the state-of-the-art
+text data augmentation methods. The additional analysis demonstrates that the
+data augmentations generated by AWD are interpretable and can flexibly extend
+to new examples without further training. 
+
+",This is a test answer.,abs-2305.09287v2
+How do the evaluation goals of the 'Sem-nCG' metric (abs-2308.02270v2) differ from the 'FEQA' metric (abs-2005.03754v1) for abstractive summarization?,"abs-2308.02270v2,abs-2005.03754v1",Comparative & Contrastive,"Title: Redundancy Aware Multi-Reference Based Gainwise Evaluation of Extractive
+  Summarization 
+Summary: The ROUGE metric is commonly used to evaluate extractive summarization task,
+but it has been criticized for its lack of semantic awareness and its ignorance
+about the ranking quality of the extractive summarizer. Previous research has
+introduced a gain-based automated metric called Sem-nCG that addresses these
+issues, as it is both rank and semantic aware. However, it does not consider
+the amount of redundancy present in a model summary and currently does not
+support evaluation with multiple reference summaries. It is essential to have a
+model summary that balances importance and diversity, but finding a metric that
+captures both of these aspects is challenging. In this paper, we propose a
+redundancy-aware Sem-nCG metric and demonstrate how the revised Sem-nCG metric
+can be used to evaluate model summaries against multiple references as well
+which was missing in previous research. Experimental results demonstrate that
+the revised Sem-nCG metric has a stronger correlation with human judgments
+compared to the previous Sem-nCG metric and traditional ROUGE and BERTScore
+metric for both single and multiple reference scenarios. 
+
+Title: FEQA: A Question Answering Evaluation Framework for Faithfulness
+  Assessment in Abstractive Summarization 
+Summary: Neural abstractive summarization models are prone to generate content
+inconsistent with the source document, i.e. unfaithful. Existing automatic
+metrics do not capture such mistakes effectively. We tackle the problem of
+evaluating faithfulness of a generated summary given its source document. We
+first collected human annotations of faithfulness for outputs from numerous
+models on two datasets. We find that current models exhibit a trade-off between
+abstractiveness and faithfulness: outputs with less word overlap with the
+source document are more likely to be unfaithful. Next, we propose an automatic
+question answering (QA) based metric for faithfulness, FEQA, which leverages
+recent advances in reading comprehension. Given question-answer pairs generated
+from the summary, a QA model extracts answers from the document; non-matched
+answers indicate unfaithful information in the summary. Among metrics based on
+word overlap, embedding similarity, and learned language understanding models,
+our QA-based metric has significantly higher correlation with human
+faithfulness scores, especially on highly abstractive summaries. 
+
+",This is a test answer.,abs-2308.02270v2
+Contrast the methods for fine-tuning language models in 'STT: Soft Template Tuning' (abs-2207.08408v1) and the analysis of fine-tuning brittleness in 'Fine-Tuning Pretrained Language Models' (abs-2002.06305v1).,"abs-2207.08408v1,abs-2002.06305v1",Comparative & Contrastive,"Title: STT: Soft Template Tuning for Few-Shot Adaptation 
+Summary: Prompt tuning has been an extremely effective tool to adapt a pre-trained
+model to downstream tasks. However, standard prompt-based methods mainly
+consider the case of sufficient data of downstream tasks. It is still unclear
+whether the advantage can be transferred to the few-shot regime, where only
+limited data are available for each downstream task. Although some works have
+demonstrated the potential of prompt-tuning under the few-shot setting, the
+main stream methods via searching discrete prompts or tuning soft prompts with
+limited data are still very challenging. Through extensive empirical studies,
+we find that there is still a gap between prompt tuning and fully fine-tuning
+for few-shot learning. To bridge the gap, we propose a new prompt-tuning
+framework, called Soft Template Tuning (STT). STT combines manual and auto
+prompts, and treats downstream classification tasks as a masked language
+modeling task. Comprehensive evaluation on different settings suggests STT can
+close the gap between fine-tuning and prompt-based methods without introducing
+additional parameters. Significantly, it can even outperform the time- and
+resource-consuming fine-tuning method on sentiment classification tasks. 
+
+Title: Fine-Tuning Pretrained Language Models: Weight Initializations, Data
+  Orders, and Early Stopping 
+Summary: Fine-tuning pretrained contextual word embedding models to supervised
+downstream tasks has become commonplace in natural language processing. This
+process, however, is often brittle: even with the same hyperparameter values,
+distinct random seeds can lead to substantially different results. To better
+understand this phenomenon, we experiment with four datasets from the GLUE
+benchmark, fine-tuning BERT hundreds of times on each while varying only the
+random seeds. We find substantial performance increases compared to previously
+reported results, and we quantify how the performance of the best-found model
+varies as a function of the number of fine-tuning trials. Further, we examine
+two factors influenced by the choice of random seed: weight initialization and
+training data order. We find that both contribute comparably to the variance of
+out-of-sample performance, and that some weight initializations perform well
+across all tasks explored. On small datasets, we observe that many fine-tuning
+trials diverge part of the way through training, and we offer best practices
+for practitioners to stop training less promising runs early. We publicly
+release all of our experimental data, including training and validation scores
+for 2,100 trials, to encourage further analysis of training dynamics during
+fine-tuning. 
+
+",This is a test answer.,abs-2207.08408v1
+How does the approach to multi-task learning in 'AdapterFusion' (abs-2005.00247v3) differ from the approach to multi-domain text classification in 'MRAN' (abs-2102.00467v1)?,"abs-2005.00247v3,abs-2102.00467v1",Comparative & Contrastive,"Title: AdapterFusion: Non-Destructive Task Composition for Transfer Learning 
+Summary: Sequential fine-tuning and multi-task learning are methods aiming to
+incorporate knowledge from multiple tasks; however, they suffer from
+catastrophic forgetting and difficulties in dataset balancing. To address these
+shortcomings, we propose AdapterFusion, a new two stage learning algorithm that
+leverages knowledge from multiple tasks. First, in the knowledge extraction
+stage we learn task specific parameters called adapters, that encapsulate the
+task-specific information. We then combine the adapters in a separate knowledge
+composition step. We show that by separating the two stages, i.e., knowledge
+extraction and knowledge composition, the classifier can effectively exploit
+the representations learned from multiple tasks in a non-destructive manner. We
+empirically evaluate AdapterFusion on 16 diverse NLU tasks, and find that it
+effectively combines various types of knowledge at different layers of the
+model. We show that our approach outperforms traditional strategies such as
+full fine-tuning as well as multi-task learning. Our code and adapters are
+available at AdapterHub.ml. 
+
+Title: Mixup Regularized Adversarial Networks for Multi-Domain Text
+  Classification 
+Summary: Using the shared-private paradigm and adversarial training has significantly
+improved the performances of multi-domain text classification (MDTC) models.
+However, there are two issues for the existing methods. First, instances from
+the multiple domains are not sufficient for domain-invariant feature
+extraction. Second, aligning on the marginal distributions may lead to fatal
+mismatching. In this paper, we propose a mixup regularized adversarial network
+(MRAN) to address these two issues. More specifically, the domain and category
+mixup regularizations are introduced to enrich the intrinsic features in the
+shared latent space and enforce consistent predictions in-between training
+instances such that the learned features can be more domain-invariant and
+discriminative. We conduct experiments on two benchmarks: The Amazon review
+dataset and the FDU-MTL dataset. Our approach on these two datasets yields
+average accuracies of 87.64\% and 89.0\% respectively, outperforming all
+relevant baselines. 
+
+",This is a test answer.,abs-2005.00247v3
+Could the 'LimeAttack' method (abs-2308.00319v2) be used to test the robustness of the 'WizardCoder' model (abs-2306.08568v1) against hard-label attacks on code generation tasks?,"abs-2308.00319v2,abs-2306.08568v1",Synthesis & Multi-Hop Reasoning,"Title: LimeAttack: Local Explainable Method for Textual Hard-Label Adversarial
+  Attack 
+Summary: Natural language processing models are vulnerable to adversarial examples.
+Previous textual adversarial attacks adopt gradients or confidence scores to
+calculate word importance ranking and generate adversarial examples. However,
+this information is unavailable in the real world. Therefore, we focus on a
+more realistic and challenging setting, named hard-label attack, in which the
+attacker can only query the model and obtain a discrete prediction label.
+Existing hard-label attack algorithms tend to initialize adversarial examples
+by random substitution and then utilize complex heuristic algorithms to
+optimize the adversarial perturbation. These methods require a lot of model
+queries and the attack success rate is restricted by adversary initialization.
+In this paper, we propose a novel hard-label attack algorithm named LimeAttack,
+which leverages a local explainable method to approximate word importance
+ranking, and then adopts beam search to find the optimal solution. Extensive
+experiments show that LimeAttack achieves the better attacking performance
+compared with existing hard-label attack under the same query budget. In
+addition, we evaluate the effectiveness of LimeAttack on large language models,
+and results indicate that adversarial examples remain a significant threat to
+large language models. The adversarial examples crafted by LimeAttack are
+highly transferable and effectively improve model robustness in adversarial
+training. 
+
+Title: WizardCoder: Empowering Code Large Language Models with Evol-Instruct 
+Summary: Code Large Language Models (Code LLMs), such as StarCoder, have demonstrated
+exceptional performance in code-related tasks. However, most existing models
+are solely pre-trained on extensive raw code data without instruction
+fine-tuning. In this paper, we introduce WizardCoder, which empowers Code LLMs
+with complex instruction fine-tuning, by adapting the Evol-Instruct method to
+the domain of code. Through comprehensive experiments on four prominent code
+generation benchmarks, namely HumanEval, HumanEval+, MBPP, and DS-1000, we
+unveil the exceptional capabilities of our model. It surpasses all other
+open-source Code LLMs by a substantial margin. Moreover, our model even
+outperforms the largest closed LLMs, Anthropic's Claude and Google's Bard, on
+HumanEval and HumanEval+. Our code, model weights, and data are public at
+https://github.com/nlpxucan/WizardLM 
+
+",This is a test answer.,abs-2308.00319v2
+How might the 'generator-validator consistency' framework from abs-2310.01846v1 be used to evaluate the faithfulness of summaries generated by models trained for structure-controllable generation on the 'MReD' dataset (abs-2110.07474v6)?,"abs-2310.01846v1,abs-2110.07474v6",Synthesis & Multi-Hop Reasoning,"Title: Benchmarking and Improving Generator-Validator Consistency of Language
+  Models 
+Summary: As of September 2023, ChatGPT correctly answers ""what is 7+8"" with 15, but
+when asked ""7+8=15, True or False"" it responds with ""False"". This inconsistency
+between generating and validating an answer is prevalent in language models
+(LMs) and erodes trust. In this paper, we propose a framework for measuring the
+consistency between generation and validation (which we call
+generator-validator consistency, or GV-consistency), finding that even GPT-4, a
+state-of-the-art LM, is GV-consistent only 76% of the time. To improve the
+consistency of LMs, we propose to finetune on the filtered generator and
+validator responses that are GV-consistent, and call this approach consistency
+fine-tuning. We find that this approach improves GV-consistency of Alpaca-30B
+from 60% to 93%, and the improvement extrapolates to unseen tasks and domains
+(e.g., GV-consistency for positive style transfers extrapolates to unseen
+styles like humor). In addition to improving consistency, consistency
+fine-tuning improves both generator quality and validator accuracy without
+using any labeled data. Evaluated across 6 tasks, including math questions,
+knowledge-intensive QA, and instruction following, our method improves the
+generator quality by 16% and the validator accuracy by 6.3% across all tasks. 
+
+Title: MReD: A Meta-Review Dataset for Structure-Controllable Text Generation 
+Summary: When directly using existing text generation datasets for controllable
+generation, we are facing the problem of not having the domain knowledge and
+thus the aspects that could be controlled are limited. A typical example is
+when using CNN/Daily Mail dataset for controllable text summarization, there is
+no guided information on the emphasis of summary sentences. A more useful text
+generator should leverage both the input text and the control signal to guide
+the generation, which can only be built with a deep understanding of the domain
+knowledge. Motivated by this vision, our paper introduces a new text generation
+dataset, named MReD. Our new dataset consists of 7,089 meta-reviews and all its
+45k meta-review sentences are manually annotated with one of the 9 carefully
+defined categories, including abstract, strength, decision, etc. We present
+experimental results on start-of-the-art summarization models, and propose
+methods for structure-controlled generation with both extractive and
+abstractive models using our annotated data. By exploring various settings and
+analyzing the model behavior with respect to the control signal, we demonstrate
+the challenges of our proposed task and the values of our dataset MReD.
+Meanwhile, MReD also allows us to have a better understanding of the
+meta-review domain. 
+
+",This is a test answer.,abs-2310.01846v1
+Can the 'TreeSwap' data augmentation method (abs-2311.02355v1) be applied to the training data for the semantic parsing tasks in abs-2111.05013v1 to improve their compositional generalization?,"abs-2311.02355v1,abs-2111.05013v1",Synthesis & Multi-Hop Reasoning,"Title: TreeSwap: Data Augmentation for Machine Translation via Dependency
+  Subtree Swapping 
+Summary: Data augmentation methods for neural machine translation are particularly
+useful when limited amount of training data is available, which is often the
+case when dealing with low-resource languages. We introduce a novel
+augmentation method, which generates new sentences by swapping objects and
+subjects across bisentences. This is performed simultaneously based on the
+dependency parse trees of the source and target sentences. We name this method
+TreeSwap. Our results show that TreeSwap achieves consistent improvements over
+baseline models in 4 language pairs in both directions on resource-constrained
+datasets. We also explore domain-specific corpora, but find that our method
+does not make significant improvements on law, medical and IT data. We report
+the scores of similar augmentation methods and find that TreeSwap performs
+comparably. We also analyze the generated sentences qualitatively and find that
+the augmentation produces a correct translation in most cases. Our code is
+available on Github. 
+
+Title: Learning to Generalize Compositionally by Transferring Across Semantic
+  Parsing Tasks 
+Summary: Neural network models often generalize poorly to mismatched domains or
+distributions. In NLP, this issue arises in particular when models are expected
+to generalize compositionally, that is, to novel combinations of familiar words
+and constructions. We investigate learning representations that facilitate
+transfer learning from one compositional task to another: the representation
+and the task-specific layers of the models are strategically trained
+differently on a pre-finetuning task such that they generalize well on
+mismatched splits that require compositionality. We apply this method to
+semantic parsing, using three very different datasets, COGS, GeoQuery and SCAN,
+used alternately as the pre-finetuning and target task. Our method
+significantly improves compositional generalization over baselines on the test
+set of the target task, which is held out during fine-tuning. Ablation studies
+characterize the utility of the major steps in the proposed algorithm and
+support our hypothesis. 
+
+",This is a test answer.,abs-2311.02355v1
+"Considering the 'Multi-User MultiWOZ' dataset (abs-2310.20479v1), how could the 'DialoKG' framework (abs-2204.09149v1) be adapted to incorporate knowledge graph reasoning into a collaborative, multi-user dialogue setting?","abs-2310.20479v1,abs-2204.09149v1",Synthesis & Multi-Hop Reasoning,"Title: Multi-User MultiWOZ: Task-Oriented Dialogues among Multiple Users 
+Summary: While most task-oriented dialogues assume conversations between the agent and
+one user at a time, dialogue systems are increasingly expected to communicate
+with multiple users simultaneously who make decisions collaboratively. To
+facilitate development of such systems, we release the Multi-User MultiWOZ
+dataset: task-oriented dialogues among two users and one agent. To collect this
+dataset, each user utterance from MultiWOZ 2.2 was replaced with a small chat
+between two users that is semantically and pragmatically consistent with the
+original user utterance, thus resulting in the same dialogue state and system
+response. These dialogues reflect interesting dynamics of collaborative
+decision-making in task-oriented scenarios, e.g., social chatter and
+deliberation. Supported by this data, we propose the novel task of multi-user
+contextual query rewriting: to rewrite a task-oriented chat between two users
+as a concise task-oriented query that retains only task-relevant information
+and that is directly consumable by the dialogue system. We demonstrate that in
+multi-user dialogues, using predicted rewrites substantially improves dialogue
+state tracking without modifying existing dialogue systems that are trained for
+single-user dialogues. Further, this method surpasses training a medium-sized
+model directly on multi-user dialogues and generalizes to unseen domains. 
+
+Title: DialoKG: Knowledge-Structure Aware Task-Oriented Dialogue Generation 
+Summary: Task-oriented dialogue generation is challenging since the underlying
+knowledge is often dynamic and effectively incorporating knowledge into the
+learning process is hard. It is particularly challenging to generate both
+human-like and informative responses in this setting. Recent research primarily
+focused on various knowledge distillation methods where the underlying
+relationship between the facts in a knowledge base is not effectively captured.
+In this paper, we go one step further and demonstrate how the structural
+information of a knowledge graph can improve the system's inference
+capabilities. Specifically, we propose DialoKG, a novel task-oriented dialogue
+system that effectively incorporates knowledge into a language model. Our
+proposed system views relational knowledge as a knowledge graph and introduces
+(1) a structure-aware knowledge embedding technique, and (2) a knowledge
+graph-weighted attention masking strategy to facilitate the system selecting
+relevant information during the dialogue generation. An empirical evaluation
+demonstrates the effectiveness of DialoKG over state-of-the-art methods on
+several standard benchmark datasets. 
+
+",This is a test answer.,abs-2210.07570v1
+What was the exact number of human evaluators used to assess the Sem-nCG metric in article abs-2308.02270v2?,abs-2308.02270v2,Negative / Unanswerable,"Title: Redundancy Aware Multi-Reference Based Gainwise Evaluation of Extractive
+  Summarization 
+Summary: The ROUGE metric is commonly used to evaluate extractive summarization task,
+but it has been criticized for its lack of semantic awareness and its ignorance
+about the ranking quality of the extractive summarizer. Previous research has
+introduced a gain-based automated metric called Sem-nCG that addresses these
+issues, as it is both rank and semantic aware. However, it does not consider
+the amount of redundancy present in a model summary and currently does not
+support evaluation with multiple reference summaries. It is essential to have a
+model summary that balances importance and diversity, but finding a metric that
+captures both of these aspects is challenging. In this paper, we propose a
+redundancy-aware Sem-nCG metric and demonstrate how the revised Sem-nCG metric
+can be used to evaluate model summaries against multiple references as well
+which was missing in previous research. Experimental results demonstrate that
+the revised Sem-nCG metric has a stronger correlation with human judgments
+compared to the previous Sem-nCG metric and traditional ROUGE and BERTScore
+metric for both single and multiple reference scenarios. 
+
+",This is a test answer.,abs-2205.08533v1
+"In the 'LimeAttack' paper (abs-2308.00319v2), what was the average query count required to successfully attack the IMDB dataset?",abs-2308.00319v2,Negative / Unanswerable,"Title: LimeAttack: Local Explainable Method for Textual Hard-Label Adversarial
+  Attack 
+Summary: Natural language processing models are vulnerable to adversarial examples.
+Previous textual adversarial attacks adopt gradients or confidence scores to
+calculate word importance ranking and generate adversarial examples. However,
+this information is unavailable in the real world. Therefore, we focus on a
+more realistic and challenging setting, named hard-label attack, in which the
+attacker can only query the model and obtain a discrete prediction label.
+Existing hard-label attack algorithms tend to initialize adversarial examples
+by random substitution and then utilize complex heuristic algorithms to
+optimize the adversarial perturbation. These methods require a lot of model
+queries and the attack success rate is restricted by adversary initialization.
+In this paper, we propose a novel hard-label attack algorithm named LimeAttack,
+which leverages a local explainable method to approximate word importance
+ranking, and then adopts beam search to find the optimal solution. Extensive
+experiments show that LimeAttack achieves the better attacking performance
+compared with existing hard-label attack under the same query budget. In
+addition, we evaluate the effectiveness of LimeAttack on large language models,
+and results indicate that adversarial examples remain a significant threat to
+large language models. The adversarial examples crafted by LimeAttack are
+highly transferable and effectively improve model robustness in adversarial
+training. 
+
+",This is a test answer.,abs-2308.00319v2
+What was the specific improvement in BLEU score when using the TreeSwap data augmentation method on the English-to-German law domain dataset?,abs-2311.02355v1,Negative / Unanswerable,"Title: TreeSwap: Data Augmentation for Machine Translation via Dependency
+  Subtree Swapping 
+Summary: Data augmentation methods for neural machine translation are particularly
+useful when limited amount of training data is available, which is often the
+case when dealing with low-resource languages. We introduce a novel
+augmentation method, which generates new sentences by swapping objects and
+subjects across bisentences. This is performed simultaneously based on the
+dependency parse trees of the source and target sentences. We name this method
+TreeSwap. Our results show that TreeSwap achieves consistent improvements over
+baseline models in 4 language pairs in both directions on resource-constrained
+datasets. We also explore domain-specific corpora, but find that our method
+does not make significant improvements on law, medical and IT data. We report
+the scores of similar augmentation methods and find that TreeSwap performs
+comparably. We also analyze the generated sentences qualitatively and find that
+the augmentation produces a correct translation in most cases. Our code is
+available on Github. 
+
+",This is a test answer.,abs-2311.02355v1
+What was the specific parameter size of the largest WizardCoder model evaluated on the HumanEval+ benchmark?,abs-2306.08568v1,Negative / Unanswerable,"Title: WizardCoder: Empowering Code Large Language Models with Evol-Instruct 
+Summary: Code Large Language Models (Code LLMs), such as StarCoder, have demonstrated
+exceptional performance in code-related tasks. However, most existing models
+are solely pre-trained on extensive raw code data without instruction
+fine-tuning. In this paper, we introduce WizardCoder, which empowers Code LLMs
+with complex instruction fine-tuning, by adapting the Evol-Instruct method to
+the domain of code. Through comprehensive experiments on four prominent code
+generation benchmarks, namely HumanEval, HumanEval+, MBPP, and DS-1000, we
+unveil the exceptional capabilities of our model. It surpasses all other
+open-source Code LLMs by a substantial margin. Moreover, our model even
+outperforms the largest closed LLMs, Anthropic's Claude and Google's Bard, on
+HumanEval and HumanEval+. Our code, model weights, and data are public at
+https://github.com/nlpxucan/WizardLM 
+
+",This is a test answer.,abs-2306.08568v1

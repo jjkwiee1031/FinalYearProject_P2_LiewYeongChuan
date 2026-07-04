@@ -1,0 +1,587 @@
+Question,Source Article Index,Question Type,Summary,documentIDs
+What does 'OSAS' stand for according to the paper 'AIOSA: An approach to the automatic identification of obstructive sleep apnea events'?,abs-2302.05179v1,Direct Fact Retrieval & Definition Questions,"Title: AIOSA: An approach to the automatic identification of obstructive sleep
+  apnea events based on deep learning 
+Summary: Obstructive Sleep Apnea Syndrome (OSAS) is the most common sleep-related
+breathing disorder. It is caused by an increased upper airway resistance during
+sleep, which determines episodes of partial or complete interruption of
+airflow. The detection and treatment of OSAS is particularly important in
+stroke patients, because the presence of severe OSAS is associated with higher
+mortality, worse neurological deficits, worse functional outcome after
+rehabilitation, and a higher likelihood of uncontrolled hypertension. The gold
+standard test for diagnosing OSAS is polysomnography (PSG). Unfortunately,
+performing a PSG in an electrically hostile environment, like a stroke unit, on
+neurologically impaired patients is a difficult task; also, the number of
+strokes per day outnumbers the availability of polysomnographs and dedicated
+healthcare professionals. Thus, a simple and automated recognition system to
+identify OSAS among acute stroke patients, relying on routinely recorded vital
+signs, is desirable. The majority of the work done so far focuses on data
+recorded in ideal conditions and highly selected patients, and thus it is
+hardly exploitable in real-life settings, where it would be of actual use. In
+this paper, we propose a convolutional deep learning architecture able to
+reduce the temporal resolution of raw waveform data, like physiological
+signals, extracting key features that can be used for further processing. We
+exploit models based on such an architecture to detect OSAS events in stroke
+unit recordings obtained from the monitoring of unselected patients. Unlike
+existing approaches, annotations are performed at one-second granularity,
+allowing physicians to better interpret the model outcome. Results are
+considered to be satisfactory by the domain experts. Moreover, based on a
+widely-used benchmark, we show that the proposed approach outperforms current
+state-of-the-art solutions. 
+
+","abs-2302.05179v1, abs-2304.03452v2, abs-2302.03355v1, abs-2402.03244v2"
+What is the main goal of the Highway Value Iteration Network (VIN) presented in the paper 'Highway Value Iteration Networks'?,abs-2406.03485v1,Summarization / Purpose Identification Questions,"Title: Highway Value Iteration Networks 
+Summary: Value iteration networks (VINs) enable end-to-end learning for planning tasks
+by employing a differentiable ""planning module"" that approximates the value
+iteration algorithm. However, long-term planning remains a challenge because
+training very deep VINs is difficult. To address this problem, we embed highway
+value iteration -- a recent algorithm designed to facilitate long-term credit
+assignment -- into the structure of VINs. This improvement augments the
+""planning module"" of the VIN with three additional components: 1) an ""aggregate
+gate,"" which constructs skip connections to improve information flow across
+many layers; 2) an ""exploration module,"" crafted to increase the diversity of
+information and gradient flow in spatial dimensions; 3) a ""filter gate""
+designed to ensure safe exploration. The resulting novel highway VIN can be
+trained effectively with hundreds of layers using standard backpropagation. In
+long-term planning tasks requiring hundreds of planning steps, deep highway
+VINs outperform both traditional VINs and several advanced, very deep NNs. 
+
+","abs-2406.03485v1, abs-2310.00664v1, abs-2401.05442v3, abs-2302.03255v1, abs-2406.15291v2"
+Compare the approaches of 'Behavior Proximal Policy Optimization' (BPPO) and 'Adaptive Policy Learning for Offline-to-Online Reinforcement Learning'. How do they differ in their strategies for utilizing offline datasets?,"abs-2302.11312v1,abs-2303.07693v1",Comparative & Contrastive Questions,"Title: Behavior Proximal Policy Optimization 
+Summary: Offline reinforcement learning (RL) is a challenging setting where existing
+off-policy actor-critic methods perform poorly due to the overestimation of
+out-of-distribution state-action pairs. Thus, various additional augmentations
+are proposed to keep the learned policy close to the offline dataset (or the
+behavior policy). In this work, starting from the analysis of offline monotonic
+policy improvement, we get a surprising finding that some online on-policy
+algorithms are naturally able to solve offline RL. Specifically, the inherent
+conservatism of these on-policy algorithms is exactly what the offline RL
+method needs to overcome the overestimation. Based on this, we propose Behavior
+Proximal Policy Optimization (BPPO), which solves offline RL without any extra
+constraint or regularization introduced compared to PPO. Extensive experiments
+on the D4RL benchmark indicate this extremely succinct method outperforms
+state-of-the-art offline RL algorithms. Our implementation is available at
+https://github.com/Dragon-Zhuang/BPPO. 
+
+Title: Adaptive Policy Learning for Offline-to-Online Reinforcement Learning 
+Summary: Conventional reinforcement learning (RL) needs an environment to collect
+fresh data, which is impractical when online interactions are costly. Offline
+RL provides an alternative solution by directly learning from the previously
+collected dataset. However, it will yield unsatisfactory performance if the
+quality of the offline datasets is poor. In this paper, we consider an
+offline-to-online setting where the agent is first learned from the offline
+dataset and then trained online, and propose a framework called Adaptive Policy
+Learning for effectively taking advantage of offline and online data.
+Specifically, we explicitly consider the difference between the online and
+offline data and apply an adaptive update scheme accordingly, that is, a
+pessimistic update strategy for the offline dataset and an optimistic/greedy
+update scheme for the online dataset. Such a simple and effective method
+provides a way to mix the offline and online RL and achieve the best of both
+worlds. We further provide two detailed algorithms for implementing the
+framework through embedding value or policy-based RL algorithms into it.
+Finally, we conduct extensive experiments on popular continuous control tasks,
+and results show that our algorithm can learn the expert policy with high
+sample efficiency even when the quality of offline dataset is poor, e.g.,
+random dataset. 
+
+","abs-2302.11312v1, abs-2303.07693v1, abs-2401.02019v1, abs-2406.06495v1"
+"How could the 'Bonsai' gradient-free pruning method be used to test the 'Junk DNA Hypothesis' by selectively removing small-magnitude weights and observing the performance drop on tasks of varying difficulty, as defined in the hypothesis paper?","abs-2402.05406v2,abs-2310.02277v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Everybody Prune Now: Structured Pruning of LLMs with only Forward Passes 
+Summary: Given the generational gap in available hardware between lay practitioners
+and the most endowed institutions, LLMs are becoming increasingly inaccessible
+as they grow in size. Whilst many approaches have been proposed to compress
+LLMs to make their resource consumption manageable, these methods themselves
+tend to be resource intensive, putting them out of the reach of the very user
+groups they target. In this work, we explore the problem of structured pruning
+of LLMs using only forward passes. We seek to empower practitioners to prune
+models so large that their available hardware has just enough memory to run
+inference. We develop Bonsai, a gradient-free, perturbative pruning method
+capable of delivering small, fast, and accurate pruned models.
+  We observe that Bonsai outputs pruned models that (i) outperform those
+generated by more expensive gradient-based structured pruning methods, and (ii)
+are twice as fast (with comparable accuracy) as those generated by
+semi-structured pruning methods requiring comparable resources as Bonsai. We
+also leverage Bonsai to produce a new sub-2B model using a single A6000 that
+yields state-of-the-art performance on 4/6 tasks on the Huggingface Open LLM
+leaderboard. 
+
+Title: Pruning Small Pre-Trained Weights Irreversibly and Monotonically Impairs
+  ""Difficult"" Downstream Tasks in LLMs 
+Summary: We present Junk DNA Hypothesis by adopting a novel task-centric angle for the
+pre-trained weights of large language models (LLMs). It has been believed that
+weights in LLMs contain significant redundancy, leading to the conception that
+a considerable chunk of the parameters can be removed by pruning without
+compromising performance. Contrary to this belief, this paper presents a
+counter-argument: small-magnitude weights of pre-trained model weights encode
+vital knowledge essential for tackling difficult downstream tasks - manifested
+as the monotonic relationship between the performance drop of downstream tasks
+across the difficulty spectrum, as we prune more pre-trained weights by
+magnitude. Moreover, we reveal that these seemingly inconsequential weights can
+result in irreparable loss of knowledge and performance degradation in
+difficult tasks, even when downstream continual training is allowed.
+Interestingly, our evaluations show that the other popular compression, namely
+quantization, fails to exhibit similar monotonic effect and does not as
+convincingly disentangle this task-difficulty information. To study formally,
+we introduce several quantifiable metrics to gauge the downstream task
+difficulty: (1) within the same task category, and (2) across different task
+categories. Our extensive experiments substantiate the Junk DNA Hypothesis
+across a diverse range of model sizes, tasks, datasets, and even pruning
+methods. Codes are available at:
+https://github.com/VITA-Group/Junk_DNA_Hypothesis.git. 
+
+","abs-2310.02277v2, abs-2402.05406v2"
+"In the 'cito' R package, what specific version of the 'torch' library was used for the experiments on the African elephant species distribution model?",abs-2303.09599v3,Negative / Unanswerable Questions,"Title: cito: An R package for training neural networks using torch 
+Summary: Deep Neural Networks (DNN) have become a central method in ecology. Most
+current deep learning (DL) applications rely on one of the major deep learning
+frameworks, in particular Torch or TensorFlow, to build and train DNN. Using
+these frameworks, however, requires substantially more experience and time than
+typical regression functions in the R environment. Here, we present 'cito', a
+user-friendly R package for DL that allows specifying DNNs in the familiar
+formula syntax used by many R packages. To fit the models, 'cito' uses 'torch',
+taking advantage of the numerically optimized torch library, including the
+ability to switch between training models on the CPU or the graphics processing
+unit (GPU) (which allows to efficiently train large DNN). Moreover, 'cito'
+includes many user-friendly functions for model plotting and analysis,
+including optional confidence intervals (CIs) based on bootstraps for
+predictions and explainable AI (xAI) metrics for effect sizes and variable
+importance with CIs and p-values. To showcase a typical analysis pipeline using
+'cito', including its built-in xAI features to explore the trained DNN, we
+build a species distribution model of the African elephant. We hope that by
+providing a user-friendly R framework to specify, deploy and interpret DNN,
+'cito' will make this interesting model class more accessible to ecological
+data analysis. A stable version of 'cito' can be installed from the
+comprehensive R archive network (CRAN). 
+
+","abs-2303.09599v3, abs-2307.07682v1, abs-2302.14853v2"
+"What is the core problem that the 'LeBeD' score, proposed in 'Online GNN Evaluation Under Test-time Graph Distribution Shifts', is designed to address?",abs-2403.09953v1,Summarization / Purpose Identification Questions,"Title: Online GNN Evaluation Under Test-time Graph Distribution Shifts 
+Summary: Evaluating the performance of a well-trained GNN model on real-world graphs
+is a pivotal step for reliable GNN online deployment and serving. Due to a lack
+of test node labels and unknown potential training-test graph data distribution
+shifts, conventional model evaluation encounters limitations in calculating
+performance metrics (e.g., test error) and measuring graph data-level
+discrepancies, particularly when the training graph used for developing GNNs
+remains unobserved during test time. In this paper, we study a new research
+problem, online GNN evaluation, which aims to provide valuable insights into
+the well-trained GNNs's ability to effectively generalize to real-world
+unlabeled graphs under the test-time graph distribution shifts. Concretely, we
+develop an effective learning behavior discrepancy score, dubbed LeBeD, to
+estimate the test-time generalization errors of well-trained GNN models.
+Through a novel GNN re-training strategy with a parameter-free optimality
+criterion, the proposed LeBeD comprehensively integrates learning behavior
+discrepancies from both node prediction and structure reconstruction
+perspectives. This enables the effective evaluation of the well-trained GNNs'
+ability to capture test node semantics and structural representations, making
+it an expressive metric for estimating the generalization error in online GNN
+evaluation. Extensive experiments on real-world test graphs under diverse graph
+distribution shifts could verify the effectiveness of the proposed method,
+revealing its strong correlation with ground-truth test errors on various
+well-trained GNN models. 
+
+","abs-2403.09953v1, abs-2402.05660v1, abs-2410.17617v1"
+"According to the paper 'An Efficient Tester-Learner for Halfspaces', what kind of noise model does their algorithm handle for Gaussian target distributions in polynomial time?",abs-2302.14853v2,Direct Fact Retrieval & Definition Questions,"Title: An Efficient Tester-Learner for Halfspaces 
+Summary: We give the first efficient algorithm for learning halfspaces in the testable
+learning model recently defined by Rubinfeld and Vasilyan (2023). In this
+model, a learner certifies that the accuracy of its output hypothesis is near
+optimal whenever the training set passes an associated test, and training sets
+drawn from some target distribution -- e.g., the Gaussian -- must pass the
+test. This model is more challenging than distribution-specific agnostic or
+Massart noise models where the learner is allowed to fail arbitrarily if the
+distributional assumption does not hold.
+  We consider the setting where the target distribution is Gaussian (or more
+generally any strongly log-concave distribution) in $d$ dimensions and the
+noise model is either Massart or adversarial (agnostic). For Massart noise, our
+tester-learner runs in polynomial time and outputs a hypothesis with
+(information-theoretically optimal) error $\mathsf{opt} + \epsilon$ for any
+strongly log-concave target distribution. For adversarial noise, our
+tester-learner obtains error $O(\mathsf{opt}) + \epsilon$ in polynomial time
+when the target distribution is Gaussian; for strongly log-concave
+distributions, we obtain $\tilde{O}(\mathsf{opt}) + \epsilon$ in
+quasipolynomial time.
+  Prior work on testable learning ignores the labels in the training set and
+checks that the empirical moments of the covariates are close to the moments of
+the base distribution. Here we develop new tests of independent interest that
+make critical use of the labels and combine them with the moment-matching
+approach of Gollakota et al. (2023). This enables us to simulate a variant of
+the algorithm of Diakonikolas et al. (2020) for learning noisy halfspaces using
+nonconvex SGD but in the testable learning setting. 
+
+","abs-2302.14853v2, abs-2408.09033v2, abs-2409.06830v1, abs-2406.06495v1"
+Contrast the role of reinforcement learning in 'SneakyPrompt' and 'GO-DICE'. How is RL applied for opposite goals in these two frameworks?,"abs-2305.12082v3,abs-2312.10802v1",Comparative & Contrastive Questions,"Title: SneakyPrompt: Jailbreaking Text-to-image Generative Models 
+Summary: Text-to-image generative models such as Stable Diffusion and DALL$\cdot$E
+raise many ethical concerns due to the generation of harmful images such as
+Not-Safe-for-Work (NSFW) ones. To address these ethical concerns, safety
+filters are often adopted to prevent the generation of NSFW images. In this
+work, we propose SneakyPrompt, the first automated attack framework, to
+jailbreak text-to-image generative models such that they generate NSFW images
+even if safety filters are adopted. Given a prompt that is blocked by a safety
+filter, SneakyPrompt repeatedly queries the text-to-image generative model and
+strategically perturbs tokens in the prompt based on the query results to
+bypass the safety filter. Specifically, SneakyPrompt utilizes reinforcement
+learning to guide the perturbation of tokens. Our evaluation shows that
+SneakyPrompt successfully jailbreaks DALL$\cdot$E 2 with closed-box safety
+filters to generate NSFW images. Moreover, we also deploy several
+state-of-the-art, open-source safety filters on a Stable Diffusion model. Our
+evaluation shows that SneakyPrompt not only successfully generates NSFW images,
+but also outperforms existing text adversarial attacks when extended to
+jailbreak text-to-image generative models, in terms of both the number of
+queries and qualities of the generated NSFW images. SneakyPrompt is open-source
+and available at this repository:
+\url{https://github.com/Yuchen413/text2image_safety}. 
+
+Title: GO-DICE: Goal-Conditioned Option-Aware Offline Imitation Learning via
+  Stationary Distribution Correction Estimation 
+Summary: Offline imitation learning (IL) refers to learning expert behavior solely
+from demonstrations, without any additional interaction with the environment.
+Despite significant advances in offline IL, existing techniques find it
+challenging to learn policies for long-horizon tasks and require significant
+re-training when task specifications change. Towards addressing these
+limitations, we present GO-DICE an offline IL technique for goal-conditioned
+long-horizon sequential tasks. GO-DICE discerns a hierarchy of sub-tasks from
+demonstrations and uses these to learn separate policies for sub-task
+transitions and action execution, respectively; this hierarchical policy
+learning facilitates long-horizon reasoning. Inspired by the expansive
+DICE-family of techniques, policy learning at both the levels transpires within
+the space of stationary distributions. Further, both policies are learnt with
+goal conditioning to minimize need for retraining when task goals change.
+Experimental results substantiate that GO-DICE outperforms recent baselines, as
+evidenced by a marked improvement in the completion rate of increasingly
+challenging pick-and-place Mujoco robotic tasks. GO-DICE is also capable of
+leveraging imperfect demonstration and partial task segmentation when
+available, both of which boost task performance relative to learning from
+expert demonstrations alone. 
+
+","abs-2312.10802v1, abs-2305.12082v3, abs-2410.21151v1"
+The paper 'Unbiased Learning of Deep Generative Models...' uses a memory-efficient implicit differentiation scheme. How could this optimization technique be applied within the 'Self-Consistent Velocity Matching' framework to potentially scale it to even higher-dimensional PDEs?,"abs-2306.08230v2,abs-2301.13737v4",Synthesis & Multi-Hop Reasoning Questions,"Title: Unbiased Learning of Deep Generative Models with Structured Discrete
+  Representations 
+Summary: By composing graphical models with deep learning architectures, we learn
+generative models with the strengths of both frameworks. The structured
+variational autoencoder (SVAE) inherits structure and interpretability from
+graphical models, and flexible likelihoods for high-dimensional data from deep
+learning, but poses substantial optimization challenges. We propose novel
+algorithms for learning SVAEs, and are the first to demonstrate the SVAE's
+ability to handle multimodal uncertainty when data is missing by incorporating
+discrete latent variables. Our memory-efficient implicit differentiation scheme
+makes the SVAE tractable to learn via gradient descent, while demonstrating
+robustness to incomplete optimization. To more rapidly learn accurate graphical
+model parameters, we derive a method for computing natural gradients without
+manual derivations, which avoids biases found in prior work. These optimization
+innovations enable the first comparisons of the SVAE to state-of-the-art time
+series models, where the SVAE performs competitively while learning
+interpretable and structured discrete data representations. 
+
+Title: Self-Consistent Velocity Matching of Probability Flows 
+Summary: We present a discretization-free scalable framework for solving a large class
+of mass-conserving partial differential equations (PDEs), including the
+time-dependent Fokker-Planck equation and the Wasserstein gradient flow. The
+main observation is that the time-varying velocity field of the PDE solution
+needs to be self-consistent: it must satisfy a fixed-point equation involving
+the probability flow characterized by the same velocity field. Instead of
+directly minimizing the residual of the fixed-point equation with neural
+parameterization, we use an iterative formulation with a biased gradient
+estimator that bypasses significant computational obstacles with strong
+empirical performance. Compared to existing approaches, our method does not
+suffer from temporal or spatial discretization, covers a wider range of PDEs,
+and scales to high dimensions. Experimentally, our method recovers analytical
+solutions accurately when they are available and achieves superior performance
+in high dimensions with less training time compared to alternatives. 
+
+","abs-2301.13737v4, abs-2407.00748v1, abs-2306.08230v2, abs-2310.05674v2, abs-2410.08633v2"
+What was the exact number of nodes in the graph representation of the road network used to test the TraffNet framework?,abs-2303.15954v7,Negative / Unanswerable Questions,"Title: TraffNet: Learning Causality of Traffic Generation for What-if
+  Prediction 
+Summary: Real-time what-if traffic prediction is crucial for decision making in
+intelligent traffic management and control. Although current deep learning
+methods demonstrate significant advantages in traffic prediction, they are
+powerless in what-if traffic prediction due to their nature of
+correla-tion-based. Here, we present a simple deep learning framework called
+TraffNet that learns the mechanisms of traffic generation for what-if
+pre-diction from vehicle trajectory data. First, we use a heterogeneous graph
+to represent the road network, allowing the model to incorporate causal
+features of traffic flows, such as Origin-Destination (OD) demands and routes.
+Next, we propose a method for learning segment representations, which models
+the process of assigning OD demands onto the road network. The learned segment
+represen-tations effectively encapsulate the intricate causes of traffic
+generation, facilitating downstream what-if traffic prediction. Finally, we
+conduct experiments on synthetic datasets to evaluate the effectiveness of
+TraffNet. The code and datasets of TraffNet is available at
+https://github.com/iCityLab/TraffNet. 
+
+","abs-2303.15954v7, abs-2406.15852v2, abs-2410.17617v1, abs-2403.15077v1, abs-2401.06595v1"
+What is the purpose of the 'First Above Threshold' (FAT) operator introduced in 'Fully Embedded Time-Series Generative Adversarial Networks'?,abs-2308.15730v2,Direct Fact Retrieval & Definition Questions,"Title: Fully Embedded Time-Series Generative Adversarial Networks 
+Summary: Generative Adversarial Networks (GANs) should produce synthetic data that
+fits the underlying distribution of the data being modeled. For real valued
+time-series data, this implies the need to simultaneously capture the static
+distribution of the data, but also the full temporal distribution of the data
+for any potential time horizon. This temporal element produces a more complex
+problem that can potentially leave current solutions under-constrained,
+unstable during training, or prone to varying degrees of mode collapse. In
+FETSGAN, entire sequences are translated directly to the generator's sampling
+space using a seq2seq style adversarial auto encoder (AAE), where adversarial
+training is used to match the training distribution in both the feature space
+and the lower dimensional sampling space. This additional constraint provides a
+loose assurance that the temporal distribution of the synthetic samples will
+not collapse. In addition, the First Above Threshold (FAT) operator is
+introduced to supplement the reconstruction of encoded sequences, which
+improves training stability and the overall quality of the synthetic data being
+generated. These novel contributions demonstrate a significant improvement to
+the current state of the art for adversarial learners in qualitative measures
+of temporal similarity and quantitative predictive ability of data generated
+through FETSGAN. 
+
+","abs-2308.15730v2, abs-2405.15256v2, abs-2302.10182v1, abs-2308.12686v2, abs-2305.13036v3"
+What is the primary motivation for proposing the Behavior Proximal Policy Optimization (BPPO) algorithm for offline reinforcement learning?,abs-2302.11312v1,Summarization / Purpose Identification Questions,"Title: Behavior Proximal Policy Optimization 
+Summary: Offline reinforcement learning (RL) is a challenging setting where existing
+off-policy actor-critic methods perform poorly due to the overestimation of
+out-of-distribution state-action pairs. Thus, various additional augmentations
+are proposed to keep the learned policy close to the offline dataset (or the
+behavior policy). In this work, starting from the analysis of offline monotonic
+policy improvement, we get a surprising finding that some online on-policy
+algorithms are naturally able to solve offline RL. Specifically, the inherent
+conservatism of these on-policy algorithms is exactly what the offline RL
+method needs to overcome the overestimation. Based on this, we propose Behavior
+Proximal Policy Optimization (BPPO), which solves offline RL without any extra
+constraint or regularization introduced compared to PPO. Extensive experiments
+on the D4RL benchmark indicate this extremely succinct method outperforms
+state-of-the-art offline RL algorithms. Our implementation is available at
+https://github.com/Dragon-Zhuang/BPPO. 
+
+","abs-2410.21151v1, abs-2406.03234v1, abs-2406.06495v1, abs-2303.07693v1, abs-2307.04887v1"
+How does the learning approach in 'Unbiased Learning of Deep Generative Models with Structured Discrete Representations' differ from the approach in 'Deep Random Features for Scalable Interpolation of Spatiotemporal Data' in terms of handling data structure and scalability?,"abs-2306.08230v2,abs-2412.11350v1",Comparative & Contrastive Questions,"Title: Unbiased Learning of Deep Generative Models with Structured Discrete
+  Representations 
+Summary: By composing graphical models with deep learning architectures, we learn
+generative models with the strengths of both frameworks. The structured
+variational autoencoder (SVAE) inherits structure and interpretability from
+graphical models, and flexible likelihoods for high-dimensional data from deep
+learning, but poses substantial optimization challenges. We propose novel
+algorithms for learning SVAEs, and are the first to demonstrate the SVAE's
+ability to handle multimodal uncertainty when data is missing by incorporating
+discrete latent variables. Our memory-efficient implicit differentiation scheme
+makes the SVAE tractable to learn via gradient descent, while demonstrating
+robustness to incomplete optimization. To more rapidly learn accurate graphical
+model parameters, we derive a method for computing natural gradients without
+manual derivations, which avoids biases found in prior work. These optimization
+innovations enable the first comparisons of the SVAE to state-of-the-art time
+series models, where the SVAE performs competitively while learning
+interpretable and structured discrete data representations. 
+
+Title: Deep Random Features for Scalable Interpolation of Spatiotemporal Data 
+Summary: The rapid growth of earth observation systems calls for a scalable approach
+to interpolate remote-sensing observations. These methods in principle, should
+acquire more information about the observed field as data grows. Gaussian
+processes (GPs) are candidate model choices for interpolation. However, due to
+their poor scalability, they usually rely on inducing points for inference,
+which restricts their expressivity. Moreover, commonly imposed assumptions such
+as stationarity prevents them from capturing complex patterns in the data.
+While deep GPs can overcome this issue, training and making inference with them
+are difficult, again requiring crude approximations via inducing points. In
+this work, we instead approach the problem through Bayesian deep learning,
+where spatiotemporal fields are represented by deep neural networks, whose
+layers share the inductive bias of stationary GPs on the plane/sphere via
+random feature expansions. This allows one to (1) capture high frequency
+patterns in the data, and (2) use mini-batched gradient descent for large scale
+training. We experiment on various remote sensing data at local/global scales,
+showing that our approach produce competitive or superior results to existing
+methods, with well-calibrated uncertainties. 
+
+","abs-2306.08230v2, abs-2412.11350v1, abs-2407.21176v1, abs-2407.00748v1, abs-2401.17042v1"
+The 'DySurv' model is designed for dynamic risk prediction from electronic health records. How could the reinforcement learning framework from 'Step-by-Step Guidance to Differential Anemia Diagnosis' leverage DySurv's time-to-event predictions to create a more dynamic diagnostic pathway that adapts based on the patient's evolving risk profile over time?,"abs-2310.18681v3,abs-2412.02273v1",Synthesis & Multi-Hop Reasoning Questions,"Title: DySurv: dynamic deep learning model for survival analysis with
+  conditional variational inference 
+Summary: Machine learning applications for longitudinal electronic health records
+often forecast the risk of events at fixed time points, whereas survival
+analysis achieves dynamic risk prediction by estimating time-to-event
+distributions. Here, we propose a novel conditional variational
+autoencoder-based method, DySurv, which uses a combination of static and
+longitudinal measurements from electronic health records to estimate the
+individual risk of death dynamically. DySurv directly estimates the cumulative
+risk incidence function without making any parametric assumptions on the
+underlying stochastic process of the time-to-event. We evaluate DySurv on 6
+time-to-event benchmark datasets in healthcare, as well as 2 real-world
+intensive care unit (ICU) electronic health records (EHR) datasets extracted
+from the eICU Collaborative Research (eICU) and the Medical Information Mart
+for Intensive Care database (MIMIC-IV). DySurv outperforms other existing
+statistical and deep learning approaches to time-to-event analysis across
+concordance and other metrics. It achieves time-dependent concordance of over
+60% in the eICU case. It is also over 12% more accurate and 22% more sensitive
+than in-use ICU scores like Acute Physiology and Chronic Health Evaluation
+(APACHE) and Sequential Organ Failure Assessment (SOFA) scores. The predictive
+capacity of DySurv is consistent and the survival estimates remain disentangled
+across different datasets. Our interdisciplinary framework successfully
+incorporates deep learning, survival analysis, and intensive care to create a
+novel method for time-to-event prediction from longitudinal health records. We
+test our method on several held-out test sets from a variety of healthcare
+datasets and compare it to existing in-use clinical risk scoring benchmarks. 
+
+Title: Step-by-Step Guidance to Differential Anemia Diagnosis with Real-World
+  Data and Deep Reinforcement Learning 
+Summary: Clinical diagnostic guidelines outline the key questions to answer to reach a
+diagnosis. Inspired by guidelines, we aim to develop a model that learns from
+electronic health records to determine the optimal sequence of actions for
+accurate diagnosis. Focusing on anemia and its sub-types, we employ deep
+reinforcement learning (DRL) algorithms and evaluate their performance on both
+a synthetic dataset, which is based on expert-defined diagnostic pathways, and
+a real-world dataset. We investigate the performance of these algorithms across
+various scenarios. Our experimental results demonstrate that DRL algorithms
+perform competitively with state-of-the-art methods while offering the
+significant advantage of progressively generating pathways to the suggested
+diagnosis, providing a transparent decision-making process that can guide and
+explain diagnostic reasoning. 
+
+","abs-2310.18681v3, abs-2312.11669v1, abs-2308.08469v5"
+"In the paper 'Improving deep learning precipitation nowcasting by using prior knowledge', what was the specific advection-diffusion differential equation used in the hand-engineering of the PhyCell?",abs-2301.11707v1,Negative / Unanswerable Questions,"Title: Improving deep learning precipitation nowcasting by using prior
+  knowledge 
+Summary: Deep learning methods dominate short-term high-resolution precipitation
+nowcasting in terms of prediction error. However, their operational usability
+is limited by difficulties explaining dynamics behind the predictions, which
+are smoothed out and missing the high-frequency features due to optimizing for
+mean error loss functions. We experiment with hand-engineering of the
+advection-diffusion differential equation into a PhyCell to introduce more
+accurate physical prior to a PhyDNet model that disentangles physical and
+residual dynamics. Results indicate that while PhyCell can learn the intended
+dynamics, training of PhyDNet remains driven by loss optimization, resulting in
+a model with the same prediction capabilities. 
+
+","abs-2301.11707v1, abs-2401.15989v1, abs-2401.17042v1, abs-2307.14185v1, abs-2305.14244v2"
+What does the acronym 'CASH' stand for in the context of the paper 'DivBO: Diversity-aware CASH for Ensemble Learning'?,abs-2302.03255v1,Direct Fact Retrieval & Definition Questions,"Title: DivBO: Diversity-aware CASH for Ensemble Learning 
+Summary: The Combined Algorithm Selection and Hyperparameters optimization (CASH)
+problem is one of the fundamental problems in Automated Machine Learning
+(AutoML). Motivated by the success of ensemble learning, recent AutoML systems
+build post-hoc ensembles to output the final predictions instead of using the
+best single learner. However, while most CASH methods focus on searching for a
+single learner with the best performance, they neglect the diversity among base
+learners (i.e., they may suggest similar configurations to previously evaluated
+ones), which is also a crucial consideration when building an ensemble. To
+tackle this issue and further enhance the ensemble performance, we propose
+DivBO, a diversity-aware framework to inject explicit search of diversity into
+the CASH problems. In the framework, we propose to use a diversity surrogate to
+predict the pair-wise diversity of two unseen configurations. Furthermore, we
+introduce a temporary pool and a weighted acquisition function to guide the
+search of both performance and diversity based on Bayesian optimization.
+Empirical results on 15 public datasets show that DivBO achieves the best
+average ranks (1.82 and 1.73) on both validation and test errors among 10
+compared methods, including post-hoc designs in recent AutoML systems and
+state-of-the-art baselines for ensemble learning on CASH problems. 
+
+","abs-2302.03255v1, abs-2310.05674v2, abs-2405.16124v2"
+What problem does the 'SOPHON' framework aim to solve regarding the use of pre-trained models?,abs-2404.12699v1,Summarization / Purpose Identification Questions,"Title: SOPHON: Non-Fine-Tunable Learning to Restrain Task Transferability For
+  Pre-trained Models 
+Summary: Instead of building deep learning models from scratch, developers are more
+and more relying on adapting pre-trained models to their customized tasks.
+However, powerful pre-trained models may be misused for unethical or illegal
+tasks, e.g., privacy inference and unsafe content generation. In this paper, we
+introduce a pioneering learning paradigm, non-fine-tunable learning, which
+prevents the pre-trained model from being fine-tuned to indecent tasks while
+preserving its performance on the original task. To fulfill this goal, we
+propose SOPHON, a protection framework that reinforces a given pre-trained
+model to be resistant to being fine-tuned in pre-defined restricted domains.
+Nonetheless, this is challenging due to a diversity of complicated fine-tuning
+strategies that may be adopted by adversaries. Inspired by model-agnostic
+meta-learning, we overcome this difficulty by designing sophisticated
+fine-tuning simulation and fine-tuning evaluation algorithms. In addition, we
+carefully design the optimization process to entrap the pre-trained model
+within a hard-to-escape local optimum regarding restricted domains. We have
+conducted extensive experiments on two deep learning modes (classification and
+generation), seven restricted domains, and six model architectures to verify
+the effectiveness of SOPHON. Experiment results verify that fine-tuning
+SOPHON-protected models incurs an overhead comparable to or even greater than
+training from scratch. Furthermore, we confirm the robustness of SOPHON to
+three fine-tuning methods, five optimizers, various learning rates and batch
+sizes. SOPHON may help boost further investigations into safe and responsible
+AI. 
+
+","abs-2404.12699v1, abs-2312.00662v1, abs-2310.02277v2, abs-2410.03640v1"
+Compare the goals of 'Fairness-Aware Estimation of Graphical Models' and 'Achieving Counterfactual Fairness for Anomaly Detection'. What types of fairness do they each address and in what kind of machine learning task?,"abs-2408.17396v2,abs-2303.02318v1",Comparative & Contrastive Questions,"Title: Fairness-Aware Estimation of Graphical Models 
+Summary: This paper examines the issue of fairness in the estimation of graphical
+models (GMs), particularly Gaussian, Covariance, and Ising models. These models
+play a vital role in understanding complex relationships in high-dimensional
+data. However, standard GMs can result in biased outcomes, especially when the
+underlying data involves sensitive characteristics or protected groups. To
+address this, we introduce a comprehensive framework designed to reduce bias in
+the estimation of GMs related to protected attributes. Our approach involves
+the integration of the pairwise graph disparity error and a tailored loss
+function into a nonsmooth multi-objective optimization problem, striving to
+achieve fairness across different sensitive groups while maintaining the
+effectiveness of the GMs. Experimental evaluations on synthetic and real-world
+datasets demonstrate that our framework effectively mitigates bias without
+undermining GMs' performance. 
+
+Title: Achieving Counterfactual Fairness for Anomaly Detection 
+Summary: Ensuring fairness in anomaly detection models has received much attention
+recently as many anomaly detection applications involve human beings. However,
+existing fair anomaly detection approaches mainly focus on association-based
+fairness notions. In this work, we target counterfactual fairness, which is a
+prevalent causation-based fairness notion. The goal of counterfactually fair
+anomaly detection is to ensure that the detection outcome of an individual in
+the factual world is the same as that in the counterfactual world where the
+individual had belonged to a different group. To this end, we propose a
+counterfactually fair anomaly detection (CFAD) framework which consists of two
+phases, counterfactual data generation and fair anomaly detection. Experimental
+results on a synthetic dataset and two real datasets show that CFAD can
+effectively detect anomalies as well as ensure counterfactual fairness. 
+
+","abs-2303.02318v1, abs-2408.17396v2, abs-2304.03452v2, abs-2402.03244v2"
+How could the adaptive batch selection algorithm from 'Multi-Label Adaptive Batch Selection' be integrated into the training process of the 'R2N' algorithm for preference-based RL to prioritize training on preference pairs that are 'hard' or related to imbalanced (rare) environment features?,"abs-2403.18192v1,abs-2406.06495v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Multi-Label Adaptive Batch Selection by Highlighting Hard and Imbalanced
+  Samples 
+Summary: Deep neural network models have demonstrated their effectiveness in
+classifying multi-label data from various domains. Typically, they employ a
+training mode that combines mini-batches with optimizers, where each sample is
+randomly selected with equal probability when constructing mini-batches.
+However, the intrinsic class imbalance in multi-label data may bias the model
+towards majority labels, since samples relevant to minority labels may be
+underrepresented in each mini-batch. Meanwhile, during the training process, we
+observe that instances associated with minority labels tend to induce greater
+losses. Existing heuristic batch selection methods, such as priority selection
+of samples with high contribution to the objective function, i.e., samples with
+high loss, have been proven to accelerate convergence while reducing the loss
+and test error in single-label data. However, batch selection methods have not
+yet been applied and validated in multi-label data. In this study, we introduce
+a simple yet effective adaptive batch selection algorithm tailored to
+multi-label deep learning models. It adaptively selects each batch by
+prioritizing hard samples related to minority labels. A variant of our method
+also takes informative label correlations into consideration. Comprehensive
+experiments combining five multi-label deep learning models on thirteen
+benchmark datasets show that our method converges faster and performs better
+than random batch selection. 
+
+Title: Boosting Robustness in Preference-Based Reinforcement Learning with
+  Dynamic Sparsity 
+Summary: For autonomous agents to successfully integrate into human-centered
+environments, agents should be able to learn from and adapt to humans in their
+native settings. Preference-based reinforcement learning (PbRL) is a promising
+approach that learns reward functions from human preferences. This enables RL
+agents to adapt their behavior based on human desires. However, humans live in
+a world full of diverse information, most of which is not relevant to
+completing a particular task. It becomes essential that agents learn to focus
+on the subset of task-relevant environment features. Unfortunately, prior work
+has largely ignored this aspect; primarily focusing on improving PbRL
+algorithms in standard RL environments that are carefully constructed to
+contain only task-relevant features. This can result in algorithms that may not
+effectively transfer to a more noisy real-world setting. To that end, this work
+proposes R2N (Robust-to-Noise), the first PbRL algorithm that leverages
+principles of dynamic sparse training to learn robust reward models that can
+focus on task-relevant features. We study the effectiveness of R2N in the
+Extremely Noisy Environment setting, an RL problem setting where up to 95% of
+the state features are irrelevant distractions. In experiments with a simulated
+teacher, we demonstrate that R2N can adapt the sparse connectivity of its
+neural networks to focus on task-relevant features, enabling R2N to
+significantly outperform several state-of-the-art PbRL algorithms in multiple
+locomotion and control environments. 
+
+","abs-2406.06495v1, abs-2404.00069v1, abs-2305.10203v1, abs-2304.03452v2"
+What was the average number of training epochs required for the DivBO framework to converge on the 15 public datasets used in the experiments?,abs-2302.03255v1,Negative / Unanswerable Questions,"Title: DivBO: Diversity-aware CASH for Ensemble Learning 
+Summary: The Combined Algorithm Selection and Hyperparameters optimization (CASH)
+problem is one of the fundamental problems in Automated Machine Learning
+(AutoML). Motivated by the success of ensemble learning, recent AutoML systems
+build post-hoc ensembles to output the final predictions instead of using the
+best single learner. However, while most CASH methods focus on searching for a
+single learner with the best performance, they neglect the diversity among base
+learners (i.e., they may suggest similar configurations to previously evaluated
+ones), which is also a crucial consideration when building an ensemble. To
+tackle this issue and further enhance the ensemble performance, we propose
+DivBO, a diversity-aware framework to inject explicit search of diversity into
+the CASH problems. In the framework, we propose to use a diversity surrogate to
+predict the pair-wise diversity of two unseen configurations. Furthermore, we
+introduce a temporary pool and a weighted acquisition function to guide the
+search of both performance and diversity based on Bayesian optimization.
+Empirical results on 15 public datasets show that DivBO achieves the best
+average ranks (1.82 and 1.73) on both validation and test errors among 10
+compared methods, including post-hoc designs in recent AutoML systems and
+state-of-the-art baselines for ensemble learning on CASH problems. 
+
+","abs-2309.00023v2, abs-2307.05915v2, abs-2411.14019v1, abs-2408.08493v2"

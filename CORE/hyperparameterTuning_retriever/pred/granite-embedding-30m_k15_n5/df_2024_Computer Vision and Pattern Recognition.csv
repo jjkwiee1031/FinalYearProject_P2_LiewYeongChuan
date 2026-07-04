@@ -1,0 +1,600 @@
+Question,Source Article Index,Question Type,Summary,prediction,documentIDs
+What is the Prism framework designed to do for Vision Language Models (VLMs)?,abs-2406.14544v1,Direct Fact Retrieval & Definition,"Title: Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs 
+Summary: Vision Language Models (VLMs) demonstrate remarkable proficiency in
+addressing a wide array of visual questions, which requires strong perception
+and reasoning faculties. Assessing these two competencies independently is
+crucial for model refinement, despite the inherent difficulty due to the
+intertwined nature of seeing and reasoning in existing VLMs. To tackle this
+issue, we present Prism, an innovative framework designed to disentangle the
+perception and reasoning processes involved in visual question solving. Prism
+comprises two distinct stages: a perception stage that utilizes a VLM to
+extract and articulate visual information in textual form, and a reasoning
+stage that formulates responses based on the extracted visual information using
+a Large Language Model (LLM). This modular design enables the systematic
+comparison and assessment of both proprietary and open-source VLM for their
+perception and reasoning strengths. Our analytical framework provides several
+valuable insights, underscoring Prism's potential as a cost-effective solution
+for vision-language tasks. By combining a streamlined VLM focused on perception
+with a powerful LLM tailored for reasoning, Prism achieves superior results in
+general vision-language tasks while substantially cutting down on training and
+operational expenses. Quantitative evaluations show that Prism, when configured
+with a vanilla 2B LLaVA and freely accessible GPT-3.5, delivers performance on
+par with VLMs $10 \times$ larger on the rigorous multimodal benchmark MMStar.
+The project is released at: https://github.com/SparksJoe/Prism. 
+
+",This is a test answer.,"abs-2406.14544v1, abs-2402.04236v2, abs-2403.00231v3, abs-2406.15329v1, abs-2404.07520v2"
+"According to the Broiler-Net paper, what are the two specific abnormal chicken behaviors investigated?",abs-2401.12176v1,Direct Fact Retrieval & Definition,"Title: Broiler-Net: A Deep Convolutional Framework for Broiler Behavior
+  Analysis in Poultry Houses 
+Summary: Detecting anomalies in poultry houses is crucial for maintaining optimal
+chicken health conditions, minimizing economic losses and bolstering
+profitability. This paper presents a novel real-time framework for analyzing
+chicken behavior in cage-free poultry houses to detect abnormal behaviors.
+Specifically, two significant abnormalities, namely inactive broiler and
+huddling behavior, are investigated in this study. The proposed framework
+comprises three key steps: (1) chicken detection utilizing a state-of-the-art
+deep learning model, (2) tracking individual chickens across consecutive frames
+with a fast tracker module, and (3) detecting abnormal behaviors within the
+video stream. Experimental studies are conducted to evaluate the efficacy of
+the proposed algorithm in accurately assessing chicken behavior. The results
+illustrate that our framework provides a precise and efficient solution for
+real-time anomaly detection, facilitating timely interventions to maintain
+chicken health and enhance overall productivity on poultry farms. Github:
+https://github.com/TaherehZarratEhsan/Chicken-Behavior-Analysis 
+
+",This is a test answer.,"abs-2401.12176v1, abs-2406.02976v1, abs-2401.12665v2, abs-2406.11003v1, abs-2401.11814v1"
+What four components are integrated within the Mix-SSM blocks of the InsectMamba model?,abs-2404.03611v1,Direct Fact Retrieval & Definition,"Title: InsectMamba: Insect Pest Classification with State Space Model 
+Summary: The classification of insect pests is a critical task in agricultural
+technology, vital for ensuring food security and environmental sustainability.
+However, the complexity of pest identification, due to factors like high
+camouflage and species diversity, poses significant obstacles. Existing methods
+struggle with the fine-grained feature extraction needed to distinguish between
+closely related pest species. Although recent advancements have utilized
+modified network structures and combined deep learning approaches to improve
+accuracy, challenges persist due to the similarity between pests and their
+surroundings. To address this problem, we introduce InsectMamba, a novel
+approach that integrates State Space Models (SSMs), Convolutional Neural
+Networks (CNNs), Multi-Head Self-Attention mechanism (MSA), and Multilayer
+Perceptrons (MLPs) within Mix-SSM blocks. This integration facilitates the
+extraction of comprehensive visual features by leveraging the strengths of each
+encoding strategy. A selective module is also proposed to adaptively aggregate
+these features, enhancing the model's ability to discern pest characteristics.
+InsectMamba was evaluated against strong competitors across five insect pest
+classification datasets. The results demonstrate its superior performance and
+verify the significance of each model component by an ablation study. 
+
+",This is a test answer.,"abs-2404.03611v1, abs-2401.11724v1, abs-2404.02659v1, abs-2406.11772v1, abs-2401.12665v2"
+What does ELRT stand for in the context of training compact convolutional neural networks?,abs-2401.10341v1,Direct Fact Retrieval & Definition,"Title: ELRT: Efficient Low-Rank Training for Compact Convolutional Neural
+  Networks 
+Summary: Low-rank compression, a popular model compression technique that produces
+compact convolutional neural networks (CNNs) with low rankness, has been
+well-studied in the literature. On the other hand, low-rank training, as an
+alternative way to train low-rank CNNs from scratch, has been exploited little
+yet. Unlike low-rank compression, low-rank training does not need pre-trained
+full-rank models, and the entire training phase is always performed on the
+low-rank structure, bringing attractive benefits for practical applications.
+However, the existing low-rank training solutions still face several
+challenges, such as a considerable accuracy drop and/or still needing to update
+full-size models during the training. In this paper, we perform a systematic
+investigation on low-rank CNN training. By identifying the proper low-rank
+format and performance-improving strategy, we propose ELRT, an efficient
+low-rank training solution for high-accuracy, high-compactness, low-rank CNN
+models. Our extensive evaluation results for training various CNNs on different
+datasets demonstrate the effectiveness of ELRT. 
+
+",This is a test answer.,"abs-2401.10341v1, abs-2404.04159v1, abs-2404.05290v1, abs-2406.15329v1, abs-2403.12572v1"
+What is the primary purpose of the AllSpark framework in the context of semi-supervised semantic segmentation?,abs-2403.01818v3,Summarization / Purpose Identification,"Title: AllSpark: Reborn Labeled Features from Unlabeled in Transformer for
+  Semi-Supervised Semantic Segmentation 
+Summary: Semi-supervised semantic segmentation (SSSS) has been proposed to alleviate
+the burden of time-consuming pixel-level manual labeling, which leverages
+limited labeled data along with larger amounts of unlabeled data. Current
+state-of-the-art methods train the labeled data with ground truths and
+unlabeled data with pseudo labels. However, the two training flows are
+separate, which allows labeled data to dominate the training process, resulting
+in low-quality pseudo labels and, consequently, sub-optimal results. To
+alleviate this issue, we present AllSpark, which reborns the labeled features
+from unlabeled ones with the channel-wise cross-attention mechanism. We further
+introduce a Semantic Memory along with a Channel Semantic Grouping strategy to
+ensure that unlabeled features adequately represent labeled features. The
+AllSpark shed new light on the architecture level designs of SSSS rather than
+framework level, which avoids increasingly complicated training pipeline
+designs. It can also be regarded as a flexible bottleneck module that can be
+seamlessly integrated into a general transformer-based segmentation model. The
+proposed AllSpark outperforms existing methods across all evaluation protocols
+on Pascal, Cityscapes and COCO benchmarks without bells-and-whistles. Code and
+model weights are available at: https://github.com/xmed-lab/AllSpark. 
+
+",This is a test answer.,"abs-2403.01818v3, abs-2404.06177v2, abs-2401.12164v1, abs-2403.10216v1, abs-2401.05010v2"
+Summarize the main problem that the survey on 'Noisy Label Processing for Classification' addresses.,abs-2404.04159v1,Summarization / Purpose Identification,"Title: Noisy Label Processing for Classification: A Survey 
+Summary: In recent years, deep neural networks (DNNs) have gained remarkable
+achievement in computer vision tasks, and the success of DNNs often depends
+greatly on the richness of data. However, the acquisition process of data and
+high-quality ground truth requires a lot of manpower and money. In the long,
+tedious process of data annotation, annotators are prone to make mistakes,
+resulting in incorrect labels of images, i.e., noisy labels. The emergence of
+noisy labels is inevitable. Moreover, since research shows that DNNs can easily
+fit noisy labels, the existence of noisy labels will cause significant damage
+to the model training process. Therefore, it is crucial to combat noisy labels
+for computer vision tasks, especially for classification tasks. In this survey,
+we first comprehensively review the evolution of different deep learning
+approaches for noisy label combating in the image classification task. In
+addition, we also review different noise patterns that have been proposed to
+design robust algorithms. Furthermore, we explore the inner pattern of
+real-world label noise and propose an algorithm to generate a synthetic label
+noise pattern guided by real-world data. We test the algorithm on the
+well-known real-world dataset CIFAR-10N to form a new real-world data-guided
+synthetic benchmark and evaluate some typical noise-robust methods on the
+benchmark. 
+
+",This is a test answer.,"abs-2404.04159v1, abs-2401.11724v1, abs-2403.01818v3, abs-2401.12164v1, abs-2411.03082v1"
+What is the core objective of the Griffon v2 model?,abs-2403.09333v1,Summarization / Purpose Identification,"Title: Griffon v2: Advancing Multimodal Perception with High-Resolution Scaling
+  and Visual-Language Co-Referring 
+Summary: Large Vision Language Models have achieved fine-grained object perception,
+but the limitation of image resolution remains a significant obstacle to
+surpass the performance of task-specific experts in complex and dense
+scenarios. Such limitation further restricts the model's potential to achieve
+nuanced visual and language referring in domains such as GUI Agents, Counting
+and \etc. To address this issue, we introduce a unified high-resolution
+generalist model, Griffon v2, enabling flexible object referring with visual
+and textual prompts. To efficiently scaling up image resolution, we design a
+simple and lightweight down-sampling projector to overcome the input tokens
+constraint in Large Language Models. This design inherently preserves the
+complete contexts and fine details, and significantly improves multimodal
+perception ability especially for small objects. Building upon this, we further
+equip the model with visual-language co-referring capabilities through a
+plug-and-play visual tokenizer. It enables user-friendly interaction with
+flexible target images, free-form texts and even coordinates. Experiments
+demonstrate that Griffon v2 can localize any objects of interest with visual
+and textual referring, achieve state-of-the-art performance on REC, phrase
+grounding, and REG tasks, and outperform expert models in object detection and
+object counting. Data, codes and models will be released at
+https://github.com/jefferyZhan/Griffon. 
+
+",This is a test answer.,"abs-2403.09333v1, abs-2406.14544v1, abs-2402.04236v2, abs-2403.05125v2, abs-2401.02677v1"
+What is the main goal of the 'Exploring Optical Flow Inclusion into nnU-Net Framework' study?,abs-2403.10216v1,Summarization / Purpose Identification,"Title: Exploring Optical Flow Inclusion into nnU-Net Framework for Surgical
+  Instrument Segmentation 
+Summary: Surgical instrument segmentation in laparoscopy is essential for
+computer-assisted surgical systems. Despite the Deep Learning progress in
+recent years, the dynamic setting of laparoscopic surgery still presents
+challenges for precise segmentation. The nnU-Net framework excelled in semantic
+segmentation analyzing single frames without temporal information. The
+framework's ease of use, including its ability to be automatically configured,
+and its low expertise requirements, have made it a popular base framework for
+comparisons. Optical flow (OF) is a tool commonly used in video tasks to
+estimate motion and represent it in a single frame, containing temporal
+information. This work seeks to employ OF maps as an additional input to the
+nnU-Net architecture to improve its performance in the surgical instrument
+segmentation task, taking advantage of the fact that instruments are the main
+moving objects in the surgical field. With this new input, the temporal
+component would be indirectly added without modifying the architecture. Using
+CholecSeg8k dataset, three different representations of movement were estimated
+and used as new inputs, comparing them with a baseline model. Results showed
+that the use of OF maps improves the detection of classes with high movement,
+even when these are scarce in the dataset. To further improve performance,
+future work may focus on implementing other OF-preserving augmentations. 
+
+",This is a test answer.,"abs-2403.10216v1, abs-2406.02976v1, abs-2406.04493v1, abs-2401.12862v2, abs-2402.02246v1"
+Compare the approaches for improving model performance in resource-constrained environments in ELRT (abs-2401.10341v1) and SaFF-Net (abs-2406.14038v2).,"abs-2401.10341v1,abs-2406.14038v2",Comparative & Contrastive,"Title: ELRT: Efficient Low-Rank Training for Compact Convolutional Neural
+  Networks 
+Summary: Low-rank compression, a popular model compression technique that produces
+compact convolutional neural networks (CNNs) with low rankness, has been
+well-studied in the literature. On the other hand, low-rank training, as an
+alternative way to train low-rank CNNs from scratch, has been exploited little
+yet. Unlike low-rank compression, low-rank training does not need pre-trained
+full-rank models, and the entire training phase is always performed on the
+low-rank structure, bringing attractive benefits for practical applications.
+However, the existing low-rank training solutions still face several
+challenges, such as a considerable accuracy drop and/or still needing to update
+full-size models during the training. In this paper, we perform a systematic
+investigation on low-rank CNN training. By identifying the proper low-rank
+format and performance-improving strategy, we propose ELRT, an efficient
+low-rank training solution for high-accuracy, high-compactness, low-rank CNN
+models. Our extensive evaluation results for training various CNNs on different
+datasets demonstrate the effectiveness of ELRT. 
+
+Title: Resource-efficient Medical Image Analysis with Self-adapting
+  Forward-Forward Networks 
+Summary: We introduce a fast Self-adapting Forward-Forward Network (SaFF-Net) for
+medical imaging analysis, mitigating power consumption and resource
+limitations, which currently primarily stem from the prevalent reliance on
+back-propagation for model training and fine-tuning. Building upon the recently
+proposed Forward-Forward Algorithm (FFA), we introduce the Convolutional
+Forward-Forward Algorithm (CFFA), a parameter-efficient reformulation that is
+suitable for advanced image analysis and overcomes the speed and generalisation
+constraints of the original FFA. To address hyper-parameter sensitivity of FFAs
+we are also introducing a self-adapting framework SaFF-Net fine-tuning
+parameters during warmup and training in parallel. Our approach enables more
+effective model training and eliminates the previously essential requirement
+for an arbitrarily chosen Goodness function in FFA. We evaluate our approach on
+several benchmarking datasets in comparison with standard Back-Propagation (BP)
+neural networks showing that FFA-based networks with notably fewer parameters
+and function evaluations can compete with standard models, especially, in
+one-shot scenarios and large batch sizes. The code will be available at the
+time of the conference. 
+
+",This is a test answer.,"abs-2403.00231v3, abs-2403.05168v1, abs-2404.07686v1, abs-2401.05010v2, abs-2402.16050v2"
+Contrast the methods used to handle different data modalities in Prism (abs-2406.14544v1) for VLMs and in Broiler-Net (abs-2401.12176v1) for poultry behavior analysis.,"abs-2406.14544v1,abs-2401.12176v1",Comparative & Contrastive,"Title: Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs 
+Summary: Vision Language Models (VLMs) demonstrate remarkable proficiency in
+addressing a wide array of visual questions, which requires strong perception
+and reasoning faculties. Assessing these two competencies independently is
+crucial for model refinement, despite the inherent difficulty due to the
+intertwined nature of seeing and reasoning in existing VLMs. To tackle this
+issue, we present Prism, an innovative framework designed to disentangle the
+perception and reasoning processes involved in visual question solving. Prism
+comprises two distinct stages: a perception stage that utilizes a VLM to
+extract and articulate visual information in textual form, and a reasoning
+stage that formulates responses based on the extracted visual information using
+a Large Language Model (LLM). This modular design enables the systematic
+comparison and assessment of both proprietary and open-source VLM for their
+perception and reasoning strengths. Our analytical framework provides several
+valuable insights, underscoring Prism's potential as a cost-effective solution
+for vision-language tasks. By combining a streamlined VLM focused on perception
+with a powerful LLM tailored for reasoning, Prism achieves superior results in
+general vision-language tasks while substantially cutting down on training and
+operational expenses. Quantitative evaluations show that Prism, when configured
+with a vanilla 2B LLaVA and freely accessible GPT-3.5, delivers performance on
+par with VLMs $10 \times$ larger on the rigorous multimodal benchmark MMStar.
+The project is released at: https://github.com/SparksJoe/Prism. 
+
+Title: Broiler-Net: A Deep Convolutional Framework for Broiler Behavior
+  Analysis in Poultry Houses 
+Summary: Detecting anomalies in poultry houses is crucial for maintaining optimal
+chicken health conditions, minimizing economic losses and bolstering
+profitability. This paper presents a novel real-time framework for analyzing
+chicken behavior in cage-free poultry houses to detect abnormal behaviors.
+Specifically, two significant abnormalities, namely inactive broiler and
+huddling behavior, are investigated in this study. The proposed framework
+comprises three key steps: (1) chicken detection utilizing a state-of-the-art
+deep learning model, (2) tracking individual chickens across consecutive frames
+with a fast tracker module, and (3) detecting abnormal behaviors within the
+video stream. Experimental studies are conducted to evaluate the efficacy of
+the proposed algorithm in accurately assessing chicken behavior. The results
+illustrate that our framework provides a precise and efficient solution for
+real-time anomaly detection, facilitating timely interventions to maintain
+chicken health and enhance overall productivity on poultry farms. Github:
+https://github.com/TaherehZarratEhsan/Chicken-Behavior-Analysis 
+
+",This is a test answer.,"abs-2401.12176v1, abs-2406.14544v1, abs-2402.04236v2, abs-2403.11771v1, abs-2403.00231v3"
+How do the data augmentation strategies differ between SAMAug-C for medical image classification (abs-2406.11026v1) and UnDeM for image demoireing (abs-2401.02719v1)?,"abs-2406.11026v1,abs-2401.02719v1",Comparative & Contrastive,"Title: Boosting Medical Image Classification with Segmentation Foundation Model 
+Summary: The Segment Anything Model (SAM) exhibits impressive capabilities in
+zero-shot segmentation for natural images. Recently, SAM has gained a great
+deal of attention for its applications in medical image segmentation. However,
+to our best knowledge, no studies have shown how to harness the power of SAM
+for medical image classification. To fill this gap and make SAM a true
+``foundation model'' for medical image analysis, it is highly desirable to
+customize SAM specifically for medical image classification. In this paper, we
+introduce SAMAug-C, an innovative augmentation method based on SAM for
+augmenting classification datasets by generating variants of the original
+images. The augmented datasets can be used to train a deep learning
+classification model, thereby boosting the classification performance.
+Furthermore, we propose a novel framework that simultaneously processes raw and
+SAMAug-C augmented image input, capitalizing on the complementary information
+that is offered by both. Experiments on three public datasets validate the
+effectiveness of our new approach. 
+
+Title: Learning Image Demoireing from Unpaired Real Data 
+Summary: This paper focuses on addressing the issue of image demoireing. Unlike the
+large volume of existing studies that rely on learning from paired real data,
+we attempt to learn a demoireing model from unpaired real data, i.e., moire
+images associated with irrelevant clean images. The proposed method, referred
+to as Unpaired Demoireing (UnDeM), synthesizes pseudo moire images from
+unpaired datasets, generating pairs with clean images for training demoireing
+models. To achieve this, we divide real moire images into patches and group
+them in compliance with their moire complexity. We introduce a novel moire
+generation framework to synthesize moire images with diverse moire features,
+resembling real moire patches, and details akin to real moire-free images.
+Additionally, we introduce an adaptive denoise method to eliminate the
+low-quality pseudo moire images that adversely impact the learning of
+demoireing models. We conduct extensive experiments on the commonly-used FHDMi
+and UHDM datasets. Results manifest that our UnDeM performs better than
+existing methods when using existing demoireing models such as MBCNN and
+ESDNet-L. Code: https://github.com/zysxmu/UnDeM 
+
+",This is a test answer.,"abs-2406.11026v1, abs-2401.11724v1, abs-2404.06177v2, abs-2404.06362v2, abs-2404.04663v1"
+Compare the methods used to generate synthetic data in 'Synthesize Step-by-Step' for Chart VQA (abs-2403.16385v2) and 'UnDeM' for image demoireing (abs-2401.02719v1).,"abs-2403.16385v2,abs-2401.02719v1",Comparative & Contrastive,"Title: Synthesize Step-by-Step: Tools, Templates and LLMs as Data Generators
+  for Reasoning-Based Chart VQA 
+Summary: Understanding data visualizations like charts and plots requires reasoning
+about both visual elements and numerics. Although strong in extractive
+questions, current chart visual question answering (chart VQA) models suffer on
+complex reasoning questions. In this work, we address the lack of reasoning
+ability by data augmentation. We leverage Large Language Models (LLMs), which
+have shown to have strong reasoning ability, as an automatic data annotator
+that generates question-answer annotations for chart images. The key innovation
+in our method lies in the Synthesize Step-by-Step strategy: our LLM-based data
+generator learns to decompose the complex question into step-by-step
+sub-questions (rationales), which are then used to derive the final answer
+using external tools, i.e. Python. This step-wise generation procedure is
+trained on synthetic data generated using a template-based QA generation
+pipeline. Experimental results highlight the significance of the proposed
+step-by-step generation. By training with the LLM-augmented data (LAMENDA), we
+significantly enhance the chart VQA models, achieving the state-of-the-art
+accuracy on the ChartQA and PlotQA datasets. In particular, our approach
+improves the accuracy of the previous state-of-the-art approach from 38% to 54%
+on the human-written questions in the ChartQA dataset, which needs strong
+reasoning. We hope our work underscores the potential of synthetic data and
+encourages further exploration of data augmentation using LLMs for
+reasoning-heavy tasks. 
+
+Title: Learning Image Demoireing from Unpaired Real Data 
+Summary: This paper focuses on addressing the issue of image demoireing. Unlike the
+large volume of existing studies that rely on learning from paired real data,
+we attempt to learn a demoireing model from unpaired real data, i.e., moire
+images associated with irrelevant clean images. The proposed method, referred
+to as Unpaired Demoireing (UnDeM), synthesizes pseudo moire images from
+unpaired datasets, generating pairs with clean images for training demoireing
+models. To achieve this, we divide real moire images into patches and group
+them in compliance with their moire complexity. We introduce a novel moire
+generation framework to synthesize moire images with diverse moire features,
+resembling real moire patches, and details akin to real moire-free images.
+Additionally, we introduce an adaptive denoise method to eliminate the
+low-quality pseudo moire images that adversely impact the learning of
+demoireing models. We conduct extensive experiments on the commonly-used FHDMi
+and UHDM datasets. Results manifest that our UnDeM performs better than
+existing methods when using existing demoireing models such as MBCNN and
+ESDNet-L. Code: https://github.com/zysxmu/UnDeM 
+
+",This is a test answer.,"abs-2403.16385v2, abs-2406.01316v2, abs-2401.02719v1, abs-2402.04979v1, abs-2401.01651v3"
+"How could the 'Synthesize Step-by-Step' strategy from abs-2403.16385v2 be applied to the 'reasoning stage' of the Prism framework (abs-2406.14544v1) to generate more interpretable, step-by-step answers for visual questions?","abs-2403.16385v2,abs-2406.14544v1",Synthesis & Multi-Hop Reasoning,"Title: Synthesize Step-by-Step: Tools, Templates and LLMs as Data Generators
+  for Reasoning-Based Chart VQA 
+Summary: Understanding data visualizations like charts and plots requires reasoning
+about both visual elements and numerics. Although strong in extractive
+questions, current chart visual question answering (chart VQA) models suffer on
+complex reasoning questions. In this work, we address the lack of reasoning
+ability by data augmentation. We leverage Large Language Models (LLMs), which
+have shown to have strong reasoning ability, as an automatic data annotator
+that generates question-answer annotations for chart images. The key innovation
+in our method lies in the Synthesize Step-by-Step strategy: our LLM-based data
+generator learns to decompose the complex question into step-by-step
+sub-questions (rationales), which are then used to derive the final answer
+using external tools, i.e. Python. This step-wise generation procedure is
+trained on synthetic data generated using a template-based QA generation
+pipeline. Experimental results highlight the significance of the proposed
+step-by-step generation. By training with the LLM-augmented data (LAMENDA), we
+significantly enhance the chart VQA models, achieving the state-of-the-art
+accuracy on the ChartQA and PlotQA datasets. In particular, our approach
+improves the accuracy of the previous state-of-the-art approach from 38% to 54%
+on the human-written questions in the ChartQA dataset, which needs strong
+reasoning. We hope our work underscores the potential of synthetic data and
+encourages further exploration of data augmentation using LLMs for
+reasoning-heavy tasks. 
+
+Title: Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs 
+Summary: Vision Language Models (VLMs) demonstrate remarkable proficiency in
+addressing a wide array of visual questions, which requires strong perception
+and reasoning faculties. Assessing these two competencies independently is
+crucial for model refinement, despite the inherent difficulty due to the
+intertwined nature of seeing and reasoning in existing VLMs. To tackle this
+issue, we present Prism, an innovative framework designed to disentangle the
+perception and reasoning processes involved in visual question solving. Prism
+comprises two distinct stages: a perception stage that utilizes a VLM to
+extract and articulate visual information in textual form, and a reasoning
+stage that formulates responses based on the extracted visual information using
+a Large Language Model (LLM). This modular design enables the systematic
+comparison and assessment of both proprietary and open-source VLM for their
+perception and reasoning strengths. Our analytical framework provides several
+valuable insights, underscoring Prism's potential as a cost-effective solution
+for vision-language tasks. By combining a streamlined VLM focused on perception
+with a powerful LLM tailored for reasoning, Prism achieves superior results in
+general vision-language tasks while substantially cutting down on training and
+operational expenses. Quantitative evaluations show that Prism, when configured
+with a vanilla 2B LLaVA and freely accessible GPT-3.5, delivers performance on
+par with VLMs $10 \times$ larger on the rigorous multimodal benchmark MMStar.
+The project is released at: https://github.com/SparksJoe/Prism. 
+
+",This is a test answer.,"abs-2403.16385v2, abs-2406.14544v1, abs-2402.04236v2, abs-2402.02503v1, abs-2407.15047v2"
+Can the self-supervised approach for training a YOLO-based student network from RGB-D data (abs-2411.03082v1) be combined with the chicken detection and tracking modules of Broiler-Net (abs-2401.12176v1) to create a system that learns to detect abnormal broiler behavior without manually labeled video frames?,"abs-2411.03082v1,abs-2401.12176v1",Synthesis & Multi-Hop Reasoning,"Title: Self-supervised cross-modality learning for uncertainty-aware object
+  detection and recognition in applications which lack pre-labelled training
+  data 
+Summary: This paper shows how an uncertainty-aware, deep neural network can be trained
+to detect, recognise and localise objects in 2D RGB images, in applications
+lacking annotated train-ng datasets. We propose a self-supervising
+teacher-student pipeline, in which a relatively simple teacher classifier,
+trained with only a few labelled 2D thumbnails, automatically processes a
+larger body of unlabelled RGB-D data to teach a student network based on a
+modified YOLOv3 architecture. Firstly, 3D object detection with back projection
+is used to automatically extract and teach 2D detection and localisation
+information to the student network. Secondly, a weakly supervised 2D thumbnail
+classifier, with minimal training on a small number of hand-labelled images, is
+used to teach object category recognition. Thirdly, we use a Gaussian Process
+GP to encode and teach a robust uncertainty estimation functionality, so that
+the student can output confidence scores with each categorization. The
+resulting student significantly outperforms the same YOLO architecture trained
+directly on the same amount of labelled data. Our GP-based approach yields
+robust and meaningful uncertainty estimations for complex industrial object
+classifications. The end-to-end network is also capable of real-time
+processing, needed for robotics applications. Our method can be applied to many
+important industrial tasks, where labelled datasets are typically unavailable.
+In this paper, we demonstrate an example of detection, localisation, and object
+category recognition of nuclear mixed-waste materials in highly cluttered and
+unstructured scenes. This is critical for robotic sorting and handling of
+legacy nuclear waste, which poses complex environmental remediation challenges
+in many nuclearised nations. 
+
+Title: Broiler-Net: A Deep Convolutional Framework for Broiler Behavior
+  Analysis in Poultry Houses 
+Summary: Detecting anomalies in poultry houses is crucial for maintaining optimal
+chicken health conditions, minimizing economic losses and bolstering
+profitability. This paper presents a novel real-time framework for analyzing
+chicken behavior in cage-free poultry houses to detect abnormal behaviors.
+Specifically, two significant abnormalities, namely inactive broiler and
+huddling behavior, are investigated in this study. The proposed framework
+comprises three key steps: (1) chicken detection utilizing a state-of-the-art
+deep learning model, (2) tracking individual chickens across consecutive frames
+with a fast tracker module, and (3) detecting abnormal behaviors within the
+video stream. Experimental studies are conducted to evaluate the efficacy of
+the proposed algorithm in accurately assessing chicken behavior. The results
+illustrate that our framework provides a precise and efficient solution for
+real-time anomaly detection, facilitating timely interventions to maintain
+chicken health and enhance overall productivity on poultry farms. Github:
+https://github.com/TaherehZarratEhsan/Chicken-Behavior-Analysis 
+
+",This is a test answer.,"abs-2401.12176v1, abs-2411.03082v1, abs-2403.09313v1, abs-2406.02976v1, abs-2401.12513v2"
+"Considering the challenges of noisy labels discussed in abs-2404.04159v1, how could the AllSpark framework's 'Semantic Memory' (abs-2403.01818v3) be adapted to identify and correct potentially mislabeled pixels during semi-supervised training?","abs-2404.04159v1,abs-2403.01818v3",Synthesis & Multi-Hop Reasoning,"Title: Noisy Label Processing for Classification: A Survey 
+Summary: In recent years, deep neural networks (DNNs) have gained remarkable
+achievement in computer vision tasks, and the success of DNNs often depends
+greatly on the richness of data. However, the acquisition process of data and
+high-quality ground truth requires a lot of manpower and money. In the long,
+tedious process of data annotation, annotators are prone to make mistakes,
+resulting in incorrect labels of images, i.e., noisy labels. The emergence of
+noisy labels is inevitable. Moreover, since research shows that DNNs can easily
+fit noisy labels, the existence of noisy labels will cause significant damage
+to the model training process. Therefore, it is crucial to combat noisy labels
+for computer vision tasks, especially for classification tasks. In this survey,
+we first comprehensively review the evolution of different deep learning
+approaches for noisy label combating in the image classification task. In
+addition, we also review different noise patterns that have been proposed to
+design robust algorithms. Furthermore, we explore the inner pattern of
+real-world label noise and propose an algorithm to generate a synthetic label
+noise pattern guided by real-world data. We test the algorithm on the
+well-known real-world dataset CIFAR-10N to form a new real-world data-guided
+synthetic benchmark and evaluate some typical noise-robust methods on the
+benchmark. 
+
+Title: AllSpark: Reborn Labeled Features from Unlabeled in Transformer for
+  Semi-Supervised Semantic Segmentation 
+Summary: Semi-supervised semantic segmentation (SSSS) has been proposed to alleviate
+the burden of time-consuming pixel-level manual labeling, which leverages
+limited labeled data along with larger amounts of unlabeled data. Current
+state-of-the-art methods train the labeled data with ground truths and
+unlabeled data with pseudo labels. However, the two training flows are
+separate, which allows labeled data to dominate the training process, resulting
+in low-quality pseudo labels and, consequently, sub-optimal results. To
+alleviate this issue, we present AllSpark, which reborns the labeled features
+from unlabeled ones with the channel-wise cross-attention mechanism. We further
+introduce a Semantic Memory along with a Channel Semantic Grouping strategy to
+ensure that unlabeled features adequately represent labeled features. The
+AllSpark shed new light on the architecture level designs of SSSS rather than
+framework level, which avoids increasingly complicated training pipeline
+designs. It can also be regarded as a flexible bottleneck module that can be
+seamlessly integrated into a general transformer-based segmentation model. The
+proposed AllSpark outperforms existing methods across all evaluation protocols
+on Pascal, Cityscapes and COCO benchmarks without bells-and-whistles. Code and
+model weights are available at: https://github.com/xmed-lab/AllSpark. 
+
+",This is a test answer.,"abs-2403.01818v3, abs-2404.04159v1, abs-2401.12164v1, abs-2403.13684v2, abs-2401.11489v1"
+How could the optical flow inclusion method from abs-2403.10216v1 be used to enhance the motion-guided warping module in Pix2Gif (abs-2403.04634v2) for more accurate GIF generation?,"abs-2403.10216v1,abs-2403.04634v2",Synthesis & Multi-Hop Reasoning,"Title: Exploring Optical Flow Inclusion into nnU-Net Framework for Surgical
+  Instrument Segmentation 
+Summary: Surgical instrument segmentation in laparoscopy is essential for
+computer-assisted surgical systems. Despite the Deep Learning progress in
+recent years, the dynamic setting of laparoscopic surgery still presents
+challenges for precise segmentation. The nnU-Net framework excelled in semantic
+segmentation analyzing single frames without temporal information. The
+framework's ease of use, including its ability to be automatically configured,
+and its low expertise requirements, have made it a popular base framework for
+comparisons. Optical flow (OF) is a tool commonly used in video tasks to
+estimate motion and represent it in a single frame, containing temporal
+information. This work seeks to employ OF maps as an additional input to the
+nnU-Net architecture to improve its performance in the surgical instrument
+segmentation task, taking advantage of the fact that instruments are the main
+moving objects in the surgical field. With this new input, the temporal
+component would be indirectly added without modifying the architecture. Using
+CholecSeg8k dataset, three different representations of movement were estimated
+and used as new inputs, comparing them with a baseline model. Results showed
+that the use of OF maps improves the detection of classes with high movement,
+even when these are scarce in the dataset. To further improve performance,
+future work may focus on implementing other OF-preserving augmentations. 
+
+Title: Pix2Gif: Motion-Guided Diffusion for GIF Generation 
+Summary: We present Pix2Gif, a motion-guided diffusion model for image-to-GIF (video)
+generation. We tackle this problem differently by formulating the task as an
+image translation problem steered by text and motion magnitude prompts, as
+shown in teaser fig. To ensure that the model adheres to motion guidance, we
+propose a new motion-guided warping module to spatially transform the features
+of the source image conditioned on the two types of prompts. Furthermore, we
+introduce a perceptual loss to ensure the transformed feature map remains
+within the same space as the target image, ensuring content consistency and
+coherence. In preparation for the model training, we meticulously curated data
+by extracting coherent image frames from the TGIF video-caption dataset, which
+provides rich information about the temporal changes of subjects. After
+pretraining, we apply our model in a zero-shot manner to a number of video
+datasets. Extensive qualitative and quantitative experiments demonstrate the
+effectiveness of our model -- it not only captures the semantic prompt from
+text but also the spatial ones from motion guidance. We train all our models
+using a single node of 16xV100 GPUs. Code, dataset and models are made public
+at: https://hiteshk03.github.io/Pix2Gif/. 
+
+",This is a test answer.,"abs-2403.04634v2, abs-2403.10216v1, abs-2406.02976v1, abs-2406.16333v1, abs-2403.01606v2"
+"In the Prism framework (abs-2406.14544v1), what was the specific training time in GPU hours for the 2B LLaVA model used in the perception stage?",abs-2406.14544v1,Negative / Unanswerable,"Title: Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs 
+Summary: Vision Language Models (VLMs) demonstrate remarkable proficiency in
+addressing a wide array of visual questions, which requires strong perception
+and reasoning faculties. Assessing these two competencies independently is
+crucial for model refinement, despite the inherent difficulty due to the
+intertwined nature of seeing and reasoning in existing VLMs. To tackle this
+issue, we present Prism, an innovative framework designed to disentangle the
+perception and reasoning processes involved in visual question solving. Prism
+comprises two distinct stages: a perception stage that utilizes a VLM to
+extract and articulate visual information in textual form, and a reasoning
+stage that formulates responses based on the extracted visual information using
+a Large Language Model (LLM). This modular design enables the systematic
+comparison and assessment of both proprietary and open-source VLM for their
+perception and reasoning strengths. Our analytical framework provides several
+valuable insights, underscoring Prism's potential as a cost-effective solution
+for vision-language tasks. By combining a streamlined VLM focused on perception
+with a powerful LLM tailored for reasoning, Prism achieves superior results in
+general vision-language tasks while substantially cutting down on training and
+operational expenses. Quantitative evaluations show that Prism, when configured
+with a vanilla 2B LLaVA and freely accessible GPT-3.5, delivers performance on
+par with VLMs $10 \times$ larger on the rigorous multimodal benchmark MMStar.
+The project is released at: https://github.com/SparksJoe/Prism. 
+
+",This is a test answer.,"abs-2406.14544v1, abs-2402.05195v2, abs-2402.04009v1, abs-2401.12862v2, abs-2406.10973v2"
+What was the specific breed of broiler chicken observed in the poultry houses for the Broiler-Net study?,abs-2401.12176v1,Negative / Unanswerable,"Title: Broiler-Net: A Deep Convolutional Framework for Broiler Behavior
+  Analysis in Poultry Houses 
+Summary: Detecting anomalies in poultry houses is crucial for maintaining optimal
+chicken health conditions, minimizing economic losses and bolstering
+profitability. This paper presents a novel real-time framework for analyzing
+chicken behavior in cage-free poultry houses to detect abnormal behaviors.
+Specifically, two significant abnormalities, namely inactive broiler and
+huddling behavior, are investigated in this study. The proposed framework
+comprises three key steps: (1) chicken detection utilizing a state-of-the-art
+deep learning model, (2) tracking individual chickens across consecutive frames
+with a fast tracker module, and (3) detecting abnormal behaviors within the
+video stream. Experimental studies are conducted to evaluate the efficacy of
+the proposed algorithm in accurately assessing chicken behavior. The results
+illustrate that our framework provides a precise and efficient solution for
+real-time anomaly detection, facilitating timely interventions to maintain
+chicken health and enhance overall productivity on poultry farms. Github:
+https://github.com/TaherehZarratEhsan/Chicken-Behavior-Analysis 
+
+",This is a test answer.,"abs-2401.12176v1, abs-2404.04665v1, abs-2403.12572v1, abs-2401.12164v1, abs-2406.16638v1"
+What was the average inference speed-up achieved by ELRT (abs-2401.10341v1) on a standard mobile CPU compared to the full-rank model?,abs-2401.10341v1,Negative / Unanswerable,"Title: ELRT: Efficient Low-Rank Training for Compact Convolutional Neural
+  Networks 
+Summary: Low-rank compression, a popular model compression technique that produces
+compact convolutional neural networks (CNNs) with low rankness, has been
+well-studied in the literature. On the other hand, low-rank training, as an
+alternative way to train low-rank CNNs from scratch, has been exploited little
+yet. Unlike low-rank compression, low-rank training does not need pre-trained
+full-rank models, and the entire training phase is always performed on the
+low-rank structure, bringing attractive benefits for practical applications.
+However, the existing low-rank training solutions still face several
+challenges, such as a considerable accuracy drop and/or still needing to update
+full-size models during the training. In this paper, we perform a systematic
+investigation on low-rank CNN training. By identifying the proper low-rank
+format and performance-improving strategy, we propose ELRT, an efficient
+low-rank training solution for high-accuracy, high-compactness, low-rank CNN
+models. Our extensive evaluation results for training various CNNs on different
+datasets demonstrate the effectiveness of ELRT. 
+
+",This is a test answer.,"abs-2401.10341v1, abs-2401.12862v2, abs-2402.04009v1, abs-2401.03177v1, abs-2403.06199v4"
+"In the 'Exploring Optical Flow Inclusion into nnU-Net' paper (abs-2403.10216v1), what was the percentage of frames in the CholecSeg8k dataset that contained surgical smoke, which could obstruct the view?",abs-2403.10216v1,Negative / Unanswerable,"Title: Exploring Optical Flow Inclusion into nnU-Net Framework for Surgical
+  Instrument Segmentation 
+Summary: Surgical instrument segmentation in laparoscopy is essential for
+computer-assisted surgical systems. Despite the Deep Learning progress in
+recent years, the dynamic setting of laparoscopic surgery still presents
+challenges for precise segmentation. The nnU-Net framework excelled in semantic
+segmentation analyzing single frames without temporal information. The
+framework's ease of use, including its ability to be automatically configured,
+and its low expertise requirements, have made it a popular base framework for
+comparisons. Optical flow (OF) is a tool commonly used in video tasks to
+estimate motion and represent it in a single frame, containing temporal
+information. This work seeks to employ OF maps as an additional input to the
+nnU-Net architecture to improve its performance in the surgical instrument
+segmentation task, taking advantage of the fact that instruments are the main
+moving objects in the surgical field. With this new input, the temporal
+component would be indirectly added without modifying the architecture. Using
+CholecSeg8k dataset, three different representations of movement were estimated
+and used as new inputs, comparing them with a baseline model. Results showed
+that the use of OF maps improves the detection of classes with high movement,
+even when these are scarce in the dataset. To further improve performance,
+future work may focus on implementing other OF-preserving augmentations. 
+
+",This is a test answer.,"abs-2403.10216v1, abs-2406.02976v1, abs-2406.14038v2, abs-2402.03843v4, abs-2401.12862v2"

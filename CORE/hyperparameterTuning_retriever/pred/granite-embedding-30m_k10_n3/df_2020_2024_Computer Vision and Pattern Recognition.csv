@@ -1,0 +1,529 @@
+Question,Source Article Index,Question Type,Summary,prediction,documentIDs
+What does OREO stand for in the context of the face recognition method described in article abs-2006.06787v1?,abs-2006.06787v1,Direct Fact Retrieval & Definition Questions,"Title: On Improving the Generalization of Face Recognition in the Presence of
+  Occlusions 
+Summary: In this paper, we address a key limitation of existing 2D face recognition
+methods: robustness to occlusions. To accomplish this task, we systematically
+analyzed the impact of facial attributes on the performance of a
+state-of-the-art face recognition method and through extensive experimentation,
+quantitatively analyzed the performance degradation under different types of
+occlusion. Our proposed Occlusion-aware face REcOgnition (OREO) approach
+learned discriminative facial templates despite the presence of such
+occlusions. First, an attention mechanism was proposed that extracted local
+identity-related region. The local features were then aggregated with the
+global representations to form a single template. Second, a simple, yet
+effective, training strategy was introduced to balance the non-occluded and
+occluded facial images. Extensive experiments demonstrated that OREO improved
+the generalization ability of face recognition under occlusions by (10.17%) in
+a single-image-based setting and outperformed the baseline by approximately
+(2%) in terms of rank-1 accuracy in an image-set-based scenario. 
+
+",This is a test answer.,"abs-2006.06787v1, abs-2209.10340v1, abs-2006.07743v1"
+"In article abs-2203.11432v1, what are the two types of representations that GDIFD aims to disentangle for domain generalizable object detection?",abs-2203.11432v1,Direct Fact Retrieval & Definition Questions,"Title: Gated Domain-Invariant Feature Disentanglement for Domain Generalizable
+  Object Detection 
+Summary: For Domain Generalizable Object Detection (DGOD), Disentangled Representation
+Learning (DRL) helps a lot by explicitly disentangling Domain-Invariant
+Representations (DIR) from Domain-Specific Representations (DSR). Considering
+the domain category is an attribute of input data, it should be feasible for
+networks to fit a specific mapping which projects DSR into feature channels
+exclusive to domain-specific information, and thus much cleaner disentanglement
+of DIR from DSR can be achieved simply on channel dimension. Inspired by this
+idea, we propose a novel DRL method for DGOD, which is termed Gated
+Domain-Invariant Feature Disentanglement (GDIFD). In GDIFD, a Channel Gate
+Module (CGM) learns to output channel gate signals close to either 0 or 1,
+which can mask out the channels exclusive to domain-specific information
+helpful for domain recognition. With the proposed GDIFD, the backbone in our
+framework can fit the desired mapping easily, which enables the channel-wise
+disentanglement. In experiments, we demonstrate that our approach is highly
+effective and achieves state-of-the-art DGOD performance. 
+
+",This is a test answer.,"abs-2203.11432v1, abs-2012.08689v1, abs-2010.08243v2"
+What is the name of the aerial-image dataset released in article abs-2010.10032v1 for detecting transmission towers and power lines?,abs-2010.10032v1,Direct Fact Retrieval & Definition Questions,"Title: TTPLA: An Aerial-Image Dataset for Detection and Segmentation of
+  Transmission Towers and Power Lines 
+Summary: Accurate detection and segmentation of transmission towers~(TTs) and power
+lines~(PLs) from aerial images plays a key role in protecting power-grid
+security and low-altitude UAV safety. Meanwhile, aerial images of TTs and PLs
+pose a number of new challenges to the computer vision researchers who work on
+object detection and segmentation -- PLs are long and thin, and may show
+similar color as the background; TTs can be of various shapes and most likely
+made up of line structures of various sparsity; The background scene, lighting,
+and object sizes can vary significantly from one image to another. In this
+paper we collect and release a new TT/PL Aerial-image (TTPLA) dataset,
+consisting of 1,100 images with the resolution of 3,840$\times$2,160 pixels, as
+well as manually labeled 8,987 instances of TTs and PLs. We develop novel
+policies for collecting, annotating, and labeling the images in TTPLA.
+Different from other relevant datasets, TTPLA supports evaluation of instance
+segmentation, besides detection and semantic segmentation. To build a baseline
+for detection and segmentation tasks on TTPLA, we report the performance of
+several state-of-the-art deep learning models on our dataset. TTPLA dataset is
+publicly available at https://github.com/r3ab/ttpla_dataset 
+
+",This is a test answer.,"abs-2010.10032v1, abs-2102.05402v1, abs-2106.05003v1"
+"According to article abs-2104.04359v1, what was the binary classification accuracy achieved for distinguishing Martian rocks from rover parts?",abs-2104.04359v1,Direct Fact Retrieval & Definition Questions,"Title: Rock Hunting With Martian Machine Vision 
+Summary: The Mars Perseverance rover applies computer vision for navigation and hazard
+avoidance. The challenge to do onboard object recognition highlights the need
+for low-power, customized training, often including low-contrast backgrounds.
+We investigate deep learning methods for the classification and detection of
+Martian rocks. We report greater than 97% accuracy for binary classifications
+(rock vs. rover). We fine-tune a detector to render geo-located bounding boxes
+while counting rocks. For these models to run on microcontrollers, we shrink
+and quantize the neural networks' weights and demonstrate a low-power rock
+hunter with faster frame rates (1 frame per second) but lower accuracy (37%). 
+
+",This is a test answer.,"abs-2104.04359v1, abs-2212.00352v2, abs-2011.05243v1"
+What is the main purpose of the EDEN framework described in article abs-2105.13979v2?,abs-2105.13979v2,Summarization / Purpose Identification Questions,"Title: EDEN: Deep Feature Distribution Pooling for Saimaa Ringed Seals Pattern
+  Matching 
+Summary: In this paper, pelage pattern matching is considered to solve the individual
+re-identification of the Saimaa ringed seals. Animal re-identification together
+with the access to large amount of image material through camera traps and
+crowd-sourcing provide novel possibilities for animal monitoring and
+conservation. We propose a novel feature pooling approach that allow
+aggregating the local pattern features to get a fixed size embedding vector
+that incorporate global features by taking into account the spatial
+distribution of features. This is obtained by eigen decomposition of
+covariances computed for probability mass functions representing feature maps.
+Embedding vectors can then be used to find the best match in the database of
+known individuals allowing animal re-identification. The results show that the
+proposed pooling method outperforms the existing methods on the challenging
+Saimaa ringed seal image data. 
+
+",This is a test answer.,"abs-2105.13979v2, abs-2209.01401v1, abs-2302.03820v1"
+Summarize the primary challenge in single image super-resolution that the Latent Adversarial Generator (LAG) in article abs-2003.02365v1 is designed to address.,abs-2003.02365v1,Summarization / Purpose Identification Questions,"Title: Creating High Resolution Images with a Latent Adversarial Generator 
+Summary: Generating realistic images is difficult, and many formulations for this task
+have been proposed recently. If we restrict the task to that of generating a
+particular class of images, however, the task becomes more tractable. That is
+to say, instead of generating an arbitrary image as a sample from the manifold
+of natural images, we propose to sample images from a particular ""subspace"" of
+natural images, directed by a low-resolution image from the same subspace. The
+problem we address, while close to the formulation of the single-image
+super-resolution problem, is in fact rather different. Single image
+super-resolution is the task of predicting the image closest to the ground
+truth from a relatively low resolution image. We propose to produce samples of
+high resolution images given extremely small inputs with a new method called
+Latent Adversarial Generator (LAG). In our generative sampling framework, we
+only use the input (possibly of very low-resolution) to direct what class of
+samples the network should produce. As such, the output of our algorithm is not
+a unique image that relates to the input, but rather a possible se} of related
+images sampled from the manifold of natural images. Our method learns
+exclusively in the latent space of the adversary using perceptual loss -- it
+does not have a pixel loss. 
+
+",This is a test answer.,"abs-2201.06888v1, abs-2003.02365v1, abs-2012.08803v1"
+What is the main goal of the proposed method in 'Predicting Pedestrian Crosswalk Behavior Using Convolutional Neural Networks' (abs-2208.07250v1)?,abs-2208.07250v1,Summarization / Purpose Identification Questions,"Title: Predicting Pedestrian Crosswalk Behavior Using Convolutional Neural
+  Networks 
+Summary: A common yet potentially dangerous task is the act of crossing the street.
+Pedestrian accidents contribute a significant amount to the high number of
+annual traffic casualties, which is why it is crucial for pedestrians to use
+safety measures such as a crosswalk. However, people often forget to activate a
+crosswalk light or are unable to do so -- such as those who are visually
+impaired or have occupied hands. Other pedestrians are simply careless and find
+the crosswalk signals a hassle, which can result in an accident where a car
+hits them. In this paper, we consider an improvement to the crosswalk system by
+designing a system that can detect pedestrians and triggering the crosswalk
+signal automatically. We collect a dataset of images that we then use to train
+a convolutional neural network to distinguish between pedestrians (including
+bicycle riders) and various false alarms. The resulting system can capture and
+evaluate images in real time, and the result can be used to automatically
+activate systems a crosswalk light. After extensive testing of our system in
+real-world environments, we conclude that it is feasible as a back-up system
+that can compliment existing crosswalk buttons, and thereby improve the overall
+safety of crossing the street. 
+
+",This is a test answer.,"abs-2208.07250v1, abs-2303.15632v1, abs-2403.04954v2"
+What problem in video generation does the AVLAE model (abs-2201.06888v1) aim to solve by autoencoding latent vectors?,abs-2201.06888v1,Summarization / Purpose Identification Questions,"Title: Autoencoding Video Latents for Adversarial Video Generation 
+Summary: Given the three dimensional complexity of a video signal, training a robust
+and diverse GAN based video generative model is onerous due to large
+stochasticity involved in data space. Learning disentangled representations of
+the data help to improve robustness and provide control in the sampling
+process. For video generation, there is a recent progress in this area by
+considering motion and appearance as orthogonal information and designing
+architectures that efficiently disentangle them. These approaches rely on
+handcrafting architectures that impose structural priors on the generator to
+decompose appearance and motion codes in the latent space. Inspired from the
+recent advancements in the autoencoder based image generation, we present AVLAE
+(Adversarial Video Latent AutoEncoder) which is a two stream latent autoencoder
+where the video distribution is learned by adversarial training. In particular,
+we propose to autoencode the motion and appearance latent vectors of the video
+generator in the adversarial setting. We demonstrate that our approach learns
+to disentangle motion and appearance codes even without the explicit structural
+composition in the generator. Several experiments with qualitative and
+quantitative results demonstrate the effectiveness of our method. 
+
+",This is a test answer.,"abs-2201.06888v1, abs-2304.02777v1, abs-2012.07462v1"
+Compare the methods used for handling occlusions in face recognition in OREO (abs-2006.06787v1) versus the approach for human motion prediction in ARNet (abs-2011.11221v2).,"abs-2006.06787v1,abs-2011.11221v2",Comparative & Contrastive Questions,"Title: On Improving the Generalization of Face Recognition in the Presence of
+  Occlusions 
+Summary: In this paper, we address a key limitation of existing 2D face recognition
+methods: robustness to occlusions. To accomplish this task, we systematically
+analyzed the impact of facial attributes on the performance of a
+state-of-the-art face recognition method and through extensive experimentation,
+quantitatively analyzed the performance degradation under different types of
+occlusion. Our proposed Occlusion-aware face REcOgnition (OREO) approach
+learned discriminative facial templates despite the presence of such
+occlusions. First, an attention mechanism was proposed that extracted local
+identity-related region. The local features were then aggregated with the
+global representations to form a single template. Second, a simple, yet
+effective, training strategy was introduced to balance the non-occluded and
+occluded facial images. Extensive experiments demonstrated that OREO improved
+the generalization ability of face recognition under occlusions by (10.17%) in
+a single-image-based setting and outperformed the baseline by approximately
+(2%) in terms of rank-1 accuracy in an image-set-based scenario. 
+
+Title: Adversarial Refinement Network for Human Motion Prediction 
+Summary: Human motion prediction aims to predict future 3D skeletal sequences by
+giving a limited human motion as inputs. Two popular methods, recurrent neural
+networks and feed-forward deep networks, are able to predict rough motion
+trend, but motion details such as limb movement may be lost. To predict more
+accurate future human motion, we propose an Adversarial Refinement Network
+(ARNet) following a simple yet effective coarse-to-fine mechanism with novel
+adversarial error augmentation. Specifically, we take both the historical
+motion sequences and coarse prediction as input of our cascaded refinement
+network to predict refined human motion and strengthen the refinement network
+with adversarial error augmentation. During training, we deliberately introduce
+the error distribution by learning through the adversarial mechanism among
+different subjects. In testing, our cascaded refinement network alleviates the
+prediction error from the coarse predictor resulting in a finer prediction
+robustly. This adversarial error augmentation provides rich error cases as
+input to our refinement network, leading to better generalization performance
+on the testing dataset. We conduct extensive experiments on three standard
+benchmark datasets and show that our proposed ARNet outperforms other
+state-of-the-art methods, especially on challenging aperiodic actions in both
+short-term and long-term predictions. 
+
+",This is a test answer.,"abs-2006.06787v1, abs-2005.06040v1, abs-2104.00842v1"
+Contrast the approaches to domain generalization for object detection in GDIFD (abs-2203.11432v1) and the approach for domain adaptation in SF-UDA3D (abs-2010.08243v2).,"abs-2203.11432v1,abs-2010.08243v2",Comparative & Contrastive Questions,"Title: Gated Domain-Invariant Feature Disentanglement for Domain Generalizable
+  Object Detection 
+Summary: For Domain Generalizable Object Detection (DGOD), Disentangled Representation
+Learning (DRL) helps a lot by explicitly disentangling Domain-Invariant
+Representations (DIR) from Domain-Specific Representations (DSR). Considering
+the domain category is an attribute of input data, it should be feasible for
+networks to fit a specific mapping which projects DSR into feature channels
+exclusive to domain-specific information, and thus much cleaner disentanglement
+of DIR from DSR can be achieved simply on channel dimension. Inspired by this
+idea, we propose a novel DRL method for DGOD, which is termed Gated
+Domain-Invariant Feature Disentanglement (GDIFD). In GDIFD, a Channel Gate
+Module (CGM) learns to output channel gate signals close to either 0 or 1,
+which can mask out the channels exclusive to domain-specific information
+helpful for domain recognition. With the proposed GDIFD, the backbone in our
+framework can fit the desired mapping easily, which enables the channel-wise
+disentanglement. In experiments, we demonstrate that our approach is highly
+effective and achieves state-of-the-art DGOD performance. 
+
+Title: SF-UDA$^{3D}$: Source-Free Unsupervised Domain Adaptation for
+  LiDAR-Based 3D Object Detection 
+Summary: 3D object detectors based only on LiDAR point clouds hold the
+state-of-the-art on modern street-view benchmarks. However, LiDAR-based
+detectors poorly generalize across domains due to domain shift. In the case of
+LiDAR, in fact, domain shift is not only due to changes in the environment and
+in the object appearances, as for visual data from RGB cameras, but is also
+related to the geometry of the point clouds (e.g., point density variations).
+This paper proposes SF-UDA$^{3D}$, the first Source-Free Unsupervised Domain
+Adaptation (SF-UDA) framework to domain-adapt the state-of-the-art PointRCNN 3D
+detector to target domains for which we have no annotations (unsupervised),
+neither we hold images nor annotations of the source domain (source-free).
+SF-UDA$^{3D}$ is novel on both aspects. Our approach is based on
+pseudo-annotations, reversible scale-transformations and motion coherency.
+SF-UDA$^{3D}$ outperforms both previous domain adaptation techniques based on
+features alignment and state-of-the-art 3D object detection methods which
+additionally use few-shot target annotations or target annotation statistics.
+This is demonstrated by extensive experiments on two large-scale datasets,
+i.e., KITTI and nuScenes. 
+
+",This is a test answer.,"abs-2010.08243v2, abs-2203.11432v1, abs-2012.08689v1"
+How does the generative approach in 'Creating High Resolution Images with a Latent Adversarial Generator' (abs-2003.02365v1) differ from the generative approach in 'Autoencoding Video Latents for Adversarial Video Generation' (abs-2201.06888v1)?,"abs-2003.02365v1,abs-2201.06888v1",Comparative & Contrastive Questions,"Title: Creating High Resolution Images with a Latent Adversarial Generator 
+Summary: Generating realistic images is difficult, and many formulations for this task
+have been proposed recently. If we restrict the task to that of generating a
+particular class of images, however, the task becomes more tractable. That is
+to say, instead of generating an arbitrary image as a sample from the manifold
+of natural images, we propose to sample images from a particular ""subspace"" of
+natural images, directed by a low-resolution image from the same subspace. The
+problem we address, while close to the formulation of the single-image
+super-resolution problem, is in fact rather different. Single image
+super-resolution is the task of predicting the image closest to the ground
+truth from a relatively low resolution image. We propose to produce samples of
+high resolution images given extremely small inputs with a new method called
+Latent Adversarial Generator (LAG). In our generative sampling framework, we
+only use the input (possibly of very low-resolution) to direct what class of
+samples the network should produce. As such, the output of our algorithm is not
+a unique image that relates to the input, but rather a possible se} of related
+images sampled from the manifold of natural images. Our method learns
+exclusively in the latent space of the adversary using perceptual loss -- it
+does not have a pixel loss. 
+
+Title: Autoencoding Video Latents for Adversarial Video Generation 
+Summary: Given the three dimensional complexity of a video signal, training a robust
+and diverse GAN based video generative model is onerous due to large
+stochasticity involved in data space. Learning disentangled representations of
+the data help to improve robustness and provide control in the sampling
+process. For video generation, there is a recent progress in this area by
+considering motion and appearance as orthogonal information and designing
+architectures that efficiently disentangle them. These approaches rely on
+handcrafting architectures that impose structural priors on the generator to
+decompose appearance and motion codes in the latent space. Inspired from the
+recent advancements in the autoencoder based image generation, we present AVLAE
+(Adversarial Video Latent AutoEncoder) which is a two stream latent autoencoder
+where the video distribution is learned by adversarial training. In particular,
+we propose to autoencode the motion and appearance latent vectors of the video
+generator in the adversarial setting. We demonstrate that our approach learns
+to disentangle motion and appearance codes even without the explicit structural
+composition in the generator. Several experiments with qualitative and
+quantitative results demonstrate the effectiveness of our method. 
+
+",This is a test answer.,"abs-2012.08803v1, abs-2201.06888v1, abs-2003.02365v1"
+Compare the datasets introduced in TTPLA (abs-2010.10032v1) for power lines and Archangel (abs-2209.00128v3) for humans in terms of their composition and intended purpose.,"abs-2010.10032v1,abs-2209.00128v3",Comparative & Contrastive Questions,"Title: TTPLA: An Aerial-Image Dataset for Detection and Segmentation of
+  Transmission Towers and Power Lines 
+Summary: Accurate detection and segmentation of transmission towers~(TTs) and power
+lines~(PLs) from aerial images plays a key role in protecting power-grid
+security and low-altitude UAV safety. Meanwhile, aerial images of TTs and PLs
+pose a number of new challenges to the computer vision researchers who work on
+object detection and segmentation -- PLs are long and thin, and may show
+similar color as the background; TTs can be of various shapes and most likely
+made up of line structures of various sparsity; The background scene, lighting,
+and object sizes can vary significantly from one image to another. In this
+paper we collect and release a new TT/PL Aerial-image (TTPLA) dataset,
+consisting of 1,100 images with the resolution of 3,840$\times$2,160 pixels, as
+well as manually labeled 8,987 instances of TTs and PLs. We develop novel
+policies for collecting, annotating, and labeling the images in TTPLA.
+Different from other relevant datasets, TTPLA supports evaluation of instance
+segmentation, besides detection and semantic segmentation. To build a baseline
+for detection and segmentation tasks on TTPLA, we report the performance of
+several state-of-the-art deep learning models on our dataset. TTPLA dataset is
+publicly available at https://github.com/r3ab/ttpla_dataset 
+
+Title: Archangel: A Hybrid UAV-based Human Detection Benchmark with Position
+  and Pose Metadata 
+Summary: Learning to detect objects, such as humans, in imagery captured by an
+unmanned aerial vehicle (UAV) usually suffers from tremendous variations caused
+by the UAV's position towards the objects. In addition, existing UAV-based
+benchmark datasets do not provide adequate dataset metadata, which is essential
+for precise model diagnosis and learning features invariant to those
+variations. In this paper, we introduce Archangel, the first UAV-based object
+detection dataset composed of real and synthetic subsets captured with similar
+imagining conditions and UAV position and object pose metadata. A series of
+experiments are carefully designed with a state-of-the-art object detector to
+demonstrate the benefits of leveraging the metadata during model evaluation.
+Moreover, several crucial insights involving both real and synthetic data
+during model optimization are presented. In the end, we discuss the advantages,
+limitations, and future directions regarding Archangel to highlight its
+distinct value for the broader machine learning community. 
+
+",This is a test answer.,"abs-2209.00128v3, abs-2010.10032v1, abs-2305.20091v3"
+"How could the HexCNN framework (abs-2101.10897v1) be used to improve the computational efficiency of the pedestrian detection CNN described in article abs-2208.07250v1, assuming the input images were resampled onto a hexagonal grid?","abs-2101.10897v1,abs-2208.07250v1",Synthesis & Multi-Hop Reasoning Questions,"Title: HexCNN: A Framework for Native Hexagonal Convolutional Neural Networks 
+Summary: Hexagonal CNN models have shown superior performance in applications such as
+IACT data analysis and aerial scene classification due to their better rotation
+symmetry and reduced anisotropy. In order to realize hexagonal processing,
+existing studies mainly use the ZeroOut method to imitate hexagonal processing,
+which causes substantial memory and computation overheads. We address this
+deficiency with a novel native hexagonal CNN framework named HexCNN. HexCNN
+takes hexagon-shaped input and performs forward and backward propagation on the
+original form of the input based on hexagon-shaped filters, hence avoiding
+computation and memory overheads caused by imitation. For applications with
+rectangle-shaped input but require hexagonal processing, HexCNN can be applied
+by padding the input into hexagon-shape as preprocessing. In this case, we show
+that the time and space efficiency of HexCNN still outperforms existing
+hexagonal CNN methods substantially. Experimental results show that compared
+with the state-of-the-art models, which imitate hexagonal processing but using
+rectangle-shaped filters, HexCNN reduces the training time by up to 42.2%.
+Meanwhile, HexCNN saves the memory space cost by up to 25% and 41.7% for
+loading the input and performing convolution, respectively. 
+
+Title: Predicting Pedestrian Crosswalk Behavior Using Convolutional Neural
+  Networks 
+Summary: A common yet potentially dangerous task is the act of crossing the street.
+Pedestrian accidents contribute a significant amount to the high number of
+annual traffic casualties, which is why it is crucial for pedestrians to use
+safety measures such as a crosswalk. However, people often forget to activate a
+crosswalk light or are unable to do so -- such as those who are visually
+impaired or have occupied hands. Other pedestrians are simply careless and find
+the crosswalk signals a hassle, which can result in an accident where a car
+hits them. In this paper, we consider an improvement to the crosswalk system by
+designing a system that can detect pedestrians and triggering the crosswalk
+signal automatically. We collect a dataset of images that we then use to train
+a convolutional neural network to distinguish between pedestrians (including
+bicycle riders) and various false alarms. The resulting system can capture and
+evaluate images in real time, and the result can be used to automatically
+activate systems a crosswalk light. After extensive testing of our system in
+real-world environments, we conclude that it is feasible as a back-up system
+that can compliment existing crosswalk buttons, and thereby improve the overall
+safety of crossing the street. 
+
+",This is a test answer.,"abs-2101.10897v1, abs-2005.07344v2, abs-2307.03505v1"
+"Considering the challenges of occlusion in face recognition (abs-2006.06787v1), could the disentangled representation learning from the face anti-spoofing method (abs-2008.08250v1) be used to separate identity features from occlusion artifacts?","abs-2006.06787v1,abs-2008.08250v1",Synthesis & Multi-Hop Reasoning Questions,"Title: On Improving the Generalization of Face Recognition in the Presence of
+  Occlusions 
+Summary: In this paper, we address a key limitation of existing 2D face recognition
+methods: robustness to occlusions. To accomplish this task, we systematically
+analyzed the impact of facial attributes on the performance of a
+state-of-the-art face recognition method and through extensive experimentation,
+quantitatively analyzed the performance degradation under different types of
+occlusion. Our proposed Occlusion-aware face REcOgnition (OREO) approach
+learned discriminative facial templates despite the presence of such
+occlusions. First, an attention mechanism was proposed that extracted local
+identity-related region. The local features were then aggregated with the
+global representations to form a single template. Second, a simple, yet
+effective, training strategy was introduced to balance the non-occluded and
+occluded facial images. Extensive experiments demonstrated that OREO improved
+the generalization ability of face recognition under occlusions by (10.17%) in
+a single-image-based setting and outperformed the baseline by approximately
+(2%) in terms of rank-1 accuracy in an image-set-based scenario. 
+
+Title: Face Anti-Spoofing Via Disentangled Representation Learning 
+Summary: Face anti-spoofing is crucial to security of face recognition systems.
+Previous approaches focus on developing discriminative models based on the
+features extracted from images, which may be still entangled between spoof
+patterns and real persons. In this paper, motivated by the disentangled
+representation learning, we propose a novel perspective of face anti-spoofing
+that disentangles the liveness features and content features from images, and
+the liveness features is further used for classification. We also put forward a
+Convolutional Neural Network (CNN) architecture with the process of
+disentanglement and combination of low-level and high-level supervision to
+improve the generalization capabilities. We evaluate our method on public
+benchmark datasets and extensive experimental results demonstrate the
+effectiveness of our method against the state-of-the-art competitors. Finally,
+we further visualize some results to help understand the effect and advantage
+of disentanglement. 
+
+",This is a test answer.,"abs-2008.08250v1, abs-2006.06787v1, abs-2005.06040v1"
+Could the feature pooling approach from EDEN (abs-2105.13979v2) be applied to the person re-identification task in 'Unsupervised Domain Adaptive Person Re-id' (abs-2201.03803v1) to create a fixed-size embedding for individuals' clothing patterns?,"abs-2105.13979v2,abs-2201.03803v1",Synthesis & Multi-Hop Reasoning Questions,"Title: EDEN: Deep Feature Distribution Pooling for Saimaa Ringed Seals Pattern
+  Matching 
+Summary: In this paper, pelage pattern matching is considered to solve the individual
+re-identification of the Saimaa ringed seals. Animal re-identification together
+with the access to large amount of image material through camera traps and
+crowd-sourcing provide novel possibilities for animal monitoring and
+conservation. We propose a novel feature pooling approach that allow
+aggregating the local pattern features to get a fixed size embedding vector
+that incorporate global features by taking into account the spatial
+distribution of features. This is obtained by eigen decomposition of
+covariances computed for probability mass functions representing feature maps.
+Embedding vectors can then be used to find the best match in the database of
+known individuals allowing animal re-identification. The results show that the
+proposed pooling method outperforms the existing methods on the challenging
+Saimaa ringed seal image data. 
+
+Title: Unsupervised Domain Adaptive Person Re-id with Local-enhance and
+  Prototype Dictionary Learning 
+Summary: The unsupervised domain adaptive person re-identification (re-ID) task has
+been a challenge because, unlike the general domain adaptive tasks, there is no
+overlap between the classes of source and target domain data in the person
+re-ID, which leads to a significant domain gap. State-of-the-art unsupervised
+re-ID methods train the neural networks using a memory-based contrastive loss.
+However, performing contrastive learning by treating each unlabeled instance as
+a class will lead to the problem of class collision, and the updating intensity
+is inconsistent due to the difference in the number of instances of different
+categories when updating in the memory bank. To address such problems, we
+propose Prototype Dictionary Learning for person re-ID which is able to utilize
+both source domain data and target domain data by one training stage while
+avoiding the problem of class collision and the problem of updating intensity
+inconsistency by cluster-level prototype dictionary learning. In order to
+reduce the interference of domain gap on the model, we propose a local-enhance
+module to improve the domain adaptation of the model without increasing the
+number of model parameters. Our experiments on two large datasets demonstrate
+the effectiveness of the prototype dictionary learning. 71.5\% mAP is achieved
+in the Market-to-Duke task, which is a 2.3\% improvement compared to the
+state-of-the-art unsupervised domain adaptive re-ID methods. It achieves 83.9\%
+mAP in the Duke-to-Market task, which improves by 4.4\% compared to the
+state-of-the-art unsupervised adaptive re-ID methods. 
+
+",This is a test answer.,"abs-2105.13979v2, abs-2102.10798v1, abs-2302.00884v1"
+Can the self-supervised scene flow estimation method from article abs-2104.04724v2 be used to generate training data for the motion-based point cloud prediction network in MoNet (abs-2011.10812v1)?,"abs-2104.04724v2,abs-2011.10812v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Occlusion Guided Self-supervised Scene Flow Estimation on 3D Point
+  Clouds 
+Summary: Understanding the flow in 3D space of sparsely sampled points between two
+consecutive time frames is the core stone of modern geometric-driven systems
+such as VR/AR, Robotics, and Autonomous driving. The lack of real,
+non-simulated, labeled data for this task emphasizes the importance of self- or
+un-supervised deep architectures. This work presents a new self-supervised
+training method and an architecture for the 3D scene flow estimation under
+occlusions. Here we show that smart multi-layer fusion between flow prediction
+and occlusion detection outperforms traditional architectures by a large margin
+for occluded and non-occluded scenarios. We report state-of-the-art results on
+Flyingthings3D and KITTI datasets for both the supervised and self-supervised
+training. 
+
+Title: MoNet: Motion-based Point Cloud Prediction Network 
+Summary: Predicting the future can significantly improve the safety of intelligent
+vehicles, which is a key component in autonomous driving. 3D point clouds
+accurately model 3D information of surrounding environment and are crucial for
+intelligent vehicles to perceive the scene. Therefore, prediction of 3D point
+clouds has great significance for intelligent vehicles, which can be utilized
+for numerous further applications. However, due to point clouds are unordered
+and unstructured, point cloud prediction is challenging and has not been deeply
+explored in current literature. In this paper, we propose a novel motion-based
+neural network named MoNet. The key idea of the proposed MoNet is to integrate
+motion features between two consecutive point clouds into the prediction
+pipeline. The introduction of motion features enables the model to more
+accurately capture the variations of motion information across frames and thus
+make better predictions for future motion. In addition, content features are
+introduced to model the spatial content of individual point clouds. A recurrent
+neural network named MotionRNN is proposed to capture the temporal correlations
+of both features. Besides, we propose an attention-based motion align module to
+address the problem of missing motion features in the inference pipeline.
+Extensive experiments on two large scale outdoor LiDAR datasets demonstrate the
+performance of the proposed MoNet. Moreover, we perform experiments on
+applications using the predicted point clouds and the results indicate the
+great application potential of the proposed method. 
+
+",This is a test answer.,"abs-2104.04724v2, abs-2212.05867v3, abs-2011.10812v1"
+What was the specific make and model of the camera used to collect the real-world images for the pedestrian crosswalk detection dataset in article abs-2208.07250v1?,abs-2208.07250v1,Negative / Unanswerable Questions,"Title: Predicting Pedestrian Crosswalk Behavior Using Convolutional Neural
+  Networks 
+Summary: A common yet potentially dangerous task is the act of crossing the street.
+Pedestrian accidents contribute a significant amount to the high number of
+annual traffic casualties, which is why it is crucial for pedestrians to use
+safety measures such as a crosswalk. However, people often forget to activate a
+crosswalk light or are unable to do so -- such as those who are visually
+impaired or have occupied hands. Other pedestrians are simply careless and find
+the crosswalk signals a hassle, which can result in an accident where a car
+hits them. In this paper, we consider an improvement to the crosswalk system by
+designing a system that can detect pedestrians and triggering the crosswalk
+signal automatically. We collect a dataset of images that we then use to train
+a convolutional neural network to distinguish between pedestrians (including
+bicycle riders) and various false alarms. The resulting system can capture and
+evaluate images in real time, and the result can be used to automatically
+activate systems a crosswalk light. After extensive testing of our system in
+real-world environments, we conclude that it is feasible as a back-up system
+that can compliment existing crosswalk buttons, and thereby improve the overall
+safety of crossing the street. 
+
+",This is a test answer.,"abs-2208.07250v1, abs-2005.07344v2, abs-2102.10798v1"
+How many individual Saimaa ringed seals were included in the database used for the re-identification task in article abs-2105.13979v2?,abs-2105.13979v2,Negative / Unanswerable Questions,"Title: EDEN: Deep Feature Distribution Pooling for Saimaa Ringed Seals Pattern
+  Matching 
+Summary: In this paper, pelage pattern matching is considered to solve the individual
+re-identification of the Saimaa ringed seals. Animal re-identification together
+with the access to large amount of image material through camera traps and
+crowd-sourcing provide novel possibilities for animal monitoring and
+conservation. We propose a novel feature pooling approach that allow
+aggregating the local pattern features to get a fixed size embedding vector
+that incorporate global features by taking into account the spatial
+distribution of features. This is obtained by eigen decomposition of
+covariances computed for probability mass functions representing feature maps.
+Embedding vectors can then be used to find the best match in the database of
+known individuals allowing animal re-identification. The results show that the
+proposed pooling method outperforms the existing methods on the challenging
+Saimaa ringed seal image data. 
+
+",This is a test answer.,"abs-2105.13979v2, abs-2212.00352v2, abs-2208.13944v1"
+What was the average inference time in milliseconds for the OREO face recognition model (abs-2006.06787v1) when running on a mobile device CPU?,abs-2006.06787v1,Negative / Unanswerable Questions,"Title: On Improving the Generalization of Face Recognition in the Presence of
+  Occlusions 
+Summary: In this paper, we address a key limitation of existing 2D face recognition
+methods: robustness to occlusions. To accomplish this task, we systematically
+analyzed the impact of facial attributes on the performance of a
+state-of-the-art face recognition method and through extensive experimentation,
+quantitatively analyzed the performance degradation under different types of
+occlusion. Our proposed Occlusion-aware face REcOgnition (OREO) approach
+learned discriminative facial templates despite the presence of such
+occlusions. First, an attention mechanism was proposed that extracted local
+identity-related region. The local features were then aggregated with the
+global representations to form a single template. Second, a simple, yet
+effective, training strategy was introduced to balance the non-occluded and
+occluded facial images. Extensive experiments demonstrated that OREO improved
+the generalization ability of face recognition under occlusions by (10.17%) in
+a single-image-based setting and outperformed the baseline by approximately
+(2%) in terms of rank-1 accuracy in an image-set-based scenario. 
+
+",This is a test answer.,"abs-2204.10149v1, abs-2102.04965v3, abs-2208.08207v1"
+"In the 'Google Landmark Recognition 2020' paper (abs-2010.05350v1), what was the exact number of classes in the GLDv2 dataset?",abs-2010.05350v1,Negative / Unanswerable Questions,"Title: Google Landmark Recognition 2020 Competition Third Place Solution 
+Summary: We present our third place solution to the Google Landmark Recognition 2020
+competition. It is an ensemble of global features only Sub-center ArcFace
+models. We introduce dynamic margins for ArcFace loss, a family of tune-able
+margin functions of class size, designed to deal with the extreme imbalance in
+GLDv2 dataset. Progressive finetuning and careful postprocessing are also key
+to the solution. Our two submissions scored 0.6344 and 0.6289 on private
+leaderboard, both ranking third place out of 736 teams. 
+
+",This is a test answer.,"abs-2010.05350v1, abs-2104.05978v2, abs-2302.13293v2"

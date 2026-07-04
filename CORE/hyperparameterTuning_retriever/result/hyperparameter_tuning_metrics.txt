@@ -1,0 +1,27 @@
+=== Hyperparameter Tuning Results (Varying K and N) ===
+                Model  K  N  Total Questions  Recall@N
+granite-embedding-30m  5  1              401  0.700748
+granite-embedding-30m  5  2              401  0.842893
+granite-embedding-30m  5  3              401  0.866584
+granite-embedding-30m  5  4              401  0.884040
+granite-embedding-30m  5  5              401  0.895262
+granite-embedding-30m 10  1              401  0.714464
+granite-embedding-30m 10  2              401  0.859102
+granite-embedding-30m 10  3              401  0.886534
+granite-embedding-30m 10  4              401  0.889027
+granite-embedding-30m 10  5              401  0.892768
+granite-embedding-30m 10  6              401  0.937656
+granite-embedding-30m 10  7              401  0.917706
+granite-embedding-30m 10  8              401  0.931421
+granite-embedding-30m 10  9              401  0.930175
+granite-embedding-30m 10 10              401  0.911471
+granite-embedding-30m 15  1              401  0.724439
+granite-embedding-30m 15  2              401  0.841646
+granite-embedding-30m 15  3              401  0.879052
+granite-embedding-30m 15  4              401  0.899002
+granite-embedding-30m 15  5              401  0.910224
+granite-embedding-30m 15  6              401  0.921446
+granite-embedding-30m 15  7              401  0.935162
+granite-embedding-30m 15  8              401  0.906484
+granite-embedding-30m 15  9              401  0.926434
+granite-embedding-30m 15 10              401  0.925187

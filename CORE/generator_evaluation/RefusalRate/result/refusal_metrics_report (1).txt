@@ -1,0 +1,76 @@
+========================================================
+REFUSAL RATE EVALUATION REPORT (UNANSWERABLE QUESTIONS)
+========================================================
+
+--- 1. Overall Refusal Rates by Generator LLM ---
+  LLM_Model  Total_Questions  Refusal_Rate_Keyword(%)  Refusal_Rate_NLI(%)
+  gemma2:2b               80                    61.25                78.75
+llama3.2:1b               80                    37.50                50.00
+llama3.2:3b               80                    73.75                75.00
+phi3.5:3.8b               80                    87.50                95.00
+ qwen2.5:3b               80                    72.50                85.00
+
+--- 2. Refusal Rates by Generator LLM & Embedding Model ---
+  LLM_Model       Embedding_Model  Total_Questions  Refusal_Rate_Keyword(%)  Refusal_Rate_NLI(%)
+  gemma2:2b granite-embedding-30m               80                    61.25                78.75
+llama3.2:1b granite-embedding-30m               80                    37.50                50.00
+llama3.2:3b granite-embedding-30m               80                    73.75                75.00
+phi3.5:3.8b granite-embedding-30m               80                    87.50                95.00
+ qwen2.5:3b granite-embedding-30m               80                    72.50                85.00
+
+--- 3. Refusal Rates by Generator LLM & Year Group ---
+  LLM_Model   Year_Group  Total_Questions  Refusal_Rate_Keyword(%)  Refusal_Rate_NLI(%)
+  gemma2:2b df_2015_2024               20                     70.0                 90.0
+  gemma2:2b df_2020_2024               20                     70.0                 85.0
+  gemma2:2b df_2023_2024               20                     55.0                 70.0
+  gemma2:2b      df_2024               20                     50.0                 70.0
+llama3.2:1b df_2015_2024               20                     45.0                 60.0
+llama3.2:1b df_2020_2024               20                     45.0                 55.0
+llama3.2:1b df_2023_2024               20                     35.0                 40.0
+llama3.2:1b      df_2024               20                     25.0                 45.0
+llama3.2:3b df_2015_2024               20                     90.0                100.0
+llama3.2:3b df_2020_2024               20                     80.0                 75.0
+llama3.2:3b df_2023_2024               20                     60.0                 60.0
+llama3.2:3b      df_2024               20                     65.0                 65.0
+phi3.5:3.8b df_2015_2024               20                     95.0                 95.0
+phi3.5:3.8b df_2020_2024               20                     90.0                100.0
+phi3.5:3.8b df_2023_2024               20                     90.0                100.0
+phi3.5:3.8b      df_2024               20                     75.0                 85.0
+ qwen2.5:3b df_2015_2024               20                     80.0                 95.0
+ qwen2.5:3b df_2020_2024               20                     75.0                 95.0
+ qwen2.5:3b df_2023_2024               20                     65.0                 65.0
+ qwen2.5:3b      df_2024               20                     70.0                 85.0
+
+--- 4. Detailed Refusal Rates per Question Set (Top 30 Rows) ---
+  LLM_Model                                                        Question_Set  Total_Questions  Refusal_Rate_Keyword(%)  Refusal_Rate_NLI(%)
+  gemma2:2b                                df_2015_2024_Artificial Intelligence                4                    100.0                100.0
+  gemma2:2b df_2015_2024_Computation and Language (Natural Language Processing)                4                     50.0                 75.0
+  gemma2:2b                df_2015_2024_Computer Vision and Pattern Recognition                4                     75.0                100.0
+  gemma2:2b                                       df_2015_2024_Machine Learning                4                     75.0                100.0
+  gemma2:2b                          df_2015_2024_Machine Learning (Statistics)                4                     50.0                 75.0
+  gemma2:2b                                df_2020_2024_Artificial Intelligence                4                     25.0                 75.0
+  gemma2:2b df_2020_2024_Computation and Language (Natural Language Processing)                4                    100.0                100.0
+  gemma2:2b                df_2020_2024_Computer Vision and Pattern Recognition                4                     75.0                 75.0
+  gemma2:2b                                       df_2020_2024_Machine Learning                4                     50.0                 75.0
+  gemma2:2b                          df_2020_2024_Machine Learning (Statistics)                4                    100.0                100.0
+  gemma2:2b                                df_2023_2024_Artificial Intelligence                4                      0.0                 25.0
+  gemma2:2b df_2023_2024_Computation and Language (Natural Language Processing)                4                     25.0                 25.0
+  gemma2:2b                df_2023_2024_Computer Vision and Pattern Recognition                4                    100.0                100.0
+  gemma2:2b                                       df_2023_2024_Machine Learning                4                     75.0                100.0
+  gemma2:2b                          df_2023_2024_Machine Learning (Statistics)                4                     75.0                100.0
+  gemma2:2b                                     df_2024_Artificial Intelligence                4                     75.0                 75.0
+  gemma2:2b      df_2024_Computation and Language (Natural Language Processing)                4                     50.0                 50.0
+  gemma2:2b                     df_2024_Computer Vision and Pattern Recognition                4                     50.0                 50.0
+  gemma2:2b                                            df_2024_Machine Learning                4                     75.0                 75.0
+  gemma2:2b                               df_2024_Machine Learning (Statistics)                4                      0.0                100.0
+llama3.2:1b                                df_2015_2024_Artificial Intelligence                4                      0.0                 25.0
+llama3.2:1b df_2015_2024_Computation and Language (Natural Language Processing)                4                     75.0                 75.0
+llama3.2:1b                df_2015_2024_Computer Vision and Pattern Recognition                4                     25.0                 75.0
+llama3.2:1b                                       df_2015_2024_Machine Learning                4                     75.0                 50.0
+llama3.2:1b                          df_2015_2024_Machine Learning (Statistics)                4                     50.0                 75.0
+llama3.2:1b                                df_2020_2024_Artificial Intelligence                4                     50.0                 50.0
+llama3.2:1b df_2020_2024_Computation and Language (Natural Language Processing)                4                     50.0                 25.0
+llama3.2:1b                df_2020_2024_Computer Vision and Pattern Recognition                4                      0.0                 50.0
+llama3.2:1b                                       df_2020_2024_Machine Learning                4                     50.0                 75.0
+llama3.2:1b                          df_2020_2024_Machine Learning (Statistics)                4                     75.0                 75.0
+

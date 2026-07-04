@@ -1,0 +1,20 @@
+================ RAGAS Local Metric Evaluation Comparison ================
+Metric                         | Before (Baseline)  | After (Optimized)  | Improvement 
+---------------------------------------------------------------------------------------
+Generator Model                | qwen2.5:3b         | qwen2.5-3b-ragas   |
+Relevancy Model                | ms-marco-MiniLM-L-6-v2 | ms-marco-MiniLM-L-6-v2 |
+NLI Model                      | deberta_ml         | deberta_ml         |
+---------------------------------------------------------------------------------------
+ [Generator Metrics]
+  Answer Relevancy Score       | 0.9075             | 0.8994             | -0.0081     (-0.89%)
+  Faithfulness Score           | 0.5519             | 0.6586             | +0.1067     (+19.33%)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ [Retriever Metrics]
+  Context Precision Score      | 0.2592             | 0.2140             | -0.0453     (-17.47%)
+  Context Recall Score         | 0.7475             | 0.7700             | +0.0225     (+3.01%)
+---------------------------------------------------------------------------------------
+Generator Metrics Average      | 0.7297             | 0.7790             | +0.0493     (+6.76%)
+Retriever Metrics Average      | 0.5034             | 0.4920             | -0.0114     (-2.26%)
+---------------------------------------------------------------------------------------
+Overall RAGAS Index            | 0.6165             | 0.6355             | +0.0190     (+3.07%)
+==========================================================================

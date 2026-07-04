@@ -1,0 +1,101 @@
+LLM_Model,Question_Set,Total_Questions,Refusal_Rate_Keyword(%),Refusal_Rate_NLI(%)
+gemma2:2b,df_2015_2024_Artificial Intelligence,4,100.0,100.0
+gemma2:2b,df_2015_2024_Computation and Language (Natural Language Processing),4,50.0,75.0
+gemma2:2b,df_2015_2024_Computer Vision and Pattern Recognition,4,75.0,100.0
+gemma2:2b,df_2015_2024_Machine Learning,4,75.0,100.0
+gemma2:2b,df_2015_2024_Machine Learning (Statistics),4,50.0,75.0
+gemma2:2b,df_2020_2024_Artificial Intelligence,4,25.0,75.0
+gemma2:2b,df_2020_2024_Computation and Language (Natural Language Processing),4,100.0,100.0
+gemma2:2b,df_2020_2024_Computer Vision and Pattern Recognition,4,75.0,75.0
+gemma2:2b,df_2020_2024_Machine Learning,4,50.0,75.0
+gemma2:2b,df_2020_2024_Machine Learning (Statistics),4,100.0,100.0
+gemma2:2b,df_2023_2024_Artificial Intelligence,4,0.0,25.0
+gemma2:2b,df_2023_2024_Computation and Language (Natural Language Processing),4,25.0,25.0
+gemma2:2b,df_2023_2024_Computer Vision and Pattern Recognition,4,100.0,100.0
+gemma2:2b,df_2023_2024_Machine Learning,4,75.0,100.0
+gemma2:2b,df_2023_2024_Machine Learning (Statistics),4,75.0,100.0
+gemma2:2b,df_2024_Artificial Intelligence,4,75.0,75.0
+gemma2:2b,df_2024_Computation and Language (Natural Language Processing),4,50.0,50.0
+gemma2:2b,df_2024_Computer Vision and Pattern Recognition,4,50.0,50.0
+gemma2:2b,df_2024_Machine Learning,4,75.0,75.0
+gemma2:2b,df_2024_Machine Learning (Statistics),4,0.0,100.0
+llama3.2:1b,df_2015_2024_Artificial Intelligence,4,0.0,25.0
+llama3.2:1b,df_2015_2024_Computation and Language (Natural Language Processing),4,75.0,75.0
+llama3.2:1b,df_2015_2024_Computer Vision and Pattern Recognition,4,25.0,75.0
+llama3.2:1b,df_2015_2024_Machine Learning,4,75.0,50.0
+llama3.2:1b,df_2015_2024_Machine Learning (Statistics),4,50.0,75.0
+llama3.2:1b,df_2020_2024_Artificial Intelligence,4,50.0,50.0
+llama3.2:1b,df_2020_2024_Computation and Language (Natural Language Processing),4,50.0,25.0
+llama3.2:1b,df_2020_2024_Computer Vision and Pattern Recognition,4,0.0,50.0
+llama3.2:1b,df_2020_2024_Machine Learning,4,50.0,75.0
+llama3.2:1b,df_2020_2024_Machine Learning (Statistics),4,75.0,75.0
+llama3.2:1b,df_2023_2024_Artificial Intelligence,4,25.0,25.0
+llama3.2:1b,df_2023_2024_Computation and Language (Natural Language Processing),4,25.0,50.0
+llama3.2:1b,df_2023_2024_Computer Vision and Pattern Recognition,4,25.0,50.0
+llama3.2:1b,df_2023_2024_Machine Learning,4,50.0,25.0
+llama3.2:1b,df_2023_2024_Machine Learning (Statistics),4,50.0,50.0
+llama3.2:1b,df_2024_Artificial Intelligence,4,0.0,25.0
+llama3.2:1b,df_2024_Computation and Language (Natural Language Processing),4,25.0,50.0
+llama3.2:1b,df_2024_Computer Vision and Pattern Recognition,4,25.0,25.0
+llama3.2:1b,df_2024_Machine Learning,4,25.0,75.0
+llama3.2:1b,df_2024_Machine Learning (Statistics),4,50.0,50.0
+llama3.2:3b,df_2015_2024_Artificial Intelligence,4,75.0,100.0
+llama3.2:3b,df_2015_2024_Computation and Language (Natural Language Processing),4,75.0,100.0
+llama3.2:3b,df_2015_2024_Computer Vision and Pattern Recognition,4,100.0,100.0
+llama3.2:3b,df_2015_2024_Machine Learning,4,100.0,100.0
+llama3.2:3b,df_2015_2024_Machine Learning (Statistics),4,100.0,100.0
+llama3.2:3b,df_2020_2024_Artificial Intelligence,4,25.0,25.0
+llama3.2:3b,df_2020_2024_Computation and Language (Natural Language Processing),4,100.0,100.0
+llama3.2:3b,df_2020_2024_Computer Vision and Pattern Recognition,4,100.0,75.0
+llama3.2:3b,df_2020_2024_Machine Learning,4,75.0,75.0
+llama3.2:3b,df_2020_2024_Machine Learning (Statistics),4,100.0,100.0
+llama3.2:3b,df_2023_2024_Artificial Intelligence,4,25.0,0.0
+llama3.2:3b,df_2023_2024_Computation and Language (Natural Language Processing),4,50.0,50.0
+llama3.2:3b,df_2023_2024_Computer Vision and Pattern Recognition,4,100.0,100.0
+llama3.2:3b,df_2023_2024_Machine Learning,4,50.0,75.0
+llama3.2:3b,df_2023_2024_Machine Learning (Statistics),4,75.0,75.0
+llama3.2:3b,df_2024_Artificial Intelligence,4,75.0,75.0
+llama3.2:3b,df_2024_Computation and Language (Natural Language Processing),4,75.0,50.0
+llama3.2:3b,df_2024_Computer Vision and Pattern Recognition,4,75.0,75.0
+llama3.2:3b,df_2024_Machine Learning,4,75.0,75.0
+llama3.2:3b,df_2024_Machine Learning (Statistics),4,25.0,50.0
+phi3.5:3.8b,df_2015_2024_Artificial Intelligence,4,100.0,100.0
+phi3.5:3.8b,df_2015_2024_Computation and Language (Natural Language Processing),4,100.0,100.0
+phi3.5:3.8b,df_2015_2024_Computer Vision and Pattern Recognition,4,100.0,100.0
+phi3.5:3.8b,df_2015_2024_Machine Learning,4,100.0,100.0
+phi3.5:3.8b,df_2015_2024_Machine Learning (Statistics),4,75.0,75.0
+phi3.5:3.8b,df_2020_2024_Artificial Intelligence,4,100.0,100.0
+phi3.5:3.8b,df_2020_2024_Computation and Language (Natural Language Processing),4,100.0,100.0
+phi3.5:3.8b,df_2020_2024_Computer Vision and Pattern Recognition,4,100.0,100.0
+phi3.5:3.8b,df_2020_2024_Machine Learning,4,75.0,100.0
+phi3.5:3.8b,df_2020_2024_Machine Learning (Statistics),4,75.0,100.0
+phi3.5:3.8b,df_2023_2024_Artificial Intelligence,4,100.0,100.0
+phi3.5:3.8b,df_2023_2024_Computation and Language (Natural Language Processing),4,100.0,100.0
+phi3.5:3.8b,df_2023_2024_Computer Vision and Pattern Recognition,4,75.0,100.0
+phi3.5:3.8b,df_2023_2024_Machine Learning,4,100.0,100.0
+phi3.5:3.8b,df_2023_2024_Machine Learning (Statistics),4,75.0,100.0
+phi3.5:3.8b,df_2024_Artificial Intelligence,4,75.0,75.0
+phi3.5:3.8b,df_2024_Computation and Language (Natural Language Processing),4,75.0,75.0
+phi3.5:3.8b,df_2024_Computer Vision and Pattern Recognition,4,100.0,100.0
+phi3.5:3.8b,df_2024_Machine Learning,4,50.0,75.0
+phi3.5:3.8b,df_2024_Machine Learning (Statistics),4,75.0,100.0
+qwen2.5:3b,df_2015_2024_Artificial Intelligence,4,100.0,100.0
+qwen2.5:3b,df_2015_2024_Computation and Language (Natural Language Processing),4,75.0,100.0
+qwen2.5:3b,df_2015_2024_Computer Vision and Pattern Recognition,4,75.0,100.0
+qwen2.5:3b,df_2015_2024_Machine Learning,4,50.0,75.0
+qwen2.5:3b,df_2015_2024_Machine Learning (Statistics),4,100.0,100.0
+qwen2.5:3b,df_2020_2024_Artificial Intelligence,4,50.0,75.0
+qwen2.5:3b,df_2020_2024_Computation and Language (Natural Language Processing),4,100.0,100.0
+qwen2.5:3b,df_2020_2024_Computer Vision and Pattern Recognition,4,75.0,100.0
+qwen2.5:3b,df_2020_2024_Machine Learning,4,50.0,100.0
+qwen2.5:3b,df_2020_2024_Machine Learning (Statistics),4,100.0,100.0
+qwen2.5:3b,df_2023_2024_Artificial Intelligence,4,0.0,0.0
+qwen2.5:3b,df_2023_2024_Computation and Language (Natural Language Processing),4,75.0,50.0
+qwen2.5:3b,df_2023_2024_Computer Vision and Pattern Recognition,4,100.0,75.0
+qwen2.5:3b,df_2023_2024_Machine Learning,4,50.0,100.0
+qwen2.5:3b,df_2023_2024_Machine Learning (Statistics),4,100.0,100.0
+qwen2.5:3b,df_2024_Artificial Intelligence,4,75.0,100.0
+qwen2.5:3b,df_2024_Computation and Language (Natural Language Processing),4,50.0,50.0
+qwen2.5:3b,df_2024_Computer Vision and Pattern Recognition,4,75.0,100.0
+qwen2.5:3b,df_2024_Machine Learning,4,75.0,75.0
+qwen2.5:3b,df_2024_Machine Learning (Statistics),4,75.0,100.0

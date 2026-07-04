@@ -1,0 +1,560 @@
+Question,Source Article Index,Question Type,Summary
+"What does ACORN stand for, as described in the paper 'ACORN: Aspect-wise Commonsense Reasoning Explanation Evaluation'?",abs-2405.04818v2,Direct Fact Retrieval & Definition Questions,"Title: ACORN: Aspect-wise Commonsense Reasoning Explanation Evaluation 
+Summary: Evaluating the quality of free-text explanations is a multifaceted,
+subjective, and labor-intensive task. Large language models (LLMs) present an
+appealing alternative due to their potential for consistency, scalability, and
+cost-efficiency. In this work, we present ACORN, a new dataset of 3,500
+free-text explanations and aspect-wise quality ratings, and use it to evaluate
+how LLMs rate explanations. We observed that larger models outputted labels
+that maintained or increased the inter-annotator agreement, suggesting that
+they are within the expected variance between human raters. However, their
+correlation with majority-voted human ratings varied across different quality
+aspects, indicating that they are not a complete replacement. In turn, using
+LLMs as a supplement to a smaller group of human raters in some cases improved
+the correlation with the original majority labels. However, the effect was
+limited to cases where human raters were scarce, and an additional human rater
+had a more pronounced effect in all cases. Overall, we recommend against using
+LLMs as a complete replacement for human raters but encourage using them in
+configurations that end with targeted human involvement. Data available here:
+https://github.com/a-brassard/ACORN 
+
+"
+What is the main goal of the BABILong benchmark introduced in 'Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack'?,abs-2406.10149v2,Summarization / Purpose Identification Questions,"Title: BABILong: Testing the Limits of LLMs with Long Context
+  Reasoning-in-a-Haystack 
+Summary: In recent years, the input context sizes of large language models (LLMs) have
+increased dramatically. However, existing evaluation methods have not kept
+pace, failing to comprehensively assess the efficiency of models in handling
+long contexts. To bridge this gap, we introduce the BABILong benchmark,
+designed to test language models' ability to reason across facts distributed in
+extremely long documents. BABILong includes a diverse set of 20 reasoning
+tasks, including fact chaining, simple induction, deduction, counting, and
+handling lists/sets. These tasks are challenging on their own, and even more
+demanding when the required facts are scattered across long natural text. Our
+evaluations show that popular LLMs effectively utilize only 10-20\% of the
+context and their performance declines sharply with increased reasoning
+complexity. Among alternatives to in-context reasoning, Retrieval-Augmented
+Generation methods achieve a modest 60\% accuracy on single-fact question
+answering, independent of context length. Among context extension methods, the
+highest performance is demonstrated by recurrent memory transformers after
+fine-tuning, enabling the processing of lengths up to 50 million tokens. The
+BABILong benchmark is extendable to any length to support the evaluation of new
+upcoming models with increased capabilities, and we provide splits up to 10
+million token lengths. 
+
+"
+Compare the approaches of the UniArk framework and the ORPO algorithm. How do their methods for improving language models differ in terms of their focus on knowledge extraction versus preference alignment?,"abs-2404.01253v1,abs-2403.07691v2",Comparative & Contrastive Questions,"Title: UniArk: Improving Generalisation and Consistency for Factual Knowledge
+  Extraction through Debiasing 
+Summary: Several recent papers have investigated the potential of language models as
+knowledge bases as well as the existence of severe biases when extracting
+factual knowledge. In this work, we focus on the factual probing performance
+over unseen prompts from tuning, and using a probabilistic view we show the
+inherent misalignment between pre-training and downstream tuning objectives in
+language models for probing knowledge. We hypothesize that simultaneously
+debiasing these objectives can be the key to generalisation over unseen
+prompts. We propose an adapter-based framework, UniArk, for generalised and
+consistent factual knowledge extraction through simple methods without
+introducing extra parameters. Extensive experiments show that UniArk can
+significantly improve the model's out-of-domain generalisation as well as
+consistency under various prompts. Additionally, we construct ParaTrex, a
+large-scale and diverse dataset for measuring the inconsistency and
+out-of-domain generation of models. Further, ParaTrex offers a reference method
+for constructing paraphrased datasets using large language models. 
+
+Title: ORPO: Monolithic Preference Optimization without Reference Model 
+Summary: While recent preference alignment algorithms for language models have
+demonstrated promising results, supervised fine-tuning (SFT) remains imperative
+for achieving successful convergence. In this paper, we study the crucial role
+of SFT within the context of preference alignment, emphasizing that a minor
+penalty for the disfavored generation style is sufficient for
+preference-aligned SFT. Building on this foundation, we introduce a
+straightforward and innovative reference model-free monolithic odds ratio
+preference optimization algorithm, ORPO, eliminating the necessity for an
+additional preference alignment phase. We demonstrate, both empirically and
+theoretically, that the odds ratio is a sensible choice for contrasting favored
+and disfavored styles during SFT across the diverse sizes from 125M to 7B.
+Specifically, fine-tuning Phi-2 (2.7B), Llama-2 (7B), and Mistral (7B) with
+ORPO on the UltraFeedback alone surpasses the performance of state-of-the-art
+language models with more than 7B and 13B parameters: achieving up to 12.20% on
+$\text{AlpacaEval}_{2.0}$ (Figure 1), 66.19% on IFEval (instruction-level
+loose, Table 6), and 7.32 in MT-Bench (Figure 12). We release code and model
+checkpoints for Mistral-ORPO-$\alpha$ (7B) and Mistral-ORPO-$\beta$ (7B). 
+
+"
+"The paper 'Interpreting Predictive Probabilities' proposes disentangling model confidence from human label variation. How could the ACORN dataset, with its multiple human ratings, be used to train and evaluate a model that explicitly separates these two sources of uncertainty?","abs-2402.16102v1,abs-2405.04818v2",Synthesis & Multi-Hop Reasoning Questions,"Title: Interpreting Predictive Probabilities: Model Confidence or Human Label
+  Variation? 
+Summary: With the rise of increasingly powerful and user-facing NLP systems, there is
+growing interest in assessing whether they have a good representation of
+uncertainty by evaluating the quality of their predictive distribution over
+outcomes. We identify two main perspectives that drive starkly different
+evaluation protocols. The first treats predictive probability as an indication
+of model confidence; the second as an indication of human label variation. We
+discuss their merits and limitations, and take the position that both are
+crucial for trustworthy and fair NLP systems, but that exploiting a single
+predictive distribution is limiting. We recommend tools and highlight exciting
+directions towards models with disentangled representations of uncertainty
+about predictions and uncertainty about human labels. 
+
+Title: ACORN: Aspect-wise Commonsense Reasoning Explanation Evaluation 
+Summary: Evaluating the quality of free-text explanations is a multifaceted,
+subjective, and labor-intensive task. Large language models (LLMs) present an
+appealing alternative due to their potential for consistency, scalability, and
+cost-efficiency. In this work, we present ACORN, a new dataset of 3,500
+free-text explanations and aspect-wise quality ratings, and use it to evaluate
+how LLMs rate explanations. We observed that larger models outputted labels
+that maintained or increased the inter-annotator agreement, suggesting that
+they are within the expected variance between human raters. However, their
+correlation with majority-voted human ratings varied across different quality
+aspects, indicating that they are not a complete replacement. In turn, using
+LLMs as a supplement to a smaller group of human raters in some cases improved
+the correlation with the original majority labels. However, the effect was
+limited to cases where human raters were scarce, and an additional human rater
+had a more pronounced effect in all cases. Overall, we recommend against using
+LLMs as a complete replacement for human raters but encourage using them in
+configurations that end with targeted human involvement. Data available here:
+https://github.com/a-brassard/ACORN 
+
+"
+"In the 'ACORN' paper, what was the average monetary cost for obtaining a single quality rating from a human annotator?",abs-2405.04818v2,Negative / Unanswerable Questions,"Title: ACORN: Aspect-wise Commonsense Reasoning Explanation Evaluation 
+Summary: Evaluating the quality of free-text explanations is a multifaceted,
+subjective, and labor-intensive task. Large language models (LLMs) present an
+appealing alternative due to their potential for consistency, scalability, and
+cost-efficiency. In this work, we present ACORN, a new dataset of 3,500
+free-text explanations and aspect-wise quality ratings, and use it to evaluate
+how LLMs rate explanations. We observed that larger models outputted labels
+that maintained or increased the inter-annotator agreement, suggesting that
+they are within the expected variance between human raters. However, their
+correlation with majority-voted human ratings varied across different quality
+aspects, indicating that they are not a complete replacement. In turn, using
+LLMs as a supplement to a smaller group of human raters in some cases improved
+the correlation with the original majority labels. However, the effect was
+limited to cases where human raters were scarce, and an additional human rater
+had a more pronounced effect in all cases. Overall, we recommend against using
+LLMs as a complete replacement for human raters but encourage using them in
+configurations that end with targeted human involvement. Data available here:
+https://github.com/a-brassard/ACORN 
+
+"
+"According to the 'Multi-modal Stance Detection' paper, what is the name of the proposed prompt tuning framework?",abs-2402.14298v3,Direct Fact Retrieval & Definition Questions,"Title: Multi-modal Stance Detection: New Datasets and Model 
+Summary: Stance detection is a challenging task that aims to identify public opinion
+from social media platforms with respect to specific targets. Previous work on
+stance detection largely focused on pure texts. In this paper, we study
+multi-modal stance detection for tweets consisting of texts and images, which
+are prevalent in today's fast-growing social media platforms where people often
+post multi-modal messages. To this end, we create five new multi-modal stance
+detection datasets of different domains based on Twitter, in which each example
+consists of a text and an image. In addition, we propose a simple yet effective
+Targeted Multi-modal Prompt Tuning framework (TMPT), where target information
+is leveraged to learn multi-modal stance features from textual and visual
+modalities. Experimental results on our five benchmark datasets show that the
+proposed TMPT achieves state-of-the-art performance in multi-modal stance
+detection. 
+
+"
+What is the primary problem that the UniArk framework is designed to address in language models?,abs-2404.01253v1,Summarization / Purpose Identification Questions,"Title: UniArk: Improving Generalisation and Consistency for Factual Knowledge
+  Extraction through Debiasing 
+Summary: Several recent papers have investigated the potential of language models as
+knowledge bases as well as the existence of severe biases when extracting
+factual knowledge. In this work, we focus on the factual probing performance
+over unseen prompts from tuning, and using a probabilistic view we show the
+inherent misalignment between pre-training and downstream tuning objectives in
+language models for probing knowledge. We hypothesize that simultaneously
+debiasing these objectives can be the key to generalisation over unseen
+prompts. We propose an adapter-based framework, UniArk, for generalised and
+consistent factual knowledge extraction through simple methods without
+introducing extra parameters. Extensive experiments show that UniArk can
+significantly improve the model's out-of-domain generalisation as well as
+consistency under various prompts. Additionally, we construct ParaTrex, a
+large-scale and diverse dataset for measuring the inconsistency and
+out-of-domain generation of models. Further, ParaTrex offers a reference method
+for constructing paraphrased datasets using large language models. 
+
+"
+Contrast the evaluation methodologies of the InfiAgent-DABench and the MMLU-Pro benchmark. What are the key differences in the types of tasks they evaluate and how they measure performance?,"abs-2401.05507v3,abs-2406.01574v6",Comparative & Contrastive Questions,"Title: InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks 
+Summary: In this paper, we introduce InfiAgent-DABench, the first benchmark
+specifically designed to evaluate LLM-based agents on data analysis tasks.
+These tasks require agents to end-to-end solving complex tasks by interacting
+with an execution environment. This benchmark contains DAEval, a dataset
+consisting of 257 data analysis questions derived from 52 CSV files, and an
+agent framework which incorporates LLMs to serve as data analysis agents for
+both serving and evaluation. Since data analysis questions are often open-ended
+and hard to evaluate without human supervision, we adopt a format-prompting
+technique to convert each question into a closed-form format so that they can
+be automatically evaluated. Our extensive benchmarking of 34 LLMs uncovers the
+current challenges encountered in data analysis tasks. In addition, building on
+top of our agent framework, we develop a specialized agent, DAAgent, which
+surpasses GPT-3.5 by 3.9% on DABench. Evaluation datasets and toolkits for
+InfiAgent-DABench are released at https://github.com/InfiAgent/InfiAgent . 
+
+Title: MMLU-Pro: A More Robust and Challenging Multi-Task Language
+  Understanding Benchmark 
+Summary: In the age of large-scale language models, benchmarks like the Massive
+Multitask Language Understanding (MMLU) have been pivotal in pushing the
+boundaries of what AI can achieve in language comprehension and reasoning
+across diverse domains. However, as models continue to improve, their
+performance on these benchmarks has begun to plateau, making it increasingly
+difficult to discern differences in model capabilities. This paper introduces
+MMLU-Pro, an enhanced dataset designed to extend the mostly knowledge-driven
+MMLU benchmark by integrating more challenging, reasoning-focused questions and
+expanding the choice set from four to ten options. Additionally, MMLU-Pro
+eliminates the trivial and noisy questions in MMLU. Our experimental results
+show that MMLU-Pro not only raises the challenge, causing a significant drop in
+accuracy by 16% to 33% compared to MMLU but also demonstrates greater stability
+under varying prompts. With 24 different prompt styles tested, the sensitivity
+of model scores to prompt variations decreased from 4-5% in MMLU to just 2% in
+MMLU-Pro. Additionally, we found that models utilizing Chain of Thought (CoT)
+reasoning achieved better performance on MMLU-Pro compared to direct answering,
+which is in stark contrast to the findings on the original MMLU, indicating
+that MMLU-Pro includes more complex reasoning questions. Our assessments
+confirm that MMLU-Pro is a more discriminative benchmark to better track
+progress in the field. 
+
+"
+"The paper on 'Tokenization counts' suggests right-to-left tokenization improves arithmetic. How could this insight be applied to the 'AraPoemBERT' model, which works with the right-to-left Arabic script, to potentially improve its analysis of numerical or structural patterns in poetry?","abs-2402.14903v1,abs-2403.12392v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Tokenization counts: the impact of tokenization on arithmetic in
+  frontier LLMs 
+Summary: Tokenization, the division of input text into input tokens, is an often
+overlooked aspect of the large language model (LLM) pipeline and could be the
+source of useful or harmful inductive biases. Historically, LLMs have relied on
+byte pair encoding, without care to specific input domains. With the increased
+use of LLMs for reasoning, various number-specific tokenization schemes have
+been adopted, with popular models like LLaMa and PaLM opting for single-digit
+tokenization while GPT-3.5 and GPT-4 have separate tokens for each 1-, 2-, and
+3-digit numbers. In this work, we study the effect this choice has on numerical
+reasoning through the use of arithmetic tasks. We consider left-to-right and
+right-to-left tokenization for GPT-3.5 and -4, finding that right-to-left
+tokenization (enforced by comma separating numbers at inference time) leads to
+largely improved performance. Furthermore, we find that model errors when using
+standard left-to-right tokenization follow stereotyped error patterns,
+suggesting that model computations are systematic rather than approximate. We
+show that the model is able to convert between tokenizations easily, thus
+allowing chain-of-thought-inspired approaches to recover performance on
+left-to-right tokenized inputs. We also find the gap between tokenization
+directions decreases when models are scaled, possibly indicating that larger
+models are better able to override this tokenization-dependent inductive bias.
+In summary, our work performs the first study of how number tokenization
+choices lead to differences in model performance on arithmetic tasks,
+accompanied by a thorough analysis of error patterns. We hope this work
+inspires practitioners to more carefully ablate number tokenization-related
+choices when working towards general models of numerical reasoning. 
+
+Title: AraPoemBERT: A Pretrained Language Model for Arabic Poetry Analysis 
+Summary: Arabic poetry, with its rich linguistic features and profound cultural
+significance, presents a unique challenge to the Natural Language Processing
+(NLP) field. The complexity of its structure and context necessitates advanced
+computational models for accurate analysis. In this paper, we introduce
+AraPoemBERT, an Arabic language model pretrained exclusively on Arabic poetry
+text. To demonstrate the effectiveness of the proposed model, we compared
+AraPoemBERT with 5 different Arabic language models on various NLP tasks
+related to Arabic poetry. The new model outperformed all other models and
+achieved state-of-the-art results in most of the downstream tasks. AraPoemBERT
+achieved unprecedented accuracy in two out of three novel tasks: poet's gender
+classification (99.34\% accuracy), and poetry sub-meter classification (97.79\%
+accuracy). In addition, the model achieved an accuracy score in poems' rhyme
+classification (97.73\% accuracy) which is almost equivalent to the best score
+reported in this study. Moreover, the proposed model significantly outperformed
+previous work and other comparative models in the tasks of poems' sentiment
+analysis, achieving an accuracy of 78.95\%, and poetry meter classification
+(99.03\% accuracy), while significantly expanding the scope of these two
+problems. The dataset used in this study, contains more than 2.09 million
+verses collected from online sources, each associated with various attributes
+such as meter, sub-meter, poet, rhyme, and topic. The results demonstrate the
+effectiveness of the proposed model in understanding and analyzing Arabic
+poetry, achieving state-of-the-art results in several tasks and outperforming
+previous works and other language models included in the study. AraPoemBERT
+model is publicly available on \url{https://huggingface.co/faisalq}. 
+
+"
+What specific version of the LLaMA model was used in the ablation study for the Bryndza submission to the ClimateActivism 2024 shared task?,abs-2402.06549v1,Negative / Unanswerable Questions,"Title: Bryndza at ClimateActivism 2024: Stance, Target and Hate Event Detection
+  via Retrieval-Augmented GPT-4 and LLaMA 
+Summary: This study details our approach for the CASE 2024 Shared Task on Climate
+Activism Stance and Hate Event Detection, focusing on Hate Speech Detection,
+Hate Speech Target Identification, and Stance Detection as classification
+challenges. We explored the capability of Large Language Models (LLMs),
+particularly GPT-4, in zero- or few-shot settings enhanced by retrieval
+augmentation and re-ranking for Tweet classification. Our goal was to determine
+if LLMs could match or surpass traditional methods in this context.
+  We conducted an ablation study with LLaMA for comparison, and our results
+indicate that our models significantly outperformed the baselines, securing
+second place in the Target Detection task. The code for our submission is
+available at https://github.com/NaiveNeuron/bryndza-case-2024 
+
+"
+"In the 'Recurrent Drafter' paper, what does the acronym ReDrafter stand for?",abs-2403.09919v5,Direct Fact Retrieval & Definition Questions,"Title: Recurrent Drafter for Fast Speculative Decoding in Large Language Models 
+Summary: We present Recurrent Drafter (ReDrafter), an advanced speculative decoding
+approach that achieves state-of-the-art speedup for large language models
+(LLMs) inference. The performance gains are driven by three key aspects: (1)
+leveraging a recurrent neural network (RNN) as the draft model conditioning on
+LLM's hidden states, (2) applying a dynamic tree attention algorithm over beam
+search results to eliminate duplicated prefixes in candidate sequences, and (3)
+training through knowledge distillation from the LLM. ReDrafter accelerates
+Vicuna inference in MT-Bench by up to 2.8x with a PyTorch implementation on
+Nvidia H100 GPUs. To demonstrate its practicality in real environments, we also
+validated its effectiveness for on-device applications by implementing the
+approach in MLX and benchmarking performance on Metal GPUs in Apple Silicon
+chips, achieving up to 2.3x speedup. 
+
+"
+What is the main purpose of the MExGen framework proposed in 'Multi-Level Explanations for Generative Language Models'?,abs-2403.14459v1,Summarization / Purpose Identification Questions,"Title: Multi-Level Explanations for Generative Language Models 
+Summary: Perturbation-based explanation methods such as LIME and SHAP are commonly
+applied to text classification. This work focuses on their extension to
+generative language models. To address the challenges of text as output and
+long text inputs, we propose a general framework called MExGen that can be
+instantiated with different attribution algorithms. To handle text output, we
+introduce the notion of scalarizers for mapping text to real numbers and
+investigate multiple possibilities. To handle long inputs, we take a
+multi-level approach, proceeding from coarser levels of granularity to finer
+ones, and focus on algorithms with linear scaling in model queries. We conduct
+a systematic evaluation, both automated and human, of perturbation-based
+attribution methods for summarization and context-grounded question answering.
+The results show that our framework can provide more locally faithful
+explanations of generated outputs. 
+
+"
+Compare the methods for defending against malicious LLM use in 'Defending LLMs against Jailbreaking Attacks via Backtranslation' and the adversarial attack method in 'LinkPrompt'. How do their core mechanisms operate in opposition to each other?,"abs-2402.16459v3,abs-2403.16432v3",Comparative & Contrastive Questions,"Title: Defending LLMs against Jailbreaking Attacks via Backtranslation 
+Summary: Although many large language models (LLMs) have been trained to refuse
+harmful requests, they are still vulnerable to jailbreaking attacks which
+rewrite the original prompt to conceal its harmful intent. In this paper, we
+propose a new method for defending LLMs against jailbreaking attacks by
+``backtranslation''. Specifically, given an initial response generated by the
+target LLM from an input prompt, our backtranslation prompts a language model
+to infer an input prompt that can lead to the response. The inferred prompt is
+called the backtranslated prompt which tends to reveal the actual intent of the
+original prompt, since it is generated based on the LLM's response and not
+directly manipulated by the attacker. We then run the target LLM again on the
+backtranslated prompt, and we refuse the original prompt if the model refuses
+the backtranslated prompt. We explain that the proposed defense provides
+several benefits on its effectiveness and efficiency. We empirically
+demonstrate that our defense significantly outperforms the baselines, in the
+cases that are hard for the baselines, and our defense also has little impact
+on the generation quality for benign input prompts. Our implementation is based
+on our library for LLM jailbreaking defense algorithms at
+\url{https://github.com/YihanWang617/llm-jailbreaking-defense}, and the code
+for reproducing our experiments is available at
+\url{https://github.com/YihanWang617/LLM-Jailbreaking-Defense-Backtranslation}. 
+
+Title: $\textit{LinkPrompt}$: Natural and Universal Adversarial Attacks on
+  Prompt-based Language Models 
+Summary: Prompt-based learning is a new language model training paradigm that adapts
+the Pre-trained Language Models (PLMs) to downstream tasks, which revitalizes
+the performance benchmarks across various natural language processing (NLP)
+tasks. Instead of using a fixed prompt template to fine-tune the model, some
+research demonstrates the effectiveness of searching for the prompt via
+optimization. Such prompt optimization process of prompt-based learning on PLMs
+also gives insight into generating adversarial prompts to mislead the model,
+raising concerns about the adversarial vulnerability of this paradigm. Recent
+studies have shown that universal adversarial triggers (UATs) can be generated
+to alter not only the predictions of the target PLMs but also the prediction of
+corresponding Prompt-based Fine-tuning Models (PFMs) under the prompt-based
+learning paradigm. However, UATs found in previous works are often unreadable
+tokens or characters and can be easily distinguished from natural texts with
+adaptive defenses. In this work, we consider the naturalness of the UATs and
+develop $\textit{LinkPrompt}$, an adversarial attack algorithm to generate UATs
+by a gradient-based beam search algorithm that not only effectively attacks the
+target PLMs and PFMs but also maintains the naturalness among the trigger
+tokens. Extensive results demonstrate the effectiveness of
+$\textit{LinkPrompt}$, as well as the transferability of UATs generated by
+$\textit{LinkPrompt}$ to open-sourced Large Language Model (LLM) Llama2 and
+API-accessed LLM GPT-3.5-turbo. The resource is available at
+$\href{https://github.com/SavannahXu79/LinkPrompt}{https://github.com/SavannahXu79/LinkPrompt}$. 
+
+"
+"The 'Butterfly Effect of Altering Prompts' paper shows that small prompt changes can cause large output shifts. How does this finding challenge the reliability of using 'worst prompt performance' as a stable metric, as proposed in the 'On the Worst Prompt Performance of Large Language Models' paper?","abs-2401.03729v3,abs-2406.10248v4",Synthesis & Multi-Hop Reasoning Questions,"Title: The Butterfly Effect of Altering Prompts: How Small Changes and
+  Jailbreaks Affect Large Language Model Performance 
+Summary: Large Language Models (LLMs) are regularly being used to label data across
+many domains and for myriad tasks. By simply asking the LLM for an answer, or
+``prompting,'' practitioners are able to use LLMs to quickly get a response for
+an arbitrary task. This prompting is done through a series of decisions by the
+practitioner, from simple wording of the prompt, to requesting the output in a
+certain data format, to jailbreaking in the case of prompts that address more
+sensitive topics. In this work, we ask: do variations in the way a prompt is
+constructed change the ultimate decision of the LLM? We answer this using a
+series of prompt variations across a variety of text classification tasks. We
+find that even the smallest of perturbations, such as adding a space at the end
+of a prompt, can cause the LLM to change its answer. Further, we find that
+requesting responses in XML and commonly used jailbreaks can have cataclysmic
+effects on the data labeled by LLMs. 
+
+Title: On the Worst Prompt Performance of Large Language Models 
+Summary: The performance of large language models (LLMs) is acutely sensitive to the
+phrasing of prompts, which raises significant concerns about their reliability
+in real-world scenarios. Existing studies often divide prompts into task-level
+instructions and case-level inputs and primarily focus on evaluating and
+improving robustness against variations in tasks-level instructions. However,
+this setup fails to fully address the diversity of real-world user queries and
+assumes the existence of task-specific datasets. To address these limitations,
+we introduce RobustAlpacaEval, a new benchmark that consists of semantically
+equivalent case-level queries and emphasizes the importance of using the worst
+prompt performance to gauge the lower bound of model performance. Extensive
+experiments on RobustAlpacaEval with ChatGPT and six open-source LLMs from the
+Llama, Mistral, and Gemma families uncover substantial variability in model
+performance; for instance, a difference of 45.48% between the worst and best
+performance for the Llama-2-70B-chat model, with its worst performance dipping
+as low as 9.38%. We further illustrate the difficulty in identifying the worst
+prompt from both model-agnostic and model-dependent perspectives, emphasizing
+the absence of a shortcut to characterize the worst prompt. We also attempt to
+enhance the worst prompt performance using existing prompt engineering and
+prompt consistency methods, but find that their impact is limited. These
+findings underscore the need to create more resilient LLMs that can maintain
+high performance across diverse prompts. Data and code are available at
+https://github.com/cbwbuaa/On-the-Worst-Prompt- Performance-of-LLMs. 
+
+"
+"In the TMPT framework for multi-modal stance detection, what was the average file size of the images used in the new datasets?",abs-2402.14298v3,Negative / Unanswerable Questions,"Title: Multi-modal Stance Detection: New Datasets and Model 
+Summary: Stance detection is a challenging task that aims to identify public opinion
+from social media platforms with respect to specific targets. Previous work on
+stance detection largely focused on pure texts. In this paper, we study
+multi-modal stance detection for tweets consisting of texts and images, which
+are prevalent in today's fast-growing social media platforms where people often
+post multi-modal messages. To this end, we create five new multi-modal stance
+detection datasets of different domains based on Twitter, in which each example
+consists of a text and an image. In addition, we propose a simple yet effective
+Targeted Multi-modal Prompt Tuning framework (TMPT), where target information
+is leveraged to learn multi-modal stance features from textual and visual
+modalities. Experimental results on our five benchmark datasets show that the
+proposed TMPT achieves state-of-the-art performance in multi-modal stance
+detection. 
+
+"
+"In the paper 'Information Flow Routes', what analysis method is used to efficiently uncover circuits with just a single forward pass, in contrast to activation patching?",abs-2403.00824v2,Direct Fact Retrieval & Definition Questions,"Title: Information Flow Routes: Automatically Interpreting Language Models at
+  Scale 
+Summary: Information flows by routes inside the network via mechanisms implemented in
+the model. These routes can be represented as graphs where nodes correspond to
+token representations and edges to operations inside the network. We
+automatically build these graphs in a top-down manner, for each prediction
+leaving only the most important nodes and edges. In contrast to the existing
+workflows relying on activation patching, we do this through attribution: this
+allows us to efficiently uncover existing circuits with just a single forward
+pass. Additionally, the applicability of our method is far beyond patching: we
+do not need a human to carefully design prediction templates, and we can
+extract information flow routes for any prediction (not just the ones among the
+allowed templates). As a result, we can talk about model behavior in general,
+for specific types of predictions, or different domains. We experiment with
+Llama 2 and show that the role of some attention heads is overall important,
+e.g. previous token heads and subword merging heads. Next, we find similarities
+in Llama 2 behavior when handling tokens of the same part of speech. Finally,
+we show that some model components can be specialized on domains such as coding
+or multilingual texts. 
+
+"
+What is the core issue with existing evaluation methods for scientific summarization that the 'Rethinking Scientific Summarization Evaluation' paper aims to address?,abs-2402.14359v1,Summarization / Purpose Identification Questions,"Title: Rethinking Scientific Summarization Evaluation: Grounding Explainable
+  Metrics on Facet-aware Benchmark 
+Summary: The summarization capabilities of pretrained and large language models (LLMs)
+have been widely validated in general areas, but their use in scientific
+corpus, which involves complex sentences and specialized knowledge, has been
+less assessed. This paper presents conceptual and experimental analyses of
+scientific summarization, highlighting the inadequacies of traditional
+evaluation methods, such as $n$-gram, embedding comparison, and QA,
+particularly in providing explanations, grasping scientific concepts, or
+identifying key content. Subsequently, we introduce the Facet-aware Metric
+(FM), employing LLMs for advanced semantic matching to evaluate summaries based
+on different aspects. This facet-aware approach offers a thorough evaluation of
+abstracts by decomposing the evaluation task into simpler subtasks.Recognizing
+the absence of an evaluation benchmark in this domain, we curate a Facet-based
+scientific summarization Dataset (FD) with facet-level annotations. Our
+findings confirm that FM offers a more logical approach to evaluating
+scientific summaries. In addition, fine-tuned smaller models can compete with
+LLMs in scientific contexts, while LLMs have limitations in learning from
+in-context information in scientific domains. This suggests an area for future
+enhancement of LLMs. 
+
+"
+"Contrast the goal of the SKETCH framework with that of the DRAGIN framework. While both enhance Retrieval-Augmented Generation, what distinct aspect of the RAG pipeline does each focus on?","abs-2412.15443v1,abs-2403.10081v3",Comparative & Contrastive Questions,"Title: SKETCH: Structured Knowledge Enhanced Text Comprehension for Holistic
+  Retrieval 
+Summary: Retrieval-Augmented Generation (RAG) systems have become pivotal in
+leveraging vast corpora to generate informed and contextually relevant
+responses, notably reducing hallucinations in Large Language Models. Despite
+significant advancements, these systems struggle to efficiently process and
+retrieve information from large datasets while maintaining a comprehensive
+understanding of the context. This paper introduces SKETCH, a novel methodology
+that enhances the RAG retrieval process by integrating semantic text retrieval
+with knowledge graphs, thereby merging structured and unstructured data for a
+more holistic comprehension. SKETCH, demonstrates substantial improvements in
+retrieval performance and maintains superior context integrity compared to
+traditional methods. Evaluated across four diverse datasets: QuALITY, QASPER,
+NarrativeQA, and Italian Cuisine-SKETCH consistently outperforms baseline
+approaches on key RAGAS metrics such as answer_relevancy, faithfulness,
+context_precision and context_recall. Notably, on the Italian Cuisine dataset,
+SKETCH achieved an answer relevancy of 0.94 and a context precision of 0.99,
+representing the highest performance across all evaluated metrics. These
+results highlight SKETCH's capability in delivering more accurate and
+contextually relevant responses, setting new benchmarks for future retrieval
+systems. 
+
+Title: DRAGIN: Dynamic Retrieval Augmented Generation based on the Information
+  Needs of Large Language Models 
+Summary: Dynamic retrieval augmented generation (RAG) paradigm actively decides when
+and what to retrieve during the text generation process of Large Language
+Models (LLMs). There are two key elements of this paradigm: identifying the
+optimal moment to activate the retrieval module (deciding when to retrieve) and
+crafting the appropriate query once retrieval is triggered (determining what to
+retrieve). However, current dynamic RAG methods fall short in both aspects.
+Firstly, the strategies for deciding when to retrieve often rely on static
+rules. Moreover, the strategies for deciding what to retrieve typically limit
+themselves to the LLM's most recent sentence or the last few tokens, while the
+LLM's real-time information needs may span across the entire context. To
+overcome these limitations, we introduce a new framework, DRAGIN, i.e., Dynamic
+Retrieval Augmented Generation based on the real-time Information Needs of
+LLMs. Our framework is specifically designed to make decisions on when and what
+to retrieve based on the LLM's real-time information needs during the text
+generation process. We evaluate DRAGIN along with existing methods
+comprehensively over 4 knowledge-intensive generation datasets. Experimental
+results show that DRAGIN achieves superior performance on all tasks,
+demonstrating the effectiveness of our method. We have open-sourced all the
+code, data, and models in GitHub: https://github.com/oneal2000/DRAGIN/tree/main 
+
+"
+"Given that 'MMLU-Pro' was designed to be more challenging and reasoning-focused, how could the 'Retrieved In-Context Principles' framework be used to improve a model's performance on MMLU-Pro by having a teacher model analyze failures and generate principles for complex reasoning?","abs-2406.01574v6,abs-2407.05682v1",Synthesis & Multi-Hop Reasoning Questions,"Title: MMLU-Pro: A More Robust and Challenging Multi-Task Language
+  Understanding Benchmark 
+Summary: In the age of large-scale language models, benchmarks like the Massive
+Multitask Language Understanding (MMLU) have been pivotal in pushing the
+boundaries of what AI can achieve in language comprehension and reasoning
+across diverse domains. However, as models continue to improve, their
+performance on these benchmarks has begun to plateau, making it increasingly
+difficult to discern differences in model capabilities. This paper introduces
+MMLU-Pro, an enhanced dataset designed to extend the mostly knowledge-driven
+MMLU benchmark by integrating more challenging, reasoning-focused questions and
+expanding the choice set from four to ten options. Additionally, MMLU-Pro
+eliminates the trivial and noisy questions in MMLU. Our experimental results
+show that MMLU-Pro not only raises the challenge, causing a significant drop in
+accuracy by 16% to 33% compared to MMLU but also demonstrates greater stability
+under varying prompts. With 24 different prompt styles tested, the sensitivity
+of model scores to prompt variations decreased from 4-5% in MMLU to just 2% in
+MMLU-Pro. Additionally, we found that models utilizing Chain of Thought (CoT)
+reasoning achieved better performance on MMLU-Pro compared to direct answering,
+which is in stark contrast to the findings on the original MMLU, indicating
+that MMLU-Pro includes more complex reasoning questions. Our assessments
+confirm that MMLU-Pro is a more discriminative benchmark to better track
+progress in the field. 
+
+Title: Retrieved In-Context Principles from Previous Mistakes 
+Summary: In-context learning (ICL) has been instrumental in adapting Large Language
+Models (LLMs) to downstream tasks using correct input-output examples. Recent
+advances have attempted to improve model performance through principles derived
+from mistakes, yet these approaches suffer from lack of customization and
+inadequate error coverage. To address these limitations, we propose Retrieved
+In-Context Principles (RICP), a novel teacher-student framework. In RICP, the
+teacher model analyzes mistakes from the student model to generate reasons and
+insights for preventing similar mistakes. These mistakes are clustered based on
+their underlying reasons for developing task-level principles, enhancing the
+error coverage of principles. During inference, the most relevant mistakes for
+each question are retrieved to create question-level principles, improving the
+customization of the provided guidance. RICP is orthogonal to existing
+prompting methods and does not require intervention from the teacher model
+during inference. Experimental results across seven reasoning benchmarks reveal
+that RICP effectively enhances performance when applied to various prompting
+strategies. 
+
+"
+"According to the 'LlamaFactory' paper, how many individual LLMs does the unified framework support?",abs-2403.13372v4,Negative / Unanswerable Questions,"Title: LlamaFactory: Unified Efficient Fine-Tuning of 100+ Language Models 
+Summary: Efficient fine-tuning is vital for adapting large language models (LLMs) to
+downstream tasks. However, it requires non-trivial efforts to implement these
+methods on different models. We present LlamaFactory, a unified framework that
+integrates a suite of cutting-edge efficient training methods. It provides a
+solution for flexibly customizing the fine-tuning of 100+ LLMs without the need
+for coding through the built-in web UI LlamaBoard. We empirically validate the
+efficiency and effectiveness of our framework on language modeling and text
+generation tasks. It has been released at
+https://github.com/hiyouga/LLaMA-Factory and received over 25,000 stars and
+3,000 forks. 
+
+"
+,,,

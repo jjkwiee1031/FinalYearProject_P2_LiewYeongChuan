@@ -1,0 +1,563 @@
+Question,Source Article Index,Question Type,Summary,prediction,documentIDs
+"According to the abstract, what is the cost per action for the Steward web automation tool before caching is applied?",abs-2409.15441v1,Direct Fact Retrieval & Definition Questions,"Title: Steward: Natural Language Web Automation 
+Summary: Recently, large language models (LLMs) have demonstrated exceptional
+capabilities in serving as the foundation for AI assistants. One emerging
+application of LLMs, navigating through websites and interacting with UI
+elements across various web pages, remains somewhat underexplored. We introduce
+Steward, a novel LLM-powered web automation tool designed to serve as a
+cost-effective, scalable, end-to-end solution for automating web interactions.
+Traditional browser automation frameworks like Selenium, Puppeteer, and
+Playwright are not scalable for extensive web interaction tasks, such as
+studying recommendation algorithms on platforms like YouTube and Twitter. These
+frameworks require manual coding of interactions, limiting their utility in
+large-scale or dynamic contexts. Steward addresses these limitations by
+integrating LLM capabilities with browser automation, allowing for natural
+language-driven interaction with websites. Steward operates by receiving
+natural language instructions and reactively planning and executing a sequence
+of actions on websites, looping until completion, making it a practical tool
+for developers and researchers to use. It achieves high efficiency, completing
+actions in 8.52 to 10.14 seconds at a cost of $0.028 per action or an average
+of $0.18 per task, which is further reduced to 4.8 seconds and $0.022 through a
+caching mechanism. It runs tasks on real websites with a 40% completion success
+rate. We discuss various design and implementation challenges, including state
+representation, action sequence selection, system responsiveness, detecting
+task completion, and caching implementation. 
+
+",This is a test answer.,abs-2409.15441v1
+What does the acronym LoReTTa stand for in the context of training multimodal transformers?,abs-2305.14243v5,Direct Fact Retrieval & Definition Questions,"Title: Training Transitive and Commutative Multimodal Transformers with LoReTTa 
+Summary: Training multimodal foundation models is challenging due to the limited
+availability of multimodal datasets. While many public datasets pair images
+with text, few combine images with audio or text with audio. Even rarer are
+datasets that align all three modalities at once. Critical domains such as
+healthcare, infrastructure, or transportation are particularly affected by
+missing modalities. This makes it difficult to integrate all modalities into a
+large pre-trained neural network that can be used out-of-the-box or fine-tuned
+for different downstream tasks. We introduce LoReTTa (Linking mOdalities with a
+tRansitive and commutativE pre-Training sTrAtegy) to address this understudied
+problem. Our self-supervised framework unifies causal modeling and masked
+modeling with the rules of commutativity and transitivity. This allows us to
+transition within and between modalities. As a result, our pre-trained models
+are better at exploring the true underlying joint probability distribution.
+Given a dataset containing only the disjoint combinations (A, B) and (B, C),
+LoReTTa can model the relation A <-> C with A <-> B <-> C. In particular, we
+show that a transformer pre-trained with LoReTTa can handle any mixture of
+modalities at inference time, including the never-seen pair (A, C) and the
+triplet (A, B, C). We extensively evaluate our approach on a synthetic,
+medical, and reinforcement learning dataset. Across different domains, our
+universal multimodal transformer consistently outperforms strong baselines such
+as GPT, BERT, and CLIP on tasks involving the missing modality tuple. 
+
+",This is a test answer.,abs-1802.08864v1
+What is the full name of the PBT method proposed in the paper 'Accelerating and Improving AlphaZero Using Population Based Training'?,abs-2003.06212v1,Direct Fact Retrieval & Definition Questions,"Title: Accelerating and Improving AlphaZero Using Population Based Training 
+Summary: AlphaZero has been very successful in many games. Unfortunately, it still
+consumes a huge amount of computing resources, the majority of which is spent
+in self-play. Hyperparameter tuning exacerbates the training cost since each
+hyperparameter configuration requires its own time to train one run, during
+which it will generate its own self-play records. As a result, multiple runs
+are usually needed for different hyperparameter configurations. This paper
+proposes using population based training (PBT) to help tune hyperparameters
+dynamically and improve strength during training time. Another significant
+advantage is that this method requires a single run only, while incurring a
+small additional time cost, since the time for generating self-play records
+remains unchanged though the time for optimization is increased following the
+AlphaZero training algorithm. In our experiments for 9x9 Go, the PBT method is
+able to achieve a higher win rate for 9x9 Go than the baselines, each with its
+own hyperparameter configuration and trained individually. For 19x19 Go, with
+PBT, we are able to obtain improvements in playing strength. Specifically, the
+PBT agent can obtain up to 74% win rate against ELF OpenGo, an open-source
+state-of-the-art AlphaZero program using a neural network of a comparable
+capacity. This is compared to a saturated non-PBT agent, which achieves a win
+rate of 47% against ELF OpenGo under the same circumstances. 
+
+",This is a test answer.,abs-2109.01013v1
+What does the acronym GIKT stand for in the paper about knowledge tracing?,abs-2009.05991v1,Direct Fact Retrieval & Definition Questions,"Title: GIKT: A Graph-based Interaction Model for Knowledge Tracing 
+Summary: With the rapid development in online education, knowledge tracing (KT) has
+become a fundamental problem which traces students' knowledge status and
+predicts their performance on new questions. Questions are often numerous in
+online education systems, and are always associated with much fewer skills.
+However, the previous literature fails to involve question information together
+with high-order question-skill correlations, which is mostly limited by data
+sparsity and multi-skill problems. From the model perspective, previous models
+can hardly capture the long-term dependency of student exercise history, and
+cannot model the interactions between student-questions, and student-skills in
+a consistent way. In this paper, we propose a Graph-based Interaction model for
+Knowledge Tracing (GIKT) to tackle the above probems. More specifically, GIKT
+utilizes graph convolutional network (GCN) to substantially incorporate
+question-skill correlations via embedding propagation. Besides, considering
+that relevant questions are usually scattered throughout the exercise history,
+and that question and skill are just different instantiations of knowledge,
+GIKT generalizes the degree of students' master of the question to the
+interactions between the student's current state, the student's history related
+exercises, the target question, and related skills. Experiments on three
+datasets demonstrate that GIKT achieves the new state-of-the-art performance,
+with at least 1% absolute AUC improvement. 
+
+",This is a test answer.,abs-2009.05991v1
+What is the primary problem that the paper 'Learning Action Models from Disordered and Noisy Plan Traces' aims to solve?,abs-1908.09800v2,Summarization / Purpose Identification Questions,"Title: Learning Action Models from Disordered and Noisy Plan Traces 
+Summary: There is increasing awareness in the planning community that the burden of
+specifying complete domain models is too high, which impedes the applicability
+of planning technology in many real-world domains. Although there have many
+learning systems that help automatically learning domain models, most existing
+work assumes that the input traces are completely correct. A more realistic
+situation is that the plan traces are disordered and noisy, such as plan traces
+described by natural language. In this paper we propose and evaluate an
+approach for doing this. Our approach takes as input a set of plan traces with
+disordered actions and noise and outputs action models that can best explain
+the plan traces. We use a MAX-SAT framework for learning, where the constraints
+are derived from the given plan traces. Unlike traditional action models
+learners, the states in plan traces can be partially observable and noisy as
+well as the actions in plan traces can be disordered and parallel. We
+demonstrate the effectiveness of our approach through a systematic empirical
+evaluation with both IPC domains and the real-world dataset extracted from
+natural language documents. 
+
+",This is a test answer.,abs-1908.09800v2
+What is the main goal of the application described in the paper 'Discovering and Explaining Driver Behaviour under HoS Regulations'?,abs-2301.05082v1,Summarization / Purpose Identification Questions,"Title: Discovering and Explaining Driver Behaviour under HoS Regulations 
+Summary: World wide transport authorities are imposing complex Hours of Service
+regulations to drivers, which constraint the amount of working, driving and
+resting time when delivering a service. As a consequence, transport companies
+are responsible not only of scheduling driving plans aligned with laws that
+define the legal behaviour of a driver, but also of monitoring and identifying
+as soon as possible problematic patterns that can incur in costs due to
+sanctions. Transport experts are frequently in charge of many drivers and lack
+time to analyse the vast amount of data recorded by the onboard sensors, and
+companies have grown accustomed to pay sanctions rather than predict and
+forestall wrongdoings. This paper exposes an application for summarising raw
+driver activity logs according to these regulations and for explaining driver
+behaviour in a human readable format. The system employs planning, constraint,
+and clustering techniques to extract and describe what the driver has been
+doing while identifying infractions and the activities that originate them.
+Furthermore, it groups drivers based on similar driving patterns. An
+experimentation in real world data indicates that recurring driving patterns
+can be clustered from short basic driving sequences to whole drivers working
+days. 
+
+",This is a test answer.,abs-2301.05082v1
+What is the core purpose of the LAMBADA algorithm as described in its abstract?,abs-2212.13894v2,Summarization / Purpose Identification Questions,"Title: LAMBADA: Backward Chaining for Automated Reasoning in Natural Language 
+Summary: Remarkable progress has been made on automated reasoning with natural text,
+by using Language Models (LMs) and methods such as Chain-of-Thought and
+Selection-Inference. These techniques search for proofs in the forward
+direction from axioms to the conclusion, which suffers from a combinatorial
+explosion of the search space, and thus high failure rates for problems
+requiring longer chains of reasoning. The classical automated reasoning
+literature has shown that reasoning in the backward direction (i.e. from the
+intended conclusion to supporting axioms) is significantly more efficient at
+proof-finding. Importing this intuition into the LM setting, we develop a
+Backward Chaining algorithm, called LAMBADA, that decomposes reasoning into
+four sub-modules. These sub-modules are simply implemented by few-shot prompted
+LM inference. We show that LAMBADA achieves sizable accuracy boosts over
+state-of-the-art forward reasoning methods on challenging logical reasoning
+datasets, particularly when deep and accurate proof chains are required. 
+
+",This is a test answer.,abs-2212.13894v2
+What is the main objective of the 'General Video Game AI: Learning from Screen Capture' paper?,abs-1704.06945v1,Summarization / Purpose Identification Questions,"Title: General Video Game AI: Learning from Screen Capture 
+Summary: General Video Game Artificial Intelligence is a general game playing
+framework for Artificial General Intelligence research in the video-games
+domain. In this paper, we propose for the first time a screen capture learning
+agent for General Video Game AI framework. A Deep Q-Network algorithm was
+applied and improved to develop an agent capable of learning to play different
+games in the framework. After testing this algorithm using various games of
+different categories and difficulty levels, the results suggest that our
+proposed screen capture learning agent has the potential to learn many
+different games using only a single learning algorithm. 
+
+",This is a test answer.,abs-1704.06945v1
+Compare the approaches of 'Steward: Natural Language Web Automation' (abs-2409.15441v1) and 'AUTONODE' (abs-2403.10171v2) for automating web interactions. What are the key differences in their methodologies?,"abs-2409.15441v1,abs-2403.10171v2",Comparative & Contrastive Questions,"Title: Steward: Natural Language Web Automation 
+Summary: Recently, large language models (LLMs) have demonstrated exceptional
+capabilities in serving as the foundation for AI assistants. One emerging
+application of LLMs, navigating through websites and interacting with UI
+elements across various web pages, remains somewhat underexplored. We introduce
+Steward, a novel LLM-powered web automation tool designed to serve as a
+cost-effective, scalable, end-to-end solution for automating web interactions.
+Traditional browser automation frameworks like Selenium, Puppeteer, and
+Playwright are not scalable for extensive web interaction tasks, such as
+studying recommendation algorithms on platforms like YouTube and Twitter. These
+frameworks require manual coding of interactions, limiting their utility in
+large-scale or dynamic contexts. Steward addresses these limitations by
+integrating LLM capabilities with browser automation, allowing for natural
+language-driven interaction with websites. Steward operates by receiving
+natural language instructions and reactively planning and executing a sequence
+of actions on websites, looping until completion, making it a practical tool
+for developers and researchers to use. It achieves high efficiency, completing
+actions in 8.52 to 10.14 seconds at a cost of $0.028 per action or an average
+of $0.18 per task, which is further reduced to 4.8 seconds and $0.022 through a
+caching mechanism. It runs tasks on real websites with a 40% completion success
+rate. We discuss various design and implementation challenges, including state
+representation, action sequence selection, system responsiveness, detecting
+task completion, and caching implementation. 
+
+Title: AUTONODE: A Neuro-Graphic Self-Learnable Engine for Cognitive GUI
+  Automation 
+Summary: In recent advancements within the domain of Large Language Models (LLMs),
+there has been a notable emergence of agents capable of addressing Robotic
+Process Automation (RPA) challenges through enhanced cognitive capabilities and
+sophisticated reasoning. This development heralds a new era of scalability and
+human-like adaptability in goal attainment. In this context, we introduce
+AUTONODE (Autonomous User-interface Transformation through Online Neuro-graphic
+Operations and Deep Exploration). AUTONODE employs advanced neuro-graphical
+techniques to facilitate autonomous navigation and task execution on web
+interfaces, thereby obviating the necessity for predefined scripts or manual
+intervention. Our engine empowers agents to comprehend and implement complex
+workflows, adapting to dynamic web environments with unparalleled efficiency.
+Our methodology synergizes cognitive functionalities with robotic automation,
+endowing AUTONODE with the ability to learn from experience. We have integrated
+an exploratory module, DoRA (Discovery and mapping Operation for graph
+Retrieval Agent), which is instrumental in constructing a knowledge graph that
+the engine utilizes to optimize its actions and achieve objectives with minimal
+supervision. The versatility and efficacy of AUTONODE are demonstrated through
+a series of experiments, highlighting its proficiency in managing a diverse
+array of web-based tasks, ranging from data extraction to transaction
+processing. 
+
+",This is a test answer.,abs-2409.15441v1
+"Contrast the primary focus of the ontology research in 'Scene learning, recognition and similarity detection in a fuzzy ontology' (abs-1709.09433v1) with that in 'Merging of Ontologies Through Merging of Their Rules' (abs-2001.04326v1).","abs-1709.09433v1,abs-2001.04326v1",Comparative & Contrastive Questions,"Title: Scene learning, recognition and similarity detection in a fuzzy ontology
+  via human examples 
+Summary: This paper introduces a Fuzzy Logic framework for scene learning, recognition
+and similarity detection, where scenes are taught via human examples. The
+framework allows a robot to: (i) deal with the intrinsic vagueness associated
+with determining spatial relations among objects; (ii) infer similarities and
+dissimilarities in a set of scenes, and represent them in a hierarchical
+structure represented in a Fuzzy ontology. In this paper, we briefly formalize
+our approach and we provide a few use cases by way of illustration.
+Nevertheless, we discuss how the framework can be used in real-world scenarios. 
+
+Title: Merging of Ontologies Through Merging of Their Rules 
+Summary: Ontology merging is important, but not always effective. The main reason, why
+ontology merging is not effective, is that ontology merging is performed
+without considering goals. Goals define the way, in which ontologies to be
+merged more effectively. The paper illustrates ontology merging by means of
+rules, which are generated from these ontologies. This is necessary for further
+use in expert systems. 
+
+",This is a test answer.,abs-1709.09433v1
+"How do the goals of the 'Voyager' agent (abs-2305.16291v2) and the agents in 'Cooperative Open-ended Learning Framework' (abs-2302.04831v4) differ, despite both operating in open-ended learning environments?","abs-2305.16291v2,abs-2302.04831v4",Comparative & Contrastive Questions,"Title: Voyager: An Open-Ended Embodied Agent with Large Language Models 
+Summary: We introduce Voyager, the first LLM-powered embodied lifelong learning agent
+in Minecraft that continuously explores the world, acquires diverse skills, and
+makes novel discoveries without human intervention. Voyager consists of three
+key components: 1) an automatic curriculum that maximizes exploration, 2) an
+ever-growing skill library of executable code for storing and retrieving
+complex behaviors, and 3) a new iterative prompting mechanism that incorporates
+environment feedback, execution errors, and self-verification for program
+improvement. Voyager interacts with GPT-4 via blackbox queries, which bypasses
+the need for model parameter fine-tuning. The skills developed by Voyager are
+temporally extended, interpretable, and compositional, which compounds the
+agent's abilities rapidly and alleviates catastrophic forgetting. Empirically,
+Voyager shows strong in-context lifelong learning capability and exhibits
+exceptional proficiency in playing Minecraft. It obtains 3.3x more unique
+items, travels 2.3x longer distances, and unlocks key tech tree milestones up
+to 15.3x faster than prior SOTA. Voyager is able to utilize the learned skill
+library in a new Minecraft world to solve novel tasks from scratch, while other
+techniques struggle to generalize. We open-source our full codebase and prompts
+at https://voyager.minedojo.org/. 
+
+Title: Cooperative Open-ended Learning Framework for Zero-shot Coordination 
+Summary: Zero-shot coordination in cooperative artificial intelligence (AI) remains a
+significant challenge, which means effectively coordinating with a wide range
+of unseen partners. Previous algorithms have attempted to address this
+challenge by optimizing fixed objectives within a population to improve
+strategy or behaviour diversity. However, these approaches can result in a loss
+of learning and an inability to cooperate with certain strategies within the
+population, known as cooperative incompatibility. To address this issue, we
+propose the Cooperative Open-ended LEarning (COLE) framework, which constructs
+open-ended objectives in cooperative games with two players from the
+perspective of graph theory to assess and identify the cooperative ability of
+each strategy. We further specify the framework and propose a practical
+algorithm that leverages knowledge from game theory and graph theory.
+Furthermore, an analysis of the learning process of the algorithm shows that it
+can efficiently overcome cooperative incompatibility. The experimental results
+in the Overcooked game environment demonstrate that our method outperforms
+current state-of-the-art methods when coordinating with different-level
+partners. Our demo is available at https://sites.google.com/view/cole-2023. 
+
+",This is a test answer.,abs-2305.16291v2
+Compare the methods used for handling uncertainty in 'Fuzzy Approximate Reasoning Method based on Least Common Multiple' (abs-2010.05453v1) and 'Modeling Uncertainty and Imprecision in Nonmonotonic Reasoning using Fuzzy Numbers' (abs-2001.01781v1).,"abs-2010.05453v1,abs-2001.01781v1",Comparative & Contrastive Questions,"Title: Fuzzy Approximate Reasoning Method based on Least Common Multiple and
+  its Property Analysis 
+Summary: This paper shows a novel fuzzy approximate reasoning method based on the
+least common multiple (LCM). Its fundamental idea is to obtain a new fuzzy
+reasoning result by the extended distance measure based on LCM between the
+antecedent fuzzy set and the consequent one in discrete SISO fuzzy system. The
+proposed method is called LCM one. And then this paper analyzes its some
+properties, i.e., the reductive property, information loss occurred in
+reasoning process, and the convergence of fuzzy control. Theoretical and
+experimental research results highlight that proposed method meaningfully
+improve the reductive property and information loss and controllability than
+the previous fuzzy reasoning methods. 
+
+Title: Modeling Uncertainty and Imprecision in Nonmonotonic Reasoning using
+  Fuzzy Numbers 
+Summary: To deal with uncertainty in reasoning, interval-valued logic has been
+developed. But uniform intervals cannot capture the difference in degrees of
+belief for different values in the interval. To salvage the problem triangular
+and trapezoidal fuzzy numbers are used as the set of truth values along with
+traditional intervals. Preorder-based truth and knowledge ordering are defined
+over the set of fuzzy numbers defined over $[0,1]$. Based on this enhanced set
+of epistemic states, an answer set framework is developed, with properly
+defined logical connectives. This type of framework is efficient in knowledge
+representation and reasoning with vague and uncertain information under
+nonmonotonic environment where rules may posses exceptions. 
+
+",This is a test answer.,abs-2010.05453v1
+"Considering the challenges of multi-agent reinforcement learning described in 'Counterfactual Conservative Q Learning' (abs-2309.12696v1), how might the multi-persona self-collaboration approach from 'Solo Performance Prompting' (abs-2307.05300v4) be used to model and potentially mitigate the high-dimension issue?","abs-2309.12696v1,abs-2307.05300v4",Synthesis & Multi-Hop Reasoning Questions,"Title: Counterfactual Conservative Q Learning for Offline Multi-agent
+  Reinforcement Learning 
+Summary: Offline multi-agent reinforcement learning is challenging due to the coupling
+effect of both distribution shift issue common in offline setting and the high
+dimension issue common in multi-agent setting, making the action
+out-of-distribution (OOD) and value overestimation phenomenon excessively
+severe. Tomitigate this problem, we propose a novel multi-agent offline RL
+algorithm, named CounterFactual Conservative Q-Learning (CFCQL) to conduct
+conservative value estimation. Rather than regarding all the agents as a high
+dimensional single one and directly applying single agent methods to it, CFCQL
+calculates conservative regularization for each agent separately in a
+counterfactual way and then linearly combines them to realize an overall
+conservative value estimation. We prove that it still enjoys the
+underestimation property and the performance guarantee as those single agent
+conservative methods do, but the induced regularization and safe policy
+improvement bound are independent of the agent number, which is therefore
+theoretically superior to the direct treatment referred to above, especially
+when the agent number is large. We further conduct experiments on four
+environments including both discrete and continuous action settings on both
+existing and our man-made datasets, demonstrating that CFCQL outperforms
+existing methods on most datasets and even with a remarkable margin on some of
+them. 
+
+Title: Unleashing the Emergent Cognitive Synergy in Large Language Models: A
+  Task-Solving Agent through Multi-Persona Self-Collaboration 
+Summary: Human intelligence thrives on cognitive synergy, where collaboration among
+different minds yield superior outcomes compared to isolated individuals. In
+this work, we propose Solo Performance Prompting (SPP), which transforms a
+single LLM into a cognitive synergist by engaging in multi-turn
+self-collaboration with multiple personas. A cognitive synergist is an
+intelligent agent that collaboratively combines multiple minds' strengths and
+knowledge to enhance problem-solving in complex tasks. By dynamically
+identifying and simulating different personas based on task inputs, SPP
+unleashes the potential of cognitive synergy in LLMs. Our in-depth analysis
+shows that assigning multiple fine-grained personas in LLMs improves
+problem-solving abilities compared to using a single or fixed number of
+personas. We evaluate SPP on three challenging tasks: Trivia Creative Writing,
+Codenames Collaborative, and Logic Grid Puzzle, encompassing both
+knowledge-intensive and reasoning-intensive types. Unlike previous works, such
+as Chain-of-Thought, that solely enhance the reasoning abilities in LLMs,
+experimental results demonstrate that SPP effectively reduces factual
+hallucination, and maintains strong reasoning capabilities. Additionally,
+comparative experiments show that cognitive synergy only emerges in GPT-4 and
+does not appear in less capable models, such as GPT-3.5-turbo and
+Llama2-13b-chat, which draws an interesting analogy to human development. Code,
+data, and prompts can be found at:
+https://github.com/MikeWangWZHL/Solo-Performance-Prompting.git. 
+
+",This is a test answer.,abs-2309.12696v1
+How could the concept of 'signifiers' from 'Signifiers as a First-class Abstraction in Hypermedia Multi-Agent Systems' (abs-2302.06970v1) be integrated into the multi-agent interaction module of the KoMA framework (abs-2407.14239v1) to enhance decision-making for autonomous vehicles?,"abs-2302.06970v1,abs-2407.14239v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Signifiers as a First-class Abstraction in Hypermedia Multi-Agent
+  Systems 
+Summary: Hypermedia APIs enable the design of reusable hypermedia clients that
+discover and exploit affordances on the Web. However, the reusability of such
+clients remains limited since they cannot plan and reason about interaction.
+This paper provides a conceptual bridge between hypermedia-driven affordance
+exploitation on the Web and methods for representing and reasoning about
+actions that have been extensively explored for Multi-Agent Systems (MAS) and,
+more broadly, Artificial Intelligence. We build on concepts and methods from
+Affordance Theory and Human-Computer Interaction that support interaction
+efficiency in open and evolvable environments to introduce signifiers as a
+first-class abstraction in Web-based MAS: Signifiers are designed with respect
+to the agent-environment context of their usage and enable agents with
+heterogeneous abilities to act and to reason about action. We define a formal
+model for the contextual exposure of signifiers in hypermedia environments that
+aims to drive affordance exploitation. We demonstrate our approach with a
+prototypical Web-based MAS where two agents with different reasoning abilities
+proactively discover how to interact with their environment by perceiving only
+the signifiers that fit their abilities. We show that signifier exposure can be
+inherently managed based on the dynamic agent-environment context towards
+facilitating effective and efficient interactions on the Web. 
+
+Title: KoMA: Knowledge-driven Multi-agent Framework for Autonomous Driving with
+  Large Language Models 
+Summary: Large language models (LLMs) as autonomous agents offer a novel avenue for
+tackling real-world challenges through a knowledge-driven manner. These
+LLM-enhanced methodologies excel in generalization and interpretability.
+However, the complexity of driving tasks often necessitates the collaboration
+of multiple, heterogeneous agents, underscoring the need for such LLM-driven
+agents to engage in cooperative knowledge sharing and cognitive synergy.
+Despite the promise of LLMs, current applications predominantly center around
+single agent scenarios. To broaden the horizons of knowledge-driven strategies
+and bolster the generalization capabilities of autonomous agents, we propose
+the KoMA framework consisting of multi-agent interaction, multi-step planning,
+shared-memory, and ranking-based reflection modules to enhance multi-agents'
+decision-making in complex driving scenarios. Based on the framework's
+generated text descriptions of driving scenarios, the multi-agent interaction
+module enables LLM agents to analyze and infer the intentions of surrounding
+vehicles, akin to human cognition. The multi-step planning module enables LLM
+agents to analyze and obtain final action decisions layer by layer to ensure
+consistent goals for short-term action decisions. The shared memory module can
+accumulate collective experience to make superior decisions, and the
+ranking-based reflection module can evaluate and improve agent behavior with
+the aim of enhancing driving safety and efficiency. The KoMA framework not only
+enhances the robustness and adaptability of autonomous driving agents but also
+significantly elevates their generalization capabilities across diverse
+scenarios. Empirical results demonstrate the superiority of our approach over
+traditional methods, particularly in its ability to handle complex,
+unpredictable driving environments without extensive retraining. 
+
+",This is a test answer.,abs-2407.14239v1
+"Based on the proposal for a 'Thinking Fast and Slow' inspired AI in article abs-2010.06002v2, does the 'Fast and Slow Planning' architecture in article abs-2303.04283v1 address the core cognitive capabilities envisioned in the first paper?","abs-2010.06002v2,abs-2303.04283v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Thinking Fast and Slow in AI 
+Summary: This paper proposes a research direction to advance AI which draws
+inspiration from cognitive theories of human decision making. The premise is
+that if we gain insights about the causes of some human capabilities that are
+still lacking in AI (for instance, adaptability, generalizability, common
+sense, and causal reasoning), we may obtain similar capabilities in an AI
+system by embedding these causal components. We hope that the high-level
+description of our vision included in this paper, as well as the several
+research questions that we propose to consider, can stimulate the AI research
+community to define, try and evaluate new methodologies, frameworks, and
+evaluation metrics, in the spirit of achieving a better understanding of both
+human and machine intelligence. 
+
+Title: Fast and Slow Planning 
+Summary: The concept of Artificial Intelligence has gained a lot of attention over the
+last decade. In particular, AI-based tools have been employed in several
+scenarios and are, by now, pervading our everyday life. Nonetheless, most of
+these systems lack many capabilities that we would naturally consider to be
+included in a notion of ""intelligence"". In this work, we present an
+architecture that, inspired by the cognitive theory known as Thinking Fast and
+Slow by D. Kahneman, is tasked with solving planning problems in different
+settings, specifically: classical and multi-agent epistemic. The system
+proposed is an instance of a more general AI paradigm, referred to as SOFAI
+(for Slow and Fast AI). SOFAI exploits multiple solving approaches, with
+different capabilities that characterize them as either fast or slow, and a
+metacognitive module to regulate them. This combination of components, which
+roughly reflects the human reasoning process according to D. Kahneman, allowed
+us to enhance the reasoning process that, in this case, is concerned with
+planning in two different settings. The behavior of this system is then
+compared to state-of-the-art solvers, showing that the newly introduced system
+presents better results in terms of generality, solving a wider set of problems
+with an acceptable trade-off between solving times and solution accuracy. 
+
+",This is a test answer.,abs-2303.04283v1
+How can the graph completion techniques described in 'Knowledge Representation in Graphs using Convolutional Neural Networks' (abs-1612.02255v1) be applied to improve the robustness of the dependency-based text graphs used for keyphrase extraction in article abs-1909.09742v1?,"abs-1612.02255v1,abs-1909.09742v1",Synthesis & Multi-Hop Reasoning Questions,"Title: Knowledge Representation in Graphs using Convolutional Neural Networks 
+Summary: Knowledge Graphs (KG) constitute a flexible representation of complex
+relationships between entities particularly useful for biomedical data. These
+KG, however, are very sparse with many missing edges (facts) and the
+visualisation of the mesh of interactions nontrivial. Here we apply a
+compositional model to embed nodes and relationships into a vectorised semantic
+space to perform graph completion. A visualisation tool based on Convolutional
+Neural Networks and Self-Organised Maps (SOM) is proposed to extract high-level
+insights from the KG. We apply this technique to a subset of CTD, containing
+interactions of compounds with human genes / proteins and show that the
+performance is comparable to the one obtained by structural models. 
+
+Title: Dependency-based Text Graphs for Keyphrase and Summary Extraction with
+  Applications to Interactive Content Retrieval 
+Summary: We build a bridge between neural network-based machine learning and
+graph-based natural language processing and introduce a unified approach to
+keyphrase, summary and relation extraction by aggregating dependency graphs
+from links provided by a deep-learning based dependency parser.
+  We reorganize dependency graphs to focus on the most relevant content
+elements of a sentence, integrate sentence identifiers as graph nodes and after
+ranking the graph, we extract our keyphrases and summaries from its largest
+strongly-connected component. We take advantage of the implicit structural
+information that dependency links bring to extract subject-verb-object, is-a
+and part-of relations.
+  We put it all together into a proof-of-concept dialog engine that specializes
+the text graph with respect to a query and reveals interactively the document's
+most relevant content elements. The open-source code of the integrated system
+is available at https://github.com/ptarau/DeepRank .
+  Keywords: graph-based natural language processing, dependency graphs,
+keyphrase, summary and relation extraction, query-driven salient sentence
+extraction, logic-based dialog engine, synergies between neural and symbolic
+processing. 
+
+",This is a test answer.,abs-1909.09742v1
+What were the specific hardware specifications of the computer used to train the AlphaZero model in the 'Accelerating and Improving AlphaZero' paper?,abs-2003.06212v1,Negative / Unanswerable Questions,"Title: Accelerating and Improving AlphaZero Using Population Based Training 
+Summary: AlphaZero has been very successful in many games. Unfortunately, it still
+consumes a huge amount of computing resources, the majority of which is spent
+in self-play. Hyperparameter tuning exacerbates the training cost since each
+hyperparameter configuration requires its own time to train one run, during
+which it will generate its own self-play records. As a result, multiple runs
+are usually needed for different hyperparameter configurations. This paper
+proposes using population based training (PBT) to help tune hyperparameters
+dynamically and improve strength during training time. Another significant
+advantage is that this method requires a single run only, while incurring a
+small additional time cost, since the time for generating self-play records
+remains unchanged though the time for optimization is increased following the
+AlphaZero training algorithm. In our experiments for 9x9 Go, the PBT method is
+able to achieve a higher win rate for 9x9 Go than the baselines, each with its
+own hyperparameter configuration and trained individually. For 19x19 Go, with
+PBT, we are able to obtain improvements in playing strength. Specifically, the
+PBT agent can obtain up to 74% win rate against ELF OpenGo, an open-source
+state-of-the-art AlphaZero program using a neural network of a comparable
+capacity. This is compared to a saturated non-PBT agent, which achieves a win
+rate of 47% against ELF OpenGo under the same circumstances. 
+
+",This is a test answer.,abs-2003.06212v1
+The paper 'Voyager: An Open-Ended Embodied Agent with Large Language Models' mentions an ever-growing skill library. In which programming language are these skills written?,abs-2305.16291v2,Negative / Unanswerable Questions,"Title: Voyager: An Open-Ended Embodied Agent with Large Language Models 
+Summary: We introduce Voyager, the first LLM-powered embodied lifelong learning agent
+in Minecraft that continuously explores the world, acquires diverse skills, and
+makes novel discoveries without human intervention. Voyager consists of three
+key components: 1) an automatic curriculum that maximizes exploration, 2) an
+ever-growing skill library of executable code for storing and retrieving
+complex behaviors, and 3) a new iterative prompting mechanism that incorporates
+environment feedback, execution errors, and self-verification for program
+improvement. Voyager interacts with GPT-4 via blackbox queries, which bypasses
+the need for model parameter fine-tuning. The skills developed by Voyager are
+temporally extended, interpretable, and compositional, which compounds the
+agent's abilities rapidly and alleviates catastrophic forgetting. Empirically,
+Voyager shows strong in-context lifelong learning capability and exhibits
+exceptional proficiency in playing Minecraft. It obtains 3.3x more unique
+items, travels 2.3x longer distances, and unlocks key tech tree milestones up
+to 15.3x faster than prior SOTA. Voyager is able to utilize the learned skill
+library in a new Minecraft world to solve novel tasks from scratch, while other
+techniques struggle to generalize. We open-source our full codebase and prompts
+at https://voyager.minedojo.org/. 
+
+",This is a test answer.,abs-2412.03772v1
+"The paper on 'AI-based Wildfire Prevention, Detection and Suppression System' (abs-2312.06990v1) mentions using real-time satellite data from NASA. What are the names of the specific NASA satellites used?",abs-2312.06990v1,Negative / Unanswerable Questions,"Title: AI-based Wildfire Prevention, Detection and Suppression System 
+Summary: Wildfires pose a serious threat to the environment of the world. The global
+wildfire season length has increased by 19% and severe wildfires have besieged
+nations around the world. Every year, forests are burned by wildfires, causing
+vast amounts of carbon dioxide to be released into the atmosphere, contributing
+to climate change. There is a need for a system which prevents, detects, and
+suppresses wildfires. The AI based Wildfire Prevention, Detection and
+Suppression System (WPDSS) is a novel, fully automated, end to end, AI based
+solution to effectively predict hotspots and detect wildfires, deploy drones to
+spray fire retardant, preventing and suppressing wildfires. WPDSS consists of
+four steps. 1. Preprocessing: WPDSS loads real time satellite data from NASA
+and meteorological data from NOAA of vegetation, temperature, precipitation,
+wind, soil moisture, and land cover for prevention. For detection, it loads the
+real time data of Land Cover, Humidity, Temperature, Vegetation, Burned Area
+Index, Ozone, and CO2. It uses the process of masking to eliminate not hotspots
+and not wildfires such as water bodies, and rainfall. 2. Learning: The AI model
+consists of a random forest classifier, which is trained using a labeled
+dataset of hotspots and wildfires and not hotspots and not wildfires. 3.
+Identification of hotspots and wildfires: WPDSS runs the real time data through
+the model to automatically identify hotspots and wildfires. 4. Drone
+deployment: The drone flies to the identified hotspot or wildfire location.
+WPDSS attained a 98.6% accuracy in identifying hotspots and a 98.7% accuracy in
+detecting wildfires. WPDSS will reduce the impacts of climate change, protect
+ecosystems and biodiversity, avert huge economic losses, and save human lives.
+The power of WPDSS developed can be applied to any location globally to prevent
+and suppress wildfires, reducing climate change. 
+
+",This is a test answer.,abs-2312.06990v1
+"In the 'Steward: Natural Language Web Automation' paper, which specific websites were used to benchmark the 40% task completion success rate?",abs-2409.15441v1,Negative / Unanswerable Questions,"Title: Steward: Natural Language Web Automation 
+Summary: Recently, large language models (LLMs) have demonstrated exceptional
+capabilities in serving as the foundation for AI assistants. One emerging
+application of LLMs, navigating through websites and interacting with UI
+elements across various web pages, remains somewhat underexplored. We introduce
+Steward, a novel LLM-powered web automation tool designed to serve as a
+cost-effective, scalable, end-to-end solution for automating web interactions.
+Traditional browser automation frameworks like Selenium, Puppeteer, and
+Playwright are not scalable for extensive web interaction tasks, such as
+studying recommendation algorithms on platforms like YouTube and Twitter. These
+frameworks require manual coding of interactions, limiting their utility in
+large-scale or dynamic contexts. Steward addresses these limitations by
+integrating LLM capabilities with browser automation, allowing for natural
+language-driven interaction with websites. Steward operates by receiving
+natural language instructions and reactively planning and executing a sequence
+of actions on websites, looping until completion, making it a practical tool
+for developers and researchers to use. It achieves high efficiency, completing
+actions in 8.52 to 10.14 seconds at a cost of $0.028 per action or an average
+of $0.18 per task, which is further reduced to 4.8 seconds and $0.022 through a
+caching mechanism. It runs tasks on real websites with a 40% completion success
+rate. We discuss various design and implementation challenges, including state
+representation, action sequence selection, system responsiveness, detecting
+task completion, and caching implementation. 
+
+",This is a test answer.,abs-2409.15441v1
