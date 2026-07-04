@@ -1,6 +1,6 @@
-# arXiv Retrieval-Augmented Generation (RAG) Q&A System
+# Retrieval-Augmented Academic Assistant with Local RAG Implementation
 
-A comprehensive RAG system designed for querying and analyzing academic papers from the arXiv dataset. This repository contains the RAG engine, web application, hyperparameter tuning utilities, evaluation suites (NLI, Refusal, and RAGAS), and LLM fine-tuning pipelines.
+A comprehensive local RAG system designed for querying and analyzing academic papers from the arXiv dataset. This repository contains the RAG engine, web application, hyperparameter tuning utilities, evaluation suites (NLI, Refusal, and RAGAS), and LLM fine-tuning pipelines.
 
 ## Project Structure
 
@@ -28,6 +28,7 @@ A comprehensive RAG system designed for querying and analyzing academic papers f
 │   ├── templates/                       # Frontend HTML
 │   └── static/                          # Styling and frontend assets
 ├── dataset/                             # Raw and category-grouped article metadata
+│   └── old/                             # Archived raw datasets (ignored by git)
 └── questionSet/                         # Standardized evaluation questions
 ```
 
@@ -43,6 +44,35 @@ A comprehensive RAG system designed for querying and analyzing academic papers f
    - **NLI Faithfulness**: Evaluates response correctness by splitting answers into individual sentences and testing entailment against gold summaries using models like BART and DeBERTa.
    - **Refusal Rates**: Validates how robustly the LLM refuses to answer unanswerable or negative questions using keyword rules and NLI evaluation.
    - **Local RAGAS Metric Suite**: Computes Context Precision, Context Recall, Answer Relevancy, and Faithfulness locally without needing OpenAI API tokens.
+
+---
+
+## Research & Experimental Results
+
+The technical framework and pipeline design are based on the Master's in Data Science Research Report: **"Retrieval-Augmented Academic Assistant with Local RAG Implementation"**. Below are the key findings and empirical results from the three main stages of experimentation:
+
+### 1. Experiment 1: Retriever Selection
+- **Metric**: Recall@5
+- **Goal**: Identify the best-performing open-source embedding model for dense retrieval.
+- **Results**: 
+  - **`granite-embedding:30m`** (IBM) achieved the highest overall average Recall@5 of **89.90%**, peaking at **93.60%** on the 2024 dataset.
+  - Notably, retrieval performance did not directly correlate with model size: the larger `qwen3-embedding:0.6b` (1024 dimensions) was outperformed by the smaller `granite-embedding:30m` (384 dimensions), highlighting that training methodology is more critical than parameter scale alone.
+
+### 2. Experiment 2: Generator Selection
+- **Metrics**: NLI Semantic Consistency & Refusal Rate
+- **Goal**: Identify the most suitable lightweight language model (under 8B parameters) for generating grounded responses and handling unanswerable queries.
+- **Results**:
+  - **`Qwen2.5-3B`** was selected as the optimal generator. It achieved the highest combined average NLI entailment score of **0.626** and the highest majority-vote semantic consistency rate of **68.10%** across three NLI models.
+  - It also displayed a strong refusal capability (**72.50%** keyword-based and **85.00%** NLI-based) on unanswerable questions.
+
+### 3. Experiment 3: Pipeline Optimization & RAGAS Benchmarking
+- **Retriever Parameter Tuning**: Grid search identified **$K=10$** (top-ranked chunks from Dense/Sparse) and **$N=6$** (retained chunks after Cross-Encoder reranking) as the optimal elbow point of the Recall@n curve.
+- **Generator Fine-Tuning**: Supervised fine-tuning using **QLoRA** on an NLI-filtered synthetic dataset (augmented via `llama3:8b`) produced the optimized `qwen2.5-3b-ragas` model.
+- **Local RAGAS Metric Improvements**:
+  - **Faithfulness**: **+19.3%** relative improvement (from `0.5519` to `0.6586`), ensuring generated answers are highly grounded in the retrieved context.
+  - **Context Recall**: **+3.0%** improvement (from `0.7475` to `0.7700`).
+  - **Context Precision**: Decreased by **-17.5%** (from `0.2592` to `0.2140`) as a direct trade-off for higher recall, prioritizing broader context coverage.
+  - **Overall RAGAS Index**: **+3.1%** overall improvement (from `0.6165` to `0.6355`).
 
 ---
 
