@@ -3,66 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Q&A Chat System</title>
+  <title>arXiv Retrieval-Augmented Academic Assistant</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <!-- Sidebar -->
     <div id="sidebar">
-        <h2>Chats</h2>
-        <div id="chat-list">
-
+        <div id="sidebar-header">
+            <h2>arXiv RAG</h2>
+            <p>Academic Assistant</p>
         </div>
-        <button id="new-chat">+ New Chat</button>
-    </div>
-
-    <!-- Main Chat -->
-    <div id="chat-container">
-        <div id="chat-box">
-            <div class="message bot-message">
-
+        <div id="chat-list-container">
+            <h3>Active Sessions</h3>
+            <div id="chat-list">
+                <!-- Chat items loaded dynamically -->
             </div>
         </div>
-        <div id="input-container">
-            <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off">
-            <button id="send-btn">Send</button>
+        <button id="new-chat">+ Create New Session</button>
+    </div>
+
+    <!-- Main Chat Workspace -->
+    <div id="main-workspace">
+        <!-- RAG Configuration Status Dashboard Header -->
+        <div id="dashboard-header">
+            <div class="dash-title">
+                <h1>Retrieval-Augmented Academic Dashboard</h1>
+            </div>
+            <div id="status-pills">
+                <div class="pill pill-green">
+                    <span class="pill-label">Generator:</span>
+                    <span id="active-gen-display" class="pill-value">-</span>
+                </div>
+                <div class="pill pill-blue">
+                    <span class="pill-label">Embedding:</span>
+                    <span id="active-embed-display" class="pill-value">-</span>
+                </div>
+                <div class="pill pill-orange">
+                    <span class="pill-label">Reranker:</span>
+                    <span class="pill-value">ms-marco-MiniLM-L-6-v2</span>
+                </div>
+                <div class="pill pill-purple">
+                    <span class="pill-label">Parameters:</span>
+                    <span class="pill-value">K=<span id="p-k-val">10</span>, N=<span id="p-n-val">6</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="workspace-body">
+            <!-- Chat Container -->
+            <div id="chat-container">
+                <div id="chat-box">
+                    <div class="message bot-message">
+                        <div class="message-text">Hello! Ask me any academic question, and I'll retrieve research papers from the selected database to construct a grounded answer.</div>
+                    </div>
+                </div>
+                <div id="input-container">
+                    <input type="text" id="user-input" placeholder="Type your academic query here..." autocomplete="off">
+                    <button id="send-btn">
+                        <span>Send Query</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Retriever Config Sidebar Panel -->
+            <div id="config-panel">
+                <h3>Pipeline Parameters</h3>
+                
+                <div class="config-group">
+                    <div class="slider-header">
+                        <label for="k-value">Retriever Pool (K)</label>
+                        <span id="k-val-display" class="slider-val">10</span>
+                    </div>
+                    <input type="range" id="k-value" min="1" max="20" value="10" step="1">
+                    <p class="config-desc">Number of dense and sparse chunks retrieved from index before reranking.</p>
+                </div>
+
+                <div class="config-group">
+                    <div class="slider-header">
+                        <label for="n-value">Reranker Context (N)</label>
+                        <span id="n-val-display" class="slider-val">6</span>
+                    </div>
+                    <input type="range" id="n-value" min="1" max="10" value="6" step="1">
+                    <p class="config-desc">Top-N chunks retained after Cross-Encoder reranking and fed to the LLM context.</p>
+                </div>
+
+                <div class="config-note">
+                    <strong>Optimal Settings:</strong><br>
+                    Based on Experiment 3, the optimal retriever combination is <strong>K=10</strong> and <strong>N=6</strong> (elbow point).
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Retriever Details -->
-    <div id="retriever-details-container">
-        <div id="retriever-details">
-            <h3>Retriver k-Value</h3>
-            <input type="text" id="k-value" value="5">
-        </div>
-    </div>
-
-
-    <!-- Chat Config -->
+    <!-- Create New Chat Modal Dialog -->
     <div id="chatConfigModal" class="config">
         <div class="config-content">
-            <h3>Create New Chat</h3>
+            <h3>Create New RAG Index</h3>
+            
+            <div class="modal-form-group">
+                <label for="vectorInput">Index Database Name</label>
+                <input type="text" id="vectorInput" placeholder="e.g., Physics_Quantum_QA" />
+            </div>
 
+            <div class="modal-form-group">
+                <label for="embedInput">Embedding Model</label>
+                <select id="embedInput">
+                    <option value="granite-embedding:30m" selected>granite-embedding:30m (Optimal Dense Retriever)</option>
+                    <option value="nomic-embed-text:latest">nomic-embed-text:latest</option>
+                    <option value="all-minilm-latest">all-minilm-latest</option>
+                    <option value="mxbai-embed-large">mxbai-embed-large</option>
+                </select>
+            </div>
 
-            <label>Chat Name</label>
-            <input type="text" id="vectorInput" />
+            <div class="modal-form-group">
+                <label for="generatorInput">Ollama Generator Model</label>
+                <select id="generatorInput">
+                    <option value="qwen2.5-3b-ragas" selected>qwen2.5-3b-ragas (LoRA Fine-Tuned)</option>
+                    <option value="qwen2.5:3b">qwen2.5:3b (Baseline Qwen)</option>
+                    <option value="llama3.2">llama3.2 (Baseline Llama)</option>
+                </select>
+            </div>
 
-            <label>Embedding Function</label>
-            <select id="embedInput">
-                <option value="mxbai-embed-large" selected>mxbai-embed-large</option>
-            </select>
-
-            <label>CSV File</label>
-            <input type="file" id="csvFileInput" accept=".csv" />
+            <div class="modal-form-group">
+                <label for="csvFileInput">CSV File Dataset</label>
+                <input type="file" id="csvFileInput" accept=".csv" />
+                <p style="font-size: 11px; color: #94A3B8; margin-top: 4px;">CSV must contain columns: <code>title</code>, <code>published_date</code>, <code>summary</code>.</p>
+            </div>
 
             <div class="config-actions">
-                <button id="cancelChatBtn">Cancel</button>
-                <button id="createChatBtn">Create</button>
+                <button id="cancelChatBtn" class="btn-secondary">Cancel</button>
+                <button id="createChatBtn" class="btn-primary">Index & Create</button>
             </div>
         </div>
     </div>
-
-
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
