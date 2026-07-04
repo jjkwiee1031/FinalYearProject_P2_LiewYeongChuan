@@ -121,3 +121,21 @@ python CORE/RAGAS/ragas_eval.py
 # Generate comparison charts
 python CORE/RAGAS/ragas_graph.py
 ```
+
+> [!NOTE]
+> The optimized model runs on a custom local Ollama model named `qwen2.5-3b-ragas`. Since the final GGUF file is too large for GitHub (>3 GB), it is ignored by `.gitignore`. However, the **LoRA adapter weights (57 MB)** are fully committed inside `CORE/RAGAS/fine_tuning/qwen2.5-3b-ragas-lora/`.
+> 
+> To recreate the custom model locally on a new machine:
+> 1. **Merge the LoRA weights** with the base model:
+>    ```bash
+>    python CORE/RAGAS/fine_tuning/merge_and_export.py --base-model Qwen/Qwen2.5-3B-Instruct
+>    ```
+> 2. **Convert the merged weights to GGUF** using `llama.cpp`:
+>    ```bash
+>    python path/to/llama.cpp/convert_hf_to_gguf.py CORE/RAGAS/fine_tuning/qwen2.5-3b-ragas-merged --outfile CORE/RAGAS/fine_tuning/finetuned_gguf/qwen2.5-3b-rages.gguf
+>    ```
+> 3. **Create the Ollama model** from the Modelfile:
+>    ```bash
+>    cd CORE/RAGAS/fine_tuning/finetuned_gguf
+>    ollama create qwen2.5-3b-ragas -f Modelfile
+>    ```
